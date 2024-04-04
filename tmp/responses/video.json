@@ -1,0 +1,69 @@
+{
+    "video": {
+        "id": 78688,
+        "slug": "pedda-chris-auf-tour-euro-truck-simulator-2",
+        "url_slug": "78688-pedda-chris-auf-tour-euro-truck-simulator-2",
+        "short_url": "http:\/\/ptsmt.de\/v\/78688",
+        "url": "\/videos\/78688-pedda-chris-auf-tour-euro-truck-simulator-2",
+        "title": "Pedda & Chris auf Tour | Euro Truck Simulator 2",
+        "featured": false,
+        "remote": false,
+        "remote_url": null,
+        "description": "Dies ist eine Stream-Aufzeichnung. Der Stream lief am 02.04.2024 auf <a href=\"https:\/\/twitch.tv\/PietSmiet\" target=\"_blank\">https:\/\/twitch.tv\/PietSmiet<\/a><br \/>\nUnseren Merch mit Shirts, Hoodies und Caps findet ihr auf <a href=\"http:\/\/pietsmiet.store\" target=\"_blank\">http:\/\/pietsmiet.store<\/a><br \/>\n<br \/>\nMehr Stream-Aufzeichnungen gibt es in der Playlist auf YouTube: <a href=\"https:\/\/pietsmiet.de\/link\/liveplaylists\" target=\"_blank\">https:\/\/pietsmiet.de\/link\/liveplaylists<\/a><br \/>\nMehr Stream-Aufzeichnungen gibt es fr\u00fcher auf PietSmiet.de: <a href=\"https:\/\/pietsmiet.de\/videos\/channels\/44-pietstream\" target=\"_blank\">https:\/\/pietsmiet.de\/videos\/channels\/44-pietstream<\/a><br \/>\n<br \/>\nIhr k\u00f6nnt \u00fcber diesen Link auf Amazon shoppen: <a href=\"https:\/\/pietsmiet.de\/amazon\" target=\"_blank\">https:\/\/pietsmiet.de\/amazon<\/a><br \/>\nHierbei handelt es sich um einen Affiliate-Link. Durch einen Kauf \u00fcber diesen Link werden wir am Umsatz beteiligt. Dies hat f\u00fcr Dich keine Auswirkungen auf den Preis.<br \/>\n<br \/>\nReacts: <a href=\"http:\/\/youtube.com\/PietSmietTV\" target=\"_blank\">http:\/\/youtube.com\/PietSmietTV<\/a> - Stream-VODs: <a href=\"http:\/\/youtube.com\/PietSmietLive\" target=\"_blank\">http:\/\/youtube.com\/PietSmietLive<\/a> - Best-ofs: <a href=\"http:\/\/youtube.com\/BestPietSmiet\" target=\"_blank\">http:\/\/youtube.com\/BestPietSmiet<\/a> - Fragen an uns: <a href=\"http:\/\/youtube.com\/FragPietSmiet\" target=\"_blank\">http:\/\/youtube.com\/FragPietSmiet<\/a> - Merch: <a href=\"http:\/\/pietsmiet.store\" target=\"_blank\">http:\/\/pietsmiet.store<\/a> - PCs: <a href=\"http:\/\/pietsmiet.de\/pc\" target=\"_blank\">http:\/\/pietsmiet.de\/pc<\/a> - St\u00fchle: <a href=\"http:\/\/pietsmiet.de\/stuhl\" target=\"_blank\">http:\/\/pietsmiet.de\/stuhl<\/a> - Buch: <a href=\"http:\/\/pietsmiet.de\/buch\" target=\"_blank\">http:\/\/pietsmiet.de\/buch<\/a> - Podcast: <a href=\"http:\/\/pietsmiet.de\/podcast\" target=\"_blank\">http:\/\/pietsmiet.de\/podcast<\/a>",
+        "duration": 10601,
+        "duration_pretty": "02:56:41",
+        "likes_count": 12,
+        "comments_count": 2,
+        "thumbnail": {
+            "id": 248120,
+            "collection": "thumbnail",
+            "remote_url": null,
+            "variations": [
+                {
+                    "height": 720,
+                    "file": "9c8469e555df5315a83ea6e409340d73b8b4bd33.jpg",
+                    "url": "https:\/\/www.pietsmiet.de\/img\/9c8469e555df5315a83ea6e409340d73b8b4bd33.jpg?i=248120"
+                },
+                {
+                    "height": 360,
+                    "file": "4ec3d35adee7d8baf1a735fcab699606fbf047dc.jpg",
+                    "url": "https:\/\/www.pietsmiet.de\/img\/4ec3d35adee7d8baf1a735fcab699606fbf047dc.jpg?i=248120"
+                },
+                {
+                    "height": 144,
+                    "file": "6af90ea33e25439afb22effac774b5c300dd2208.jpg",
+                    "url": "https:\/\/www.pietsmiet.de\/img\/6af90ea33e25439afb22effac774b5c300dd2208.jpg?i=248120"
+                }
+            ]
+        },
+        "perspectives": [
+            {
+                "id": 67431,
+                "title": null,
+                "title_pluralized": "s",
+                "main": true
+            }
+        ],
+        "channels": [
+            {
+                "id": 44,
+                "slug": "pietstream",
+                "title": "PietSmiet Live",
+                "description": null,
+                "url_slug": "44-pietstream",
+                "videos_count": null,
+                "followings_count": null
+            }
+        ],
+        "playlists": [],
+        "publish_date": "2024-04-03 20:55:47",
+        "preferences": {
+            "comments": true,
+            "likes": true,
+            "tags": true,
+            "shares": true,
+            "clips": true
+        }
+    },
+    "success": true
+}

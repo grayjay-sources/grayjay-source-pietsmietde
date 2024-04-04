@@ -1,0 +1,241 @@
+{
+    "options": {
+        "visual": {
+            "fluid": true,
+            "responsive": true,
+            "aspect_ratio": "16:9",
+            "thumbnail": "https:\/\/www.pietsmiet.de\/storage\/images\/twitch\/custom-1054d231-837d-4136-bc7f-c13c25d861da-1280x720.jpeg",
+            "brand": {
+                "logo": "https:\/\/www.pietsmiet.de\/assets\/pietsmiet\/brand\/icon.svg",
+                "color": "039a45",
+                "link": "https:\/\/www.pietsmiet.de"
+            }
+        },
+        "generic": {
+            "autoplay": false,
+            "muted": false,
+            "controls": true,
+            "loop": false,
+            "playback_rates": [
+                0.25,
+                0.5,
+                0.75,
+                1,
+                1.25,
+                1.5,
+                2
+            ],
+            "analytics": {
+                "google": "UA-38125589-1"
+            },
+            "chromecast": {
+                "enabled": true,
+                "receiver_application_id": "198B24D0"
+            }
+        },
+        "tracks": [
+            {
+                "id": 67431,
+                "title": null,
+                "full_title": "Pedda & Chris auf Tour | Euro Truck Simulator 2",
+                "pluralized_title": "s",
+                "main": true,
+                "sources": {
+                    "hls": {
+                        "src": "https:\/\/pietcdn.de\/hls\/6f\/2c\/0e\/,956c952686bee01d0602f05bd5460765,1c0c2f351e996e26e752b36ec04b2aff,f677324e66820465d1428d53a7f572ba,bfda58408f95542e6bbf40d7fe4cd053,a5e507ed71193c2fee7c631fc97ca2aa,.mp4.us\/hmt.m3u8",
+                        "type": "application\/x-mpegurl",
+                        "labels": [
+                            "1080p60",
+                            "1080p",
+                            "720p60",
+                            "720p",
+                            "480p",
+                            "360p",
+                            "240p"
+                        ],
+                        "labels_bitrate": {
+                            "5785": "1080p60",
+                            "3855": "1080p",
+                            "2743": "720p60",
+                            "1892": "720p",
+                            "1014": "480p",
+                            "600": "360p",
+                            "369": "240p"
+                        }
+                    },
+                    "dash": {
+                        "src": "https:\/\/pietcdn.de\/dash\/6f\/2c\/0e\/,9c47dc325a96463678f83e182c496fc0,956c952686bee01d0602f05bd5460765,f5715f22ffee64599dbcd1fc09594616,1c0c2f351e996e26e752b36ec04b2aff,f677324e66820465d1428d53a7f572ba,bfda58408f95542e6bbf40d7fe4cd053,a5e507ed71193c2fee7c631fc97ca2aa,.mp4.us\/dmf.mpd",
+                        "type": "application\/dash+xml",
+                        "labels": [
+                            "1080p60",
+                            "1080p",
+                            "720p60",
+                            "720p",
+                            "480p",
+                            "360p",
+                            "240p"
+                        ],
+                        "labels_bitrate": {
+                            "5785": "1080p60",
+                            "3855": "1080p",
+                            "2743": "720p60",
+                            "1892": "720p",
+                            "1014": "480p",
+                            "600": "360p",
+                            "369": "240p"
+                        }
+                    },
+                    "mp4": null
+                },
+                "qualities": [
+                    {
+                        "label": "1080p60",
+                        "bitrate": 5924174,
+                        "framerate": 59
+                    },
+                    {
+                        "label": "1080p",
+                        "bitrate": 3947559,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "720p60",
+                        "bitrate": 2809673,
+                        "framerate": 59
+                    },
+                    {
+                        "label": "720p",
+                        "bitrate": 1937883,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "480p",
+                        "bitrate": 1039296,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "360p",
+                        "bitrate": 614480,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "240p",
+                        "bitrate": 378038,
+                        "framerate": 29
+                    }
+                ]
+            }
+        ]
+    },
+    "advertising": [
+        {
+            "time": 0,
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=preroll&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=1000&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "nugg": true,
+            "played": false
+        },
+        {
+            "time": 600,
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=8170&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "nugg": false,
+            "played": false
+        },
+        {
+            "time": 1200,
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=8419&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "nugg": false,
+            "played": false
+        },
+        {
+            "time": 1800,
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=7298&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "nugg": false,
+            "played": false
+        },
+        {
+            "time": 2400,
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=1311&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "nugg": false,
+            "played": false
+        },
+        {
+            "time": 3000,
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=2808&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "nugg": false,
+            "played": false
+        },
+        {
+            "time": 3600,
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=4479&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "nugg": false,
+            "played": false
+        },
+        {
+            "time": 4200,
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=4161&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "nugg": false,
+            "played": false
+        },
+        {
+            "time": 4800,
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=5948&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "nugg": false,
+            "played": false
+        },
+        {
+            "time": 5400,
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=7098&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "nugg": false,
+            "played": false
+        },
+        {
+            "time": 6000,
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=8298&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "nugg": false,
+            "played": false
+        },
+        {
+            "time": 6600,
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=5958&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "nugg": false,
+            "played": false
+        },
+        {
+            "time": 7200,
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=3256&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "nugg": false,
+            "played": false
+        },
+        {
+            "time": 7800,
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=5392&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "nugg": false,
+            "played": false
+        },
+        {
+            "time": 8400,
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=5769&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "nugg": false,
+            "played": false
+        },
+        {
+            "time": 9000,
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=3540&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "nugg": false,
+            "played": false
+        },
+        {
+            "time": 9600,
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=7210&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "nugg": false,
+            "played": false
+        },
+        {
+            "time": 10200,
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=7630&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "nugg": false,
+            "played": false
+        }
+    ],
+    "success": true
+}

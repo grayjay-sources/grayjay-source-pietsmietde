@@ -1,0 +1,261 @@
+{
+	"data": [
+		{
+			"id": 425435,
+			"created_at": "2024-04-04 11:51:15",
+			"text": "Bei mir läuft das Video nach <span class=\"text-primary-500 hover:text-primary-600 cursor-pointer font-semibold\" data-timestamp=\"130\">2:10<\/span> nicht weiter. Noch jemand mit demselben Problem?",
+			"approved": true,
+			"timestamp": 2,
+			"pinned": false,
+			"count_replies": 0,
+			"likes_count": 5,
+			"dislikes_count": 0,
+			"user": {
+				"id": 31960,
+				"url_slug": "31960-RBN179",
+				"username": "RBN179",
+				"name": "RBN179",
+				"name_possessive": "RBN179s",
+				"description": null,
+				"team": false,
+				"blocked": false,
+				"public_profile": false,
+				"banner": null,
+				"avatar": {
+					"id": 175984,
+					"collection": "avatar",
+					"remote_url": "https:\/\/static-cdn.jtvnw.net\/jtv_user_pictures\/rbn179-profile_image-86048bb6c1cdcec1-300x300.jpeg",
+					"variations": [
+						{
+							"height": 130,
+							"url": "https:\/\/static-cdn.jtvnw.net\/jtv_user_pictures\/rbn179-profile_image-86048bb6c1cdcec1-300x300.jpeg"
+						},
+						{
+							"height": 75,
+							"url": "https:\/\/static-cdn.jtvnw.net\/jtv_user_pictures\/rbn179-profile_image-86048bb6c1cdcec1-300x300.jpeg"
+						}
+					]
+				},
+				"reputation": 625,
+				"reputation_pretty": "625",
+				"preferences": {
+					"public_profile": true,
+					"subscription_enable_identification": true
+				},
+				"gifted_subscriptions_count": 0,
+				"created_at": "2019-03-14 13:57:36",
+				"updated_at": "2022-08-29 11:06:18"
+			},
+			"is_reply": false,
+			"reply": null
+		},
+		{
+			"id": 425425,
+			"created_at": "2024-04-04 09:48:22",
+			"text": "Chris und Peter sind immer stark zusammen; gerne öfter--wenigstens regelmäßiger--ets in dieser kombination. :D",
+			"approved": true,
+			"timestamp": null,
+			"pinned": false,
+			"count_replies": 0,
+			"likes_count": 2,
+			"dislikes_count": 0,
+			"user": {
+				"id": 122279,
+				"url_slug": "122279-johntitor",
+				"username": "johntitor",
+				"name": "JohnTitor",
+				"name_possessive": "JohnTitors",
+				"description": null,
+				"team": false,
+				"blocked": false,
+				"public_profile": false,
+				"banner": null,
+				"avatar": {
+					"id": 246309,
+					"collection": "avatar",
+					"remote_url": null,
+					"variations": [
+						{
+							"height": 130,
+							"file": "6f24d2aacf594a38971afe23261b5f1d0d52b6b4.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/6f24d2aacf594a38971afe23261b5f1d0d52b6b4.jpg?i=246309"
+						},
+						{
+							"height": 75,
+							"file": "35ae9a11796cb128804a3435ec14b13b64df1321.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/35ae9a11796cb128804a3435ec14b13b64df1321.jpg?i=246309"
+						}
+					]
+				},
+				"reputation": 67,
+				"reputation_pretty": "67",
+				"preferences": {
+					"public_profile": true,
+					"subscription_enable_identification": true
+				},
+				"gifted_subscriptions_count": 0,
+				"created_at": "2020-11-21 13:21:25",
+				"updated_at": "2024-01-10 11:13:38"
+			},
+			"is_reply": false,
+			"reply": null
+		},
+		{
+			"id": 425422,
+			"created_at": "2024-04-04 05:02:41",
+			"text": "Toller Stream, Tolles Game, einfach nur Danke",
+			"approved": true,
+			"timestamp": 58,
+			"pinned": false,
+			"count_replies": 0,
+			"likes_count": 0,
+			"dislikes_count": 1,
+			"user": {
+				"id": 122615,
+				"url_slug": "122615-scraft220",
+				"username": "scraft220",
+				"name": "Scraft220",
+				"name_possessive": "Scraft220s",
+				"description": null,
+				"team": false,
+				"blocked": false,
+				"public_profile": false,
+				"banner": null,
+				"avatar": null,
+				"reputation": 15,
+				"reputation_pretty": "15",
+				"preferences": {
+					"public_profile": true,
+					"subscription_enable_identification": true
+				},
+				"gifted_subscriptions_count": 0,
+				"created_at": "2020-11-26 20:25:45",
+				"updated_at": "2024-02-20 14:36:39"
+			},
+			"is_reply": false,
+			"reply": null
+		},
+		{
+			"id": 425442,
+			"created_at": "2024-04-04 12:58:17",
+			"text": "Jo. Das selbe bei mir auch.",
+			"approved": true,
+			"timestamp": 130,
+			"pinned": false,
+			"count_replies": 0,
+			"likes_count": 0,
+			"dislikes_count": 0,
+			"user": {
+				"id": 154634,
+				"url_slug": "154634-frihed1007",
+				"username": "frihed1007",
+				"name": "Frihed1007",
+				"name_possessive": "Frihed1007s",
+				"description": null,
+				"team": false,
+				"blocked": false,
+				"public_profile": false,
+				"banner": null,
+				"avatar": null,
+				"reputation": 33,
+				"reputation_pretty": "33",
+				"preferences": {
+					"public_profile": true,
+					"subscription_enable_identification": true
+				},
+				"subscribed": true,
+				"subscription_streak": 4,
+				"subscription_supporter": false,
+				"gifted_subscriptions_count": 0,
+				"created_at": "2022-03-29 11:50:47",
+				"updated_at": "2024-03-05 13:56:39"
+			},
+			"is_reply": true,
+			"reply": 425435
+		},
+		{
+			"id": 425448,
+			"created_at": "2024-04-04 14:14:55",
+			"text": "Dito. Auf Youtube funktioniert es aber",
+			"approved": true,
+			"timestamp": null,
+			"pinned": false,
+			"count_replies": 0,
+			"likes_count": 1,
+			"dislikes_count": 0,
+			"user": {
+				"id": 125853,
+				"url_slug": "125853-baskase",
+				"username": "baskase",
+				"name": "Baskase",
+				"name_possessive": "Baskases",
+				"description": null,
+				"team": false,
+				"blocked": false,
+				"public_profile": false,
+				"banner": null,
+				"avatar": {
+					"id": 212737,
+					"collection": "avatar",
+					"remote_url": null,
+					"variations": [
+						{
+							"height": 130,
+							"file": "26439565ae22a03d289880877bfe886888bae477.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/26439565ae22a03d289880877bfe886888bae477.jpg?i=212737"
+						},
+						{
+							"height": 75,
+							"file": "5293c6799f45c43d74eebebf291607a71c07b083.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/5293c6799f45c43d74eebebf291607a71c07b083.jpg?i=212737"
+						}
+					]
+				},
+				"reputation": 88,
+				"reputation_pretty": "88",
+				"preferences": {
+					"public_profile": false,
+					"subscription_enable_identification": true
+				},
+				"gifted_subscriptions_count": 0,
+				"created_at": "2021-01-11 15:03:58",
+				"updated_at": "2021-01-11 15:33:06"
+			},
+			"is_reply": true,
+			"reply": 425435
+		}
+	],
+	"links": {
+		"first": "\/?page=1",
+		"last": "\/?page=1",
+		"prev": null,
+		"next": null
+	},
+	"meta": {
+		"current_page": 1,
+		"from": 1,
+		"last_page": 1,
+		"links": [
+			{
+				"url": null,
+				"label": "Vorige",
+				"active": false
+			},
+			{
+				"url": "\/?page=1",
+				"label": "1",
+				"active": true
+			},
+			{
+				"url": null,
+				"label": "Nächste",
+				"active": false
+			}
+		],
+		"path": "\/",
+		"per_page": 100,
+		"to": 5,
+		"total": 3
+	},
+	"success": true
+}

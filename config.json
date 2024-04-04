@@ -4,9 +4,11 @@
 	"author": "Bluscream",
 	"authorUrl": "https://futo.org",
 	
-	"sourceUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/config.json",
+	"sourceUrl": "./config.json",
+	"sourceUrl_": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/config.json",
 	"repositoryUrl": "https://github.com/Bluscream/grayjay-source-pietsmietde",
-	"scriptUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/script.js",
+	"scriptUrl": "./script.js",
+	"scriptUrl_": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/script.js",
 	"version": 1,
 	
 	"iconUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/icon.svg",

@@ -188,57 +188,53 @@ source.getContentDetails = function(url) {
 	
 };
 
-function getCommentResults(contextUrl, page) {
-	const video_id = parseVideoId(contextUrl);
-	const commentResponse = http.GET(`${URL_COMMENTS}${video_id}&page=${page}`, headerDict);
-	if(!commentResponse.isOk)
-		throw new ScriptException(`Failed to get comments for ${video_id} (page ${page}) [${commentResponse.code}]`)
-	const results = JSON.parse(commentResponse.body);
-
-	const comments = results.data?.map(i => {
-		const c = new Comment({
-			contextUrl: contextUrl,
-			author: new PlatformAuthorLink(getPlatformId(i.id),
-				i.user.name ?? "",
-				URL_PROFILE + i.user.url_slug,
-				i.user.avatar.variations[0]?.url ?? ""),
-			message: i.text ?? "",
-			date: parseDate(i.created_at),
-			replyCount: i.count_replies,
-			context: { commentId: i.id }
-		});
-
-		return c;
-	}) ?? [];
-
-	const hasMore = results.meta.current_page < result.result.last_page;
-	return new PietsmietDECommentPager(comments, hasMore,  contextUrl);
-
-}
-
-class PietsmietDECommentPager extends CommentPager {
-	constructor(comments, hasMore, contextUrl) {
-		super(comments, hasMore != null, contextUrl);
-		this.hasMore = hasMore;
-	}
-	nextPage() {
-		if(!this.hasMore)
-			return new CommentPager([], false);
-		this.page++;
-		return getCommentResults(this.contextUrl, this.page) ?? new CommentPager([], false);
-	}
-}
-
 
 //Comments
 source.getComments = function (url) {
 	// const video_id = parseVideoId(url);
-	return getCommentResults(id, url, 1, true);
-
-
+	return new CommentPager([], false); // getCommentResults(id, url, 1, true);
 };
 source.getSubComments = function (comment) {
 	throw new ScriptException("This is a sample");
 };
+// class PietsmietDECommentPager extends CommentPager {
+// 	constructor(comments, hasMore, contextUrl) {
+// 		super(comments, hasMore != null, contextUrl);
+// 		this.hasMore = hasMore;
+// 	}
+// 	nextPage() {
+// 		if(!this.hasMore)
+// 			return new CommentPager([], false);
+// 		this.page++;
+// 		return getCommentResults(this.contextUrl, this.page) ?? new CommentPager([], false);
+// 	}
+// }
+
+// function getCommentResults(contextUrl, page) {
+// 	const video_id = parseVideoId(contextUrl);
+// 	const commentResponse = http.GET(`${URL_COMMENTS}${video_id}&page=${page}`, headerDict);
+// 	if(!commentResponse.isOk)
+// 		throw new ScriptException(`Failed to get comments for ${video_id} (page ${page}) [${commentResponse.code}]`)
+// 	const results = JSON.parse(commentResponse.body);
+
+// 	const comments = results.data?.map(i => {
+// 		const c = new Comment({
+// 			contextUrl: contextUrl,
+// 			author: new PlatformAuthorLink(getPlatformId(i.id),
+// 				i.user.name ?? "",
+// 				URL_PROFILE + i.user.url_slug,
+// 				i.user.avatar.variations[0]?.url ?? ""),
+// 			message: i.text ?? "",
+// 			date: parseDate(i.created_at),
+// 			replyCount: i.count_replies,
+// 			context: { commentId: i.id }
+// 		});
+
+// 		return c;
+// 	}) ?? [];
+
+// 	const hasMore = results.meta.current_page < result.result.last_page;
+// 	return new PietsmietDECommentPager(comments, hasMore,  contextUrl);
+// }
 
 log("LOADED");

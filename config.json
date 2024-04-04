@@ -9,7 +9,7 @@
 	"scriptUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/script.js",
 	"version": 1,
 	
-	"iconUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/banner.svg",
+	"iconUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/icon.svg",
 	"id": "82b8fefc-24ae-11ee-be56-0242aa120002",
 	
 	"scriptSignature": "",
@@ -19,8 +19,23 @@
 	"allowEval": false,
 	"allowUrls": [
 		"pietsmiet.de",
+		"www.pietsmiet.de",
+		"lft1.pietcdn.de",
+		"challenges.cloudflare.com",
+		"rsms.me",
+		"local.adguard.org",
+		"unpkg.com",
+		"jubbie.de",
+		"cmp.inmobi.com",
+		"data-c53e1346fa.pietsmiet.de",
+		"static-cdn.jtvnw.net",
+		"www.google-analytics.com",
+		"c.amazon-adsystem.com",
+		"imasdk.googleapis.com",
+		"cdn.lib.getjad.io",
 		"pietcdn.de",
-		"cloudflare.com",
+		"widgets.outbrain.com",
+		"www.googletagservices.com",
 		"everywhere"
 	]
 }

@@ -99,7 +99,7 @@ function fetchIntegrityValue() {
 source.enable = function(conf, settings, savedState){
 	config = conf ?? {};
 	fetchIntegrityValue();
-	let msg = `plugin enabled: 'X-Origin-Integrity'=${headerDict['X-Origin-Integrity']}`;
+	let msg = `plugin enabled > X-Origin-Integrity=${headerDict['X-Origin-Integrity']}`;
 	console.log(msg);
 	return msg;
 }
@@ -189,12 +189,15 @@ source.getContentDetails = function(url) {
 			name: `${e.full_title} (HLS)`,
 			url: hlssource.src,
 			priority: false,
-			language: "German"
+			language: "German",
+			duration: detailResults.video.duration
 		}));
 		const dashsource = e.sources.dash;
 		sourceVideos.push(new DashSource({
 			name: `${e.full_title} (Dash)`,
-			url: dashsource.src
+			url: dashsource.src,
+			duration: detailResults.video.duration,
+			priority: true
 		}));
 	});
 	return new PlatformVideoDetails({
@@ -206,6 +209,7 @@ source.getContentDetails = function(url) {
 		duration: detailResults.video.duration,
 		// viewCount: detailResults.video.likes_count,
 		url: url,
+		shareUrl: detailResults.video.short_url,
 		isLive: false,
 		description: detailResults.video.description,
 		video: new VideoSourceDescriptor(sourceVideos), //See sources

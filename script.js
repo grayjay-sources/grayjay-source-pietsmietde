@@ -258,7 +258,7 @@ function getCommentResults(contextUrl, page) {
 		});
 		return c;
 	}) ?? [];
-	const hasMore = results.meta.current_page < result.result.last_page;
+	const hasMore = results.meta.current_page < results.result.last_page;
 	return new PietsmietDECommentPager(comments, hasMore,  contextUrl);
 }
 

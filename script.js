@@ -4,6 +4,7 @@ const LIMIT_VIDEOS = 500;
 const LIMIT_COMMENTS = 100;
 
 const URL_BASE = "https://www.pietsmiet.de";
+const URL_CONFIG = `${URL_BASE}/api/v1/config/i`;
 const URL_HOME = `${URL_BASE}/api/v1/videos?limit=${LIMIT_VIDEOS}&order=latest&prioritize_featured=0&page=`;
 const URL_VIDEO_DETAILS = `${URL_BASE}/api/v1/videos/`; // include[]=playlist
 const URL_VIDEO_PLAYER = `${URL_BASE}/api/v1/utility/player?preset=quality&video=`;
@@ -16,14 +17,13 @@ const URL_ICON = `${URL_BASE}/assets/pietsmiet/brand/icon.svg`;
 const URL_BANNER = `${URL_BASE}/assets/pietsmiet/brand/wordmark-plain-light-detail.svg`;
 
 const REGEX_VIDEO_URL = /https:\/\/www\.pietsmiet\.de\/videos\/(\d+)(.*)/; // /https:\/\/www\.pietsmiet\.de\/videos\/(.*)/;
+const REGEX_CHANNEL_URL = /https:\/\/www\.pietsmiet\.de\/videos\/channels\/(.*)/;
 
-let HEADER_INTEGRITY = "9144f98d";
-
-const headerDict = {
+let headerDict = {
 	'Content-Type': 'application/json',
 	'Accept': 'application/json',
 	'Access-Control-Allow-Headers': 'Content-Type',
-	'X-Origin-Integrity': HEADER_INTEGRITY
+	'X-Origin-Integrity': ''
 };
 
 var config = {};
@@ -49,10 +49,18 @@ function parseAuthor(videoDict) {
 function parseDate(date) {
 	parseInt((new Date(date)).getTime() / 1000)
 }
+function fetchIntegrityValue() {
+	const confResponse = http.GET(url, headerDict);
+	if(!homeResp.isOk)
+		throw new ScriptException(`Failed to get integrity value from ${url} [${confResponse.code}]`);
+	const results = JSON.parse(confResponse.body);
+	headerDict[atob(results.h)] = atob(results.v);
+}
 
 //Source Methods
 source.enable = function(conf, settings, savedState){
 	config = conf ?? {};
+	fetchIntegrityValue();
 	console.log("plugin enabled");
 	return "plugin enabled";
 }
@@ -79,10 +87,10 @@ class HomePager extends VideoPager {
 }
 function getHomeResults(page) {
 	const url = URL_HOME + page;
-	const homeResp = http.GET(url, headerDict);
-	if(!homeResp.isOk)
-		throw new ScriptException(`Failed to get home from ${url} [${homeResp.code}]`)
-	const results = JSON.parse(homeResp.body).data;
+	const homeResponse = http.GET(url, headerDict);
+	if(!homeResponse.isOk)
+		throw new ScriptException(`Failed to get home from ${url} [${homeResponse.code}]`)
+	const results = JSON.parse(homeResponse.body).data;
 
 	return results.map(x=>new PlatformVideo({
 		id: getPlatformId(x.id),
@@ -128,7 +136,7 @@ source.searchChannels = function (query) {
 
 //Channel
 source.isChannelUrl = function(url) {
-	throw new ScriptException("This is a sample");
+	return REGEX_CHANNEL_URL.test(url);
 };
 source.getChannel = function(url) {
 	throw new ScriptException("This is a sample");

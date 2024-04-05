@@ -1,15 +1,15 @@
 {
-	"name": "Pietsmiet.de",
+	"name": "Pietsmiet.de (dev)",
 	"description": "GrayJay source for Pietsmiet.de",
 	"author": "Bluscream",
-	"authorUrl": "https://futo.org",
+	"authorUrl": "https://bluscream.github.io",
 	
 	"sourceUrl": "./config.json",
 	"sourceUrl_": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/config.json",
 	"repositoryUrl": "https://github.com/Bluscream/grayjay-source-pietsmietde",
 	"scriptUrl": "./script.js",
 	"scriptUrl_": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/script.js",
-	"version": 2,
+	"version": 3,
 	
 	"iconUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/icon.png",
 	"id": "82b8fefc-24ae-11ee-be56-0242aa120002",

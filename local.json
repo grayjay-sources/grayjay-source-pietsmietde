@@ -9,14 +9,18 @@
 	"repositoryUrl": "https://github.com/Bluscream/grayjay-source-pietsmietde",
 	"scriptUrl": "./script.js",
 	"scriptUrl_": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/script.js",
-	"version": 5,
+	"version": 6,
 	
 	"iconUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/icon.png",
 	"id": "82b8fefc-24ae-11ee-be56-0242aa120002",
 	
 	"scriptSignature": "",
 	"scriptPublicKey": "",
-	"packages": ["Http"],
+
+	"packages": [
+		"Http",
+		"Utilities"
+	],
 	
 	"allowEval": false,
 	"allowUrls": [

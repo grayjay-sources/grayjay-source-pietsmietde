@@ -20,10 +20,10 @@ const REGEX_VIDEO_URL = /https:\/\/www\.pietsmiet\.de\/videos\/(\d+)(.*)/; // /h
 const REGEX_CHANNEL_URL = /https:\/\/www\.pietsmiet\.de\/videos\/channels\/(.*)/;
 
 let headerDict = {
-	'Content-Type': 'application/json',
-	'Accept': 'application/json',
-	'Access-Control-Allow-Headers': 'Content-Type',
-	'X-Origin-Integrity': ''
+	// 'Content-Type': 'application/json',
+	// 'Accept': 'application/json',
+	// 'Access-Control-Allow-Headers': 'Content-Type',
+	// 'X-Origin-Integrity': ''
 };
 
 var config = {};
@@ -49,20 +49,59 @@ function parseAuthor(videoDict) {
 function parseDate(date) {
 	parseInt((new Date(date)).getTime() / 1000)
 }
+function atob(encodedData) {
+    const base64Chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+    let decodedData = '';
+    let padding = 0;
+
+    // Remove all characters that are not in the lookup table
+    encodedData = encodedData.replace(/[^A-Za-z0-9\+\/\=]/g, '');
+
+    // Count padding characters
+    if (encodedData.charAt(encodedData.length - 1) === '=') {
+        padding++;
+        if (encodedData.charAt(encodedData.length - 2) === '=') padding++;
+    }
+
+    // Convert each 4 Base64 characters to 3 bytes
+    for (let i = 0; i < encodedData.length; i += 4) {
+        const enc1 = base64Chars.indexOf(encodedData.charAt(i));
+        const enc2 = base64Chars.indexOf(encodedData.charAt(i + 1));
+        const enc3 = base64Chars.indexOf(encodedData.charAt(i + 2));
+        const enc4 = base64Chars.indexOf(encodedData.charAt(i + 3));
+
+        const chr1 = (enc1 << 2) | (enc2 >> 4);
+        const chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);
+        const chr3 = ((enc3 & 3) << 6) | enc4;
+
+        decodedData += String.fromCharCode(chr1);
+        if (enc3 !== 64) decodedData += String.fromCharCode(chr2);
+        if (enc4 !== 64) decodedData += String.fromCharCode(chr3);
+    }
+
+    // Adjust for padding
+    decodedData = decodedData.slice(0, decodedData.length - padding + 1);
+
+    return decodedData;
+}
+
+
 function fetchIntegrityValue() {
 	const confResponse = http.GET(URL_CONFIG, {}); // headerDict
-	if(!homeResp.isOk)
-		throw new ScriptException(`Failed to get integrity value from ${url} [${confResponse.code}]`);
+	if(!confResponse.isOk)
+		throw new ScriptException(`Failed to get integrity value from ${URL_CONFIG} [${confResponse.code}]`);
 	const results = JSON.parse(confResponse.body);
 	headerDict[atob(results.h)] = atob(results.v);
 }
+
 
 //Source Methods
 source.enable = function(conf, settings, savedState){
 	config = conf ?? {};
 	fetchIntegrityValue();
-	console.log("plugin enabled");
-	return "plugin enabled";
+	let msg = `plugin enabled: 'X-Origin-Integrity'=${headerDict['X-Origin-Integrity']}`;
+	console.log(msg);
+	return msg;
 }
 source.disable = function(conf, settings, savedState){
 	console.log("plugin disabled");

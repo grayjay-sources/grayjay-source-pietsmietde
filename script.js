@@ -50,7 +50,7 @@ function parseDate(date) {
 	parseInt((new Date(date)).getTime() / 1000)
 }
 function fetchIntegrityValue() {
-	const confResponse = http.GET(url, headerDict);
+	const confResponse = http.GET(URL_CONFIG, {}); // headerDict
 	if(!homeResp.isOk)
 		throw new ScriptException(`Failed to get integrity value from ${url} [${confResponse.code}]`);
 	const results = JSON.parse(confResponse.body);

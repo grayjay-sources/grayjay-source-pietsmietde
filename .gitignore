@@ -1,1 +1,5 @@
 *.har
+
+/assets/banner.*
+/assets/icon.*
+/assets/logo.*

@@ -12,3 +12,8 @@ https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/co
 Home | Video | Streams | Source
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 ![](assets/screenshots/home.jpg) | ![](assets/screenshots/video.jpg) | ![](assets/screenshots/streams.jpg) | ![](assets/screenshots/source.jpg)
+
+## Mirrors
+- https://github.com/Bluscream/grayjay-source-pietsmietde
+- https://gitlab.com/Bluscream/grayjay-source-pietsmietde
+- https://git.minopia.de/blu/grayjay-source-pietsmietde

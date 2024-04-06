@@ -15,6 +15,7 @@ const URL_COMMENTS = `${URL_BASE}/api/v1/utility/comments?order=popular&type=vid
 
 const URL_ICON = `${URL_BASE}/assets/pietsmiet/brand/icon.svg`;
 const URL_BANNER = `${URL_BASE}/assets/pietsmiet/brand/wordmark-plain-light-detail.svg`;
+const URL_PLACEHOLDER_AVATAR = `${URL_BASE}/assets/pietsmiet/placeholder-1-1.jpg`
 
 const REGEX_VIDEO_URL = /https:\/\/www\.pietsmiet\.de\/videos\/(\d+)(.*)/; // /https:\/\/www\.pietsmiet\.de\/videos\/(.*)/;
 const REGEX_CHANNEL_URL = /https:\/\/www\.pietsmiet\.de\/videos\/channels\/(.*)/;
@@ -223,9 +224,9 @@ source.getComments = function (url) {
 	// const video_id = parseVideoId(url);
 	return getCommentResults(url, 1); // new CommentPager([], false);
 };
-source.getSubComments = function (comment) {
-	throw new ScriptException("This is a sample");
-};
+// source.getSubComments = function (comment) {
+// 	throw new ScriptException("This is a sample");
+// };
 class PietsmietDECommentPager extends CommentPager {
 	constructor(comments, hasMore, contextUrl) {
 		super(comments, hasMore != null, contextUrl);
@@ -250,15 +251,16 @@ function getCommentResults(contextUrl, page) {
 			author: new PlatformAuthorLink(getPlatformId(i.id),
 				i.user.name ?? "",
 				URL_PROFILE + i.user.url_slug,
-				i.user.avatar.variations[0]?.url ?? ""),
+				i.user.avatar?.variations[0]?.url ?? URL_PLACEHOLDER_AVATAR),
 			message: i.text ?? "",
-			date: parseDate(i.created_at),
+			date: parseDate(i.created_at), // Date.parse(i.created_at) / 1000
 			replyCount: i.count_replies,
+			rating: new RatingLikesDislikes(i.likes_count, i.dislikes_count),
 			context: { commentId: i.id }
 		});
 		return c;
 	}) ?? [];
-	const hasMore = results.meta.current_page < results.result.last_page;
+	const hasMore = results.meta.current_page < results.meta.last_page;
 	return new PietsmietDECommentPager(comments, hasMore,  contextUrl);
 }
 

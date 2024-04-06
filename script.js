@@ -16,7 +16,9 @@ const URL_API_COMMENTS = `${URL_BASE}/api/v1/utility/comments?order=popular&type
 
 
 const URL_ICON = `${URL_BASE}/assets/pietsmiet/brand/icon.svg`;
+const URL_ICON_PNG = "https://i.vgy.me/CZ2jjB.png"; // Todo: Find png on their website or implement svg parsing into GrayJay @Kelvin-FUTO
 const URL_BANNER = `${URL_BASE}/assets/pietsmiet/brand/wordmark-plain-light-detail.svg`;
+const URL_BANNER_PNG = "https://i.imgur.com/8D68cRq.png"; // Todo: Find png on their website or implement svg parsing into GrayJay @Kelvin-FUTO
 const URL_PLACEHOLDER_AVATAR = `${URL_BASE}/assets/pietsmiet/placeholder-1-1.jpg`
 
 const REGEX_VIDEO_URL = /https:\/\/www\.pietsmiet\.de\/videos\/(\d+)(.*)/; // /https:\/\/www\.pietsmiet\.de\/videos\/(.*)/;
@@ -29,15 +31,13 @@ let headerDict = {
 	// 'X-Origin-Integrity': ''
 };
 
-const channelIcons = {
-	9: "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj", // @pietsmiet
+const channelIcons = { // Todo: find a way to get these dynamically
 	8: "https://yt3.googleusercontent.com/ytc/AIdro_nMgWqMfXY78nUTzabB0TvSF1OHeUtMc93WKpG2hnbRW3k=s176-c-k-c0x00ffffff-no-rj", // @FragPietSmiet
+	9: "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj", // @pietsmiet
 	10: "https://yt3.googleusercontent.com/ytc/AIdro_nI1TZILbTDn38tNbzDb_K2rxe6c5V7UGn4hVjG2DX4jg=s176-c-k-c0x00ffffff-no-rj", // @PietSmietTV
-	44: "https://yt3.googleusercontent.com/ytc/AIdro_nnAWki_jzSkHEzvkkT7TDlb-WxDBIc-rcqhFoEsp0tMg=s176-c-k-c0x00ffffff-no-rj", // @pietsmietlive
 	12: "https://yt3.googleusercontent.com/ytc/AIdro_kej_tg4mojF1qht3fNepeKyR10sAlVK4oBwUYL2hAeSg=s176-c-k-c0x00ffffff-no-rj", // @PietSmietBest
-	37: "", // @
-	8: "", // @
-	8: "", // @
+	37: URL_ICON_PNG, // @pietsmietde
+	44: "https://yt3.googleusercontent.com/ytc/AIdro_nnAWki_jzSkHEzvkkT7TDlb-WxDBIc-rcqhFoEsp0tMg=s176-c-k-c0x00ffffff-no-rj" // @pietsmietlive
 }
 
 let cachedChannels = {}; // filled in later
@@ -63,13 +63,14 @@ function parseThumbnailVariations(variationsDict) {
 	return new Thumbnails(variationsDict.map(y=>new Thumbnail(y.url, y.height)))
 }
 function parseAuthor(videoDict) {
-	const url = URL_CHANNEL + videoDict.channels[0].url_slug;
+	const channel = videoDict.channels[0];
+	const url = URL_CHANNEL + channel.url_slug;
 	const cachedChannel = source.getChannel(url);
 	return new PlatformAuthorLink({
-		id: getPlatformId(videoDict.id),
-		name: videoDict.channels[0].title,
+		id: getPlatformId(channel.id),
+		name: channel.title,
 		url: url,
-		thumbnail: cachedChannel,
+		thumbnail: channelIcons[channel.id], // todo: improve
 		subscribers: cachedChannel.subscribers
 	});
 }
@@ -85,9 +86,14 @@ function getItemsByProp(dict, prop, value) {
 	}
 	return foundObjects;
 }
-function getItemByProp(dict, prop, value) {
-	return getItemsByProp(dict, prop, value)[0];
-}
+function getItemByProp(dict, prop, value, defaultValue = null) {
+	try {
+	   const items = getItemsByProp(dict, prop, value);
+	   return items.length > 0 ? items[0] : defaultValue;
+	} catch (error) {
+	   return defaultValue;
+	}
+   }
 function atob(encodedData) {
     const base64Chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
     let decodedData = '';
@@ -222,7 +228,7 @@ source.getChannel = function (url) {
 	return new PlatformChannel({
 		id: getPlatformId(channelId),
 		name: channelResponse.title ?? "",
-		thumbnail: channelResponse.first_video.thumbnail.variations[0].url ?? "",
+		thumbnail: channelIcons[channelId] ?? "",
 		banner: channelResponse.first_video.thumbnail.variations[0].url ?? "",
 		subscribers: channelResponse.followings_count,
 		description: channelResponse.description ?? channelResponse.title ?? "",

@@ -4,7 +4,7 @@
 	"author": "Bluscream",
 	"authorUrl": "https://bluscream.github.io",
 	"platformUrl": "https://www.pietsmiet.de/",
-	
+
 	"sourceUrl_": "./config.json",
 	"sourceUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/config.json",
 	"repositoryUrl": "https://github.com/Bluscream/grayjay-source-pietsmietde",
@@ -12,7 +12,7 @@
 	"scriptUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/script.js",
 	"version": 9,
 	
-	"iconUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/icon.png",
+	"iconUrl": "https://yt3.ggpht.com/-nm49M5AVi64/AAAAAAAAAAI/AAAAAAAAAAA/h0Scy91ZiZQ/s900-c-k-no-rj-c0xffffff/photo.jpg",
 	"id": "82b8fefc-24ae-11ee-be56-0242aa120002",
 	
 	"scriptSignature": "",

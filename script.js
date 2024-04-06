@@ -4,13 +4,15 @@ const LIMIT_VIDEOS = 500;
 const LIMIT_COMMENTS = 100;
 
 const URL_BASE = "https://www.pietsmiet.de";
-const URL_CONFIG = `${URL_BASE}/api/v1/config/i`;
-const URL_HOME = `${URL_BASE}/api/v1/videos?limit=${LIMIT_VIDEOS}&order=latest&prioritize_featured=0&page=`;
-const URL_VIDEO_DETAILS = `${URL_BASE}/api/v1/videos/`; // include[]=playlist
-const URL_VIDEO_PLAYER = `${URL_BASE}/api/v1/utility/player?preset=quality&video=`;
 const URL_CHANNEL = `${URL_BASE}/videos/channels/`;
-const URL_PROFILE = `${URL_BASE}/profile/`
-const URL_COMMENTS = `${URL_BASE}/api/v1/utility/comments?order=popular&type=video&limit=${LIMIT_COMMENTS}&include[]=replies&id=`;
+const URL_PROFILE = `${URL_BASE}/profile/`;
+
+const URL_API_CONFIG =  `${URL_BASE}/api/v1/config/i`;
+const URL_API_CHANNELS = `${URL_BASE}/api/v1/videos/channels?page=`; // &order=videos
+const URL_API_HOME = `${URL_BASE}/api/v1/videos?limit=${LIMIT_VIDEOS}&order=latest&prioritize_featured=0&page=`;
+const URL_API_VIDEO_DETAILS = `${URL_BASE}/api/v1/videos/`; // include[]=playlist
+const URL_API_VIDEO_PLAYER = `${URL_BASE}/api/v1/utility/player?preset=quality&video=`;
+const URL_API_COMMENTS = `${URL_BASE}/api/v1/utility/comments?order=popular&type=video&limit=${LIMIT_COMMENTS}&include[]=replies&id=`;
 
 
 const URL_ICON = `${URL_BASE}/assets/pietsmiet/brand/icon.svg`;
@@ -27,28 +29,64 @@ let headerDict = {
 	// 'X-Origin-Integrity': ''
 };
 
+const channelIcons = {
+	9: "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj", // @pietsmiet
+	8: "https://yt3.googleusercontent.com/ytc/AIdro_nMgWqMfXY78nUTzabB0TvSF1OHeUtMc93WKpG2hnbRW3k=s176-c-k-c0x00ffffff-no-rj", // @FragPietSmiet
+	10: "https://yt3.googleusercontent.com/ytc/AIdro_nI1TZILbTDn38tNbzDb_K2rxe6c5V7UGn4hVjG2DX4jg=s176-c-k-c0x00ffffff-no-rj", // @PietSmietTV
+	44: "https://yt3.googleusercontent.com/ytc/AIdro_nnAWki_jzSkHEzvkkT7TDlb-WxDBIc-rcqhFoEsp0tMg=s176-c-k-c0x00ffffff-no-rj", // @pietsmietlive
+	12: "https://yt3.googleusercontent.com/ytc/AIdro_kej_tg4mojF1qht3fNepeKyR10sAlVK4oBwUYL2hAeSg=s176-c-k-c0x00ffffff-no-rj", // @PietSmietBest
+	37: "", // @
+	8: "", // @
+	8: "", // @
+}
+
+let cachedChannels = {}; // filled in later
+
 var config = {};
 
+// region utils
 function getPlatformId(id) {
 	return new PlatformID(PLATFORM, id.toString(), config.id);
 }
-function parseVideoId(url) {
+function parseVideoSlug(url) {
 	const matches = REGEX_VIDEO_URL.exec(url);
 	return matches[1];
+}
+function parseChannelSlug(url) {
+	const matches = REGEX_CHANNEL_URL.exec(url);
+	return matches[1];
+}
+function parseIdFromSlug(slug) {
+	return parseInt(slug.split("-", 1)[0]);
 }
 function parseThumbnailVariations(variationsDict) {
 	return new Thumbnails(variationsDict.map(y=>new Thumbnail(y.url, y.height)))
 }
 function parseAuthor(videoDict) {
-	return new PlatformAuthorLink(
-		getPlatformId(videoDict.id),
-		videoDict.channels[0].title,
-		URL_CHANNEL + videoDict.channels[0].url_slug,
-		URL_ICON
-	);
+	const url = URL_CHANNEL + videoDict.channels[0].url_slug;
+	const cachedChannel = source.getChannel(url);
+	return new PlatformAuthorLink({
+		id: getPlatformId(videoDict.id),
+		name: videoDict.channels[0].title,
+		url: url,
+		thumbnail: cachedChannel,
+		subscribers: cachedChannel.subscribers
+	});
 }
 function parseDate(date) {
 	parseInt((new Date(date)).getTime() / 1000)
+}
+function getItemsByProp(dict, prop, value) {
+	let foundObjects = [];
+	for (let key in dict) {
+	   if (dict[key][prop] === value) {
+		 foundObjects.push(dict[key]);
+	   }
+	}
+	return foundObjects;
+}
+function getItemByProp(dict, prop, value) {
+	return getItemsByProp(dict, prop, value)[0];
 }
 function atob(encodedData) {
     const base64Chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
@@ -85,21 +123,30 @@ function atob(encodedData) {
 
     return decodedData;
 }
+// endregion utils
 
-
+// region api
 function fetchIntegrityValue() {
-	const confResponse = http.GET(URL_CONFIG, {}); // headerDict
+	const confResponse = http.GET(URL_API_CONFIG, {}); // headerDict
 	if(!confResponse.isOk)
-		throw new ScriptException(`Failed to get integrity value from ${URL_CONFIG} [${confResponse.code}]`);
+		throw new ScriptException(`Failed to get integrity value from ${URL_API_CONFIG} [${confResponse.code}]`);
 	const results = JSON.parse(confResponse.body);
 	headerDict[atob(results.h)] = atob(results.v);
 }
-
+function fetchChannels() {
+	const channelsResponse = http.GET(URL_API_CHANNELS, headerDict);
+	if(!channelsResponse.isOk)
+		throw new ScriptException(`Failed to get channels from ${URL_API_CHANNELS} [${channelsResponse.code}]`);
+	const results = JSON.parse(channelsResponse.body);
+	cachedChannels = results;
+}
+// endregion api
 
 //Source Methods
 source.enable = function(conf, settings, savedState){
 	config = conf ?? {};
 	fetchIntegrityValue();
+	fetchChannels();
 	let msg = `plugin enabled > X-Origin-Integrity=${headerDict['X-Origin-Integrity']}`;
 	console.log(msg);
 	return msg;
@@ -126,7 +173,7 @@ class HomePager extends VideoPager {
 	}
 }
 function getHomeResults(page) {
-	const url = URL_HOME + page;
+	const url = URL_API_HOME + page;
 	const homeResponse = http.GET(url, headerDict);
 	if(!homeResponse.isOk)
 		throw new ScriptException(`Failed to get home from ${url} [${homeResponse.code}]`)
@@ -168,18 +215,33 @@ source.getSearchChannelContentsCapabilities = function () {
 source.isChannelUrl = function(url) {
 	return REGEX_CHANNEL_URL.test(url);
 };
+source.getChannel = function (url) {
+	const channelSlug = parseChannelSlug(url);
+	const channelId = parseIdFromSlug(channelSlug);
+	const channelResponse = getItemByProp(cachedChannels.data, "id", channelId);
+	return new PlatformChannel({
+		id: getPlatformId(channelId),
+		name: channelResponse.title ?? "",
+		thumbnail: channelResponse.first_video.thumbnail.variations[0].url ?? "",
+		banner: channelResponse.first_video.thumbnail.variations[0].url ?? "",
+		subscribers: channelResponse.followings_count,
+		description: channelResponse.description ?? channelResponse.title ?? "",
+		url: url,
+		links: {}
+	});
+};
 
 //Video
 source.isContentDetailsUrl = function(url) {
 	return REGEX_VIDEO_URL.test(url);
 };
 source.getContentDetails = function(url) {
-	const video_id = parseVideoId(url);
-	const detailResponse = http.GET(URL_VIDEO_DETAILS + video_id, headerDict);
+	const video_id = parseVideoSlug(url);
+	const detailResponse = http.GET(URL_API_VIDEO_DETAILS + video_id, headerDict);
 	if(!detailResponse.isOk)
 		throw new ScriptException(`Failed to get detail for ${video_id} [${homeResp.code}]`)
 	const detailResults = JSON.parse(detailResponse.body);
-	const streamsResponse = http.GET(URL_VIDEO_PLAYER + video_id, headerDict);
+	const streamsResponse = http.GET(URL_API_VIDEO_PLAYER + video_id, headerDict);
 	if(!streamsResponse.isOk)
 		throw new ScriptException(`Failed to get streams for ${video_id} [${streamsResponse.code}]`)
 	const streamsResults = JSON.parse(streamsResponse.body);
@@ -240,8 +302,8 @@ class PietsmietDECommentPager extends CommentPager {
 	}
 }
 function getCommentResults(contextUrl, page) {
-	const video_id = parseVideoId(contextUrl);
-	const commentResponse = http.GET(`${URL_COMMENTS}${video_id}&page=${page}`, headerDict);
+	const video_id = parseVideoSlug(contextUrl);
+	const commentResponse = http.GET(`${URL_API_COMMENTS}${video_id}&page=${page}`, headerDict);
 	if(!commentResponse.isOk)
 		throw new ScriptException(`Failed to get comments for ${video_id} (page ${page}) [${commentResponse.code}]`)
 	const results = JSON.parse(commentResponse.body);
@@ -253,7 +315,7 @@ function getCommentResults(contextUrl, page) {
 				URL_PROFILE + i.user.url_slug,
 				i.user.avatar?.variations[0]?.url ?? URL_PLACEHOLDER_AVATAR),
 			message: i.text ?? "",
-			date: parseDate(i.created_at), // Date.parse(i.created_at) / 1000
+			date: Date.parse(i.created_at) / 1000, // parseDate(i.created_at), // 
 			replyCount: i.count_replies,
 			rating: new RatingLikesDislikes(i.likes_count, i.dislikes_count),
 			context: { commentId: i.id }

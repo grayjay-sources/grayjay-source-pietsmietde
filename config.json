@@ -3,6 +3,7 @@
 	"description": "GrayJay source for Pietsmiet.de",
 	"author": "Bluscream",
 	"authorUrl": "https://bluscream.github.io",
+	"platformUrl": "https://www.pietsmiet.de/",
 	
 	"sourceUrl_": "./config.json",
 	"sourceUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/config.json",

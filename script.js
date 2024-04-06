@@ -66,13 +66,13 @@ function parseAuthor(videoDict) {
 	const channel = videoDict.channels[0];
 	const url = URL_CHANNEL + channel.url_slug;
 	const cachedChannel = source.getChannel(url);
-	return new PlatformAuthorLink({
-		id: getPlatformId(channel.id),
-		name: channel.title,
-		url: url,
-		thumbnail: channelIcons[channel.id], // todo: improve
-		subscribers: cachedChannel.subscribers
-	});
+	return new PlatformAuthorLink(
+		getPlatformId(channel.id),
+		channel.title,
+		url,
+		channelIcons[channel.id], // todo: improve
+		cachedChannel.subscribers
+	);
 }
 function parseDate(date) {
 	parseInt((new Date(date)).getTime() / 1000)

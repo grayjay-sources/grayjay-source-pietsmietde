@@ -331,8 +331,8 @@ source.isContentDetailsUrl = function(url) {
 };
 source.getContentDetails = function(url) {
 	const video_id = parseVideoSlug(url);
-	const detailResults = getProtectedJson(URL_API_VIDEO_DETAILS + video_id).playlist;
-	const streamsResults = getProtectedJson(URL_API_VIDEO_PLAYER + video_id).playlist;
+	const detailResults = getProtectedJson(URL_API_VIDEO_DETAILS + video_id);
+	const streamsResults = getProtectedJson(URL_API_VIDEO_PLAYER + video_id);
 	let sourceVideos = [];
 	streamsResults.options.tracks.forEach(e => {
 		const hlssource = e.sources.hls;

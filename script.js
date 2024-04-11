@@ -2,6 +2,8 @@ const PLATFORM = "PietsmietDE";
 
 const LIMIT_VIDEOS = 500;
 const LIMIT_COMMENTS = 100;
+const ORDER_VIDEOS = "latest";
+const ORDER_COMMENTS = "latest"; // popular
 
 const URL_BASE = "https://www.pietsmiet.de";
 const URL_CHANNEL = `${URL_BASE}/videos/channels/`;
@@ -9,11 +11,13 @@ const URL_PROFILE = `${URL_BASE}/profile/`;
 
 const URL_API_CONFIG =  `${URL_BASE}/api/v1/config/i`;
 const URL_API_CHANNELS = `${URL_BASE}/api/v1/videos/channels?page=`; // &order=videos
-const URL_API_HOME = `${URL_BASE}/api/v1/videos?limit=${LIMIT_VIDEOS}&order=latest&prioritize_featured=0&page=`;
+const URL_API_HOME = `${URL_BASE}/api/v1/videos?limit=${LIMIT_VIDEOS}&order=${ORDER_VIDEOS}&prioritize_featured=0&page=`; // &playlists[]=
+const URL_API_PLAYLIST = `${URL_BASE}/api/v1/videos/playlists/`
+const URL_API_PLAYLISTS = `${URL_BASE}/api/v1/videos/playlists?limit=${LIMIT_VIDEOS}&order=${ORDER_VIDEOS}&page=1`
 const URL_API_VIDEO_DETAILS = `${URL_BASE}/api/v1/videos/`; // include[]=playlist
 const URL_API_VIDEO_PLAYER = `${URL_BASE}/api/v1/utility/player?preset=quality&video=`;
-const URL_API_COMMENTS = `${URL_BASE}/api/v1/utility/comments?order=popular&type=video&limit=${LIMIT_COMMENTS}&include[]=replies&id=`;
-
+const URL_API_COMMENTS = `${URL_BASE}/api/v1/utility/comments?order=${ORDER_COMMENTS}&type=video&limit=${LIMIT_COMMENTS}&id=`; // &include[]=replies
+const URL_API_SEARCH = `${URL_BASE}/api/v1/search?page=`; // &query= &part=videos &part=playlists
 
 const URL_ICON = `${URL_BASE}/assets/pietsmiet/brand/icon.svg`;
 const URL_ICON_PNG = "https://i.vgy.me/CZ2jjB.png"; // Todo: Find png on their website or implement svg parsing into GrayJay @Kelvin-FUTO
@@ -23,7 +27,9 @@ const URL_PLACEHOLDER_AVATAR = `${URL_BASE}/assets/pietsmiet/placeholder-1-1.jpg
 
 const REGEX_VIDEO_URL = /https:\/\/www\.pietsmiet\.de\/videos\/(\d+)(.*)/; // /https:\/\/www\.pietsmiet\.de\/videos\/(.*)/;
 const REGEX_CHANNEL_URL = /https:\/\/www\.pietsmiet\.de\/videos\/channels\/(.*)/;
+const REGEX_PLAYLIST_URL = /https:\/\/www\.pietsmiet\.de\/videos\/playlists\/(.*)/;
 
+const HEADER_INTEGRITY = 'X-Origin-Integrity';
 let headerDict = {
 	// 'Content-Type': 'application/json',
 	// 'Accept': 'application/json',
@@ -45,15 +51,23 @@ let cachedChannels = {}; // filled in later
 var config = {};
 
 // region utils
+function hasIntegrity() {
+	return headerDict.hasOwnProperty(HEADER_INTEGRITY) && !isNullOrEmpty(headerDict[HEADER_INTEGRITY])
+}
 function getPlatformId(id) {
 	return new PlatformID(PLATFORM, id.toString(), config.id);
 }
-function parseVideoSlug(url) {
-	const matches = REGEX_VIDEO_URL.exec(url);
-	return matches[1];
-}
+// region parsing
 function parseChannelSlug(url) {
 	const matches = REGEX_CHANNEL_URL.exec(url);
+	return matches[1];
+}
+function parsePlaylistSlug(url) {
+	const matches = REGEX_PLAYLIST_URL.exec(url);
+	return matches[1];
+}
+function parseVideoSlug(url) {
+	const matches = REGEX_VIDEO_URL.exec(url);
 	return matches[1];
 }
 function parseIdFromSlug(slug) {
@@ -77,6 +91,33 @@ function parseAuthor(videoDict) {
 function parseDate(date) {
 	parseInt((new Date(date)).getTime() / 1000)
 }
+// endregion parsing
+// region placeholders
+function getPlaceholderAuthor() {
+	return new PlatformAuthorLink(
+		platformPlaylistId,
+		PLATFORM,
+		URL_BASE,
+		channelIcons[37] // todo: improve
+	);
+}
+function getPlaceholderChannel(url="", id=0) {
+	return new PlatformChannel({
+		id: getPlatformId(0),
+		name: PLATFORM,
+		thumbnail: URL_ICON_PNG,
+		banner: URL_BANNER_PNG,
+		subscribers: -1,
+		description: "Placeholder Channel",
+		url: url,
+		links: {}
+	});
+}
+// endregion placeholders
+// region js
+function Debug(obj) {
+	throw new ScriptException(`Debug: ${JSON.stringify(obj)}`);
+}
 function getItemsByProp(dict, prop, value) {
 	let foundObjects = [];
 	for (let key in dict) {
@@ -93,7 +134,10 @@ function getItemByProp(dict, prop, value, defaultValue = null) {
 	} catch (error) {
 	   return defaultValue;
 	}
-   }
+}
+function isNullOrEmpty(str) {
+	return str === null || str === "";
+}
 function atob(encodedData) {
     const base64Chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
     let decodedData = '';
@@ -129,9 +173,22 @@ function atob(encodedData) {
 
     return decodedData;
 }
+// endregion js
 // endregion utils
 
 // region api
+function getProtected(url) {
+	if (!hasIntegrity()) {
+		fetchIntegrityValue();
+	}
+	const response = http.GET(url, headerDict);
+	if(!response.isOk)
+		throw new ScriptException(`Failed to get ${url} [${response.code}]`);
+	return response.body;
+}
+function getProtectedJson(url) {
+	return JSON.parse(getProtected(url));
+}
 function fetchIntegrityValue() {
 	const confResponse = http.GET(URL_API_CONFIG, {}); // headerDict
 	if(!confResponse.isOk)
@@ -140,11 +197,7 @@ function fetchIntegrityValue() {
 	headerDict[atob(results.h)] = atob(results.v);
 }
 function fetchChannels() {
-	const channelsResponse = http.GET(URL_API_CHANNELS, headerDict);
-	if(!channelsResponse.isOk)
-		throw new ScriptException(`Failed to get channels from ${URL_API_CHANNELS} [${channelsResponse.code}]`);
-	const results = JSON.parse(channelsResponse.body);
-	cachedChannels = results;
+	cachedChannels = getProtectedJson(URL_API_CHANNELS);
 }
 // endregion api
 
@@ -153,7 +206,7 @@ source.enable = function(conf, settings, savedState){
 	config = conf ?? {};
 	fetchIntegrityValue();
 	fetchChannels();
-	let msg = `plugin enabled > X-Origin-Integrity=${headerDict['X-Origin-Integrity']}`;
+	let msg = `plugin enabled > ${HEADER_INTEGRITY}=${headerDict[HEADER_INTEGRITY]}`;
 	console.log(msg);
 	return msg;
 }
@@ -163,7 +216,7 @@ source.disable = function(conf, settings, savedState){
 }
 
 source.getHome = function() {
-	return new ContentPager(getHomeResults(0), true);
+	return new ContentPager(getVideoResults(1), true);
 };
 class HomePager extends VideoPager {
 	constructor(initialResults, hasMore) {
@@ -173,17 +226,17 @@ class HomePager extends VideoPager {
 
 	nextPage() {
 		this.page++;
-		this.results = getHomeResults(this.page);
+		this.results = getVideoResults(this.page);
 		this.hasMore = true;
 		return this;
 	}
 }
-function getHomeResults(page) {
-	const url = URL_API_HOME + page;
-	const homeResponse = http.GET(url, headerDict);
-	if(!homeResponse.isOk)
-		throw new ScriptException(`Failed to get home from ${url} [${homeResponse.code}]`)
-	const results = JSON.parse(homeResponse.body).data;
+function getVideoResults(page, playlists=[]) {
+	let url = URL_API_HOME + page;
+	if (playlists.length > 0) {
+		url += "&playlists[]=" + playlists.join(",");
+	}
+	const results = getProtectedJson(url).data;
 
 	return results.map(x=>new PlatformVideo({
 		id: getPlatformId(x.id),
@@ -217,40 +270,69 @@ source.getSearchChannelContentsCapabilities = function () {
 	};
 };
 
-//Channel
+// region Channel
 source.isChannelUrl = function(url) {
 	return REGEX_CHANNEL_URL.test(url);
 };
-source.getChannel = function (url) {
+source.getChannel = function(url) {
 	const channelSlug = parseChannelSlug(url);
 	const channelId = parseIdFromSlug(channelSlug);
 	const channelResponse = getItemByProp(cachedChannels.data, "id", channelId);
-	return new PlatformChannel({
-		id: getPlatformId(channelId),
-		name: channelResponse.title ?? "",
-		thumbnail: channelIcons[channelId] ?? "",
-		banner: channelResponse.first_video.thumbnail.variations[0].url ?? "",
-		subscribers: channelResponse.followings_count,
-		description: channelResponse.description ?? channelResponse.title ?? "",
-		url: url,
-		links: {}
-	});
+	if (!isNullOrEmpty(channelResponse)) {
+		return new PlatformChannel({
+			id: getPlatformId(channelId),
+			name: channelResponse.title ?? "",
+			thumbnail: channelIcons[channelId] ?? "",
+			banner: channelResponse.first_video?.thumbnail.variations[0].url ?? "",
+			subscribers: channelResponse.followings_count,
+			description: channelResponse.description ?? channelResponse.title ?? "",
+			url: url,
+			links: {}
+		});
+	}
+	return getPlaceholderChannel(url, channelId);
 };
+// endregion Channel
+// region Playlist
+function getPlaylistDetailsFromId(id) {
+	const url = URL_API_PLAYLIST + id;
+	return getProtectedJson(url).playlist;
+}
+source.isPlaylistUrl = function(url) {
+	return REGEX_PLAYLIST_URL.test(url);
+}
+source.getPlaylist = function(url) {
+	const slug = parsePlaylistSlug(url);
+	const id = parseIdFromSlug(slug);
+	const playlistDetails = getPlaylistDetailsFromId(id);
+	const playlistVideos = getVideoResults(1, [id]);
+	const platformPlaylistId = getPlatformId(playlistDetails.id);
+	const firstVideoAuthor = playlistVideos[0].author;
+	return new PlatformPlaylistDetails({
+		url: url,
+		id: platformPlaylistId,
+		author: firstVideoAuthor/*new PlatformAuthorLink(
+			platformPlaylistId,
+			PLATFORM,
+			URL_BASE,
+			channelIcons[37] // todo: improve
+		)*/,
+		name: playlistDetails.title,
+		// thumbnail: thumbnail,
+		videoCount: playlistDetails.videos_count,
+		contents: new VideoPager(playlistVideos)
+	});
 
-//Video
+}
+// endregion Playlist
+// region Video
 source.isContentDetailsUrl = function(url) {
 	return REGEX_VIDEO_URL.test(url);
 };
 source.getContentDetails = function(url) {
 	const video_id = parseVideoSlug(url);
-	const detailResponse = http.GET(URL_API_VIDEO_DETAILS + video_id, headerDict);
-	if(!detailResponse.isOk)
-		throw new ScriptException(`Failed to get detail for ${video_id} [${homeResp.code}]`)
-	const detailResults = JSON.parse(detailResponse.body);
-	const streamsResponse = http.GET(URL_API_VIDEO_PLAYER + video_id, headerDict);
-	if(!streamsResponse.isOk)
-		throw new ScriptException(`Failed to get streams for ${video_id} [${streamsResponse.code}]`)
-	const streamsResults = JSON.parse(streamsResponse.body);
+	const detailResults = getProtectedJson(URL_API_VIDEO_DETAILS + video_id).playlist;
+	const streamsResults = getProtectedJson(URL_API_VIDEO_PLAYER + video_id).playlist;
 	let sourceVideos = [];
 	streamsResults.options.tracks.forEach(e => {
 		const hlssource = e.sources.hls;
@@ -287,7 +369,8 @@ source.getContentDetails = function(url) {
 		subtitles: []
 	});
 };
-
+// endregion Video
+// region Comments
 source.getComments = function (url) {
 	// const video_id = parseVideoId(url);
 	return getCommentResults(url, 1); // new CommentPager([], false);
@@ -309,10 +392,7 @@ class PietsmietDECommentPager extends CommentPager {
 }
 function getCommentResults(contextUrl, page) {
 	const video_id = parseVideoSlug(contextUrl);
-	const commentResponse = http.GET(`${URL_API_COMMENTS}${video_id}&page=${page}`, headerDict);
-	if(!commentResponse.isOk)
-		throw new ScriptException(`Failed to get comments for ${video_id} (page ${page}) [${commentResponse.code}]`)
-	const results = JSON.parse(commentResponse.body);
+	const results = getProtectedJson(`${URL_API_COMMENTS}${video_id}&page=${page}`);
 	const comments = results.data?.map(i => {
 		const c = new Comment({
 			contextUrl: contextUrl,
@@ -331,5 +411,6 @@ function getCommentResults(contextUrl, page) {
 	const hasMore = results.meta.current_page < results.meta.last_page;
 	return new PietsmietDECommentPager(comments, hasMore,  contextUrl);
 }
+// endregion Comments
 
 log("LOADED");

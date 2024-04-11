@@ -1,0 +1,58 @@
+{
+    "data": [
+        {
+            "id": 239,
+            "slug": "dayz",
+            "title": "DayZ",
+            "description": null,
+            "type": 0,
+            "publish_date": "2013-12-17 15:23:08",
+            "meta_tags": null,
+            "url_slug": "239-dayz",
+            "videos_count": 688,
+            "followings_count": 0
+        }
+    ],
+    "links": {
+        "first": "https:\/\/www.pietsmiet.de\/api\/v1\/search?query=dayz&part=playlists&page=1",
+        "last": "https:\/\/www.pietsmiet.de\/api\/v1\/search?query=dayz&part=playlists&page=1",
+        "prev": null,
+        "next": null
+    },
+    "meta": {
+        "current_page": 1,
+        "from": 1,
+        "last_page": 1,
+        "links": [
+            {
+                "url": null,
+                "label": "Vorige",
+                "active": false
+            },
+            {
+                "url": "https:\/\/www.pietsmiet.de\/api\/v1\/search?query=dayz&part=playlists&page=1",
+                "label": "1",
+                "active": true
+            },
+            {
+                "url": null,
+                "label": "N\u00e4chste",
+                "active": false
+            }
+        ],
+        "path": "https:\/\/www.pietsmiet.de\/api\/v1\/search",
+        "per_page": 15,
+        "to": 1,
+        "total": 1
+    },
+    "counts": {
+        "videos": 710,
+        "articles": 4,
+        "playlists": 1,
+        "channels": 0,
+        "podcasts": 0,
+        "tags": 12,
+        "suggestions": 55
+    },
+    "success": true
+}

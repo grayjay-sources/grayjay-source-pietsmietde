@@ -13,7 +13,7 @@
 	"scriptUrl_": "./script.js",
 	"scriptUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/script.js",
 	"changelogUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/changelog.md",
-	"version": 11,
+	"version": 12,
 	
 	"iconUrl": "https://yt3.ggpht.com/-nm49M5AVi64/AAAAAAAAAAI/AAAAAAAAAAA/h0Scy91ZiZQ/s900-c-k-no-rj-c0xffffff/photo.jpg",
 	"id": "82b8fefc-24ae-11ee-be56-0242aa120002",
@@ -34,5 +34,42 @@
 		"data-c53e1346fa.pietsmiet.de",
 		"static-cdn.jtvnw.net",
 		"pietcdn.de"
+	],
+	"subscriptionRateLimit": 120,
+	"authentication": {
+		"loginUrl": "https://www.pietsmiet.de/auth/login",
+		"cookiesToFind": [
+			"XSRF-TOKEN",
+			"psde_auth3"
+		],
+		"userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
+		"loginWarning": "Login does not work (yet)."
+	},
+	"settings": [
+		{
+			"variable": "pluginTestHeader",
+			"name": "Plugin Test Settings",
+			"description": "Lorem Ipsum Dolor Sit Amet",
+			"type": "Header"
+		},
+		{
+			"variable": "bluscream",
+			"name": "Bluscream",
+			"description": "Bluscream's Test Bool",
+			"type": "Boolean",
+			"default": "false"
+		},
+		{
+			"variable": "sponsorBlockType",
+			"name": "Skip Type",
+			"description": "Change skip behavior for SponsorBlock. Automatic may cause unexpected skipping for some users, and thus not recommended.",
+			"type": "Dropdown",
+			"default": "0",
+			"dependency": "sponsorBlock",
+			"options": [
+				"Manual",
+				"Automatic"
+			]
+		}
 	]
 }

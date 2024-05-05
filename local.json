@@ -47,5 +47,44 @@
 		"widgets.outbrain.com",
 		"www.googletagservices.com",
 		"everywhere"
+	],
+	
+	"subscriptionRateLimit": 120,
+	"authentication": {
+		"loginUrl": "https://www.pietsmiet.de/auth/login",
+		"cookiesToFind": [
+			"XSRF-TOKEN",
+			"psde_auth3"
+		],
+		"userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
+		"loginWarning": "Login does not work (yet)."
+	},
+	"settings": [
+		{
+			"variable": "pluginTestHeader",
+			"name": "Plugin Test Settings",
+			"description": "Lorem Ipsum Dolor Sit Amet",
+			"type": "Header"
+		},
+		{
+			"variable": "bluscream",
+			"name": "Bluscream",
+			"description": "Bluscream's Test Bool",
+			"type": "Boolean",
+			"default": "false"
+		},
+		{
+			"variable": "sponsorBlockType",
+			"name": "Skip Type",
+			"description": "Change skip behavior for SponsorBlock. Automatic may cause unexpected skipping for some users, and thus not recommended.",
+			"type": "Dropdown",
+			"default": "0",
+			"dependency": "sponsorBlock",
+			"options": [
+				"Manual",
+				"Automatic"
+			]
+		}
 	]
 }
+

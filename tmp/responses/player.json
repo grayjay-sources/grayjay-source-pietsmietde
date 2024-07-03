@@ -4,7 +4,7 @@
             "fluid": true,
             "responsive": true,
             "aspect_ratio": "16:9",
-            "thumbnail": "https:\/\/www.pietsmiet.de\/storage\/images\/twitch\/custom-1054d231-837d-4136-bc7f-c13c25d861da-1280x720.jpeg",
+            "thumbnail": "https:\/\/www.pietsmiet.de\/storage\/media\/3a\/d0\/b3\/9ddc48fed930564a44cfd1cdb1ec1e6f.jpg",
             "brand": {
                 "logo": "https:\/\/www.pietsmiet.de\/assets\/pietsmiet\/brand\/icon.svg",
                 "color": "039a45",
@@ -35,14 +35,14 @@
         },
         "tracks": [
             {
-                "id": 67431,
-                "title": null,
-                "full_title": "Pedda & Chris auf Tour | Euro Truck Simulator 2",
-                "pluralized_title": "s",
-                "main": true,
+                "id": 67993,
+                "title": "Brammens Sicht",
+                "full_title": "Brammens Sicht | Heute sterben _____ Leute an FALLSCHADEN! | TTT",
+                "pluralized_title": "Brammens Sichts",
+                "main": false,
                 "sources": {
                     "hls": {
-                        "src": "https:\/\/pietcdn.de\/hls\/6f\/2c\/0e\/,956c952686bee01d0602f05bd5460765,1c0c2f351e996e26e752b36ec04b2aff,f677324e66820465d1428d53a7f572ba,bfda58408f95542e6bbf40d7fe4cd053,a5e507ed71193c2fee7c631fc97ca2aa,.mp4.us\/hmt.m3u8",
+                        "src": "https:\/\/pietcdn.de\/hls\/3a\/d0\/b3\/,d2810ccfc94f028d68f9ba8a5d5bc679,944d86def38c1149138e9f79fbd326d4,7dc9deb8e65b9b4fd6dbadc4d1928daf,a03d14ca4be554cbe10a3be55db154cb,02d30b8913887af9205ac2ef9389ff6d,.mp4.us\/hmt.m3u8",
                         "type": "application\/x-mpegurl",
                         "labels": [
                             "1080p60",
@@ -54,17 +54,17 @@
                             "240p"
                         ],
                         "labels_bitrate": {
-                            "5785": "1080p60",
-                            "3855": "1080p",
-                            "2743": "720p60",
-                            "1892": "720p",
-                            "1014": "480p",
-                            "600": "360p",
-                            "369": "240p"
+                            "6529": "1080p60",
+                            "3896": "1080p",
+                            "3336": "720p60",
+                            "2028": "720p",
+                            "1088": "480p",
+                            "618": "360p",
+                            "376": "240p"
                         }
                     },
                     "dash": {
-                        "src": "https:\/\/pietcdn.de\/dash\/6f\/2c\/0e\/,9c47dc325a96463678f83e182c496fc0,956c952686bee01d0602f05bd5460765,f5715f22ffee64599dbcd1fc09594616,1c0c2f351e996e26e752b36ec04b2aff,f677324e66820465d1428d53a7f572ba,bfda58408f95542e6bbf40d7fe4cd053,a5e507ed71193c2fee7c631fc97ca2aa,.mp4.us\/dmf.mpd",
+                        "src": "https:\/\/pietcdn.de\/dash\/3a\/d0\/b3\/,98bb572eaa412858a477409f7ba8a719,d2810ccfc94f028d68f9ba8a5d5bc679,5d23a1f161d4a517cbf83d376232dccf,944d86def38c1149138e9f79fbd326d4,7dc9deb8e65b9b4fd6dbadc4d1928daf,a03d14ca4be554cbe10a3be55db154cb,02d30b8913887af9205ac2ef9389ff6d,.mp4.us\/dmf.mpd",
                         "type": "application\/dash+xml",
                         "labels": [
                             "1080p60",
@@ -76,13 +76,13 @@
                             "240p"
                         ],
                         "labels_bitrate": {
-                            "5785": "1080p60",
-                            "3855": "1080p",
-                            "2743": "720p60",
-                            "1892": "720p",
-                            "1014": "480p",
-                            "600": "360p",
-                            "369": "240p"
+                            "6529": "1080p60",
+                            "3896": "1080p",
+                            "3336": "720p60",
+                            "2028": "720p",
+                            "1088": "480p",
+                            "618": "360p",
+                            "376": "240p"
                         }
                     },
                     "mp4": null
@@ -90,37 +90,674 @@
                 "qualities": [
                     {
                         "label": "1080p60",
-                        "bitrate": 5924174,
+                        "bitrate": 6686554,
                         "framerate": 59
                     },
                     {
                         "label": "1080p",
-                        "bitrate": 3947559,
+                        "bitrate": 3990339,
                         "framerate": 29
                     },
                     {
                         "label": "720p60",
-                        "bitrate": 2809673,
+                        "bitrate": 3416232,
                         "framerate": 59
                     },
                     {
                         "label": "720p",
-                        "bitrate": 1937883,
+                        "bitrate": 2077154,
                         "framerate": 29
                     },
                     {
                         "label": "480p",
-                        "bitrate": 1039296,
+                        "bitrate": 1114550,
                         "framerate": 29
                     },
                     {
                         "label": "360p",
-                        "bitrate": 614480,
+                        "bitrate": 632859,
                         "framerate": 29
                     },
                     {
                         "label": "240p",
-                        "bitrate": 378038,
+                        "bitrate": 385961,
+                        "framerate": 29
+                    }
+                ]
+            },
+            {
+                "id": 67994,
+                "title": "Chris Sicht",
+                "full_title": "Chris Sicht | Heute sterben _____ Leute an FALLSCHADEN! | TTT",
+                "pluralized_title": "Chris Sichts",
+                "main": false,
+                "sources": {
+                    "hls": {
+                        "src": "https:\/\/pietcdn.de\/hls\/3a\/d0\/b3\/,f415ad546d73da6ec58deff7d0b62bcc,2f2f7d6e3f7bdc01e4dc58b792625bf2,a8296527683a2499d57a53fb2204a814,623d6ef846fe0f3f015437e34d6f0802,e5f075ec6b83b26477898a62c6da6247,.mp4.us\/hmt.m3u8",
+                        "type": "application\/x-mpegurl",
+                        "labels": [
+                            "1080p60",
+                            "1080p",
+                            "720p60",
+                            "720p",
+                            "480p",
+                            "360p",
+                            "240p"
+                        ],
+                        "labels_bitrate": {
+                            "6673": "1080p60",
+                            "3972": "1080p",
+                            "3384": "720p60",
+                            "2051": "720p",
+                            "1095": "480p",
+                            "620": "360p",
+                            "378": "240p"
+                        }
+                    },
+                    "dash": {
+                        "src": "https:\/\/pietcdn.de\/dash\/3a\/d0\/b3\/,c7ddfa1ff423b3adf96f90202ecfd23b,f415ad546d73da6ec58deff7d0b62bcc,77566e224e9493205035834135c7177e,2f2f7d6e3f7bdc01e4dc58b792625bf2,a8296527683a2499d57a53fb2204a814,623d6ef846fe0f3f015437e34d6f0802,e5f075ec6b83b26477898a62c6da6247,.mp4.us\/dmf.mpd",
+                        "type": "application\/dash+xml",
+                        "labels": [
+                            "1080p60",
+                            "1080p",
+                            "720p60",
+                            "720p",
+                            "480p",
+                            "360p",
+                            "240p"
+                        ],
+                        "labels_bitrate": {
+                            "6673": "1080p60",
+                            "3972": "1080p",
+                            "3384": "720p60",
+                            "2051": "720p",
+                            "1095": "480p",
+                            "620": "360p",
+                            "378": "240p"
+                        }
+                    },
+                    "mp4": null
+                },
+                "qualities": [
+                    {
+                        "label": "1080p60",
+                        "bitrate": 6833276,
+                        "framerate": 59
+                    },
+                    {
+                        "label": "1080p",
+                        "bitrate": 4068081,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "720p60",
+                        "bitrate": 3465942,
+                        "framerate": 59
+                    },
+                    {
+                        "label": "720p",
+                        "bitrate": 2100845,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "480p",
+                        "bitrate": 1121361,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "360p",
+                        "bitrate": 635864,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "240p",
+                        "bitrate": 387439,
+                        "framerate": 29
+                    }
+                ]
+            },
+            {
+                "id": 67995,
+                "title": "Jays Sicht",
+                "full_title": "Jays Sicht | Heute sterben _____ Leute an FALLSCHADEN! | TTT",
+                "pluralized_title": "Jays Sichts",
+                "main": false,
+                "sources": {
+                    "hls": {
+                        "src": "https:\/\/pietcdn.de\/hls\/3a\/d0\/b3\/,25d4d63aa84b227452293df716961ed9,cb341a4875d701d15b7e206cc310cdca,6d3e6a22495153dfbb9413e92b606f0b,0366e321a3258b53deb5e6db28eec687,0894cd0e65848236f29bee50e29f16ff,.mp4.us\/hmt.m3u8",
+                        "type": "application\/x-mpegurl",
+                        "labels": [
+                            "1080p60",
+                            "1080p",
+                            "720p60",
+                            "720p",
+                            "480p",
+                            "360p",
+                            "240p"
+                        ],
+                        "labels_bitrate": {
+                            "6823": "1080p60",
+                            "4002": "1080p",
+                            "3476": "720p60",
+                            "2078": "720p",
+                            "1109": "480p",
+                            "625": "360p",
+                            "380": "240p"
+                        }
+                    },
+                    "dash": {
+                        "src": "https:\/\/pietcdn.de\/dash\/3a\/d0\/b3\/,d34156ac29bf5825d82dc5875ccdcf66,25d4d63aa84b227452293df716961ed9,05681b4ade9c94c31daf4425b61df3f2,cb341a4875d701d15b7e206cc310cdca,6d3e6a22495153dfbb9413e92b606f0b,0366e321a3258b53deb5e6db28eec687,0894cd0e65848236f29bee50e29f16ff,.mp4.us\/dmf.mpd",
+                        "type": "application\/dash+xml",
+                        "labels": [
+                            "1080p60",
+                            "1080p",
+                            "720p60",
+                            "720p",
+                            "480p",
+                            "360p",
+                            "240p"
+                        ],
+                        "labels_bitrate": {
+                            "6823": "1080p60",
+                            "4002": "1080p",
+                            "3476": "720p60",
+                            "2078": "720p",
+                            "1109": "480p",
+                            "625": "360p",
+                            "380": "240p"
+                        }
+                    },
+                    "mp4": null
+                },
+                "qualities": [
+                    {
+                        "label": "1080p60",
+                        "bitrate": 6986930,
+                        "framerate": 59
+                    },
+                    {
+                        "label": "1080p",
+                        "bitrate": 4098505,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "720p60",
+                        "bitrate": 3560200,
+                        "framerate": 59
+                    },
+                    {
+                        "label": "720p",
+                        "bitrate": 2128631,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "480p",
+                        "bitrate": 1135858,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "360p",
+                        "bitrate": 640532,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "240p",
+                        "bitrate": 389340,
+                        "framerate": 29
+                    }
+                ]
+            },
+            {
+                "id": 67996,
+                "title": "Peters Sicht",
+                "full_title": "Peters Sicht | Heute sterben _____ Leute an FALLSCHADEN! | TTT",
+                "pluralized_title": "Peters Sichts",
+                "main": false,
+                "sources": {
+                    "hls": {
+                        "src": "https:\/\/pietcdn.de\/hls\/3a\/d0\/b3\/,92d0ebbaf610cd60a6517e761dc3afa7,3f0967c197fe2b83ae2f61e4cc5915ee,b481e54e9f6a7977747acfbba6077ff9,ace38bcacf60a80d408551e4f4ee5f20,9f6f09d58e149a5483820503c9638042,.mp4.us\/hmt.m3u8",
+                        "type": "application\/x-mpegurl",
+                        "labels": [
+                            "1080p60",
+                            "1080p",
+                            "720p60",
+                            "720p",
+                            "480p",
+                            "360p",
+                            "240p"
+                        ],
+                        "labels_bitrate": {
+                            "6286": "1080p60",
+                            "3830": "1080p",
+                            "3214": "720p60",
+                            "1997": "720p",
+                            "1070": "480p",
+                            "614": "360p",
+                            "375": "240p"
+                        }
+                    },
+                    "dash": {
+                        "src": "https:\/\/pietcdn.de\/dash\/3a\/d0\/b3\/,3e7975476f9ebaea8be5387f186d349a,92d0ebbaf610cd60a6517e761dc3afa7,a4de3b2ffaf97abf95b85de9c80e91fa,3f0967c197fe2b83ae2f61e4cc5915ee,b481e54e9f6a7977747acfbba6077ff9,ace38bcacf60a80d408551e4f4ee5f20,9f6f09d58e149a5483820503c9638042,.mp4.us\/dmf.mpd",
+                        "type": "application\/dash+xml",
+                        "labels": [
+                            "1080p60",
+                            "1080p",
+                            "720p60",
+                            "720p",
+                            "480p",
+                            "360p",
+                            "240p"
+                        ],
+                        "labels_bitrate": {
+                            "6286": "1080p60",
+                            "3830": "1080p",
+                            "3214": "720p60",
+                            "1997": "720p",
+                            "1070": "480p",
+                            "614": "360p",
+                            "375": "240p"
+                        }
+                    },
+                    "mp4": null
+                },
+                "qualities": [
+                    {
+                        "label": "1080p60",
+                        "bitrate": 6437143,
+                        "framerate": 59
+                    },
+                    {
+                        "label": "1080p",
+                        "bitrate": 3922494,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "720p60",
+                        "bitrate": 3291567,
+                        "framerate": 59
+                    },
+                    {
+                        "label": "720p",
+                        "bitrate": 2045338,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "480p",
+                        "bitrate": 1096637,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "360p",
+                        "bitrate": 629280,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "240p",
+                        "bitrate": 384727,
+                        "framerate": 29
+                    }
+                ]
+            },
+            {
+                "id": 67997,
+                "title": "Seps Sicht",
+                "full_title": "Seps Sicht | Heute sterben _____ Leute an FALLSCHADEN! | TTT",
+                "pluralized_title": "Seps Sichts",
+                "main": false,
+                "sources": {
+                    "hls": {
+                        "src": "https:\/\/pietcdn.de\/hls\/3a\/d0\/b3\/,1d5a0c651aaeb3e50c7cf53ff1ecb74a,3e218c85f0c050437046fd4c12f1c81a,a8f39ab8af503d01a2ef61cf588d6d9c,7db37e2d5c760d3ca0576109f9a93975,becef3ffe0bccb6db56b272d5c0b86e0,.mp4.us\/hmt.m3u8",
+                        "type": "application\/x-mpegurl",
+                        "labels": [
+                            "1080p60",
+                            "1080p",
+                            "720p60",
+                            "720p",
+                            "480p",
+                            "360p",
+                            "240p"
+                        ],
+                        "labels_bitrate": {
+                            "6365": "1080p60",
+                            "3864": "1080p",
+                            "3248": "720p60",
+                            "2010": "720p",
+                            "1078": "480p",
+                            "616": "360p",
+                            "376": "240p"
+                        }
+                    },
+                    "dash": {
+                        "src": "https:\/\/pietcdn.de\/dash\/3a\/d0\/b3\/,1a8c053f9ec113429d60792b2627db8a,1d5a0c651aaeb3e50c7cf53ff1ecb74a,4107299d99ab655898666f36ddd800c5,3e218c85f0c050437046fd4c12f1c81a,a8f39ab8af503d01a2ef61cf588d6d9c,7db37e2d5c760d3ca0576109f9a93975,becef3ffe0bccb6db56b272d5c0b86e0,.mp4.us\/dmf.mpd",
+                        "type": "application\/dash+xml",
+                        "labels": [
+                            "1080p60",
+                            "1080p",
+                            "720p60",
+                            "720p",
+                            "480p",
+                            "360p",
+                            "240p"
+                        ],
+                        "labels_bitrate": {
+                            "6365": "1080p60",
+                            "3864": "1080p",
+                            "3248": "720p60",
+                            "2010": "720p",
+                            "1078": "480p",
+                            "616": "360p",
+                            "376": "240p"
+                        }
+                    },
+                    "mp4": null
+                },
+                "qualities": [
+                    {
+                        "label": "1080p60",
+                        "bitrate": 6518382,
+                        "framerate": 59
+                    },
+                    {
+                        "label": "1080p",
+                        "bitrate": 3957217,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "720p60",
+                        "bitrate": 3326147,
+                        "framerate": 59
+                    },
+                    {
+                        "label": "720p",
+                        "bitrate": 2058861,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "480p",
+                        "bitrate": 1104207,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "360p",
+                        "bitrate": 631205,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "240p",
+                        "bitrate": 385598,
+                        "framerate": 29
+                    }
+                ]
+            },
+            {
+                "id": 67998,
+                "title": "Jules Sicht",
+                "full_title": "Jules Sicht | Heute sterben _____ Leute an FALLSCHADEN! | TTT",
+                "pluralized_title": "Jules Sichts",
+                "main": false,
+                "sources": {
+                    "hls": {
+                        "src": "https:\/\/pietcdn.de\/hls\/3a\/d0\/b3\/,5e7b1b95494f92442a90fb5dff6cf8c1,a6b040851b7f4594411b82d6c47d51e7,c8d72c4dbeac0db794bfe1e4f1228f56,c3d236e63e244aefc9b68e8675090093,744c69fc571356cdcd6bb29c67a4bd4d,.mp4.us\/hmt.m3u8",
+                        "type": "application\/x-mpegurl",
+                        "labels": [
+                            "1080p60",
+                            "1080p",
+                            "720p60",
+                            "720p",
+                            "480p",
+                            "360p",
+                            "240p"
+                        ],
+                        "labels_bitrate": {
+                            "6247": "1080p60",
+                            "3822": "1080p",
+                            "3197": "720p60",
+                            "1998": "720p",
+                            "1073": "480p",
+                            "614": "360p",
+                            "375": "240p"
+                        }
+                    },
+                    "dash": {
+                        "src": "https:\/\/pietcdn.de\/dash\/3a\/d0\/b3\/,4d41fedeee58ba64f95e461172e30bb2,5e7b1b95494f92442a90fb5dff6cf8c1,cd0a0badc2acff735016174831c82a73,a6b040851b7f4594411b82d6c47d51e7,c8d72c4dbeac0db794bfe1e4f1228f56,c3d236e63e244aefc9b68e8675090093,744c69fc571356cdcd6bb29c67a4bd4d,.mp4.us\/dmf.mpd",
+                        "type": "application\/dash+xml",
+                        "labels": [
+                            "1080p60",
+                            "1080p",
+                            "720p60",
+                            "720p",
+                            "480p",
+                            "360p",
+                            "240p"
+                        ],
+                        "labels_bitrate": {
+                            "6247": "1080p60",
+                            "3822": "1080p",
+                            "3197": "720p60",
+                            "1998": "720p",
+                            "1073": "480p",
+                            "614": "360p",
+                            "375": "240p"
+                        }
+                    },
+                    "mp4": null
+                },
+                "qualities": [
+                    {
+                        "label": "1080p60",
+                        "bitrate": 6397396,
+                        "framerate": 59
+                    },
+                    {
+                        "label": "1080p",
+                        "bitrate": 3914620,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "720p60",
+                        "bitrate": 3274258,
+                        "framerate": 59
+                    },
+                    {
+                        "label": "720p",
+                        "bitrate": 2046612,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "480p",
+                        "bitrate": 1099754,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "360p",
+                        "bitrate": 629509,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "240p",
+                        "bitrate": 384413,
+                        "framerate": 29
+                    }
+                ]
+            },
+            {
+                "id": 67999,
+                "title": "Svens Sicht",
+                "full_title": "Svens Sicht | Heute sterben _____ Leute an FALLSCHADEN! | TTT",
+                "pluralized_title": "Svens Sichts",
+                "main": false,
+                "sources": {
+                    "hls": {
+                        "src": "https:\/\/pietcdn.de\/hls\/3a\/d0\/b3\/,bce0239919a5570597160370994f7f6e,6b9d6e43043ff90f8768aa8c9cd5554c,0e43a945a03fb2145100813bbc69f48c,4fe8867aaa7aea9c316cd1ca43cf80d2,bcc4c614c0dc6c8eb65f10b16d71e898,.mp4.us\/hmt.m3u8",
+                        "type": "application\/x-mpegurl",
+                        "labels": [
+                            "1080p60",
+                            "1080p",
+                            "720p60",
+                            "720p",
+                            "480p",
+                            "360p",
+                            "240p"
+                        ],
+                        "labels_bitrate": {
+                            "6760": "1080p60",
+                            "4012": "1080p",
+                            "3436": "720p60",
+                            "2083": "720p",
+                            "1109": "480p",
+                            "626": "360p",
+                            "379": "240p"
+                        }
+                    },
+                    "dash": {
+                        "src": "https:\/\/pietcdn.de\/dash\/3a\/d0\/b3\/,96bb018870c47702984961539f27cbb6,bce0239919a5570597160370994f7f6e,f789748e0b185a619c3eb9e33d5e7c16,6b9d6e43043ff90f8768aa8c9cd5554c,0e43a945a03fb2145100813bbc69f48c,4fe8867aaa7aea9c316cd1ca43cf80d2,bcc4c614c0dc6c8eb65f10b16d71e898,.mp4.us\/dmf.mpd",
+                        "type": "application\/dash+xml",
+                        "labels": [
+                            "1080p60",
+                            "1080p",
+                            "720p60",
+                            "720p",
+                            "480p",
+                            "360p",
+                            "240p"
+                        ],
+                        "labels_bitrate": {
+                            "6760": "1080p60",
+                            "4012": "1080p",
+                            "3436": "720p60",
+                            "2083": "720p",
+                            "1109": "480p",
+                            "626": "360p",
+                            "379": "240p"
+                        }
+                    },
+                    "mp4": null
+                },
+                "qualities": [
+                    {
+                        "label": "1080p60",
+                        "bitrate": 6923081,
+                        "framerate": 59
+                    },
+                    {
+                        "label": "1080p",
+                        "bitrate": 4109081,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "720p60",
+                        "bitrate": 3518565,
+                        "framerate": 59
+                    },
+                    {
+                        "label": "720p",
+                        "bitrate": 2133118,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "480p",
+                        "bitrate": 1135735,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "360p",
+                        "bitrate": 641305,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "240p",
+                        "bitrate": 389119,
+                        "framerate": 29
+                    }
+                ]
+            },
+            {
+                "id": 68000,
+                "title": "Hauptsicht",
+                "full_title": "Heute sterben _____ Leute an FALLSCHADEN! | TTT",
+                "pluralized_title": "Hauptsichts",
+                "main": true,
+                "sources": {
+                    "hls": {
+                        "src": "https:\/\/pietcdn.de\/hls\/3a\/d0\/b3\/,c78eee85ed1070562e4739b36bd27d8d,e3421d71aab78cbd975e91922fdd8c72,b21fc00586f3541f87f17dc844323f7f,a4ab5988faf68fc4fed068a7ef854f58,f6a43504f0121540544ee1e4b43102aa,.mp4.us\/hmt.m3u8",
+                        "type": "application\/x-mpegurl",
+                        "labels": [
+                            "1080p60",
+                            "1080p",
+                            "720p60",
+                            "720p",
+                            "480p",
+                            "360p",
+                            "240p"
+                        ],
+                        "labels_bitrate": {
+                            "6644": "1080p60",
+                            "3959": "1080p",
+                            "3389": "720p60",
+                            "2060": "720p",
+                            "1101": "480p",
+                            "624": "360p",
+                            "380": "240p"
+                        }
+                    },
+                    "dash": {
+                        "src": "https:\/\/pietcdn.de\/dash\/3a\/d0\/b3\/,7768820c52a37e4817c77765914d2110,c78eee85ed1070562e4739b36bd27d8d,38b7f30d1ce3731b1cc043c7168ce4f4,e3421d71aab78cbd975e91922fdd8c72,b21fc00586f3541f87f17dc844323f7f,a4ab5988faf68fc4fed068a7ef854f58,f6a43504f0121540544ee1e4b43102aa,.mp4.us\/dmf.mpd",
+                        "type": "application\/dash+xml",
+                        "labels": [
+                            "1080p60",
+                            "1080p",
+                            "720p60",
+                            "720p",
+                            "480p",
+                            "360p",
+                            "240p"
+                        ],
+                        "labels_bitrate": {
+                            "6644": "1080p60",
+                            "3959": "1080p",
+                            "3389": "720p60",
+                            "2060": "720p",
+                            "1101": "480p",
+                            "624": "360p",
+                            "380": "240p"
+                        }
+                    },
+                    "mp4": null
+                },
+                "qualities": [
+                    {
+                        "label": "1080p60",
+                        "bitrate": 6803971,
+                        "framerate": 59
+                    },
+                    {
+                        "label": "1080p",
+                        "bitrate": 4054400,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "720p60",
+                        "bitrate": 3471186,
+                        "framerate": 59
+                    },
+                    {
+                        "label": "720p",
+                        "bitrate": 2110098,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "480p",
+                        "bitrate": 1128116,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "360p",
+                        "bitrate": 639957,
+                        "framerate": 29
+                    },
+                    {
+                        "label": "240p",
+                        "bitrate": 389498,
                         "framerate": 29
                     }
                 ]
@@ -130,109 +767,19 @@
     "advertising": [
         {
             "time": 0,
-            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=preroll&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=1000&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=preroll&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/79258&description_url=https:\/\/www.pietsmiet.de\/videos\/79258&correlator=5500&iu=\/35853227\/DE_Pietsmiet\/preroll",
             "nugg": true,
             "played": false
         },
         {
             "time": 600,
-            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=8170&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/79258&description_url=https:\/\/www.pietsmiet.de\/videos\/79258&correlator=4652&iu=\/35853227\/DE_Pietsmiet\/preroll",
             "nugg": false,
             "played": false
         },
         {
             "time": 1200,
-            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=8419&iu=\/35853227\/DE_Pietsmiet\/preroll",
-            "nugg": false,
-            "played": false
-        },
-        {
-            "time": 1800,
-            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=7298&iu=\/35853227\/DE_Pietsmiet\/preroll",
-            "nugg": false,
-            "played": false
-        },
-        {
-            "time": 2400,
-            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=1311&iu=\/35853227\/DE_Pietsmiet\/preroll",
-            "nugg": false,
-            "played": false
-        },
-        {
-            "time": 3000,
-            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=2808&iu=\/35853227\/DE_Pietsmiet\/preroll",
-            "nugg": false,
-            "played": false
-        },
-        {
-            "time": 3600,
-            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=4479&iu=\/35853227\/DE_Pietsmiet\/preroll",
-            "nugg": false,
-            "played": false
-        },
-        {
-            "time": 4200,
-            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=4161&iu=\/35853227\/DE_Pietsmiet\/preroll",
-            "nugg": false,
-            "played": false
-        },
-        {
-            "time": 4800,
-            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=5948&iu=\/35853227\/DE_Pietsmiet\/preroll",
-            "nugg": false,
-            "played": false
-        },
-        {
-            "time": 5400,
-            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=7098&iu=\/35853227\/DE_Pietsmiet\/preroll",
-            "nugg": false,
-            "played": false
-        },
-        {
-            "time": 6000,
-            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=8298&iu=\/35853227\/DE_Pietsmiet\/preroll",
-            "nugg": false,
-            "played": false
-        },
-        {
-            "time": 6600,
-            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=5958&iu=\/35853227\/DE_Pietsmiet\/preroll",
-            "nugg": false,
-            "played": false
-        },
-        {
-            "time": 7200,
-            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=3256&iu=\/35853227\/DE_Pietsmiet\/preroll",
-            "nugg": false,
-            "played": false
-        },
-        {
-            "time": 7800,
-            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=5392&iu=\/35853227\/DE_Pietsmiet\/preroll",
-            "nugg": false,
-            "played": false
-        },
-        {
-            "time": 8400,
-            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=5769&iu=\/35853227\/DE_Pietsmiet\/preroll",
-            "nugg": false,
-            "played": false
-        },
-        {
-            "time": 9000,
-            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=3540&iu=\/35853227\/DE_Pietsmiet\/preroll",
-            "nugg": false,
-            "played": false
-        },
-        {
-            "time": 9600,
-            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=7210&iu=\/35853227\/DE_Pietsmiet\/preroll",
-            "nugg": false,
-            "played": false
-        },
-        {
-            "time": 10200,
-            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/78688&description_url=https:\/\/www.pietsmiet.de\/videos\/78688&correlator=7630&iu=\/35853227\/DE_Pietsmiet\/preroll",
+            "tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/79258&description_url=https:\/\/www.pietsmiet.de\/videos\/79258&correlator=4200&iu=\/35853227\/DE_Pietsmiet\/preroll",
             "nugg": false,
             "played": false
         }

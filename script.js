@@ -4,6 +4,7 @@ const LIMIT_VIDEOS = 500;
 const LIMIT_COMMENTS = 100;
 const ORDER_VIDEOS = "latest";
 const ORDER_COMMENTS = "latest"; // popular
+const STREAM_LANGUAGE = "German";
 
 const URL_BASE = "https://www.pietsmiet.de";
 const URL_CHANNEL = `${URL_BASE}/videos/channels/`;
@@ -139,39 +140,9 @@ function isNullOrEmpty(str) {
 	return str === null || str === "";
 }
 function atob(encodedData) {
-    const base64Chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
-    let decodedData = '';
-    let padding = 0;
-
-    // Remove all characters that are not in the lookup table
-    encodedData = encodedData.replace(/[^A-Za-z0-9\+\/\=]/g, '');
-
-    // Count padding characters
-    if (encodedData.charAt(encodedData.length - 1) === '=') {
-        padding++;
-        if (encodedData.charAt(encodedData.length - 2) === '=') padding++;
-    }
-
-    // Convert each 4 Base64 characters to 3 bytes
-    for (let i = 0; i < encodedData.length; i += 4) {
-        const enc1 = base64Chars.indexOf(encodedData.charAt(i));
-        const enc2 = base64Chars.indexOf(encodedData.charAt(i + 1));
-        const enc3 = base64Chars.indexOf(encodedData.charAt(i + 2));
-        const enc4 = base64Chars.indexOf(encodedData.charAt(i + 3));
-
-        const chr1 = (enc1 << 2) | (enc2 >> 4);
-        const chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);
-        const chr3 = ((enc3 & 3) << 6) | enc4;
-
-        decodedData += String.fromCharCode(chr1);
-        if (enc3 !== 64) decodedData += String.fromCharCode(chr2);
-        if (enc4 !== 64) decodedData += String.fromCharCode(chr3);
-    }
-
-    // Adjust for padding
-    decodedData = decodedData.slice(0, decodedData.length - padding + 1);
-
-    return decodedData;
+	const decoded = utility.fromBase64(encodedData);
+	Debug(decoded);
+    return decoded;
 }
 // endregion js
 // endregion utils
@@ -322,7 +293,6 @@ source.getPlaylist = function(url) {
 		videoCount: playlistDetails.videos_count,
 		contents: new VideoPager(playlistVideos)
 	});
-
 }
 // endregion Playlist
 // region Video
@@ -336,20 +306,38 @@ source.getContentDetails = function(url) {
 	let sourceVideos = [];
 	streamsResults.options.tracks.forEach(e => {
 		const hlssource = e.sources.hls;
-		sourceVideos.push(new HLSSource({
-			name: `${e.full_title} (HLS)`,
-			url: hlssource.src,
-			priority: false,
-			language: "German",
-			duration: detailResults.video.duration
-		}));
+		if (hlssource !== null) {
+			sourceVideos.push(new HLSSource({
+				language: STREAM_LANGUAGE,
+				name: `${e.full_title} (HLS)`,
+				duration: detailResults.video.duration,
+				priority: e.main,
+				url: hlssource.src,
+				container: hlssource.type,
+			}));
+		}
 		const dashsource = e.sources.dash;
-		sourceVideos.push(new DashSource({
-			name: `${e.full_title} (Dash)`,
-			url: dashsource.src,
-			duration: detailResults.video.duration,
-			priority: true
-		}));
+		if (dashsource !== null) {
+			sourceVideos.push(new DashSource({
+				language: STREAM_LANGUAGE,
+				name: `${e.full_title} (Dash)`,
+				duration: detailResults.video.duration,
+				priority: e.main,
+				url: dashsource.src,
+				container: dashsource.type
+			}));
+		}
+		const mp4source = e.sources.mp4;
+		if (mp4source !== null) {
+			sourceVideos.push(new VideoUrlSource({
+				language: STREAM_LANGUAGE,
+				name: `${e.full_title} (mp4)`,
+				duration: detailResults.video.duration,
+				priority: e.main,
+				url: mp4source.src,
+				container: mp4source.type,
+			}));
+		}
 	});
 	return new PlatformVideoDetails({
 		id: getPlatformId(detailResults.video.id), // streamsResults.tracks[0]

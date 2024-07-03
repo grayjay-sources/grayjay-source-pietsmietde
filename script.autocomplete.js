@@ -359,6 +359,15 @@ class AudioUrlSource {
             this.requestModifier = obj.requestModifier;
     }
 }
+class AudioUrlWidevineSource extends AudioUrlSource {
+    constructor(obj) {
+        super(obj);
+        this.plugin_type = "AudioUrlWidevineSource";
+
+        this.bearerToken = obj.bearerToken;
+        this.licenseUri = obj.licenseUri;
+    }
+}
 class AudioUrlRangeSource extends AudioUrlSource {
     constructor(obj) {
         super(obj);
@@ -429,7 +438,7 @@ class PlatformPlaylist extends PlatformContent {
     constructor(obj) {
         super(obj, 4);
         this.plugin_type = "PlatformPlaylist";
-        this.videoCount = obj.videoCount ?? 0;
+        this.videoCount = obj.videoCount ?? -1;
         this.thumbnail = obj.thumbnail;
     }
 }
@@ -760,6 +769,23 @@ class URLSearchParams {
 //Package Bridge (variable: bridge)
 let bridge = {
    /**
+   * @return {String}
+   **/
+   buildFlavor: null,
+
+   /**
+   * @return {Int}
+   **/
+   buildVersion: null,
+
+   /**
+   * @param {String} label
+   * @param {String} data
+   * @return {Unit}
+   **/
+   devSubmit: function(label, data) {},
+
+   /**
    * @return {Boolean}
    **/
    isLoggedIn: function() {},
@@ -846,5 +872,50 @@ let http = {
    * @return {SocketResult}
    **/
    socket: function(url, headers, useAuth) {},
+
+}
+
+//Package Utilities (variable: utility)
+let utility = {
+   /**
+   * @param {String} str
+   * @return {ByteArray}
+   **/
+   fromBase64: function(str) {},
+
+   /**
+   * @param {ByteArray} arr
+   * @return {ByteArray}
+   **/
+   md5: function(arr) {},
+
+   /**
+   * @param {String} str
+   * @return {String}
+   **/
+   md5String: function(str) {},
+
+   /**
+   * @return {String}
+   **/
+   randomUUID: function() {},
+
+   /**
+   * @param {ByteArray} arr
+   * @return {ByteArray}
+   **/
+   sha256: function(arr) {},
+
+   /**
+   * @param {String} str
+   * @return {String}
+   **/
+   sha256String: function(str) {},
+
+   /**
+   * @param {ByteArray} arr
+   * @return {String}
+   **/
+   toBase64: function(arr) {},
 
 }

@@ -140,10 +140,68 @@ function isNullOrEmpty(str) {
 	return str === null || str === "";
 }
 function atob(encodedData) {
-	const decoded = utility.fromBase64(encodedData);
-	Debug(decoded);
-    return decoded;
+	return String.fromCharCode(...utility.fromBase64(encodedData));
 }
+function updateQueryStringParameter(url, key, value) {
+    let queryString = '';
+    if (url.indexOf('?') !== -1) {
+        const urlParts = url.split('?');
+        // const base = urlParts[0];
+        const queryParams = urlParts[1];
+        const paramsArray = queryParams.split('&');
+        let paramNameIndex = -1;
+        for (let i = 0; i < paramsArray.length; i++) {
+            const [name, _] = paramsArray[i].split('=');
+            if (name === key) {
+                paramNameIndex = i;
+                break;
+            }
+        }
+        if (paramNameIndex > -1) {
+            paramsArray[paramNameIndex] = `${key}=${value}`;
+        } else {
+            paramsArray.push(`${key}=${value}`);
+        }
+        queryString = paramsArray.join('&');
+    } else {
+        queryString = `?${key}=${value}`;
+    }
+    return `${url}${queryString}`;
+}
+/* class Url {
+    constructor(url) {
+        if (!url) throw new Error("URL cannot be empty");
+        const [protocol, host] = url.split('://');
+        if (!protocol || !host) throw new Error("Invalid URL format");
+        this.protocol = protocol;
+        this.host = host;
+        const [domain, port] = host.split(':');
+        this.domain = domain;
+        this.port = port ? parseInt(port) : null;
+        let [path, queryString] = url.substring(url.indexOf('?') + 1).split('#');
+        if (queryString.includes('#')) {
+            [queryString, this.fragment] = queryString.split('#');
+        }
+        this.path = path;
+        this.queryString = queryString;
+        this.fragment = this.fragment || '';
+    }
+    toString() {
+        return `${this.protocol}://${this.host}${this.path}?${this.queryString}#${this.fragment}`;
+    }
+    setQuery(key, value) {
+        const regex = new RegExp(`\\?[^#]*${key}=([^&]*)`);
+        const match = this.queryString.match(regex);
+        if (match) {
+            this.queryString = this.queryString.replace(regex, `?${key}=${encodeURIComponent(value)}`);
+        } else {
+            this.queryString += `&${key}=${encodeURIComponent(value)}`;
+        }
+    }
+    addQueryParam(key, value) {
+        this.queryString += `&${key}=${encodeURIComponent(value)}`;
+    }
+} */
 // endregion js
 // endregion utils
 
@@ -177,7 +235,7 @@ source.enable = function(conf, settings, savedState){
 	config = conf ?? {};
 	fetchIntegrityValue();
 	fetchChannels();
-	let msg = `plugin enabled > ${HEADER_INTEGRITY}=${headerDict[HEADER_INTEGRITY]}`;
+	let msg = `plugin enabled | ${HEADER_INTEGRITY}=${headerDict[HEADER_INTEGRITY]} | ${Object.keys(cachedChannels).length} channels | ${Object.keys(channelIcons).length} icons`;
 	console.log(msg);
 	return msg;
 }
@@ -306,36 +364,36 @@ source.getContentDetails = function(url) {
 	let sourceVideos = [];
 	streamsResults.options.tracks.forEach(e => {
 		const hlssource = e.sources.hls;
-		if (hlssource !== null) {
+		if (hlssource !== null && !isNullOrEmpty(hlssource.src)) {
 			sourceVideos.push(new HLSSource({
 				language: STREAM_LANGUAGE,
 				name: `${e.full_title} (HLS)`,
-				duration: detailResults.video.duration,
-				priority: e.main,
+				duration: detailResults.video.duration ?? -1,
+				priority: e.main ?? false,
 				url: hlssource.src,
-				container: hlssource.type,
+				container: hlssource.type ?? null
 			}));
 		}
 		const dashsource = e.sources.dash;
-		if (dashsource !== null) {
+		if (dashsource !== null && !isNullOrEmpty(dashsource.src)) {
 			sourceVideos.push(new DashSource({
 				language: STREAM_LANGUAGE,
 				name: `${e.full_title} (Dash)`,
-				duration: detailResults.video.duration,
-				priority: e.main,
+				duration: detailResults.video.duration ?? -1,
+				priority: e.main ?? false,
 				url: dashsource.src,
-				container: dashsource.type
+				container: dashsource.type ?? null
 			}));
 		}
 		const mp4source = e.sources.mp4;
-		if (mp4source !== null) {
+		if (mp4source !== null && !isNullOrEmpty(mp4source.src)) {
 			sourceVideos.push(new VideoUrlSource({
 				language: STREAM_LANGUAGE,
 				name: `${e.full_title} (mp4)`,
-				duration: detailResults.video.duration,
-				priority: e.main,
+				duration: detailResults.video.duration ?? -1,
+				priority: e.main ?? false,
 				url: mp4source.src,
-				container: mp4source.type,
+				container: mp4source.type ?? null
 			}));
 		}
 	});
@@ -350,7 +408,7 @@ source.getContentDetails = function(url) {
 		url: url,
 		shareUrl: detailResults.video.short_url,
 		isLive: false,
-		description: detailResults.video.description,
+		description: detailResults.video.description + `<br/><br/>${url}&ref=grayjay`,
 		video: new VideoSourceDescriptor(sourceVideos), //See sources
 		live: null,
 		rating: new RatingLikes(detailResults.video.likes_count),

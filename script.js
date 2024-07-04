@@ -371,7 +371,7 @@ source.getContentDetails = function(url) {
 				duration: detailResults.video.duration ?? -1,
 				priority: e.main ?? false,
 				url: hlssource.src,
-				container: hlssource.type ?? null
+				container: hlssource.type ?? "application/x-mpegurl"
 			}));
 		}
 		const dashsource = e.sources.dash;
@@ -382,7 +382,7 @@ source.getContentDetails = function(url) {
 				duration: detailResults.video.duration ?? -1,
 				priority: e.main ?? false,
 				url: dashsource.src,
-				container: dashsource.type ?? null
+				container: dashsource.type ?? "application/dash+xml"
 			}));
 		}
 		const mp4source = e.sources.mp4;
@@ -393,7 +393,7 @@ source.getContentDetails = function(url) {
 				duration: detailResults.video.duration ?? -1,
 				priority: e.main ?? false,
 				url: mp4source.src,
-				container: mp4source.type ?? null
+				container: mp4source.type ?? "video/mp4"
 			}));
 		}
 	});

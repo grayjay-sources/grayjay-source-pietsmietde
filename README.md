@@ -4,7 +4,9 @@
 ```
 https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/config.json
 ```
-![qr code](https://github.com/Bluscream/grayjay-source-pietsmietde/assets/3318223/2f51ad7b-8f8d-4a78-aefe-68047bfdb71d)
+<p align="center">
+  <img src="https://github.com/Bluscream/grayjay-source-pietsmietde/assets/3318223/2f51ad7b-8f8d-4a78-aefe-68047bfdb71d" alt="qr code" width="400"/>
+</p>
 <hr>
 
 ## Screenshots

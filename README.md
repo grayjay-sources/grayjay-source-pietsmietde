@@ -1,4 +1,4 @@
-# GrayJay pietsmiet.de source
+# GrayJay [pietsmiet.de](https://www.pietsmiet.de/) source
 ## Installation
 <a href="https%3A%2F%2Fraw%2Egithubusercontent%2Ecom%2FBluscream%2Fgrayjay%2Dsource%2Dpietsmietde%2Fmaster%2Fconfig%2Ejson">grayjay://plugin/https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/config.json</a>
 ```
@@ -19,3 +19,8 @@ Home | Video | Streams | Source
 - https://github.com/Bluscream/grayjay-source-pietsmietde
 - https://gitlab.com/Bluscream/grayjay-source-pietsmietde
 - https://git.minopia.de/blu/grayjay-source-pietsmietde
+
+## Contributions
+- Uses https://pietsmiet.zaanposni.com/api/
+- Uses https://returnyoutubedislike.com/docs/
+- Uses https://yt.lemnoslife.com/noKey/

@@ -439,7 +439,7 @@ source.getContentDetails = function (url) {
 	}
 	// PSProxy
 	if (_settings["use_ps_proxy"]) {
-		// try {
+		try {
 			var res = psproxy.fetchYoutubeUrl(video_id)
 			if (res === null) { utils.error(`Unable to fetch PSProxy data for ${video_id}`, error); return new PlatformVideoDetails(pvd); }
 			const yt_video_id = utils.getLastPart(res);
@@ -465,9 +465,9 @@ source.getContentDetails = function (url) {
 				`${url}?ref=grayjay (Likes: ${detailResults.video.likes_count} Comments: ${detailResults.video.comments_count})<br/>`+
 				`${res}?ref=grayjay (Views: ${yt_viewCount} Likes: ${yt_likeCount} Dislikes: ${yt_dislikeCount} Comments: ${yt_commentCount})<br/><br/>`
 				+ pvd["description"];
-		// } catch (error) {
-		// 	utils.error(`Unable to fetch PSProxy data for ${video_id}`, error)
-		// }
+		} catch (error) {
+			utils.error(`Unable to fetch PSProxy data for ${video_id}`, error)
+		}
 	}
 	return new PlatformVideoDetails(pvd);
 };

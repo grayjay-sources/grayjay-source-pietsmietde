@@ -552,7 +552,6 @@ class PSProxy {
 	}
 }
 // endregion PSProxy
-const URL_YOUTUBE_DISLIKES = "https://returnyoutubedislikeapi.com/votes?videoId=";
 //region Youtube
 class Youtube {
 	apiKey = null;

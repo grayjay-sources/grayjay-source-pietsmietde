@@ -13,7 +13,7 @@
 	"scriptUrl_": "./script.js",
 	"scriptUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/script.js",
 	"changelogUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/changelog.md",
-	"version": 13,
+	"version": 14,
 	
 	"iconUrl": "https://yt3.ggpht.com/-nm49M5AVi64/AAAAAAAAAAI/AAAAAAAAAAA/h0Scy91ZiZQ/s900-c-k-no-rj-c0xffffff/photo.jpg",
 	"id": "82b8fefc-24ae-11ee-be56-0242aa120002",
@@ -47,29 +47,32 @@
 	},
 	"settings": [
 		{
-			"variable": "pluginTestHeader",
-			"name": "Plugin Test Settings",
-			"description": "Lorem Ipsum Dolor Sit Amet",
+			"variable": "use_ps_proxy",
+			"name": "Use PSProxy for additional details from youtube",
+			"description": "Will make the source request pietsmiet.zaanposni.com/api/video/{video_id} to get additional metadata from youtube",
+			"type": "Boolean",
+			"default": "true",
+			"warningDialog": "This increases loading times significantly.\n\nTry disabling if you have issues when loading videos."
+		},
+		{
+			"variable": "merge_yt_metrics",
+			"name": "Merge PSDE and YT video metrics (requires PSProxy)",
+			"description": "Will merge the metrics from pietsmiet.de and youtube.com (views, likes, dislikes, etc) when available through PSProxy",
+			"type": "Boolean",
+			"default": "true"
+		},
+		{
+			"variable": "youtubeDislikerHeader",
+			"name": "Return Youtube Dislike",
+			"description": "This is a third-party database of video dislikes that combines historic data, crowd-sourced data, and estimations, and may not be accurate.\n\n(Using returnyoutubedislike.com)",
 			"type": "Header"
 		},
 		{
-			"variable": "bluscream",
-			"name": "Bluscream",
-			"description": "Bluscream's Test Bool",
+			"variable": "youtubeDislikes",
+			"name": "Enable",
+			"description": "Use Return YoutubeDislike to provide dislikes for videos (requires PSProxy)",
 			"type": "Boolean",
-			"default": "false"
-		},
-		{
-			"variable": "sponsorBlockType",
-			"name": "Skip Type",
-			"description": "Change skip behavior for SponsorBlock. Automatic may cause unexpected skipping for some users, and thus not recommended.",
-			"type": "Dropdown",
-			"default": "0",
-			"dependency": "sponsorBlock",
-			"options": [
-				"Manual",
-				"Automatic"
-			]
+			"default": "true"
 		}
 	]
 }

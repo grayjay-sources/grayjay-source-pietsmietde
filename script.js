@@ -584,7 +584,7 @@ class Youtube {
 
 	getVideoInfo(videoId) {
 		try {
-			const url = `https://yt.lemnoslife.com/noKey/videos?part=contentDetails,id,player,recordingDetails,snippet,statistics,status,topicDetails&id=${videoId}`;
+			const url = `https://yt.lemnoslife.com/noKey/videos?part=statistics&id=${videoId}`; // contentDetails,id,player,recordingDetails,snippet,status,topicDetails
 			const response = this.getJson(url);
 			return response.items[0] || null;
 		} catch (error) {

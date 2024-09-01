@@ -466,7 +466,7 @@ source.getContentDetails = function (url) {
 
 	if (_settings["use_yt_proxy"]) {
 		try {
-			var ytdata = yt.get(video_id)
+			const ytdata = yt.get(video_id)
 			if (ytdata === null) { utils.error(`Unable to fetch Youtube data for ${video_id}`, error, false); return new PlatformVideoDetails(pvd); }
 			const yt_data = ytdata["youtube-data"]["items"][0];
 			const yt_dislikes = ytdata["youtube-dislike"];
@@ -479,7 +479,7 @@ source.getContentDetails = function (url) {
 			const yt_subtitles = ytdata["youtube-transcripts"];
 			if (yt_subtitles) {
 				for (const [name, transcript] of Object.entries(yt_subtitles)) {
-					transcript_url = transcript["url"] + "&format=vtt"
+					const transcript_url = transcript["url"] + "&format=vtt"
 					pvd.subtitles.push({
 						name: name,
 						url: transcript_url,

@@ -148,7 +148,7 @@ class Utils {
 				utils.error(`[${name}] Error fetching video info: ${url}`, error);
 			}
 		}
-		throw new ScriptException("All URLs failed to fetch");
+		throw new ScriptException(`${url_s.length} URLs failed to fetch`);
 	}
 	getJson = function(url_s) {
 		const response = this.get(url_s);
@@ -452,10 +452,10 @@ source.getContentDetails = function (url) {
 	// PSProxy
 	if (_settings["use_yt_proxy"]) {
 		try {
-			var yt = psproxy.get(video_id)
-			if (yt === null) { utils.error(`Unable to fetch Youtube data for ${video_id}`, error); return new PlatformVideoDetails(pvd); }
-			const yt_data = yt["youtube-data"]["items"][0];
-			const yt_dislikes = yt["youtube-dislike"];
+			var ytdata = yt.get(video_id)
+			if (ytdata === null) { utils.error(`Unable to fetch Youtube data for ${video_id}`, error); return new PlatformVideoDetails(pvd); }
+			const yt_data = ytdata["youtube-data"]["items"][0];
+			const yt_dislikes = ytdata["youtube-dislike"];
 			// const yt_video_id = utils.getLastPart(res);
 			// var ytvid = yt.getVideoInfo(yt_video_id);
 			// if (ytvid === null) { utils.error(`Unable to fetch Youtube data for ${video_id}`, error); return new PlatformVideoDetails(pvd); }
@@ -539,14 +539,14 @@ class Youtube {
 	constructor() {}
 
 	get = function(video_id) {
-		try {
+		// try {
 			const urls = this.urls.map((item) => string.format(item, videoId=video_id));
 			const response = utils.getJson(urls);
 			return response || null;
-		} catch (error) {
-			utils.error("[Youtube] Error fetching video info", error);
-			throw error;
-		}
+		// } catch (error) {
+		// 	utils.error("[Youtube] Error fetching video info", error);
+		// 	throw error;
+		// }
 	}
 }
 // endregion Youtube

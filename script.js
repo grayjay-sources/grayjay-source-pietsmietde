@@ -467,7 +467,7 @@ source.getContentDetails = function (url) {
 	if (_settings["use_yt_proxy"]) {
 		try {
 			const ytdata = yt.get(video_id)
-			if (ytdata === null) { utils.error(`Unable to fetch Youtube data for ${video_id}`, error, false); return new PlatformVideoDetails(pvd); }
+			if (ytdata === null) { utils.error(`Unable to fetch Youtube data for ${video_id}`, {}, false); return new PlatformVideoDetails(pvd); }
 			const yt_data = ytdata["youtube-data"]["items"][0];
 			const yt_dislikes = ytdata["youtube-dislike"];
 			const yt_video_id = yt_data["id"];

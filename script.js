@@ -623,7 +623,7 @@ class Youtube {
 			const prefered_server = _settings["yt_proxy_server"] ?? PSPROXY_API_URL;
 			// const urls = this.urls.map((item) => item += "?videoId=" + video_id) ;// => utils.format(item, video_id));
 			const url = `${prefered_server}?videoId=${video_id}`;
-			// bridge.toast(url);
+			bridge.toast(url);
 			const response = utils.getJson(url, this.headers, "YTProxy");
 			return response || null;
 		} catch (error) {

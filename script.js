@@ -87,7 +87,7 @@ class Utils {
 		log(formattedMessage);
 		// console.log(formattedMessage);
 		// bridge.log(formattedMessage);
-		if (toast) bridge.toast(formattedMessage);
+		if (toast) bridge.toast(message);
 		try {
 			if (logErrors) errorLog += `${errorLog}\n${message}`
 		} catch (error) { }
@@ -530,8 +530,9 @@ source.getContentDetails = function (url) {
 
 			const yt_subtitles = ytdata["youtube-transcripts"];
 			if (yt_subtitles) {
-				for (const [name, transcript] of Object.entries(yt_subtitles)) {
+				for (var [name, transcript] of Object.entries(yt_subtitles)) {
 					const transcript_url = transcript["url"] + "&format=vtt"
+					if (transcript["is_generated"] && !transcript["is_translatable"]) name += " (auto-translated)"
 					pvd.subtitles.push({
 						name: name,
 						url: transcript_url,
@@ -557,11 +558,11 @@ source.getContentDetails = function (url) {
 				pvd["viewCount"] = yt_viewCount
 			}
 			pvd["description"] =
-				`${url}?ref=grayjay (Likes: ${detailResults.video.likes_count} Comments: ${detailResults.video.comments_count})<br/>` +
+				`${detailResults.video.short_url}?ref=grayjay (Likes: ${detailResults.video.likes_count} Comments: ${detailResults.video.comments_count})<br/>` +
 				`https://youtu.be/${yt_video_id}?ref=grayjay (Views: ${yt_viewCount} Likes: ${yt_likeCount} Dislikes: ${yt_dislikeCount} Comments: ${yt_commentCount})<br/><br/>`
 				+ pvd["description"];
 		} catch (error) {
-			utils.error(`Unable to fetch Youtube data for ${video_id}: ${error}`, error, false)
+			utils.error(`Unable to fetch Youtube data for ${video_id}: ${error}`, error, false);
 		}
 	}
 	return new PlatformVideoDetails(pvd);
@@ -623,10 +624,11 @@ class Youtube {
 
 	get = function (video_id) {
 		try {
-			const prefered_server = PSPROXY_SERVERS[_settings["yt_proxy_server"]];
+			const prefered_server_index = _settings["yt_proxy_server"] ?? 0;
+			const prefered_server = PSPROXY_SERVERS[prefered_server_index];
 			// const urls = this.urls.map((item) => item += "?videoId=" + video_id) ;// => utils.format(item, video_id));
 			const url = `${prefered_server}?videoId=${video_id}`;
-			utils.debug(url);
+			utils.log(url, true);
 			const response = utils.getJson(url, this.headers, "YTProxy");
 			return response || null;
 		} catch (error) {

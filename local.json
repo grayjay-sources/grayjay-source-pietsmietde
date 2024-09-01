@@ -12,7 +12,7 @@
 	"scriptUrl": "./script.js",
 	"scriptUrl_": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/script.js",
 	"changelogUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/changelog.md",
-	"version": 29,
+	"version": 30,
 	"iconUrl": "https://yt3.ggpht.com/-nm49M5AVi64/AAAAAAAAAAI/AAAAAAAAAAA/h0Scy91ZiZQ/s900-c-k-no-rj-c0xffffff/photo.jpg",
 	"id": "82b8fefc-24ae-11ee-be56-0242aa120002",
 	"scriptSignature": "",
@@ -70,7 +70,7 @@
 			"name": "Youtube Proxy Server",
 			"description": "Which Youtube Proxy Server to use",
 			"type": "Dropdown",
-			"default": "ytapi.minopia.de",
+			"default": "0",
 			"options": [
 				"ytapi.minopia.de",
 				"ytapi2.minopia.de"

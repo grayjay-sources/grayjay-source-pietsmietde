@@ -33,8 +33,8 @@ const REGEX_CHANNEL_URL = /https:\/\/www\.pietsmiet\.de\/videos\/channels\/(.*)/
 const REGEX_PLAYLIST_URL = /https:\/\/www\.pietsmiet\.de\/videos\/playlists\/(.*)/;
 
 const PSPROXY_SERVERS = [
-	"https:\/\/ytapi.minopia.de\/",
-	"https:\/\/ytapi2.minopia.de\/"
+	"https://ytapi.minopia.de/",
+	"https://ytapi2.minopia.de/"
 ]
 
 const HEADER_INTEGRITY = 'X-Origin-Integrity';

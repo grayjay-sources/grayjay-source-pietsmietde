@@ -1,3 +1,4 @@
+// region Defines
 const PLATFORM = "PietsmietDE";
 const PLATFORM_SHORT = "PSDE"
 
@@ -52,16 +53,14 @@ let cachedChannels = {}; // filled in later
 
 var config = {};
 var _settings = {
-	"use_ps_proxy": true,
-	"youtubeDislikes": true,
+	"use_yt_proxy": true,
 	"merge_yt_metrics": true
 };
 
-let psproxy;
 let yt;
-let ytdislikes;
+// endregion Defines
 
-// region utils
+// region Utils
 class Utils {
 	error = function(message, error) {
 		return utils.log(`${message}: ${JSON.stringify(error)}`, true);
@@ -78,7 +77,6 @@ class Utils {
 	debug = function(obj) {
 		bridge.throwTest((utils.log(`Debug: ${JSON.stringify(obj)}`)));
 	}
-// region js
 	getItemsByProp = function(dict, prop, value) {
 		let foundObjects = [];
 		for (let key in dict) {
@@ -136,10 +134,29 @@ class Utils {
 		const parts = inputString.split(seperator);
 		return parts[parts.length - 1];
 	}
-// endregion js
+	get = function(url_s, name = null) {
+		url_s = Array.isArray(url_s) ? url_s : [url_s];
+		name = name ?? PLATFORM_SHORT;
+		for (let url of url_s) {
+			try {
+				const response = http.GET(url, this.headers);
+				if (!response.isOk) {
+					throw new ScriptException(utils.log(`[${name}] Failed to get ${url} [${response.code}]`));
+				}
+				return response.body;
+			} catch (error) {
+				utils.error(`[${name}] Error fetching video info: ${url}`, error);
+			}
+		}
+		throw new ScriptException("All URLs failed to fetch");
+	}
+	getJson = function(url_s) {
+		const response = this.get(url_s);
+		return JSON.parse(response);
+	}
 }
-
 const utils = new Utils();
+// endregion Utils
 
 //   ytInfo.getVideoInfo(videoId)
 // 	.then(data => {
@@ -152,10 +169,10 @@ const utils = new Utils();
 function hasIntegrity() {
 	return headerDict.hasOwnProperty(HEADER_INTEGRITY) && !utils.isNullOrEmpty(headerDict[HEADER_INTEGRITY])
 }
+// region Parsing
 function getPlatformId(id) {
 	return new PlatformID(PLATFORM, id.toString(), config.id);
 }
-// region parsing
 function parseChannelSlug(url) {
 	const matches = REGEX_CHANNEL_URL.exec(url);
 	return matches[1];
@@ -189,8 +206,8 @@ function parseAuthor(videoDict) {
 function parseDate(date) {
 	parseInt((new Date(date)).getTime() / 1000)
 }
-// endregion parsing
-// region placeholders
+// endregion Parsing
+// region Placeholders
 function getPlaceholderAuthor() {
 	return new PlatformAuthorLink(
 		platformPlaylistId,
@@ -211,11 +228,9 @@ function getPlaceholderChannel(url = "", id = 0) {
 		links: {}
 	});
 }
-// endregion placeholders
+// endregion Placeholders
 
-// endregion utils
-
-// region api
+// region API
 function getProtected(url) {
 	if (!hasIntegrity()) {
 		fetchIntegrityValue();
@@ -238,9 +253,9 @@ function fetchIntegrityValue() {
 function fetchChannels() {
 	cachedChannels = getProtectedJson(URL_API_CHANNELS);
 }
-// endregion api
+// endregion API
 
-//region Source Methods
+//region SourceMethods
 source.setSettings = function(settings) {
 	_settings = settings ?? _settings;
 }
@@ -250,9 +265,7 @@ source.enable = function (conf, settings, savedState) {
 	_settings = (utils.isObjectEmpty(settings)) ? _settings : settings;
 	fetchIntegrityValue();
 	fetchChannels();
-	psproxy = new PSProxy();
 	yt = new Youtube();
-	ytdislikes = new YoutubeDislikes();
 	let msg = `plugin enabled | ${HEADER_INTEGRITY}=${headerDict[HEADER_INTEGRITY]} | ${Object.keys(cachedChannels).length} channels | ${Object.keys(channelIcons).length} icons`;
 	msg = utils.log(msg);
 	// return info;
@@ -266,7 +279,6 @@ source.disable = function (conf, settings, savedState) {
 source.getHome = function () {
 	return new ContentPager(getVideoResults(1), true);
 };
-//endregion Source Methods
 
 class HomePager extends VideoPager {
 	constructor(initialResults, hasMore) {
@@ -319,7 +331,7 @@ source.getSearchChannelContentsCapabilities = function () {
 		filters: []
 	};
 };
-//endregion Source Methods
+//endregion SourceMethods
 
 // region Channel
 source.isChannelUrl = function (url) {
@@ -438,23 +450,22 @@ source.getContentDetails = function (url) {
 		subtitles: []
 	}
 	// PSProxy
-	if (_settings["use_ps_proxy"]) {
+	if (_settings["use_yt_proxy"]) {
 		try {
-			var res = psproxy.fetchYoutubeUrl(video_id)
-			if (res === null) { utils.error(`Unable to fetch PSProxy data for ${video_id}`, error); return new PlatformVideoDetails(pvd); }
-			const yt_video_id = utils.getLastPart(res);
-			var ytvid = yt.getVideoInfo(yt_video_id);
-			if (ytvid === null) { utils.error(`Unable to fetch Youtube data for ${video_id}`, error); return new PlatformVideoDetails(pvd); }
-			let yt_dislikeCount;
-			const yt_viewCount = parseInt(ytvid["statistics"]["viewCount"]);
-			const yt_likeCount = parseInt(ytvid["statistics"]["likeCount"]);
-			const yt_commentCount = parseInt(ytvid["statistics"]["commentCount"]);
-			if (_settings["youtubeDislikes"]) {
-				yt_dislikeCount = ytdislikes.getVideoInfo(yt_video_id);
-			}
+			var yt = psproxy.get(video_id)
+			if (yt === null) { utils.error(`Unable to fetch Youtube data for ${video_id}`, error); return new PlatformVideoDetails(pvd); }
+			const yt_data = yt["youtube-data"]["items"][0];
+			const yt_dislikes = yt["youtube-dislike"];
+			// const yt_video_id = utils.getLastPart(res);
+			// var ytvid = yt.getVideoInfo(yt_video_id);
+			// if (ytvid === null) { utils.error(`Unable to fetch Youtube data for ${video_id}`, error); return new PlatformVideoDetails(pvd); }
+			const yt_viewCount = parseInt(yt_data["statistics"]["viewCount"]);
+			const yt_likeCount = parseInt(yt_data["statistics"]["likeCount"]);
+			const yt_dislikeCount = yt_dislikes["dislikes"];
+			const yt_commentCount = parseInt(yt_data["statistics"]["commentCount"]);
 
 			if (_settings["merge_yt_metrics"]) {
-				if (yt_dislikeCount === null) {
+				if (yt_dislikes === null) {
 					pvd["rating"] = new RatingLikes(likeCount+yt_likeCount)
 				} else {
 					pvd["rating"] = new RatingLikesDislikes(likeCount+yt_likeCount, yt_dislikeCount)
@@ -466,7 +477,7 @@ source.getContentDetails = function (url) {
 				`${res}?ref=grayjay (Views: ${yt_viewCount} Likes: ${yt_likeCount} Dislikes: ${yt_dislikeCount} Comments: ${yt_commentCount})<br/><br/>`
 				+ pvd["description"];
 		} catch (error) {
-			utils.error(`Unable to fetch PSProxy data for ${video_id}`, error)
+			utils.error(`Unable to fetch Youtube data for ${video_id}`, error)
 		}
 	}
 	return new PlatformVideoDetails(pvd);
@@ -515,122 +526,29 @@ function getCommentResults(contextUrl, page) {
 }
 // endregion Comments
 
-// region PSProxy
-class PSProxy {
+// region Youtube
+class Youtube {
+	urls = [
+		"https://ytapi.minopia.de/?videoId={videoId}",
+		"https://ytapi2.minopia.de/?videoId={videoId}"
+	]
 	headers = {
 		'Accept': 'application/json'
 	};
 
 	constructor() {}
 
-	get = function(url) {
+	get = function(video_id) {
 		try {
-			const response = http.GET(url, this.headers);
-			if (!response.isOk)
-				throw new ScriptException(utils.log(`[PSProxy] Failed to get ${url} [${response.code}]`));
-			return response.body;
+			const urls = this.urls.map((item) => string.format(item, videoId=video_id));
+			const response = utils.getJson(urls);
+			return response || null;
 		} catch (error) {
-			utils.error("[PSProxy] Error fetching video info", error);
-			throw error;
-		}
-	}
-
-	getJson = function(url) {
-		const response = this.get(url);
-		return JSON.parse(response);
-	}
-
-	fetchYoutubeUrl = function(input_url) {
-		try {
-			const url = `https://pietsmiet.zaanposni.com/api/video/${encodeURIComponent(input_url)}`;
-			const response = this.getJson(url);
-			return response.secondaryHref || null;
-		} catch (error) {
-			utils.error("[PSProxy] Error fetching video info", error);
+			utils.error("[Youtube] Error fetching video info", error);
 			throw error;
 		}
 	}
 }
-// endregion PSProxy
-//region Youtube
-class Youtube {
-	apiKey = null;
-	headers = {
-		'Accept': 'application/json'
-	};
-
-	constructor(apiKey = null) {
-		this.apiKey = apiKey;
-	}
-
-	get(url) {
-		try {
-			if (this.apiKey !== null) this.headers['Authorization'] = `Bearer ${this.apiKey}`;
-			else if (this.headers.hasOwnProperty('Authorization')) delete this.headers['Authorization'];
-			const response = http.GET(url, this.headers);
-			if (!response.isOk)
-				throw new ScriptException(utils.log(`[YT] Failed to get \"${url}\" [${response.code}]`));
-			return response.body;
-		} catch (error) {
-			utils.error("[YT] Error fetching video info", error);
-			throw error;
-		}
-	}
-
-	getJson(url) {
-		const response = this.get(url);
-		return JSON.parse(response);
-	}
-
-	getVideoInfo(videoId) {
-		try {
-			const url = `https://yt.lemnoslife.com/noKey/videos?part=statistics&id=${videoId}`; // contentDetails,id,player,recordingDetails,snippet,status,topicDetails
-			const response = this.getJson(url);
-			return response.items[0] || null;
-		} catch (error) {
-			utils.error("[YT] Error fetching video info", error);
-			throw error;
-		}
-	}
-}
-//endregion Youtube
-
-//region YoutubeDislikes
-class YoutubeDislikes {
-	headers = {
-		'Accept': 'application/json'
-	};
-
-	constructor() { }
-
-	get(url) {
-		try {
-			const response = http.GET(url, this.headers);
-			if (!response.isOk)
-				throw new ScriptException(utils.log(`[YTDislikes] Failed to get \"${url}\" [${response.code}]`));
-			return response.body;
-		} catch (error) {
-			utils.error("[YTDislikes] Error fetching video info", error);
-			throw error;
-		}
-	}
-
-	getJson(url) {
-		const response = this.get(url);
-		return JSON.parse(response);
-	}
-
-	getVideoInfo(videoId) {
-		try {
-			const url = `https://returnyoutubedislikeapi.com/votes?videoId=${videoId}`;
-			const response = this.getJson(url);
-			return response.dislikes || null;
-		} catch (error) {
-			utils.error("[YT] Error fetching video info", error);
-			throw error;
-		}
-	}
-}
-//endregion YoutubeDislikes
+// endregion Youtube
 
 log("LOADED");

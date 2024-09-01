@@ -32,7 +32,7 @@ const REGEX_VIDEO_URL = /https:\/\/www\.pietsmiet\.de\/videos\/(\d+)(.*)/; // /h
 const REGEX_CHANNEL_URL = /https:\/\/www\.pietsmiet\.de\/videos\/channels\/(.*)/;
 const REGEX_PLAYLIST_URL = /https:\/\/www\.pietsmiet\.de\/videos\/playlists\/(.*)/;
 
-const PSPROXY_API_URL = "https://ytapi.minopia.de/";
+const PSPROXY_API_URL = "https:\/\/ytapi.minopia.de\/";
 
 const HEADER_INTEGRITY = 'X-Origin-Integrity';
 let headerDict = {
@@ -623,7 +623,7 @@ class Youtube {
 			const prefered_server = _settings["yt_proxy_server"] ?? PSPROXY_API_URL;
 			// const urls = this.urls.map((item) => item += "?videoId=" + video_id) ;// => utils.format(item, video_id));
 			const url = `${prefered_server}?videoId=${video_id}`;
-			bridge.toast(url);
+			utils.debug(url);
 			const response = utils.getJson(url, this.headers, "YTProxy");
 			return response || null;
 		} catch (error) {

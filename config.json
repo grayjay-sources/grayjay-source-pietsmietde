@@ -12,7 +12,7 @@
 	"scriptUrl_": "./script.js",
 	"scriptUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/script.js",
 	"changelogUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/changelog.md",
-	"version": 26,
+	"version": 27,
 	"iconUrl": "https://yt3.ggpht.com/-nm49M5AVi64/AAAAAAAAAAI/AAAAAAAAAAA/h0Scy91ZiZQ/s900-c-k-no-rj-c0xffffff/photo.jpg",
 	"id": "82b8fefc-24ae-11ee-be56-0242aa120002",
 	"scriptSignature": "",
@@ -43,7 +43,7 @@
 			"name": "Enable Youtube Proxy",
 			"description": "Will make the source request the youtube proxy server to get additional metadata from youtube",
 			"type": "Boolean",
-			"default": "false",
+			"default": "true",
 			"warningDialog": "This increases loading times significantly.\n\nTry disabling if you have issues when loading videos."
 		},
 		{
@@ -51,10 +51,10 @@
 			"name": "Youtube Proxy Server",
 			"description": "Which Youtube Proxy Server to use",
 			"type": "Dropdown",
-			"default": "https://ytapi.minopia.de/",
+			"default": "https:\/\/ytapi.minopia.de\/",
 			"options": [
-				"https://ytapi.minopia.de/",
-				"https://ytapi2.minopia.de/"
+				"https:\/\/ytapi.minopia.de\/",
+				"https:\/\/ytapi2.minopia.de\/"
 			]
 		},
 		{

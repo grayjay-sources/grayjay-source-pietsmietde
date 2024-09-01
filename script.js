@@ -322,7 +322,7 @@ function fetchChannels() {
 
 //region SourceMethods
 source.setSettings = function (settings) {
-	_settings = settings ?? _settings;
+	_settings = (utils.isObjectEmpty(settings)) ? _settings : settings;
 }
 
 source.enable = function (conf, settings, savedState) {

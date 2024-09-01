@@ -32,7 +32,10 @@ const REGEX_VIDEO_URL = /https:\/\/www\.pietsmiet\.de\/videos\/(\d+)(.*)/; // /h
 const REGEX_CHANNEL_URL = /https:\/\/www\.pietsmiet\.de\/videos\/channels\/(.*)/;
 const REGEX_PLAYLIST_URL = /https:\/\/www\.pietsmiet\.de\/videos\/playlists\/(.*)/;
 
-const PSPROXY_API_URL = "https:\/\/ytapi.minopia.de\/";
+const PSPROXY_SERVERS = [
+	"https:\/\/ytapi.minopia.de\/",
+	"https:\/\/ytapi2.minopia.de\/"
+]
 
 const HEADER_INTEGRITY = 'X-Origin-Integrity';
 let headerDict = {
@@ -55,12 +58,12 @@ let cachedChannels = {}; // filled in later
 
 var config = {
 	"use_yt_proxy": true,
-	"yt_proxy_server": PSPROXY_API_URL,
+	"yt_proxy_server": 0,
 	"merge_yt_metrics": true
 };
 var _settings = {
 	"use_yt_proxy": true,
-	"yt_proxy_server": PSPROXY_API_URL,
+	"yt_proxy_server": 0,
 	"merge_yt_metrics": true
 };
 
@@ -620,7 +623,7 @@ class Youtube {
 
 	get = function (video_id) {
 		try {
-			const prefered_server = _settings["yt_proxy_server"] ?? PSPROXY_API_URL;
+			const prefered_server = PSPROXY_SERVERS[_settings["yt_proxy_server"]];
 			// const urls = this.urls.map((item) => item += "?videoId=" + video_id) ;// => utils.format(item, video_id));
 			const url = `${prefered_server}?videoId=${video_id}`;
 			utils.debug(url);

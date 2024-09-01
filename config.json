@@ -6,26 +6,21 @@
 	"platformUrl": "https://www.pietsmiet.de/",
 	"tags": [],
 	"nsfw": false,
-
 	"sourceUrl_": "./config.json",
 	"sourceUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/config.json",
 	"repositoryUrl": "https://github.com/Bluscream/grayjay-source-pietsmietde",
 	"scriptUrl_": "./script.js",
 	"scriptUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/script.js",
 	"changelogUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/changelog.md",
-	"version": 24,
-	
+	"version": 25,
 	"iconUrl": "https://yt3.ggpht.com/-nm49M5AVi64/AAAAAAAAAAI/AAAAAAAAAAA/h0Scy91ZiZQ/s900-c-k-no-rj-c0xffffff/photo.jpg",
 	"id": "82b8fefc-24ae-11ee-be56-0242aa120002",
-	
 	"scriptSignature": "",
 	"scriptPublicKey": "",
-	
 	"packages": [
 		"Http",
 		"Utilities"
 	],
-	
 	"allowEval": false,
 	"allowUrls": [
 		"pietsmiet.de",
@@ -46,10 +41,21 @@
 		{
 			"variable": "use_yt_proxy",
 			"name": "Enable Youtube Proxy",
-			"description": "Will make the source request pietsmiet.zaanposni.com/api/video/{video_id} to get additional metadata from youtube",
+			"description": "Will make the source request the youtube proxy server to get additional metadata from youtube",
 			"type": "Boolean",
-			"default": "true",
+			"default": "false",
 			"warningDialog": "This increases loading times significantly.\n\nTry disabling if you have issues when loading videos."
+		},
+		{
+			"variable": "yt_proxy_server",
+			"name": "Youtube Proxy Server",
+			"description": "Which Youtube Proxy Server to use",
+			"type": "Dropdown",
+			"default": "https://ytapi.minopia.de/",
+			"options": [
+				"https://ytapi.minopia.de/",
+				"https://ytapi2.minopia.de/"
+			]
 		},
 		{
 			"variable": "merge_yt_metrics",

@@ -32,6 +32,8 @@ const REGEX_VIDEO_URL = /https:\/\/www\.pietsmiet\.de\/videos\/(\d+)(.*)/; // /h
 const REGEX_CHANNEL_URL = /https:\/\/www\.pietsmiet\.de\/videos\/channels\/(.*)/;
 const REGEX_PLAYLIST_URL = /https:\/\/www\.pietsmiet\.de\/videos\/playlists\/(.*)/;
 
+const PSPROXY_API_URL = "https://ytapi.minopia.de/"
+
 const HEADER_INTEGRITY = 'X-Origin-Integrity';
 let headerDict = {
 	// 'Content-Type': 'application/json',
@@ -51,9 +53,14 @@ const channelIcons = { // Todo: find a way to get these dynamically
 
 let cachedChannels = {}; // filled in later
 
-var config = {};
+var config = {
+	"use_yt_proxy": true,
+	"yt_proxy_server": PSPROXY_API_URL,
+	"merge_yt_metrics": true
+};
 var _settings = {
 	"use_yt_proxy": true,
+	"yt_proxy_server": PSPROXY_API_URL,
 	"merge_yt_metrics": true
 };
 
@@ -64,14 +71,14 @@ const logErrors = true;
 
 // region Utils
 class Utils {
-	error = function(message, error, _throw = false) {
+	error = function (message, error, _throw = false) {
 		const fmt = utils.log(`${message}: ${error} (${JSON.stringify(error)})`, true);
 		if (_throw) {
-			const log = errorLog;errorLog = "";
+			const log = errorLog; errorLog = "";
 			throw new ScriptException(`${fmt}\n\n${log}`);
 		}
 	}
-	log = function(message, toast = false) {
+	log = function (message, toast = false) {
 		message = JSON.stringify(message);
 		const formattedMessage = `[${new Date().toISOString()}] [${PLATFORM_SHORT}] ${message}`;
 		log(formattedMessage);
@@ -79,14 +86,14 @@ class Utils {
 		// bridge.log(formattedMessage);
 		if (toast) bridge.toast(formattedMessage);
 		try {
-			if(logErrors) errorLog += `${errorLog}\n${message}` 
-		} catch (error) {}
+			if (logErrors) errorLog += `${errorLog}\n${message}`
+		} catch (error) { }
 		return formattedMessage;
 	}
-	debug = function(obj) {
+	debug = function (obj) {
 		bridge.throwTest((utils.log(`Debug: ${JSON.stringify(obj)}`)));
 	}
-	getItemsByProp = function(dict, prop, value) {
+	getItemsByProp = function (dict, prop, value) {
 		let foundObjects = [];
 		for (let key in dict) {
 			if (dict[key][prop] === value) {
@@ -95,7 +102,7 @@ class Utils {
 		}
 		return foundObjects;
 	}
-	getItemByProp = function(dict, prop, value, defaultValue = null) {
+	getItemByProp = function (dict, prop, value, defaultValue = null) {
 		try {
 			const items = getItemsByProp(dict, prop, value);
 			return items.length > 0 ? items[0] : defaultValue;
@@ -103,16 +110,21 @@ class Utils {
 			return defaultValue;
 		}
 	}
-	isNullOrEmpty = function(str) {
+	prepend = function (array, value) {
+		var newArray = array.slice();
+		newArray.unshift(value);
+		return newArray;
+	}
+	isNullOrEmpty = function (str) {
 		return str === null || str === "";
 	}
 	isObjectEmpty(obj) {
 		return obj !== null && Object.keys(obj).length === 0;
-	  }
-	atob = function(encodedData) {
+	}
+	atob = function (encodedData) {
 		return String.fromCharCode(...utility.fromBase64(encodedData));
 	}
-	updateQueryStringParameter = function(url, key, value) {
+	updateQueryStringParameter = function (url, key, value) {
 		let queryString = '';
 		if (url.indexOf('?') !== -1) {
 			const urlParts = url.split('?');
@@ -143,12 +155,44 @@ class Utils {
 		const parts = inputString.split(seperator);
 		return parts[parts.length - 1];
 	}
-	format = function(input, ...args) {
-		return input.replace(/(\{\d+\})/g, function(a) {
-		  return args[+(a.substr(1, a.length - 2)) || 0];
+	format = function (input, ...args) {
+		return input.replace(/(\{\d+\})/g, function (a) {
+			return args[+(a.substr(1, a.length - 2)) || 0];
 		});
-	  };
-	get = function(url_s, headers = {}, name = null) {
+	}
+	clone = function (obj) {
+		return JSON.parse(JSON.stringify(obj));
+		// Handle the 3 simple types, and null or undefined
+		if (null == obj || "object" != typeof obj) return obj;
+
+		// Handle Date
+		if (obj instanceof Date) {
+			var copy = new Date();
+			copy.setTime(obj.getTime());
+			return copy;
+		}
+
+		// Handle Array
+		if (obj instanceof Array) {
+			var copy = [];
+			for (var i = 0, len = obj.length; i < len; i++) {
+				copy[i] = this.clone(obj[i]);
+			}
+			return copy;
+		}
+
+		// Handle Object
+		if (obj instanceof Object) {
+			var copy = {};
+			for (var attr in obj) {
+				if (obj.hasOwnProperty(attr)) copy[attr] = this.clone(obj[attr]);
+			}
+			return copy;
+		}
+
+		throw new Error("Unable to copy obj! Its type isn't supported.");
+	}
+	get = function (url_s, headers = {}, name = null) {
 		url_s = Array.isArray(url_s) ? url_s : [url_s];
 		name = name ?? PLATFORM_SHORT;
 		for (let url of url_s) {
@@ -165,7 +209,7 @@ class Utils {
 		}
 		utils.error(`${url_s.length} URLs failed to fetch`, null, true);
 	}
-	getJson = function(url_s, headers = {}, name = null) {
+	getJson = function (url_s, headers = {}, name = null) {
 		headers["Accept"] = "application/json"
 		const response = this.get(url_s, headers, name);
 		return JSON.parse(response.body);
@@ -254,7 +298,7 @@ function getProtected(url_s) {
 	const response = utils.get(url_s, headerDict);
 	if (!response.isOk) {
 		utils.error(`Failed to get ${url_s} [${response.code}]`, null, true);
-		if (response.status === 400)  fetchIntegrityValue();
+		if (response.status === 400) fetchIntegrityValue();
 	}
 	return response.body;
 }
@@ -274,12 +318,12 @@ function fetchChannels() {
 // endregion API
 
 //region SourceMethods
-source.setSettings = function(settings) {
+source.setSettings = function (settings) {
 	_settings = settings ?? _settings;
 }
 
 source.enable = function (conf, settings, savedState) {
-	 config = (utils.isObjectEmpty(conf)) ? config : conf;
+	config = (utils.isObjectEmpty(conf)) ? config : conf;
 	_settings = (utils.isObjectEmpty(settings)) ? _settings : settings;
 	fetchIntegrityValue();
 	fetchChannels();
@@ -497,20 +541,20 @@ source.getContentDetails = function (url) {
 							}
 						},
 					});
-				  }
+				}
 
 			}
 
 			if (_settings["merge_yt_metrics"]) {
 				if (yt_dislikes === null) {
-					pvd["rating"] = new RatingLikes(likeCount+yt_likeCount)
+					pvd["rating"] = new RatingLikes(likeCount + yt_likeCount)
 				} else {
-					pvd["rating"] = new RatingLikesDislikes(likeCount+yt_likeCount, yt_dislikeCount)
+					pvd["rating"] = new RatingLikesDislikes(likeCount + yt_likeCount, yt_dislikeCount)
 				}
 				pvd["viewCount"] = yt_viewCount
 			}
 			pvd["description"] =
-				`${url}?ref=grayjay (Likes: ${detailResults.video.likes_count} Comments: ${detailResults.video.comments_count})<br/>`+
+				`${url}?ref=grayjay (Likes: ${detailResults.video.likes_count} Comments: ${detailResults.video.comments_count})<br/>` +
 				`https://youtu.be/${yt_video_id}?ref=grayjay (Views: ${yt_viewCount} Likes: ${yt_likeCount} Dislikes: ${yt_dislikeCount} Comments: ${yt_commentCount})<br/><br/>`
 				+ pvd["description"];
 		} catch (error) {
@@ -567,26 +611,25 @@ function getCommentResults(contextUrl, page) {
 
 // region Youtube
 class Youtube {
-	urls = [
-		"https://ytapi.minopia.de/?videoId={0}",
-		"https://ytapi2.minopia.de/?videoId={0}"
-	]
 	headers = {
 		'X-Powered-By': 'GrayJay',
 		'X-GrayJay-Source': PLATFORM_SHORT
 	};
 
-	constructor() {}
+	constructor() { }
 
-	get = function(video_id) {
-		// try {
-			const urls = this.urls.map((item) => utils.format(item, video_id));
-			const response = utils.getJson(urls, this.headers, "YTProxy");
-			return response || null;
-		// } catch (error) {
-		// 	utils.error("[Youtube] Error fetching video info", error);
-		// 	throw error;
-		// }
+	get = function (video_id) {
+		const prefered_server = _settings["yt_proxy_server"] ?? PSPROXY_API_URL;
+		try {
+		// const urls = this.urls.map((item) => item += "?videoId=" + video_id) ;// => utils.format(item, video_id));
+		const url = prefered_server + "?videoId=" + video_id;
+		// bridge.toast(url);
+		const response = utils.getJson(url, this.headers, "YTProxy");
+		return response || null;
+		} catch (error) {
+			utils.error(`[Youtube] Error fetching video info for ${video_id}: ${error?.message}`, error);
+			throw error;
+		}
 	}
 }
 // endregion Youtube

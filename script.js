@@ -476,6 +476,33 @@ source.getContentDetails = function (url) {
 			const yt_dislikeCount = yt_dislikes["dislikes"];
 			const yt_commentCount = parseInt(yt_data["statistics"]["commentCount"]);
 
+			const yt_subtitles = ytdata["youtube-transcripts"];
+			if (yt_subtitles) {
+				for (const [name, transcript] of Object.entries(yt_subtitles)) {
+					url = transcript["url"]
+					pvd.subtitles.push({
+						name: name,
+						url: url,
+						format: 'text/vtt',
+						getSubtitles() {
+							try {
+								const subResp = utils.get(url);
+								if (!subResp.isOk) {
+									utils.error(`Failed to download subtitles from ${url}`);
+									return '';
+								}
+								return convertSRTtoVTT(subResp.body);
+							}
+							catch (error) {
+								utils.error(`Failed to download subtitles from ${url}: ${error?.message}`, error);
+								return '';
+							}
+						},
+					});
+				  }
+
+			}
+
 			if (_settings["merge_yt_metrics"]) {
 				if (yt_dislikes === null) {
 					pvd["rating"] = new RatingLikes(likeCount+yt_likeCount)
@@ -494,6 +521,8 @@ source.getContentDetails = function (url) {
 	}
 	return new PlatformVideoDetails(pvd);
 };
+
+
 // endregion Video
 // region Comments
 source.getComments = function (url) {

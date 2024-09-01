@@ -30,13 +30,7 @@
 	"allowUrls": [
 		"pietsmiet.de",
 		"www.pietsmiet.de",
-		"lft1.pietcdn.de",
-		"data-c53e1346fa.pietsmiet.de",
-		"static-cdn.jtvnw.net",
-		"pietcdn.de",
-		"returnyoutubedislikeapi.com",
-		"yt.lemnoslife.com",
-		"pietsmiet.zaanposni.com"
+		"*.minopia.de"
 	],
 	"subscriptionRateLimit": 120,
 	"authentication": {

@@ -57,19 +57,6 @@
 			"description": "Will merge the metrics from pietsmiet.de and youtube.com (views, likes, dislikes, etc) when available through PSProxy",
 			"type": "Boolean",
 			"default": "true"
-		},
-		{
-			"variable": "youtubeDislikerHeader",
-			"name": "Return Youtube Dislike",
-			"description": "This is a third-party database of video dislikes that combines historic data, crowd-sourced data, and estimations, and may not be accurate.\n\n(Using returnyoutubedislike.com)",
-			"type": "Header"
-		},
-		{
-			"variable": "youtubeDislikes",
-			"name": "Enable",
-			"description": "Use Return YoutubeDislike to provide dislikes for videos (requires PSProxy)",
-			"type": "Boolean",
-			"default": "true"
 		}
 	]
 }

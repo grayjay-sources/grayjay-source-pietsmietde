@@ -59,6 +59,7 @@ var _settings = {
 
 let yt;
 let errorLog = "";
+const logErrors = true;
 // endregion Defines
 
 // region Utils
@@ -77,7 +78,9 @@ class Utils {
 		// console.log(formattedMessage);
 		// bridge.log(formattedMessage);
 		if (toast) bridge.toast(formattedMessage);
-		errorLog += `${errorLog}\n${message}` 
+		try {
+			if(logErrors) errorLog += `${errorLog}\n${message}` 
+		} catch (error) {}
 		return formattedMessage;
 	}
 	debug = function(obj) {
@@ -249,8 +252,10 @@ function getProtected(url_s) {
 		fetchIntegrityValue();
 	}
 	const response = utils.get(url_s, headerDict);
-	if (!response.isOk)
+	if (!response.isOk) {
 		utils.error(`Failed to get ${url_s} [${response.code}]`, null, true);
+		if (response.status === 400)  fetchIntegrityValue();
+	}
 	return response.body;
 }
 function getProtectedJson(url_s) {

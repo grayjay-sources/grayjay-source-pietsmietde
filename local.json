@@ -64,8 +64,8 @@
 	},
 	"settings": [
 		{
-			"variable": "use_ps_proxy",
-			"name": "Use PSProxy for additional details from youtube",
+			"variable": "use_yt_proxy",
+			"name": "Enable Youtube Proxy",
 			"description": "Will make the source request pietsmiet.zaanposni.com/api/video/{video_id} to get additional metadata from youtube",
 			"type": "Boolean",
 			"default": "true",
@@ -73,7 +73,7 @@
 		},
 		{
 			"variable": "merge_yt_metrics",
-			"name": "Merge PSDE and YT video metrics (requires PSProxy)",
+			"name": "Merge PSDE and YT metrics (requires YTProxy)",
 			"description": "Will merge the metrics from pietsmiet.de and youtube.com (views, likes, dislikes, etc) when available through PSProxy",
 			"type": "Boolean",
 			"default": "true"

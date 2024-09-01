@@ -58,12 +58,17 @@ var _settings = {
 };
 
 let yt;
+let errorLog = "";
 // endregion Defines
 
 // region Utils
 class Utils {
-	error = function(message, error) {
-		return utils.log(`${message}: ${JSON.stringify(error)}`, true);
+	error = function(message, error, _throw = false) {
+		const fmt = utils.log(`${message}: ${error} (${JSON.stringify(error)})`, true);
+		if (_throw) {
+			const log = errorLog;errorLog = "";
+			throw new ScriptException(`${fmt}\n\n${log}`);
+		}
 	}
 	log = function(message, toast = false) {
 		message = JSON.stringify(message);
@@ -72,6 +77,7 @@ class Utils {
 		// console.log(formattedMessage);
 		// bridge.log(formattedMessage);
 		if (toast) bridge.toast(formattedMessage);
+		errorLog += `${errorLog}\n${message}` 
 		return formattedMessage;
 	}
 	debug = function(obj) {
@@ -134,25 +140,32 @@ class Utils {
 		const parts = inputString.split(seperator);
 		return parts[parts.length - 1];
 	}
-	get = function(url_s, name = null) {
+	format = function(input, ...args) {
+		return input.replace(/(\{\d+\})/g, function(a) {
+		  return args[+(a.substr(1, a.length - 2)) || 0];
+		});
+	  };
+	get = function(url_s, headers = {}, name = null) {
 		url_s = Array.isArray(url_s) ? url_s : [url_s];
 		name = name ?? PLATFORM_SHORT;
 		for (let url of url_s) {
 			try {
-				const response = http.GET(url, this.headers);
+				utils.log(`GET ${url}`);
+				const response = http.GET(url, headers);
 				if (!response.isOk) {
-					throw new ScriptException(utils.log(`[${name}] Failed to get ${url} [${response.code}]`));
+					utils.error(`Failed to get ${url} [${response.code}]`, null, true);
 				}
-				return response.body;
+				return response;
 			} catch (error) {
-				utils.error(`[${name}] Error fetching video info: ${url}`, error);
+				utils.error(`Error fetching video info: ${url}:`, error, true);
 			}
 		}
-		throw new ScriptException(`${url_s.length} URLs failed to fetch`);
+		utils.error(`${url_s.length} URLs failed to fetch`, null, true);
 	}
-	getJson = function(url_s) {
-		const response = this.get(url_s);
-		return JSON.parse(response);
+	getJson = function(url_s, headers = {}, name = null) {
+		headers["Accept"] = "application/json"
+		const response = this.get(url_s, headers, name);
+		return JSON.parse(response.body);
 	}
 }
 const utils = new Utils();
@@ -231,22 +244,22 @@ function getPlaceholderChannel(url = "", id = 0) {
 // endregion Placeholders
 
 // region API
-function getProtected(url) {
+function getProtected(url_s) {
 	if (!hasIntegrity()) {
 		fetchIntegrityValue();
 	}
-	const response = http.GET(url, headerDict);
+	const response = utils.get(url_s, headerDict);
 	if (!response.isOk)
-		throw new ScriptException(utils.log(`Failed to get ${url} [${response.code}]`));
+		utils.error(`Failed to get ${url_s} [${response.code}]`, null, true);
 	return response.body;
 }
-function getProtectedJson(url) {
-	return JSON.parse(getProtected(url));
+function getProtectedJson(url_s) {
+	return utils.getJson(url_s, headerDict);
 }
 function fetchIntegrityValue() {
-	const confResponse = http.GET(URL_API_CONFIG, {}); // headerDict
+	const confResponse = utils.get(URL_API_CONFIG, {}); // headerDict
 	if (!confResponse.isOk)
-		throw new ScriptException(utils.log(`Failed to get integrity value from ${URL_API_CONFIG} [${confResponse.code}]`));
+		utils.error(`Failed to get integrity value from ${URL_API_CONFIG} [${confResponse.code}]`, null, true);
 	const results = JSON.parse(confResponse.body);
 	headerDict[utils.atob(results.h)] = utils.atob(results.v);
 }
@@ -450,15 +463,14 @@ source.getContentDetails = function (url) {
 		subtitles: []
 	}
 	// PSProxy
+
 	if (_settings["use_yt_proxy"]) {
 		try {
 			var ytdata = yt.get(video_id)
-			if (ytdata === null) { utils.error(`Unable to fetch Youtube data for ${video_id}`, error); return new PlatformVideoDetails(pvd); }
+			if (ytdata === null) { utils.error(`Unable to fetch Youtube data for ${video_id}`, error, false); return new PlatformVideoDetails(pvd); }
 			const yt_data = ytdata["youtube-data"]["items"][0];
 			const yt_dislikes = ytdata["youtube-dislike"];
-			// const yt_video_id = utils.getLastPart(res);
-			// var ytvid = yt.getVideoInfo(yt_video_id);
-			// if (ytvid === null) { utils.error(`Unable to fetch Youtube data for ${video_id}`, error); return new PlatformVideoDetails(pvd); }
+			const yt_video_id = yt_data["id"];
 			const yt_viewCount = parseInt(yt_data["statistics"]["viewCount"]);
 			const yt_likeCount = parseInt(yt_data["statistics"]["likeCount"]);
 			const yt_dislikeCount = yt_dislikes["dislikes"];
@@ -474,10 +486,10 @@ source.getContentDetails = function (url) {
 			}
 			pvd["description"] =
 				`${url}?ref=grayjay (Likes: ${detailResults.video.likes_count} Comments: ${detailResults.video.comments_count})<br/>`+
-				`${res}?ref=grayjay (Views: ${yt_viewCount} Likes: ${yt_likeCount} Dislikes: ${yt_dislikeCount} Comments: ${yt_commentCount})<br/><br/>`
+				`https://youtu.be/${yt_video_id}?ref=grayjay (Views: ${yt_viewCount} Likes: ${yt_likeCount} Dislikes: ${yt_dislikeCount} Comments: ${yt_commentCount})<br/><br/>`
 				+ pvd["description"];
 		} catch (error) {
-			utils.error(`Unable to fetch Youtube data for ${video_id}`, error)
+			utils.error(`Unable to fetch Youtube data for ${video_id}: ${error}`, error, false)
 		}
 	}
 	return new PlatformVideoDetails(pvd);
@@ -529,19 +541,20 @@ function getCommentResults(contextUrl, page) {
 // region Youtube
 class Youtube {
 	urls = [
-		"https://ytapi.minopia.de/?videoId={videoId}",
-		"https://ytapi2.minopia.de/?videoId={videoId}"
+		"https://ytapi.minopia.de/?videoId={0}",
+		"https://ytapi2.minopia.de/?videoId={0}"
 	]
 	headers = {
-		'Accept': 'application/json'
+		'X-Powered-By': 'GrayJay',
+		'X-GrayJay-Source': PLATFORM_SHORT
 	};
 
 	constructor() {}
 
 	get = function(video_id) {
 		// try {
-			const urls = this.urls.map((item) => string.format(item, videoId=video_id));
-			const response = utils.getJson(urls);
+			const urls = this.urls.map((item) => utils.format(item, video_id));
+			const response = utils.getJson(urls, this.headers, "YTProxy");
 			return response || null;
 		// } catch (error) {
 		// 	utils.error("[Youtube] Error fetching video info", error);

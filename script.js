@@ -479,7 +479,7 @@ source.getContentDetails = function (url) {
 			const yt_subtitles = ytdata["youtube-transcripts"];
 			if (yt_subtitles) {
 				for (const [name, transcript] of Object.entries(yt_subtitles)) {
-					transcript_url = transcript["url"]
+					transcript_url = transcript["url"] + "&format=vtt"
 					pvd.subtitles.push({
 						name: name,
 						url: transcript_url,

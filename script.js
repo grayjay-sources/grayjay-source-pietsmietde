@@ -479,22 +479,15 @@ source.getContentDetails = function (url) {
 			const yt_subtitles = ytdata["youtube-transcripts"];
 			if (yt_subtitles) {
 				for (const [name, transcript] of Object.entries(yt_subtitles)) {
-					url = transcript["url"]
+					transcript_url = transcript["url"]
 					pvd.subtitles.push({
 						name: name,
-						url: url,
+						url: transcript_url,
 						format: 'text/vtt',
 						getSubtitles() {
-							try {
-								const subResp = utils.get(url);
-								if (!subResp.isOk) {
-									utils.error(`Failed to download subtitles from ${url}`);
-									return '';
-								}
-								return convertSRTtoVTT(subResp.body);
-							}
+							try { return utils.get(transcript_url)?.body ?? ''; }
 							catch (error) {
-								utils.error(`Failed to download subtitles from ${url}: ${error?.message}`, error);
+								utils.error(`Failed to download subtitles from ${transcript_url}: ${error?.message}`, error, false);
 								return '';
 							}
 						},

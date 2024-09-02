@@ -1,0 +1,87 @@
+{
+	"name": "Pietsmiet.de (dev)",
+	"description": "GrayJay source for Pietsmiet.de",
+	"author": "Bluscream",
+	"authorUrl": "https://bluscream.github.io",
+	"platformUrl": "https://www.pietsmiet.de/",
+	"tags": [],
+	"nsfw": false,
+	"sourceUrl": "./config.json",
+	"sourceUrl_": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/config.json",
+	"repositoryUrl": "https://github.com/Bluscream/grayjay-source-pietsmietde",
+	"scriptUrl": "./script.js",
+	"scriptUrl_": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/script.js",
+	"changelogUrl": "https://raw.githubusercontent.com/Bluscream/grayjay-source-pietsmietde/master/changelog.md",
+	"version": 30,
+	"iconUrl": "https://yt3.ggpht.com/-nm49M5AVi64/AAAAAAAAAAI/AAAAAAAAAAA/h0Scy91ZiZQ/s900-c-k-no-rj-c0xffffff/photo.jpg",
+	"id": "82b8fefc-24ae-11ee-be56-0242aa120002",
+	"scriptSignature": "",
+	"scriptPublicKey": "",
+	"packages": [
+		"Http",
+		"Utilities"
+	],
+	"allowEval": false,
+	"allowUrls": [
+		"pietsmiet.de",
+		"www.pietsmiet.de",
+		"lft1.pietcdn.de",
+		"challenges.cloudflare.com",
+		"rsms.me",
+		"local.adguard.org",
+		"unpkg.com",
+		"jubbie.de",
+		"cmp.inmobi.com",
+		"data-c53e1346fa.pietsmiet.de",
+		"static-cdn.jtvnw.net",
+		"www.google-analytics.com",
+		"c.amazon-adsystem.com",
+		"imasdk.googleapis.com",
+		"cdn.lib.getjad.io",
+		"pietcdn.de",
+		"widgets.outbrain.com",
+		"www.googletagservices.com",
+		"returnyoutubedislikeapi.com",
+		"yt.lemnoslife.com",
+		"pietsmiet.zaanposni.com",
+		"everywhere"
+	],
+	"subscriptionRateLimit": 120,
+	"authentication": {
+		"loginUrl": "https://www.pietsmiet.de/auth/login",
+		"cookiesToFind": [
+			"XSRF-TOKEN",
+			"psde_auth3"
+		],
+		"userAgent": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.230 Mobile Safari/537.36",
+		"loginWarning": "Login does not work (yet)."
+	},
+	"settings": [
+		{
+			"variable": "use_yt_proxy",
+			"name": "Enable Youtube Proxy",
+			"description": "Will make the source request the youtube proxy server to get additional metadata from youtube",
+			"type": "Boolean",
+			"default": "true",
+			"warningDialog": "This increases loading times significantly.\n\nTry disabling if you have issues when loading videos."
+		},
+		{
+			"variable": "yt_proxy_server",
+			"name": "Youtube Proxy Server",
+			"description": "Which Youtube Proxy Server to use",
+			"type": "Dropdown",
+			"default": "0",
+			"options": [
+				"ytapi.minopia.de",
+				"ytapi2.minopia.de"
+			]
+		},
+		{
+			"variable": "merge_yt_metrics",
+			"name": "Merge PSDE and YT metrics (requires YTProxy)",
+			"description": "Will merge the metrics from pietsmiet.de and youtube.com (views, likes, dislikes, etc) when available through PSProxy",
+			"type": "Boolean",
+			"default": "true"
+		}
+	]
+}

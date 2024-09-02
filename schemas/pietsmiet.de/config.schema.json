@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/APICONFIGResponse",
+    "definitions": {
+        "APICONFIGResponse": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "h": {
+                    "type": "string"
+                },
+                "v": {
+                    "type": "string"
+                },
+                "success": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "h",
+                "success",
+                "v"
+            ],
+            "title": "APICONFIGResponse"
+        }
+    }
+}

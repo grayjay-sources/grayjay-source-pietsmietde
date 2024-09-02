@@ -9,7 +9,7 @@ def recursive_dict_traversal(nested_dict: dict[str, Any], current_path=''):
         full_path = f"{current_path}.{key}" if current_path else key
         
         if isinstance(value, dict):
-            if "type" in value.keys():
+            if "type" in value.keys() and not key == "properties":
                 value["readOnly"] = True
                 print(f"{full_path}: {value}")
             
@@ -31,7 +31,7 @@ def process_json_files(directory):
                     
                     # Write the modified content back to the file
                     with open(file_path, 'w') as f_out:
-                        json.dump(content, f_out, indent=1)
+                        json.dump(content, f_out, indent=4)
                     
                     print(f"\nModified file: {file_path}")
 

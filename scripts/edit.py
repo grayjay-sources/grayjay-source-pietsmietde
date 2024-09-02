@@ -31,8 +31,11 @@ def process_json_files(directory):
                         
                         # You can add more processing here if needed
                         # print(f"Schema name: {content.get('title', 'Untitled')}")
-                        
+                        f.seek(0, 1)  # Seek to the end of the file
+                        # Write the new content
                         json.dump(content, f)
+                        # Reset the position to the beginning of the file
+                        f.seek(0)
 
                 except json.JSONDecodeError:
                     print(f"Error parsing JSON in file: {file_path}")

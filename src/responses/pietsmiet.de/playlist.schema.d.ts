@@ -8,18 +8,18 @@
 export type PlaylistSchema = PlaylistResponse;
 
 export interface PlaylistResponse {
-  playlist: Playlist;
-  success: boolean;
+	readonly playlist: Playlist;
+	readonly success: boolean;
 }
 export interface Playlist {
-  id: number;
-  slug: string;
-  title: string;
-  description: null;
-  type: number;
-  publish_date: string;
-  meta_tags: null;
-  url_slug: string;
-  videos_count: number;
-  followings_count: number;
+	readonly id: number;
+	readonly slug: string;
+	readonly title: string;
+	readonly description: null;
+	readonly type: number;
+	readonly publish_date: string;
+	readonly meta_tags: null;
+	readonly url_slug: string;
+	readonly videos_count: number;
+	readonly followings_count: number;
 }

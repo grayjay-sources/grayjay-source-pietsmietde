@@ -11,89 +11,89 @@ export type Title = string;
 export type URLSlug = string;
 
 export interface PlaylistsResponse {
-  data: Datum[];
-  links: Links;
-  meta: Meta;
-  success: boolean;
+	readonly data: Datum[];
+	readonly links: Links;
+	readonly meta: Meta;
+	readonly success: boolean;
 }
 export interface Datum {
-  id: number;
-  slug: string;
-  title: string;
-  description: null;
-  type: number;
-  publish_date: string;
-  meta_tags: null | string;
-  url_slug: string;
-  channel: Channel | null;
-  first_video: FirstVideo;
-  videos_count: number;
-  followings_count: number;
+	readonly id: number;
+	readonly slug: string;
+	readonly title: string;
+	readonly description: null;
+	readonly type: number;
+	readonly publish_date: string;
+	readonly meta_tags: null | string;
+	readonly url_slug: string;
+	readonly channel: Channel | null;
+	readonly first_video: FirstVideo;
+	readonly videos_count: number;
+	readonly followings_count: number;
 }
 export interface Channel {
-  id: number;
-  slug: Slug;
-  title: Title;
-  description: null;
-  url_slug: URLSlug;
-  videos_count: null;
-  followings_count: null;
+	readonly id: number;
+	readonly slug: Slug;
+	readonly title: Title;
+	readonly description: null;
+	readonly url_slug: URLSlug;
+	readonly videos_count: null;
+	readonly followings_count: null;
 }
 export interface FirstVideo {
-  id: number;
-  slug: string;
-  url_slug: string;
-  short_url: string;
-  url: string;
-  title: string;
-  featured: boolean;
-  remote: boolean;
-  remote_url: null;
-  description: null;
-  likes_count: null;
-  comments_count: null;
-  thumbnail: Thumbnail;
-  publish_date: string;
-  preferences: Preferences;
+	readonly id: number;
+	readonly slug: string;
+	readonly url_slug: string;
+	readonly short_url: string;
+	readonly url: string;
+	readonly title: string;
+	readonly featured: boolean;
+	readonly remote: boolean;
+	readonly remote_url: null;
+	readonly description: null;
+	readonly likes_count: null;
+	readonly comments_count: null;
+	readonly thumbnail: Thumbnail;
+	readonly publish_date: string;
+	readonly preferences: Preferences;
 }
 export interface Thumbnail {
-  id: number;
-  collection: Collection;
-  remote_url: null;
-  variations: Variation[];
+	readonly id: number;
+	readonly collection: Collection;
+	readonly remote_url: null;
+	readonly variations: Variation[];
 }
 export interface Variation {
-  height: number;
-  file: string;
-  url: string;
+	readonly height: number;
+	readonly file: string;
+	readonly url: string;
 }
 export interface Preferences {
-  comments: boolean;
-  likes: boolean;
-  tags: boolean;
-  shares: boolean;
-  clips: boolean;
+	readonly comments: boolean;
+	readonly likes: boolean;
+	readonly tags: boolean;
+	readonly shares: boolean;
+	readonly clips: boolean;
 }
 export interface Links {
-  first: string;
-  last: string;
-  prev: null;
-  next: string;
+	readonly first: string;
+	readonly last: string;
+	readonly prev: null;
+	readonly next: string;
 }
 export interface Meta {
-  current_page: number;
-  from: number;
-  last_page: number;
-  links: Link[];
-  path: string;
-  per_page: number;
-  to: number;
-  total: number;
+	readonly current_page: number;
+	readonly from: number;
+	readonly last_page: number;
+	readonly links: Link[];
+	readonly path: string;
+	readonly per_page: number;
+	readonly to: number;
+	readonly total: number;
 }
 export interface Link {
-  url: null | string;
-  label: string;
-  active: boolean;
+	readonly url: null | string;
+	readonly label: string;
+	readonly active: boolean;
 }
 
 export const enum Collection {

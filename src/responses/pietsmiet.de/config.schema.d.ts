@@ -8,7 +8,7 @@
 export type ConfigSchema = ConfigResponse;
 
 export interface ConfigResponse {
-  h: string;
-  v: string;
-  success: boolean;
+	readonly h: string;
+	readonly v: string;
+	readonly success: boolean;
 }

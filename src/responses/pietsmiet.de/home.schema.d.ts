@@ -8,83 +8,83 @@
 export type HomeSchema = HomeResponse;
 
 export interface HomeResponse {
-  data: Datum[];
-  links: Links;
-  meta: Meta;
-  success: boolean;
+	readonly data: Datum[];
+	readonly links: Links;
+	readonly meta: Meta;
+	readonly success: boolean;
 }
 export interface Datum {
-  id: number;
-  slug: string;
-  url_slug: string;
-  short_url: string;
-  url: string;
-  title: string;
-  featured: boolean;
-  remote: boolean;
-  remote_url: null;
-  description: string;
-  duration: number;
-  duration_pretty: string;
-  likes_count: number;
-  comments_count: number;
-  thumbnail: Thumbnail;
-  perspectives: Perspective[];
-  channels: Channel[];
-  publish_date: string;
-  preferences: Preferences;
+	readonly id: number;
+	readonly slug: string;
+	readonly url_slug: string;
+	readonly short_url: string;
+	readonly url: string;
+	readonly title: string;
+	readonly featured: boolean;
+	readonly remote: boolean;
+	readonly remote_url: null;
+	readonly description: string;
+	readonly duration: number;
+	readonly duration_pretty: string;
+	readonly likes_count: number;
+	readonly comments_count: number;
+	readonly thumbnail: Thumbnail;
+	readonly perspectives: Perspective[];
+	readonly channels: Channel[];
+	readonly publish_date: string;
+	readonly preferences: Preferences;
 }
 export interface Thumbnail {
-  id: number;
-  collection: string;
-  remote_url: null;
-  variations: Variation[];
+	readonly id: number;
+	readonly collection: string;
+	readonly remote_url: null;
+	readonly variations: Variation[];
 }
 export interface Variation {
-  height: number;
-  file: string;
-  url: string;
+	readonly height: number;
+	readonly file: string;
+	readonly url: string;
 }
 export interface Perspective {
-  id: number;
-  title: null;
-  title_pluralized: string;
-  main: boolean;
+	readonly id: number;
+	readonly title: null;
+	readonly title_pluralized: string;
+	readonly main: boolean;
 }
 export interface Channel {
-  id: number;
-  slug: string;
-  title: string;
-  description: null;
-  url_slug: string;
-  videos_count: null;
-  followings_count: null;
+	readonly id: number;
+	readonly slug: string;
+	readonly title: string;
+	readonly description: null;
+	readonly url_slug: string;
+	readonly videos_count: null;
+	readonly followings_count: null;
 }
 export interface Preferences {
-  comments: boolean;
-  likes: boolean;
-  tags: boolean;
-  shares: boolean;
-  clips: boolean;
+	readonly comments: boolean;
+	readonly likes: boolean;
+	readonly tags: boolean;
+	readonly shares: boolean;
+	readonly clips: boolean;
 }
 export interface Links {
-  first: string;
-  last: string;
-  prev: null;
-  next: string;
+	readonly first: string;
+	readonly last: string;
+	readonly prev: null;
+	readonly next: string;
 }
 export interface Meta {
-  current_page: number;
-  from: number;
-  last_page: number;
-  links: Link[];
-  path: string;
-  per_page: number;
-  to: number;
-  total: number;
+	readonly current_page: number;
+	readonly from: number;
+	readonly last_page: number;
+	readonly links: Link[];
+	readonly path: string;
+	readonly per_page: number;
+	readonly to: number;
+	readonly total: number;
 }
 export interface Link {
-  url: null | string;
-  label: string;
-  active: boolean;
+	readonly url: null | string;
+	readonly label: string;
+	readonly active: boolean;
 }

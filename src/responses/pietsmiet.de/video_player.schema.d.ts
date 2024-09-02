@@ -8,74 +8,74 @@
 export type VideoPlayerSchema = VideoPlayerResponse;
 
 export interface VideoPlayerResponse {
-  options: Options;
-  advertising: Advertising[];
-  success: boolean;
+	readonly options: Options;
+	readonly advertising: Advertising[];
+	readonly success: boolean;
 }
 export interface Options {
-  visual: Visual;
-  generic: Generic;
-  tracks: Track[];
+	readonly visual: Visual;
+	readonly generic: Generic;
+	readonly tracks: Track[];
 }
 export interface Visual {
-  fluid: boolean;
-  responsive: boolean;
-  aspect_ratio: string;
-  thumbnail: string;
-  brand: Brand;
+	readonly fluid: boolean;
+	readonly responsive: boolean;
+	readonly aspect_ratio: string;
+	readonly thumbnail: string;
+	readonly brand: Brand;
 }
 export interface Brand {
-  logo: string;
-  color: string;
-  link: string;
+	readonly logo: string;
+	readonly color: string;
+	readonly link: string;
 }
 export interface Generic {
-  autoplay: boolean;
-  muted: boolean;
-  controls: boolean;
-  loop: boolean;
-  playback_rates: number[];
-  analytics: Analytics;
-  chromecast: Chromecast;
+	readonly autoplay: boolean;
+	readonly muted: boolean;
+	readonly controls: boolean;
+	readonly loop: boolean;
+	readonly playback_rates: number[];
+	readonly analytics: Analytics;
+	readonly chromecast: Chromecast;
 }
 export interface Analytics {
-  google: string;
+	readonly google: string;
 }
 export interface Chromecast {
-  enabled: boolean;
-  receiver_application_id: string;
+	readonly enabled: boolean;
+	readonly receiver_application_id: string;
 }
 export interface Track {
-  id: number;
-  title: null;
-  full_title: string;
-  pluralized_title: string;
-  main: boolean;
-  sources: Sources;
-  qualities: Quality[];
+	readonly id: number;
+	readonly title: null;
+	readonly full_title: string;
+	readonly pluralized_title: string;
+	readonly main: boolean;
+	readonly sources: Sources;
+	readonly qualities: Quality[];
 }
 export interface Sources {
-  hls: Dash;
-  dash: Dash;
-  mp4: null;
+	readonly hls: Dash;
+	readonly dash: Dash;
+	readonly mp4: null;
 }
 export interface Dash {
-  src: string;
-  type: string;
-  labels: string[];
-  labels_bitrate: LabelsBitrate;
+	readonly src: string;
+	readonly type: string;
+	readonly labels: string[];
+	readonly labels_bitrate: LabelsBitrate;
 }
 export interface LabelsBitrate {
-  "1645": string;
+	readonly "1645": string;
 }
 export interface Quality {
-  label: string;
-  bitrate: number;
-  framerate: number;
+	readonly label: string;
+	readonly bitrate: number;
+	readonly framerate: number;
 }
 export interface Advertising {
-  time: number;
-  tag: string;
-  nugg: boolean;
-  played: boolean;
+	readonly time: number;
+	readonly tag: string;
+	readonly nugg: boolean;
+	readonly played: boolean;
 }

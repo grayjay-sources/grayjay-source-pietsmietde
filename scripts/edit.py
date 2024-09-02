@@ -8,7 +8,7 @@ def add_readonly_to_fields(text):
     pattern = r'(?:(\s*:)?\s*)(\w+)\s*:\s*(.+);'
     
     def replacement(match):
-        return f'{match.group(1)}readonly {match.group(2)}: {match.group(3)};'
+        return f'\n\treadonly {match.group(2)}: {match.group(3)};'
     
     result = re.sub(pattern, replacement, text)
     return result

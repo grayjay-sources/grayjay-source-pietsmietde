@@ -8,80 +8,80 @@
 export type CommentsSchema = CommentsResponse;
 
 export interface CommentsResponse {
-  data: Datum[];
-  links: Links;
-  meta: Meta;
-  success: boolean;
+	readonly data: Datum[];
+	readonly links: Links;
+	readonly meta: Meta;
+	readonly success: boolean;
 }
 export interface Datum {
-  id: number;
-  created_at: string;
-  text: string;
-  approved: boolean;
-  timestamp: number | null;
-  pinned: boolean;
-  count_replies: number;
-  likes_count: number;
-  dislikes_count: number;
-  user: User;
-  is_reply: boolean;
-  reply: number | null;
+	readonly id: number;
+	readonly created_at: string;
+	readonly text: string;
+	readonly approved: boolean;
+	readonly timestamp: number | null;
+	readonly pinned: boolean;
+	readonly count_replies: number;
+	readonly likes_count: number;
+	readonly dislikes_count: number;
+	readonly user: User;
+	readonly is_reply: boolean;
+	readonly reply: number | null;
 }
 export interface User {
-  id: number;
-  url_slug: string;
-  username: string;
-  name: string;
-  name_possessive: string;
-  description: null;
-  team: boolean;
-  blocked: boolean;
-  public_profile: boolean;
-  banner: null;
-  avatar: Avatar | null;
-  reputation: number;
-  reputation_pretty: string;
-  preferences: Preferences;
-  gifted_subscriptions_count: number;
-  created_at: string;
-  updated_at: string;
+	readonly id: number;
+	readonly url_slug: string;
+	readonly username: string;
+	readonly name: string;
+	readonly name_possessive: string;
+	readonly description: null;
+	readonly team: boolean;
+	readonly blocked: boolean;
+	readonly public_profile: boolean;
+	readonly banner: null;
+	readonly avatar: Avatar | null;
+	readonly reputation: number;
+	readonly reputation_pretty: string;
+	readonly preferences: Preferences;
+	readonly gifted_subscriptions_count: number;
+	readonly created_at: string;
+	readonly updated_at: string;
   subscribed?: boolean;
   subscription_streak?: number;
   subscription_supporter?: boolean;
 }
 export interface Avatar {
-  id: number;
-  collection: string;
-  remote_url: null | string;
-  variations: Variation[];
+	readonly id: number;
+	readonly collection: string;
+	readonly remote_url: null | string;
+	readonly variations: Variation[];
 }
 export interface Variation {
-  height: number;
-  url: string;
+	readonly height: number;
+	readonly url: string;
   file?: string;
 }
 export interface Preferences {
-  public_profile: boolean;
-  subscription_enable_identification: boolean;
+	readonly public_profile: boolean;
+	readonly subscription_enable_identification: boolean;
 }
 export interface Links {
-  first: string;
-  last: string;
-  prev: null;
-  next: null;
+	readonly first: string;
+	readonly last: string;
+	readonly prev: null;
+	readonly next: null;
 }
 export interface Meta {
-  current_page: number;
-  from: number;
-  last_page: number;
-  links: Link[];
-  path: string;
-  per_page: number;
-  to: number;
-  total: number;
+	readonly current_page: number;
+	readonly from: number;
+	readonly last_page: number;
+	readonly links: Link[];
+	readonly path: string;
+	readonly per_page: number;
+	readonly to: number;
+	readonly total: number;
 }
 export interface Link {
-  url: null | string;
-  label: string;
-  active: boolean;
+	readonly url: null | string;
+	readonly label: string;
+	readonly active: boolean;
 }

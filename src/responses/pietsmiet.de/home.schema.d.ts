@@ -5,17 +5,12 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type Search = SearchResponse;
-export type Collection = "thumbnail";
-export type Slug = "pietsmiet" | "pietsmiet-tv";
-export type Title = "PietSmiet" | "PietSmiet TV";
-export type URLSlug = "9-pietsmiet" | "10-pietsmiet-tv";
+export type HomeSchema = HomeResponse;
 
-export interface SearchResponse {
+export interface HomeResponse {
   data: Datum[];
   links: Links;
   meta: Meta;
-  counts: Counts;
   success: boolean;
 }
 export interface Datum {
@@ -28,17 +23,20 @@ export interface Datum {
   featured: boolean;
   remote: boolean;
   remote_url: null;
-  description: null;
-  likes_count: null;
-  comments_count: null;
+  description: string;
+  duration: number;
+  duration_pretty: string;
+  likes_count: number;
+  comments_count: number;
   thumbnail: Thumbnail;
+  perspectives: Perspective[];
   channels: Channel[];
   publish_date: string;
   preferences: Preferences;
 }
 export interface Thumbnail {
   id: number;
-  collection: Collection;
+  collection: string;
   remote_url: null;
   variations: Variation[];
 }
@@ -47,12 +45,18 @@ export interface Variation {
   file: string;
   url: string;
 }
+export interface Perspective {
+  id: number;
+  title: null;
+  title_pluralized: string;
+  main: boolean;
+}
 export interface Channel {
   id: number;
-  slug: Slug;
-  title: Title;
+  slug: string;
+  title: string;
   description: null;
-  url_slug: URLSlug;
+  url_slug: string;
   videos_count: null;
   followings_count: null;
 }
@@ -83,13 +87,4 @@ export interface Link {
   url: null | string;
   label: string;
   active: boolean;
-}
-export interface Counts {
-  videos: number;
-  articles: number;
-  playlists: number;
-  channels: number;
-  podcasts: number;
-  tags: number;
-  suggestions: number;
 }

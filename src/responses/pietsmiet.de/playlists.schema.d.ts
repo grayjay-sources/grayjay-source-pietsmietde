@@ -5,9 +5,13 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type Channels = ChannelsResponse;
+export type PlaylistsSchema = PlaylistsResponse;
+export type Slug = string;
+export type Title = string;
+export type URLSlug = string;
+export type Collection = "thumbnail";
 
-export interface ChannelsResponse {
+export interface PlaylistsResponse {
   data: Datum[];
   links: Links;
   meta: Meta;
@@ -18,11 +22,23 @@ export interface Datum {
   slug: string;
   title: string;
   description: null;
+  type: number;
+  publish_date: string;
+  meta_tags: null | string;
   url_slug: string;
-  thumbnail: null;
+  channel: Channel | null;
   first_video: FirstVideo;
   videos_count: number;
   followings_count: number;
+}
+export interface Channel {
+  id: number;
+  slug: Slug;
+  title: Title;
+  description: null;
+  url_slug: URLSlug;
+  videos_count: null;
+  followings_count: null;
 }
 export interface FirstVideo {
   id: number;
@@ -43,7 +59,7 @@ export interface FirstVideo {
 }
 export interface Thumbnail {
   id: number;
-  collection: string;
+  collection: Collection;
   remote_url: null;
   variations: Variation[];
 }
@@ -63,7 +79,7 @@ export interface Links {
   first: string;
   last: string;
   prev: null;
-  next: null;
+  next: string;
 }
 export interface Meta {
   current_page: number;

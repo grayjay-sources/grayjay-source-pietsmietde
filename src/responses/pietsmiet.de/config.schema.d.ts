@@ -5,7 +5,7 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type Config = ConfigResponse;
+export type ConfigSchema = ConfigResponse;
 
 export interface ConfigResponse {
   h: string;

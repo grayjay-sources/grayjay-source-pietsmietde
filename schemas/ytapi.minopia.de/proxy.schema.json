@@ -1,6 +1,10 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$ref": "#/definitions/YoutubeAPIProxyResponse",
+    "allOf": [
+        {
+            "$ref": "#/definitions/YoutubeAPIProxyResponse"
+        }
+    ],
     "definitions": {
         "YoutubeAPIProxyResponse": {
             "type": "object",

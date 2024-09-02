@@ -5,7 +5,7 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type VideoDetails = VideoDetailsResponse;
+export type VideoDetailsSchema = VideoDetailsResponse;
 
 export interface VideoDetailsResponse {
   video: Video;

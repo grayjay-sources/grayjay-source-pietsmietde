@@ -5,9 +5,9 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type Comments = CommentsResponse;
+export type ChannelsSchema = ChannelsResponse;
 
-export interface CommentsResponse {
+export interface ChannelsResponse {
   data: Datum[];
   links: Links;
   meta: Meta;
@@ -15,54 +15,49 @@ export interface CommentsResponse {
 }
 export interface Datum {
   id: number;
-  created_at: string;
-  text: string;
-  approved: boolean;
-  timestamp: number | null;
-  pinned: boolean;
-  count_replies: number;
-  likes_count: number;
-  dislikes_count: number;
-  user: User;
-  is_reply: boolean;
-  reply: number | null;
-}
-export interface User {
-  id: number;
-  url_slug: string;
-  username: string;
-  name: string;
-  name_possessive: string;
+  slug: string;
+  title: string;
   description: null;
-  team: boolean;
-  blocked: boolean;
-  public_profile: boolean;
-  banner: null;
-  avatar: Avatar | null;
-  reputation: number;
-  reputation_pretty: string;
-  preferences: Preferences;
-  gifted_subscriptions_count: number;
-  created_at: string;
-  updated_at: string;
-  subscribed?: boolean;
-  subscription_streak?: number;
-  subscription_supporter?: boolean;
+  url_slug: string;
+  thumbnail: null;
+  first_video: FirstVideo;
+  videos_count: number;
+  followings_count: number;
 }
-export interface Avatar {
+export interface FirstVideo {
+  id: number;
+  slug: string;
+  url_slug: string;
+  short_url: string;
+  url: string;
+  title: string;
+  featured: boolean;
+  remote: boolean;
+  remote_url: null;
+  description: null;
+  likes_count: null;
+  comments_count: null;
+  thumbnail: Thumbnail;
+  publish_date: string;
+  preferences: Preferences;
+}
+export interface Thumbnail {
   id: number;
   collection: string;
-  remote_url: null | string;
+  remote_url: null;
   variations: Variation[];
 }
 export interface Variation {
   height: number;
+  file: string;
   url: string;
-  file?: string;
 }
 export interface Preferences {
-  public_profile: boolean;
-  subscription_enable_identification: boolean;
+  comments: boolean;
+  likes: boolean;
+  tags: boolean;
+  shares: boolean;
+  clips: boolean;
 }
 export interface Links {
   first: string;

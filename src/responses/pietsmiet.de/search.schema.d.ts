@@ -5,40 +5,20 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type Playlists = PlaylistsResponse;
-export type Slug = "pietsmiet" | "pietstream" | "best-of-pietsmiet";
+export type SearchSchema = SearchResponse;
 export type Collection = "thumbnail";
+export type Slug = "pietsmiet" | "pietsmiet-tv";
+export type Title = "PietSmiet" | "PietSmiet TV";
+export type URLSlug = "9-pietsmiet" | "10-pietsmiet-tv";
 
-export interface PlaylistsResponse {
+export interface SearchResponse {
   data: Datum[];
   links: Links;
   meta: Meta;
+  counts: Counts;
   success: boolean;
 }
 export interface Datum {
-  id: number;
-  slug: string;
-  title: string;
-  description: null;
-  type: number;
-  publish_date: string;
-  meta_tags: null | string;
-  url_slug: string;
-  channel: Channel | null;
-  first_video: FirstVideo;
-  videos_count: number;
-  followings_count: number;
-}
-export interface Channel {
-  id: number;
-  slug: Slug;
-  title: string;
-  description: null;
-  url_slug: string;
-  videos_count: null;
-  followings_count: null;
-}
-export interface FirstVideo {
   id: number;
   slug: string;
   url_slug: string;
@@ -52,6 +32,7 @@ export interface FirstVideo {
   likes_count: null;
   comments_count: null;
   thumbnail: Thumbnail;
+  channels: Channel[];
   publish_date: string;
   preferences: Preferences;
 }
@@ -65,6 +46,15 @@ export interface Variation {
   height: number;
   file: string;
   url: string;
+}
+export interface Channel {
+  id: number;
+  slug: Slug;
+  title: Title;
+  description: null;
+  url_slug: URLSlug;
+  videos_count: null;
+  followings_count: null;
 }
 export interface Preferences {
   comments: boolean;
@@ -93,4 +83,13 @@ export interface Link {
   url: null | string;
   label: string;
   active: boolean;
+}
+export interface Counts {
+  videos: number;
+  articles: number;
+  playlists: number;
+  channels: number;
+  podcasts: number;
+  tags: number;
+  suggestions: number;
 }

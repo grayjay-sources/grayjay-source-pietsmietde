@@ -5,7 +5,7 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type Playlist = PlaylistResponse;
+export type PlaylistSchema = PlaylistResponse;
 
 export interface PlaylistResponse {
   playlist: Playlist;

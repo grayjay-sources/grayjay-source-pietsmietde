@@ -426,6 +426,7 @@
                 "pietstream",
                 "best-of-pietsmiet"
             ],
+            "pattern": "^[a-z0-9\\-]+$",
             "title": "Slug"
         },
         "Title": {
@@ -444,6 +445,7 @@
                 "44-pietstream",
                 "12-best-of-pietsmiet"
             ],
+            "pattern": "^\\d+(?:-[a-z0-9]+)$",
             "title": "URLSlug"
         },
         "Collection": {

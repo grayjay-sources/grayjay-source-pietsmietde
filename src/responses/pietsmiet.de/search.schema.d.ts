@@ -7,9 +7,9 @@
 
 export type SearchSchema = SearchResponse;
 export type Collection = "thumbnail";
-export type Slug = "pietsmiet" | "pietsmiet-tv";
-export type Title = "PietSmiet" | "PietSmiet TV";
-export type URLSlug = "9-pietsmiet" | "10-pietsmiet-tv";
+export type Slug = string;
+export type Title = string;
+export type URLSlug = string;
 
 export interface SearchResponse {
   data: Datum[];

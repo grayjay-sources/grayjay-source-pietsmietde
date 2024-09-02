@@ -397,15 +397,16 @@
         },
         "Slug": {
             "type": "string",
-            "enum": [
+            "examples": [
                 "pietsmiet",
                 "pietsmiet-tv"
             ],
+            "pattern": "^[a-z0-9\\-]+$",
             "title": "Slug"
         },
         "Title": {
             "type": "string",
-            "enum": [
+            "examples": [
                 "PietSmiet",
                 "PietSmiet TV"
             ],
@@ -413,10 +414,11 @@
         },
         "URLSlug": {
             "type": "string",
-            "enum": [
+            "examples": [
                 "9-pietsmiet",
                 "10-pietsmiet-tv"
             ],
+            "pattern": "^\\d+(?:-[a-z0-9]+)$",
             "title": "URLSlug"
         },
         "Collection": {

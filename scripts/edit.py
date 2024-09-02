@@ -34,7 +34,7 @@ def process_json_files(directory):
                         # print(f"Schema name: {content.get('title', 'Untitled')}")
                         f.seek(0, 1)  # Seek to the end of the file
                         # Write the new content
-                        json.dump(content, f, indent=1)
+                        json.dump(content, f, indent=2)
                         # Reset the position to the beginning of the file
                         f.seek(0)
 

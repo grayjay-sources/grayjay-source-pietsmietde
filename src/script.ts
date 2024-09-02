@@ -4,7 +4,7 @@ const PLATFORM_SHORT: string = "PSDE";
 const LIMIT_VIDEOS: number = 500;
 const LIMIT_COMMENTS: number = 100;
 const ORDER_VIDEOS: string = "latest";
-const ORDER_COMMENTS: string = "latest"; 
+const ORDER_COMMENTS: string = "latest";
 const STREAM_LANGUAGE: string = "German";
 
 const URL_BASE: string = "https://www.pietsmiet.de";
@@ -12,22 +12,22 @@ const URL_CHANNEL: string = `${URL_BASE}/videos/channels/`;
 const URL_PROFILE: string = `${URL_BASE}/profile/`;
 
 const URL_API_CONFIG: string = `${URL_BASE}/api/v1/config/i`;
-const URL_API_CHANNELS: string = `${URL_BASE}/api/v1/videos/channels?page=`; 
-const URL_API_HOME: string = `${URL_BASE}/api/v1/videos?limit=${LIMIT_VIDEOS}&order=${ORDER_VIDEOS}&prioritize_featured=0&page=`; 
+const URL_API_CHANNELS: string = `${URL_BASE}/api/v1/videos/channels?page=`;
+const URL_API_HOME: string = `${URL_BASE}/api/v1/videos?limit=${LIMIT_VIDEOS}&order=${ORDER_VIDEOS}&prioritize_featured=0&page=`;
 const URL_API_PLAYLIST: string = `${URL_BASE}/api/v1/videos/playlists/`;
 const URL_API_PLAYLISTS: string = `${URL_BASE}/api/v1/videos/playlists?limit=${LIMIT_VIDEOS}&order=${ORDER_VIDEOS}&page=1`;
-const URL_API_VIDEO_DETAILS: string = `${URL_BASE}/api/v1/videos/`; 
+const URL_API_VIDEO_DETAILS: string = `${URL_BASE}/api/v1/videos/`;
 const URL_API_VIDEO_PLAYER: string = `${URL_BASE}/api/v1/utility/player?preset=quality&video=`;
-const URL_API_COMMENTS: string = `${URL_BASE}/api/v1/utility/comments?order=${ORDER_COMMENTS}&type=video&limit=${LIMIT_COMMENTS}&id=`; 
-const URL_API_SEARCH: string = `${URL_BASE}/api/v1/search?page=`; 
+const URL_API_COMMENTS: string = `${URL_BASE}/api/v1/utility/comments?order=${ORDER_COMMENTS}&type=video&limit=${LIMIT_COMMENTS}&id=`;
+const URL_API_SEARCH: string = `${URL_BASE}/api/v1/search?page=`;
 
 const URL_ICON: string = `${URL_BASE}/assets/pietsmiet/brand/icon.svg`;
-const URL_ICON_PNG: string = "https://i.vgy.me/CZ2jjB.png"; 
+const URL_ICON_PNG: string = "https://i.vgy.me/CZ2jjB.png";
 const URL_BANNER: string = `${URL_BASE}/assets/pietsmiet/brand/wordmark-plain-light-detail.svg`;
-const URL_BANNER_PNG: string = "https://i.imgur.com/8D68cRq.png"; 
+const URL_BANNER_PNG: string = "https://i.imgur.com/8D68cRq.png";
 const URL_PLACEHOLDER_AVATAR: string = `${URL_BASE}/assets/pietsmiet/placeholder-1-1.jpg`;
 
-const REGEX_VIDEO_URL: RegExp = /https:\/\/www\.pietsmiet\.de\/videos\/(\d+)(.*)/; 
+const REGEX_VIDEO_URL: RegExp = /https:\/\/www\.pietsmiet\.de\/videos\/(\d+)(.*)/;
 const REGEX_CHANNEL_URL: RegExp = /https:\/\/www\.pietsmiet\.de\/videos\/channels\/(.*)/;
 const REGEX_PLAYLIST_URL: RegExp = /https:\/\/www\.pietsmiet\.de\/videos\/playlists\/(.*)/;
 
@@ -40,12 +40,12 @@ const HEADER_INTEGRITY: string = 'X-Origin-Integrity';
 let headerDict: { [key: string]: string } = {};
 
 const channelIcons: { [key: number]: string } = {
-	8: "https://yt3.googleusercontent.com/ytc/AIdro_nMgWqMfXY78nUTzabB0TvSF1OHeUtMc93WKpG2hnbRW3k=s176-c-k-c0x00ffffff-no-rj", 
-	9: "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj", 
-	10: "https://yt3.googleusercontent.com/ytc/AIdro_nI1TZILbTDn38tNbzDb_K2rxe6c5V7UGn4hVjG2DX4jg=s176-c-k-c0x00ffffff-no-rj", 
-	12: "https://yt3.googleusercontent.com/ytc/AIdro_kej_tg4mojF1qht3fNepeKyR10sAlVK4oBwUYL2hAeSg=s176-c-k-c0x00ffffff-no-rj", 
-	37: URL_ICON_PNG, 
-	44: "https://yt3.googleusercontent.com/ytc/AIdro_nnAWki_jzSkHEzvkkT7TDlb-WxDBIc-rcqhFoEsp0tMg=s176-c-k-c0x00ffffff-no-rj" 
+	8: "https://yt3.googleusercontent.com/ytc/AIdro_nMgWqMfXY78nUTzabB0TvSF1OHeUtMc93WKpG2hnbRW3k=s176-c-k-c0x00ffffff-no-rj",
+	9: "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
+	10: "https://yt3.googleusercontent.com/ytc/AIdro_nI1TZILbTDn38tNbzDb_K2rxe6c5V7UGn4hVjG2DX4jg=s176-c-k-c0x00ffffff-no-rj",
+	12: "https://yt3.googleusercontent.com/ytc/AIdro_kej_tg4mojF1qht3fNepeKyR10sAlVK4oBwUYL2hAeSg=s176-c-k-c0x00ffffff-no-rj",
+	37: URL_ICON_PNG,
+	44: "https://yt3.googleusercontent.com/ytc/AIdro_nnAWki_jzSkHEzvkkT7TDlb-WxDBIc-rcqhFoEsp0tMg=s176-c-k-c0x00ffffff-no-rj"
 };
 
 let cachedChannels: { [key: string]: any } = {};
@@ -235,7 +235,7 @@ function parseAuthor(videoDict: any): PlatformAuthorLink {
 		getPlatformId(channel.id),
 		channel.title,
 		url,
-		channelIcons[channel.id], 
+		channelIcons[channel.id],
 		cachedChannel.subscribers
 	);
 }
@@ -249,7 +249,7 @@ function getPlaceholderAuthor(): PlatformAuthorLink {
 		platformPlaylistId,
 		PLATFORM,
 		URL_BASE,
-		channelIcons[37] 
+		channelIcons[37]
 	);
 }
 

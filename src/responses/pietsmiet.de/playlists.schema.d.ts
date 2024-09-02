@@ -97,5 +97,5 @@ export interface Link {
 }
 
 export const enum Collection {
-  thumbnail = "thumbnail"
+	thumbnail = "thumbnail"
 }

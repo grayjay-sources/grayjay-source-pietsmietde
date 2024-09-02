@@ -94,5 +94,5 @@ export interface Counts {
 }
 
 export const enum Collection {
-  thumbnail = "thumbnail"
+	thumbnail = "thumbnail"
 }

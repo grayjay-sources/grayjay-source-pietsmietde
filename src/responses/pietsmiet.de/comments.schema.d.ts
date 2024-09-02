@@ -45,9 +45,9 @@ export interface User {
 	readonly gifted_subscriptions_count: number;
 	readonly created_at: string;
 	readonly updated_at: string;
-  subscribed?: boolean;
-  subscription_streak?: number;
-  subscription_supporter?: boolean;
+	subscribed?: boolean;
+	subscription_streak?: number;
+	subscription_supporter?: boolean;
 }
 export interface Avatar {
 	readonly id: number;
@@ -58,7 +58,7 @@ export interface Avatar {
 export interface Variation {
 	readonly height: number;
 	readonly url: string;
-  file?: string;
+	file?: string;
 }
 export interface Preferences {
 	readonly public_profile: boolean;

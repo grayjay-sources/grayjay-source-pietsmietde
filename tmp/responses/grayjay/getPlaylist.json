@@ -1,458 +1,458 @@
 {
-    "contentType": 4,
-    "id": {
-       "platform": "PietsmietDE",
-       "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
-       "value": "154863",
-       "claimType": 0,
-       "claimFieldType": -1
-    },
-    "name": "Crash Team Challenge in Wreckfest",
-    "author": {
-       "id": {
-          "platform": "PietsmietDE",
-          "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
-          "value": "9",
-          "claimType": 0,
-          "claimFieldType": -1
-       },
-       "name": "PietSmiet",
-       "url": "https://www.pietsmiet.de/videos/channels/9-pietsmiet",
-       "thumbnail": "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
-       "subscribers": 926
-    },
-    "datetime": 0,
-    "url": "https://www.pietsmiet.de/videos/playlists/154863-crash-team-challenge-in-wreckfest",
-    "plugin_type": "PlatformPlaylistDetails",
-    "videoCount": 9,
-    "contents": {
-       "plugin_type": "VideoPager",
-       "results": [
-          {
-             "contentType": 1,
-             "id": {
-                "platform": "PietsmietDE",
-                "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
-                "value": "78697",
-                "claimType": 0,
-                "claimFieldType": -1
-             },
-             "name": "Crash Team Challenge 9 / CTC 9 in Wreckfest",
-             "thumbnails": {
-                "sources": [
-                   {
-                      "url": "https://www.pietsmiet.de/img/6410bf8d9432fccc8d0e28523be2d374bf52b0a9.jpg?i=248138",
-                      "quality": 720
-                   },
-                   {
-                      "url": "https://www.pietsmiet.de/img/5f9c1870b8b62aa0c3f32aea96c77e82781544af.jpg?i=248138",
-                      "quality": 360
-                   },
-                   {
-                      "url": "https://www.pietsmiet.de/img/198d73007b4afb35560041ce286c54c90b40f4c0.jpg?i=248138",
-                      "quality": 144
-                   }
-                ]
-             },
-             "author": {
-                "id": {
-                   "platform": "PietsmietDE",
-                   "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
-                   "value": "9",
-                   "claimType": 0,
-                   "claimFieldType": -1
-                },
-                "name": "PietSmiet",
-                "url": "https://www.pietsmiet.de/videos/channels/9-pietsmiet",
-                "thumbnail": "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
-                "subscribers": 926
-             },
-             "datetime": 0,
-             "url": "https://www.pietsmiet.de/videos/78697-crash-team-challenge-9-ctc-9-in-wreckfest",
-             "plugin_type": "PlatformVideo",
-             "shareUrl": "http://ptsmt.de/v/78697",
-             "duration": 9746,
-             "viewCount": -1,
-             "isLive": false
-          },
-          {
-             "contentType": 1,
-             "id": {
-                "platform": "PietsmietDE",
-                "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
-                "value": "77416",
-                "claimType": 0,
-                "claimFieldType": -1
-             },
-             "name": "CRASH TEAM CHALLENGE 8 / CTC8",
-             "thumbnails": {
-                "sources": [
-                   {
-                      "url": "https://www.pietsmiet.de/img/d295c72ae15e737c10e650f6df9e1b3adf644cba.jpg?i=245661",
-                      "quality": 720
-                   },
-                   {
-                      "url": "https://www.pietsmiet.de/img/f4577bfd8e2f46e7bdbb2c5dc2df272f8b0a3198.jpg?i=245661",
-                      "quality": 360
-                   },
-                   {
-                      "url": "https://www.pietsmiet.de/img/72538a799435320a5775fce2831494c5f5f99689.jpg?i=245661",
-                      "quality": 144
-                   }
-                ]
-             },
-             "author": {
-                "id": {
-                   "platform": "PietsmietDE",
-                   "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
-                   "value": "9",
-                   "claimType": 0,
-                   "claimFieldType": -1
-                },
-                "name": "PietSmiet",
-                "url": "https://www.pietsmiet.de/videos/channels/9-pietsmiet",
-                "thumbnail": "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
-                "subscribers": 926
-             },
-             "datetime": 0,
-             "url": "https://www.pietsmiet.de/videos/77416-ctc8-wreckfest-event-petition-gegen-busse",
-             "plugin_type": "PlatformVideo",
-             "shareUrl": "http://ptsmt.de/v/77416",
-             "duration": 10263,
-             "viewCount": -1,
-             "isLive": false
-          },
-          {
-             "contentType": 1,
-             "id": {
-                "platform": "PietsmietDE",
-                "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
-                "value": "75299",
-                "claimType": 0,
-                "claimFieldType": -1
-             },
-             "name": "CRASH TEAM CHALLENGE 7 / CTC7",
-             "thumbnails": {
-                "sources": [
-                   {
-                      "url": "https://www.pietsmiet.de/img/2ba8095b4deee9b35ad694a36091ff56af6163e7.jpg?i=240261",
-                      "quality": 720
-                   },
-                   {
-                      "url": "https://www.pietsmiet.de/img/d26cd1d0edf8d15a38e6c93c9018b336d9b2e076.jpg?i=240261",
-                      "quality": 360
-                   },
-                   {
-                      "url": "https://www.pietsmiet.de/img/d4eea8747763f58624b61ba261cd7c43245be6b5.jpg?i=240261",
-                      "quality": 144
-                   }
-                ]
-             },
-             "author": {
-                "id": {
-                   "platform": "PietsmietDE",
-                   "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
-                   "value": "9",
-                   "claimType": 0,
-                   "claimFieldType": -1
-                },
-                "name": "PietSmiet",
-                "url": "https://www.pietsmiet.de/videos/channels/9-pietsmiet",
-                "thumbnail": "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
-                "subscribers": 926
-             },
-             "datetime": 0,
-             "url": "https://www.pietsmiet.de/videos/75299-crash-team-challenge-7-ctc7",
-             "plugin_type": "PlatformVideo",
-             "shareUrl": "http://ptsmt.de/v/75299",
-             "duration": 10603,
-             "viewCount": -1,
-             "isLive": false
-          },
-          {
-             "contentType": 1,
-             "id": {
-                "platform": "PietsmietDE",
-                "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
-                "value": "73292",
-                "claimType": 0,
-                "claimFieldType": -1
-             },
-             "name": "Crash Team Challenge 6 - CTC  Wreckfest",
-             "thumbnails": {
-                "sources": [
-                   {
-                      "url": "https://www.pietsmiet.de/img/1cbe6436086b422700649eb245874c84d7c47fa2.jpg?i=235670",
-                      "quality": 720
-                   },
-                   {
-                      "url": "https://www.pietsmiet.de/img/d60c72d758c10cc938d4830fa36eb91bbbce54b3.jpg?i=235670",
-                      "quality": 360
-                   },
-                   {
-                      "url": "https://www.pietsmiet.de/img/5ac1a08dff704621429fa799f3e67c4a07295802.jpg?i=235670",
-                      "quality": 144
-                   }
-                ]
-             },
-             "author": {
-                "id": {
-                   "platform": "PietsmietDE",
-                   "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
-                   "value": "9",
-                   "claimType": 0,
-                   "claimFieldType": -1
-                },
-                "name": "PietSmiet",
-                "url": "https://www.pietsmiet.de/videos/channels/9-pietsmiet",
-                "thumbnail": "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
-                "subscribers": 926
-             },
-             "datetime": 0,
-             "url": "https://www.pietsmiet.de/videos/73292-crash-team-challenge-6-ctc-wreckfest",
-             "plugin_type": "PlatformVideo",
-             "shareUrl": "http://ptsmt.de/v/73292",
-             "duration": 10829,
-             "viewCount": -1,
-             "isLive": false
-          },
-          {
-             "contentType": 1,
-             "id": {
-                "platform": "PietsmietDE",
-                "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
-                "value": "71272",
-                "claimType": 0,
-                "claimFieldType": -1
-             },
-             "name": "Crash Team Challenge 5 - CTC in Wreckfest",
-             "thumbnails": {
-                "sources": [
-                   {
-                      "url": "https://www.pietsmiet.de/img/7da1388ae04fdaef5856afc152f38f1157fa3f80.jpg?i=230546",
-                      "quality": 720
-                   },
-                   {
-                      "url": "https://www.pietsmiet.de/img/868c9c5ca896fccf51ef59a1ba6041ddc1c0bc88.jpg?i=230546",
-                      "quality": 360
-                   },
-                   {
-                      "url": "https://www.pietsmiet.de/img/fa310403a3b44ab1669905a5b18a1244f322e557.jpg?i=230546",
-                      "quality": 144
-                   }
-                ]
-             },
-             "author": {
-                "id": {
-                   "platform": "PietsmietDE",
-                   "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
-                   "value": "9",
-                   "claimType": 0,
-                   "claimFieldType": -1
-                },
-                "name": "PietSmiet",
-                "url": "https://www.pietsmiet.de/videos/channels/9-pietsmiet",
-                "thumbnail": "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
-                "subscribers": 926
-             },
-             "datetime": 0,
-             "url": "https://www.pietsmiet.de/videos/71272-crash-team-challenge-5-ctc-in-wreckfest",
-             "plugin_type": "PlatformVideo",
-             "shareUrl": "http://ptsmt.de/v/71272",
-             "duration": 10160,
-             "viewCount": -1,
-             "isLive": false
-          },
-          {
-             "contentType": 1,
-             "id": {
-                "platform": "PietsmietDE",
-                "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
-                "value": "69618",
-                "claimType": 0,
-                "claimFieldType": -1
-             },
-             "name": "Crash Team Challenge 4 - DAS Wreckfest Event",
-             "thumbnails": {
-                "sources": [
-                   {
-                      "url": "https://www.pietsmiet.de/img/bee3fd96603c0aa51c61f9a420b189b46d6cd5a5.jpg?i=226106",
-                      "quality": 720
-                   },
-                   {
-                      "url": "https://www.pietsmiet.de/img/f22242637277a0c5b96ac0e1f86d8eb267d13480.jpg?i=226106",
-                      "quality": 360
-                   },
-                   {
-                      "url": "https://www.pietsmiet.de/img/710f24bb12ecc7cd748f2c225cda14f832f4bd70.jpg?i=226106",
-                      "quality": 144
-                   }
-                ]
-             },
-             "author": {
-                "id": {
-                   "platform": "PietsmietDE",
-                   "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
-                   "value": "9",
-                   "claimType": 0,
-                   "claimFieldType": -1
-                },
-                "name": "PietSmiet",
-                "url": "https://www.pietsmiet.de/videos/channels/9-pietsmiet",
-                "thumbnail": "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
-                "subscribers": 926
-             },
-             "datetime": 0,
-             "url": "https://www.pietsmiet.de/videos/69618-crash-team-challenge-4-das-wreckfest-event",
-             "plugin_type": "PlatformVideo",
-             "shareUrl": "http://ptsmt.de/v/69618",
-             "duration": 9840,
-             "viewCount": -1,
-             "isLive": false
-          },
-          {
-             "contentType": 1,
-             "id": {
-                "platform": "PietsmietDE",
-                "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
-                "value": "67313",
-                "claimType": 0,
-                "claimFieldType": -1
-             },
-             "name": "Die große Streamer Zerstörung! - Crash Team Challenge 3",
-             "thumbnails": {
-                "sources": [
-                   {
-                      "url": "https://www.pietsmiet.de/img/b61611552fd976f0cd21bc8e42835338d5850fb8.jpg?i=219919",
-                      "quality": 720
-                   },
-                   {
-                      "url": "https://www.pietsmiet.de/img/e4e01dfd5a8625e3b258d98c67d11273ded3126c.jpg?i=219919",
-                      "quality": 360
-                   },
-                   {
-                      "url": "https://www.pietsmiet.de/img/ba129223dc628e0a6ec3ed786fa2ec7b7ef14ceb.jpg?i=219919",
-                      "quality": 144
-                   }
-                ]
-             },
-             "author": {
-                "id": {
-                   "platform": "PietsmietDE",
-                   "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
-                   "value": "9",
-                   "claimType": 0,
-                   "claimFieldType": -1
-                },
-                "name": "PietSmiet",
-                "url": "https://www.pietsmiet.de/videos/channels/9-pietsmiet",
-                "thumbnail": "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
-                "subscribers": 926
-             },
-             "datetime": 0,
-             "url": "https://www.pietsmiet.de/videos/67313-die-grosse-streamer-zerstorung-crash-team-challenge-3",
-             "plugin_type": "PlatformVideo",
-             "shareUrl": "http://ptsmt.de/v/67313",
-             "duration": 7974,
-             "viewCount": -1,
-             "isLive": false
-          },
-          {
-             "contentType": 1,
-             "id": {
-                "platform": "PietsmietDE",
-                "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
-                "value": "66177",
-                "claimType": 0,
-                "claimFieldType": -1
-             },
-             "name": "Crash Team Challenge 2 #CTC - 16 Streamer in Wreckfest",
-             "thumbnails": {
-                "sources": [
-                   {
-                      "url": "https://www.pietsmiet.de/img/110a47d1105d28a41584e001496bbfcaaafd70b8.jpg?i=216715",
-                      "quality": 720
-                   },
-                   {
-                      "url": "https://www.pietsmiet.de/img/f4e608ccbd5e0ffab776586cd94d683c36eca585.jpg?i=216715",
-                      "quality": 360
-                   },
-                   {
-                      "url": "https://www.pietsmiet.de/img/58d04f8f807bb61948a4a85d7b569a68a171805e.jpg?i=216715",
-                      "quality": 144
-                   }
-                ]
-             },
-             "author": {
-                "id": {
-                   "platform": "PietsmietDE",
-                   "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
-                   "value": "9",
-                   "claimType": 0,
-                   "claimFieldType": -1
-                },
-                "name": "PietSmiet",
-                "url": "https://www.pietsmiet.de/videos/channels/9-pietsmiet",
-                "thumbnail": "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
-                "subscribers": 926
-             },
-             "datetime": 0,
-             "url": "https://www.pietsmiet.de/videos/66177-crash-team-challenge-2-ctc-16-streamer-in-wreckfest",
-             "plugin_type": "PlatformVideo",
-             "shareUrl": "http://ptsmt.de/v/66177",
-             "duration": 11519,
-             "viewCount": -1,
-             "isLive": false
-          },
-          {
-             "contentType": 1,
-             "id": {
-                "platform": "PietsmietDE",
-                "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
-                "value": "65093",
-                "claimType": 0,
-                "claimFieldType": -1
-             },
-             "name": "Crash Team Challenge in Wreckfest - CTC",
-             "thumbnails": {
-                "sources": [
-                   {
-                      "url": "https://www.pietsmiet.de/img/93071fffd3082cf06f53d94990e9f3bd77f3a80f.jpg?i=213141",
-                      "quality": 720
-                   },
-                   {
-                      "url": "https://www.pietsmiet.de/img/ae1f500d0d9e711e099d3f46e8b7a31f787baf78.jpg?i=213141",
-                      "quality": 360
-                   },
-                   {
-                      "url": "https://www.pietsmiet.de/img/a648cb8ffd36418d240e8ed587879fdaabbe427f.jpg?i=213141",
-                      "quality": 144
-                   }
-                ]
-             },
-             "author": {
-                "id": {
-                   "platform": "PietsmietDE",
-                   "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
-                   "value": "9",
-                   "claimType": 0,
-                   "claimFieldType": -1
-                },
-                "name": "PietSmiet",
-                "url": "https://www.pietsmiet.de/videos/channels/9-pietsmiet",
-                "thumbnail": "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
-                "subscribers": 926
-             },
-             "datetime": 0,
-             "url": "https://www.pietsmiet.de/videos/65093-crash-team-challenge-in-wreckfest-ctc",
-             "plugin_type": "PlatformVideo",
-             "shareUrl": "http://ptsmt.de/v/65093",
-             "duration": 10379,
-             "viewCount": -1,
-             "isLive": false
-          }
-       ],
-       "hasMore": false,
-       "context": {}
-    }
- }
+   "contentType": 4,
+   "id": {
+      "platform": "PietsmietDE",
+      "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
+      "value": "154863",
+      "claimType": 0,
+      "claimFieldType": -1
+   },
+   "name": "Crash Team Challenge in Wreckfest",
+   "author": {
+      "id": {
+         "platform": "PietsmietDE",
+         "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
+         "value": "9",
+         "claimType": 0,
+         "claimFieldType": -1
+      },
+      "name": "PietSmiet",
+      "url": "https://www.pietsmiet.de/videos/channels/9-pietsmiet",
+      "thumbnail": "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
+      "subscribers": 926
+   },
+   "datetime": 0,
+   "url": "https://www.pietsmiet.de/videos/playlists/154863-crash-team-challenge-in-wreckfest",
+   "plugin_type": "PlatformPlaylistDetails",
+   "videoCount": 9,
+   "contents": {
+      "plugin_type": "VideoPager",
+      "results": [
+         {
+            "contentType": 1,
+            "id": {
+               "platform": "PietsmietDE",
+               "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
+               "value": "78697",
+               "claimType": 0,
+               "claimFieldType": -1
+            },
+            "name": "Crash Team Challenge 9 / CTC 9 in Wreckfest",
+            "thumbnails": {
+               "sources": [
+                  {
+                     "url": "https://www.pietsmiet.de/img/6410bf8d9432fccc8d0e28523be2d374bf52b0a9.jpg?i=248138",
+                     "quality": 720
+                  },
+                  {
+                     "url": "https://www.pietsmiet.de/img/5f9c1870b8b62aa0c3f32aea96c77e82781544af.jpg?i=248138",
+                     "quality": 360
+                  },
+                  {
+                     "url": "https://www.pietsmiet.de/img/198d73007b4afb35560041ce286c54c90b40f4c0.jpg?i=248138",
+                     "quality": 144
+                  }
+               ]
+            },
+            "author": {
+               "id": {
+                  "platform": "PietsmietDE",
+                  "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
+                  "value": "9",
+                  "claimType": 0,
+                  "claimFieldType": -1
+               },
+               "name": "PietSmiet",
+               "url": "https://www.pietsmiet.de/videos/channels/9-pietsmiet",
+               "thumbnail": "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
+               "subscribers": 926
+            },
+            "datetime": 0,
+            "url": "https://www.pietsmiet.de/videos/78697-crash-team-challenge-9-ctc-9-in-wreckfest",
+            "plugin_type": "PlatformVideo",
+            "shareUrl": "http://ptsmt.de/v/78697",
+            "duration": 9746,
+            "viewCount": -1,
+            "isLive": false
+         },
+         {
+            "contentType": 1,
+            "id": {
+               "platform": "PietsmietDE",
+               "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
+               "value": "77416",
+               "claimType": 0,
+               "claimFieldType": -1
+            },
+            "name": "CRASH TEAM CHALLENGE 8 / CTC8",
+            "thumbnails": {
+               "sources": [
+                  {
+                     "url": "https://www.pietsmiet.de/img/d295c72ae15e737c10e650f6df9e1b3adf644cba.jpg?i=245661",
+                     "quality": 720
+                  },
+                  {
+                     "url": "https://www.pietsmiet.de/img/f4577bfd8e2f46e7bdbb2c5dc2df272f8b0a3198.jpg?i=245661",
+                     "quality": 360
+                  },
+                  {
+                     "url": "https://www.pietsmiet.de/img/72538a799435320a5775fce2831494c5f5f99689.jpg?i=245661",
+                     "quality": 144
+                  }
+               ]
+            },
+            "author": {
+               "id": {
+                  "platform": "PietsmietDE",
+                  "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
+                  "value": "9",
+                  "claimType": 0,
+                  "claimFieldType": -1
+               },
+               "name": "PietSmiet",
+               "url": "https://www.pietsmiet.de/videos/channels/9-pietsmiet",
+               "thumbnail": "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
+               "subscribers": 926
+            },
+            "datetime": 0,
+            "url": "https://www.pietsmiet.de/videos/77416-ctc8-wreckfest-event-petition-gegen-busse",
+            "plugin_type": "PlatformVideo",
+            "shareUrl": "http://ptsmt.de/v/77416",
+            "duration": 10263,
+            "viewCount": -1,
+            "isLive": false
+         },
+         {
+            "contentType": 1,
+            "id": {
+               "platform": "PietsmietDE",
+               "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
+               "value": "75299",
+               "claimType": 0,
+               "claimFieldType": -1
+            },
+            "name": "CRASH TEAM CHALLENGE 7 / CTC7",
+            "thumbnails": {
+               "sources": [
+                  {
+                     "url": "https://www.pietsmiet.de/img/2ba8095b4deee9b35ad694a36091ff56af6163e7.jpg?i=240261",
+                     "quality": 720
+                  },
+                  {
+                     "url": "https://www.pietsmiet.de/img/d26cd1d0edf8d15a38e6c93c9018b336d9b2e076.jpg?i=240261",
+                     "quality": 360
+                  },
+                  {
+                     "url": "https://www.pietsmiet.de/img/d4eea8747763f58624b61ba261cd7c43245be6b5.jpg?i=240261",
+                     "quality": 144
+                  }
+               ]
+            },
+            "author": {
+               "id": {
+                  "platform": "PietsmietDE",
+                  "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
+                  "value": "9",
+                  "claimType": 0,
+                  "claimFieldType": -1
+               },
+               "name": "PietSmiet",
+               "url": "https://www.pietsmiet.de/videos/channels/9-pietsmiet",
+               "thumbnail": "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
+               "subscribers": 926
+            },
+            "datetime": 0,
+            "url": "https://www.pietsmiet.de/videos/75299-crash-team-challenge-7-ctc7",
+            "plugin_type": "PlatformVideo",
+            "shareUrl": "http://ptsmt.de/v/75299",
+            "duration": 10603,
+            "viewCount": -1,
+            "isLive": false
+         },
+         {
+            "contentType": 1,
+            "id": {
+               "platform": "PietsmietDE",
+               "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
+               "value": "73292",
+               "claimType": 0,
+               "claimFieldType": -1
+            },
+            "name": "Crash Team Challenge 6 - CTC  Wreckfest",
+            "thumbnails": {
+               "sources": [
+                  {
+                     "url": "https://www.pietsmiet.de/img/1cbe6436086b422700649eb245874c84d7c47fa2.jpg?i=235670",
+                     "quality": 720
+                  },
+                  {
+                     "url": "https://www.pietsmiet.de/img/d60c72d758c10cc938d4830fa36eb91bbbce54b3.jpg?i=235670",
+                     "quality": 360
+                  },
+                  {
+                     "url": "https://www.pietsmiet.de/img/5ac1a08dff704621429fa799f3e67c4a07295802.jpg?i=235670",
+                     "quality": 144
+                  }
+               ]
+            },
+            "author": {
+               "id": {
+                  "platform": "PietsmietDE",
+                  "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
+                  "value": "9",
+                  "claimType": 0,
+                  "claimFieldType": -1
+               },
+               "name": "PietSmiet",
+               "url": "https://www.pietsmiet.de/videos/channels/9-pietsmiet",
+               "thumbnail": "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
+               "subscribers": 926
+            },
+            "datetime": 0,
+            "url": "https://www.pietsmiet.de/videos/73292-crash-team-challenge-6-ctc-wreckfest",
+            "plugin_type": "PlatformVideo",
+            "shareUrl": "http://ptsmt.de/v/73292",
+            "duration": 10829,
+            "viewCount": -1,
+            "isLive": false
+         },
+         {
+            "contentType": 1,
+            "id": {
+               "platform": "PietsmietDE",
+               "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
+               "value": "71272",
+               "claimType": 0,
+               "claimFieldType": -1
+            },
+            "name": "Crash Team Challenge 5 - CTC in Wreckfest",
+            "thumbnails": {
+               "sources": [
+                  {
+                     "url": "https://www.pietsmiet.de/img/7da1388ae04fdaef5856afc152f38f1157fa3f80.jpg?i=230546",
+                     "quality": 720
+                  },
+                  {
+                     "url": "https://www.pietsmiet.de/img/868c9c5ca896fccf51ef59a1ba6041ddc1c0bc88.jpg?i=230546",
+                     "quality": 360
+                  },
+                  {
+                     "url": "https://www.pietsmiet.de/img/fa310403a3b44ab1669905a5b18a1244f322e557.jpg?i=230546",
+                     "quality": 144
+                  }
+               ]
+            },
+            "author": {
+               "id": {
+                  "platform": "PietsmietDE",
+                  "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
+                  "value": "9",
+                  "claimType": 0,
+                  "claimFieldType": -1
+               },
+               "name": "PietSmiet",
+               "url": "https://www.pietsmiet.de/videos/channels/9-pietsmiet",
+               "thumbnail": "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
+               "subscribers": 926
+            },
+            "datetime": 0,
+            "url": "https://www.pietsmiet.de/videos/71272-crash-team-challenge-5-ctc-in-wreckfest",
+            "plugin_type": "PlatformVideo",
+            "shareUrl": "http://ptsmt.de/v/71272",
+            "duration": 10160,
+            "viewCount": -1,
+            "isLive": false
+         },
+         {
+            "contentType": 1,
+            "id": {
+               "platform": "PietsmietDE",
+               "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
+               "value": "69618",
+               "claimType": 0,
+               "claimFieldType": -1
+            },
+            "name": "Crash Team Challenge 4 - DAS Wreckfest Event",
+            "thumbnails": {
+               "sources": [
+                  {
+                     "url": "https://www.pietsmiet.de/img/bee3fd96603c0aa51c61f9a420b189b46d6cd5a5.jpg?i=226106",
+                     "quality": 720
+                  },
+                  {
+                     "url": "https://www.pietsmiet.de/img/f22242637277a0c5b96ac0e1f86d8eb267d13480.jpg?i=226106",
+                     "quality": 360
+                  },
+                  {
+                     "url": "https://www.pietsmiet.de/img/710f24bb12ecc7cd748f2c225cda14f832f4bd70.jpg?i=226106",
+                     "quality": 144
+                  }
+               ]
+            },
+            "author": {
+               "id": {
+                  "platform": "PietsmietDE",
+                  "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
+                  "value": "9",
+                  "claimType": 0,
+                  "claimFieldType": -1
+               },
+               "name": "PietSmiet",
+               "url": "https://www.pietsmiet.de/videos/channels/9-pietsmiet",
+               "thumbnail": "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
+               "subscribers": 926
+            },
+            "datetime": 0,
+            "url": "https://www.pietsmiet.de/videos/69618-crash-team-challenge-4-das-wreckfest-event",
+            "plugin_type": "PlatformVideo",
+            "shareUrl": "http://ptsmt.de/v/69618",
+            "duration": 9840,
+            "viewCount": -1,
+            "isLive": false
+         },
+         {
+            "contentType": 1,
+            "id": {
+               "platform": "PietsmietDE",
+               "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
+               "value": "67313",
+               "claimType": 0,
+               "claimFieldType": -1
+            },
+            "name": "Die große Streamer Zerstörung! - Crash Team Challenge 3",
+            "thumbnails": {
+               "sources": [
+                  {
+                     "url": "https://www.pietsmiet.de/img/b61611552fd976f0cd21bc8e42835338d5850fb8.jpg?i=219919",
+                     "quality": 720
+                  },
+                  {
+                     "url": "https://www.pietsmiet.de/img/e4e01dfd5a8625e3b258d98c67d11273ded3126c.jpg?i=219919",
+                     "quality": 360
+                  },
+                  {
+                     "url": "https://www.pietsmiet.de/img/ba129223dc628e0a6ec3ed786fa2ec7b7ef14ceb.jpg?i=219919",
+                     "quality": 144
+                  }
+               ]
+            },
+            "author": {
+               "id": {
+                  "platform": "PietsmietDE",
+                  "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
+                  "value": "9",
+                  "claimType": 0,
+                  "claimFieldType": -1
+               },
+               "name": "PietSmiet",
+               "url": "https://www.pietsmiet.de/videos/channels/9-pietsmiet",
+               "thumbnail": "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
+               "subscribers": 926
+            },
+            "datetime": 0,
+            "url": "https://www.pietsmiet.de/videos/67313-die-grosse-streamer-zerstorung-crash-team-challenge-3",
+            "plugin_type": "PlatformVideo",
+            "shareUrl": "http://ptsmt.de/v/67313",
+            "duration": 7974,
+            "viewCount": -1,
+            "isLive": false
+         },
+         {
+            "contentType": 1,
+            "id": {
+               "platform": "PietsmietDE",
+               "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
+               "value": "66177",
+               "claimType": 0,
+               "claimFieldType": -1
+            },
+            "name": "Crash Team Challenge 2 #CTC - 16 Streamer in Wreckfest",
+            "thumbnails": {
+               "sources": [
+                  {
+                     "url": "https://www.pietsmiet.de/img/110a47d1105d28a41584e001496bbfcaaafd70b8.jpg?i=216715",
+                     "quality": 720
+                  },
+                  {
+                     "url": "https://www.pietsmiet.de/img/f4e608ccbd5e0ffab776586cd94d683c36eca585.jpg?i=216715",
+                     "quality": 360
+                  },
+                  {
+                     "url": "https://www.pietsmiet.de/img/58d04f8f807bb61948a4a85d7b569a68a171805e.jpg?i=216715",
+                     "quality": 144
+                  }
+               ]
+            },
+            "author": {
+               "id": {
+                  "platform": "PietsmietDE",
+                  "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
+                  "value": "9",
+                  "claimType": 0,
+                  "claimFieldType": -1
+               },
+               "name": "PietSmiet",
+               "url": "https://www.pietsmiet.de/videos/channels/9-pietsmiet",
+               "thumbnail": "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
+               "subscribers": 926
+            },
+            "datetime": 0,
+            "url": "https://www.pietsmiet.de/videos/66177-crash-team-challenge-2-ctc-16-streamer-in-wreckfest",
+            "plugin_type": "PlatformVideo",
+            "shareUrl": "http://ptsmt.de/v/66177",
+            "duration": 11519,
+            "viewCount": -1,
+            "isLive": false
+         },
+         {
+            "contentType": 1,
+            "id": {
+               "platform": "PietsmietDE",
+               "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
+               "value": "65093",
+               "claimType": 0,
+               "claimFieldType": -1
+            },
+            "name": "Crash Team Challenge in Wreckfest - CTC",
+            "thumbnails": {
+               "sources": [
+                  {
+                     "url": "https://www.pietsmiet.de/img/93071fffd3082cf06f53d94990e9f3bd77f3a80f.jpg?i=213141",
+                     "quality": 720
+                  },
+                  {
+                     "url": "https://www.pietsmiet.de/img/ae1f500d0d9e711e099d3f46e8b7a31f787baf78.jpg?i=213141",
+                     "quality": 360
+                  },
+                  {
+                     "url": "https://www.pietsmiet.de/img/a648cb8ffd36418d240e8ed587879fdaabbe427f.jpg?i=213141",
+                     "quality": 144
+                  }
+               ]
+            },
+            "author": {
+               "id": {
+                  "platform": "PietsmietDE",
+                  "pluginId": "82b8fefc-24ae-11ee-be56-0242aa120002",
+                  "value": "9",
+                  "claimType": 0,
+                  "claimFieldType": -1
+               },
+               "name": "PietSmiet",
+               "url": "https://www.pietsmiet.de/videos/channels/9-pietsmiet",
+               "thumbnail": "https://yt3.googleusercontent.com/qR-4gEbPO0XQlSEwHNgNt7EG5dB_sjQ5WVExWhT11D9ItY3G24l8Egw7isWZhcsUGYcfjaT4tg=s176-c-k-c0x00ffffff-no-rj",
+               "subscribers": 926
+            },
+            "datetime": 0,
+            "url": "https://www.pietsmiet.de/videos/65093-crash-team-challenge-in-wreckfest-ctc",
+            "plugin_type": "PlatformVideo",
+            "shareUrl": "http://ptsmt.de/v/65093",
+            "duration": 10379,
+            "viewCount": -1,
+            "isLive": false
+         }
+      ],
+      "hasMore": false,
+      "context": {}
+   }
+}

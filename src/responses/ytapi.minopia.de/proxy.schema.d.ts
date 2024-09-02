@@ -40,7 +40,7 @@ export interface ContentDetails {
   licensedContent?: boolean;
   projection?: string;
 }
-export interface Content {}
+export interface Content { }
 export interface Player {
   embedHtml?: string;
 }

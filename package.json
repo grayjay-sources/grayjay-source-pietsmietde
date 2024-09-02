@@ -1,0 +1,44 @@
+{
+    "name": "grayjay-pietsmiet.de-source",
+    "version": "1.0.0",
+    "description": "GrayJay source for Pietsmiet.de",
+    "engines": {
+        "node": ">=20.0.0"
+    },
+    "module": "src/script.ts",
+    "scripts": {
+        "bun-test": "bun run build && node --test",
+        "test": "npm run build && node --test",
+        "build": "tsc && cp src/script.[tj]s* build && sed -i '/^export/s/^/\\/\\/ /' build/script.[tj]s",
+        "bun-release": "bun install && bun update && bun x npm-check-updates && bun run bun-test",
+        "npm-release": "npm install && npm update && npx npm-check-updates && npm test",
+        "bun-dev": "bun run build && bun x http-server build",
+        "npm-dev": "npm run build && npx http-server build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bluscream/grayjay-source-pietsmietde.git"
+    },
+    "keywords": [
+        "pietsmiet.de",
+        "pietsmiet",
+        "grayjay"
+    ],
+    "author": "Bluscream",
+    "contributors": [ "Kai DeLorenzo"],
+    "license": "WTFPL",
+    "bugs": {
+        "url": "https://github.com/Bluscream/grayjay-source-pietsmietde/issues/new"
+    },
+    "homepage": "https://github.com/Bluscream/grayjay-source-pietsmietde/",
+    "peerDependencies": {
+        "typescript": "^5.1.3"
+    },
+    "type": "module",
+    "devDependencies": {
+        "@grayjay/plugin": "gitlab:kaidelorenzo/grayjay-plugin-types#4478f604519640c28c4cb19d74f7cc1e9af3619d",
+        "@types/node": "^20.14.9",
+        "http-server": "^14.1.1",
+        "npm-check-updates": "^16.14.20"
+    }
+}

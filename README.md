@@ -24,3 +24,7 @@ Home | Video | Streams | Source
 - Uses https://pietsmiet.zaanposni.com/api/
 - Uses https://returnyoutubedislike.com/docs/
 - Uses https://yt.lemnoslife.com/noKey/
+
+## Development
+1.  `npm run npm-dev` or `bun run bun-dev`
+2.  load `dist/local.json` into Grayjay

@@ -1,0 +1,378 @@
+_type: export
+__export_format: 4
+__export_date: 2024-09-02T02:10:31.115Z
+__export_source: insomnia.desktop.app:v2023.5.8
+resources:
+  - _id: req_3959f372db7e479b91818a845e3afbbd
+    parentId: wrk_eeb56185d4c04ada8533414bf1bf3503
+    modified: 1725242855400
+    created: 1725242825343
+    url: "{{ _.API_URL }}search?page=1&query=pietsmiet"
+    name: Search
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: X-Origin-Integrity
+        value: "{{ _.INTEGRITY_HEADER }}"
+    authentication: {}
+    metaSortKey: -1725242825343
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_eeb56185d4c04ada8533414bf1bf3503
+    parentId: null
+    modified: 1725241873970
+    created: 1712210412575
+    name: Pietsmiet.de
+    description: a
+    scope: collection
+    _type: workspace
+  - _id: req_af79ba4d59864e37a7e226a5217f0ba3
+    parentId: wrk_eeb56185d4c04ada8533414bf1bf3503
+    modified: 1725242668277
+    created: 1725242646687
+    url: "{{ _.API_URL }}utility/player?preset=quality&video=79576"
+    name: Get Video Player
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: X-Origin-Integrity
+        value: "{{ _.INTEGRITY_HEADER }}"
+    authentication: {}
+    metaSortKey: -1725242646687
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2b3233d9f4b545e6b24e1425029fad68
+    parentId: wrk_eeb56185d4c04ada8533414bf1bf3503
+    modified: 1725242483437
+    created: 1725242407044
+    url: "{{ _.API_URL }}videos/playlists?limit=100&order=latest&page=1"
+    name: Get Playlists
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: X-Origin-Integrity
+        value: "{{ _.INTEGRITY_HEADER }}"
+    authentication: {}
+    metaSortKey: -1725242407044
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5fbe8b50ceaa45a9a9e56fc5ebb18c03
+    parentId: wrk_eeb56185d4c04ada8533414bf1bf3503
+    modified: 1725242348724
+    created: 1725242319287
+    url: "{{ _.API_URL }}videos/playlists/155942"
+    name: Get Playlist
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: X-Origin-Integrity
+        value: "{{ _.INTEGRITY_HEADER }}"
+    authentication: {}
+    metaSortKey: -1725242319287
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_fcc4ee84bf7642e3a55ada0b5cd6e54f
+    parentId: wrk_eeb56185d4c04ada8533414bf1bf3503
+    modified: 1725242190068
+    created: 1725242141853
+    url: "{{ _.API_URL }}videos?limit=2&order=latest&prioritize_featured=0&page=1"
+    name: Get Home
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: X-Origin-Integrity
+        value: "{{ _.INTEGRITY_HEADER }}"
+    authentication: {}
+    metaSortKey: -1725242141853
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c1ab03ba11174b8c9d6d99da08371a4d
+    parentId: wrk_eeb56185d4c04ada8533414bf1bf3503
+    modified: 1725242553479
+    created: 1725242058085
+    url: "{{ _.API_URL }}videos/channels?page=1"
+    name: Get Channels
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: X-Origin-Integrity
+        value: "{{ _.INTEGRITY_HEADER }}"
+    authentication: {}
+    metaSortKey: -1725242058085
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_431fdd1936fa42618610aa507f7d5926
+    parentId: wrk_eeb56185d4c04ada8533414bf1bf3503
+    modified: 1725242576527
+    created: 1725242021397
+    url: "{{ _.API_URL }}videos/79576"
+    name: Get Video
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: X-Origin-Integrity
+        value: "{{ _.INTEGRITY_HEADER }}"
+    authentication: {}
+    metaSortKey: -1725242021397
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6aa176c680794550abd271ae47f57774
+    parentId: wrk_eeb56185d4c04ada8533414bf1bf3503
+    modified: 1725241931603
+    created: 1712831733524
+    url: http://192.168.2.48:5111/api/hud/notify
+    name: Get Playlist Details
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "title",
+        	"message": "message",
+        	"sound": true
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: X-Origin-Integrity
+        value: "{{ _.INTEGRITY_HEADER }}"
+    authentication: {}
+    metaSortKey: -1712831733524
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_33b3f90e861642c4adf5da17f03ca254
+    parentId: wrk_eeb56185d4c04ada8533414bf1bf3503
+    modified: 1725241907364
+    created: 1712330617756
+    url: "{{ _.API_URL }}config/i"
+    name: Get Config
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+        id: pair_326749b9011846baa887c06a94a533e3
+        disabled: true
+      - id: pair_4769b63fbdc0490886cc060160174850
+        name: X-Origin-Integrity
+        value: "{{ _.INTEGRITY_HEADER }}"
+        description: ""
+    authentication: {}
+    metaSortKey: -1712330617756
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_280995a606e24221b75360d8e046aaaa
+    parentId: wrk_eeb56185d4c04ada8533414bf1bf3503
+    modified: 1725241920911
+    created: 1712312855626
+    url: "{{ _.BASE_URL }}"
+    name: Base
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: X-Origin-Integrity
+        value: "{{ _.INTEGRITY_HEADER }}"
+    authentication: {}
+    metaSortKey: -1712312855626
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_129c4b4feaef4276ba4438dc2fefed3c
+    parentId: wrk_eeb56185d4c04ada8533414bf1bf3503
+    modified: 1725241923716
+    created: 1712210419881
+    url: "{{ _.API_URL }}videos"
+    name: Get Videos
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - id: pair_616aa2285e074bf19ddc018ee410f17e
+        name: limit
+        value: "500"
+        description: ""
+      - id: pair_b10da933197b4952b15a70790dfd0ab3
+        name: page
+        value: "1"
+        description: ""
+      - id: pair_19335ca6f3514662aef7cb02c758b87f
+        name: order
+        value: latest
+        description: ""
+      - id: pair_3029302d358c4675934e1723140e3c32
+        name: prioritize_featured
+        value: "0"
+        description: ""
+    headers:
+      - name: X-Origin-Integrity
+        value: "{{ _.INTEGRITY_HEADER }}"
+    authentication: {}
+    metaSortKey: -1712210419881
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f5331fb5b7bd40dcb199ab5f0e3294e9
+    parentId: wrk_eeb56185d4c04ada8533414bf1bf3503
+    modified: 1725242780859
+    created: 1712250601298
+    url: "{{ _.API_URL
+      }}utility/comments?order=latest&type=video&limit=500&id=79576"
+    name: Get Comments
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - id: pair_616aa2285e074bf19ddc018ee410f17e
+        name: limit
+        value: "100"
+        description: ""
+      - id: pair_b10da933197b4952b15a70790dfd0ab3
+        name: page
+        value: "1"
+        description: ""
+      - id: pair_19335ca6f3514662aef7cb02c758b87f
+        name: order
+        value: latest
+        description: ""
+      - id: pair_50822ad8fcdb4066b1ffa9e25d93e2d8
+        name: id
+        value: "78688"
+        description: ""
+      - id: pair_55d64d36ca6b4452aea6566e98091b48
+        name: type
+        value: video
+        description: ""
+      - id: pair_dbe8b63275ce4f0a817a0ae17844918a
+        name: include[]
+        value: replies
+        description: ""
+    headers:
+      - name: X-Origin-Integrity
+        value: "{{ _.INTEGRITY_HEADER }}"
+    authentication: {}
+    metaSortKey: -1709485345980.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_b27c347d2bb847ee0dc2ea35d936a27abf8132b2
+    parentId: wrk_eeb56185d4c04ada8533414bf1bf3503
+    modified: 1725242014450
+    created: 1712210412579
+    name: Base Environment
+    data:
+      BASE_URL: https://www.pietsmiet.de/
+      API_URL: https://www.pietsmiet.de/api/v1/
+      INTEGRITY_HEADER: 8a4d8465
+    dataPropertyOrder:
+      "&":
+        - BASE_URL
+        - API_URL
+        - INTEGRITY_HEADER
+    color: null
+    isPrivate: false
+    metaSortKey: 1712210412579
+    _type: environment
+  - _id: jar_b27c347d2bb847ee0dc2ea35d936a27abf8132b2
+    parentId: wrk_eeb56185d4c04ada8533414bf1bf3503
+    modified: 1725241518016
+    created: 1712210412581
+    name: Default Jar
+    cookies:
+      - key: LPBC
+        value: ln-3
+        domain: www.pietsmiet.de
+        path: /
+        hostOnly: true
+        creation: 2024-09-02T01:45:18.015Z
+        lastAccessed: 2024-09-02T01:45:18.015Z
+        id: "38476577089421826"
+    _type: cookie_jar

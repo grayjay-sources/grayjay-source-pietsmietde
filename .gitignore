@@ -1,4 +1,4 @@
-*.har
+# *.har
 
 /assets/banner.*
 /assets/icon.*

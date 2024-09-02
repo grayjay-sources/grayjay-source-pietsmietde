@@ -5,9 +5,9 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type PietSmietDE = configResponse;
+export type Config = ConfigResponse;
 
-export interface configResponse {
+export interface ConfigResponse {
   h: string;
   v: string;
   success: boolean;

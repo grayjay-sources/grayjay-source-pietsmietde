@@ -421,7 +421,7 @@
         },
         "Slug": {
             "type": "string",
-            "enum": [
+            "examples": [
                 "pietsmiet",
                 "pietstream",
                 "best-of-pietsmiet"
@@ -430,7 +430,7 @@
         },
         "Title": {
             "type": "string",
-            "enum": [
+            "examples": [
                 "PietSmiet",
                 "PietSmiet Live",
                 "Best of Pietsmiet"
@@ -439,7 +439,7 @@
         },
         "URLSlug": {
             "type": "string",
-            "enum": [
+            "examples": [
                 "9-pietsmiet",
                 "44-pietstream",
                 "12-best-of-pietsmiet"

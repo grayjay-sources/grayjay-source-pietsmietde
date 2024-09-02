@@ -1,0 +1,462 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/YoutubeAPIProxyResponse",
+    "definitions": {
+        "YoutubeAPIProxyResponse": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "time": {
+                    "type": "number"
+                },
+                "youtube-data": {
+                    "$ref": "#/definitions/YoutubeData"
+                },
+                "youtube-dislike": {
+                    "$ref": "#/definitions/YoutubeDislike"
+                },
+                "youtube-operational": {
+                    "$ref": "#/definitions/YoutubeOperational"
+                },
+                "youtube-transcripts": {
+                    "$ref": "#/definitions/YoutubeTranscripts"
+                }
+            },
+            "required": [],
+            "title": "YoutubeAPIProxyResponse"
+        },
+        "YoutubeData": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "etag": {
+                    "type": "string"
+                },
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/YoutubeDataItem"
+                    }
+                },
+                "kind": {
+                    "type": "string"
+                },
+                "pageInfo": {
+                    "$ref": "#/definitions/PageInfo"
+                }
+            },
+            "required": [],
+            "title": "YoutubeData"
+        },
+        "YoutubeDataItem": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "contentDetails": {
+                    "$ref": "#/definitions/ContentDetails"
+                },
+                "etag": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "kind": {
+                    "type": "string"
+                },
+                "player": {
+                    "$ref": "#/definitions/Player"
+                },
+                "recordingDetails": {
+                    "$ref": "#/definitions/Content"
+                },
+                "snippet": {
+                    "$ref": "#/definitions/Snippet"
+                },
+                "statistics": {
+                    "$ref": "#/definitions/Statistics"
+                },
+                "status": {
+                    "$ref": "#/definitions/Status"
+                }
+            },
+            "required": [],
+            "title": "YoutubeDataItem"
+        },
+        "ContentDetails": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "caption": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "contentRating": {
+                    "$ref": "#/definitions/Content"
+                },
+                "definition": {
+                    "type": "string"
+                },
+                "dimension": {
+                    "type": "string"
+                },
+                "duration": {
+                    "type": "string"
+                },
+                "licensedContent": {
+                    "type": "boolean"
+                },
+                "projection": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "ContentDetails"
+        },
+        "Content": {
+            "type": "object",
+            "additionalProperties": false,
+            "title": "Content"
+        },
+        "Player": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "embedHtml": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Player"
+        },
+        "Snippet": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "categoryId": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "channelId": {
+                    "type": "string"
+                },
+                "channelTitle": {
+                    "type": "string"
+                },
+                "defaultAudioLanguage": {
+                    "type": "string"
+                },
+                "defaultLanguage": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "liveBroadcastContent": {
+                    "type": "string"
+                },
+                "localized": {
+                    "$ref": "#/definitions/Localized"
+                },
+                "publishedAt": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "thumbnails": {
+                    "$ref": "#/definitions/Thumbnails"
+                },
+                "title": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Snippet"
+        },
+        "Localized": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Localized"
+        },
+        "Thumbnails": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "default": {
+                    "$ref": "#/definitions/Default"
+                },
+                "high": {
+                    "$ref": "#/definitions/Default"
+                },
+                "maxres": {
+                    "$ref": "#/definitions/Default"
+                },
+                "medium": {
+                    "$ref": "#/definitions/Default"
+                },
+                "standard": {
+                    "$ref": "#/definitions/Default"
+                }
+            },
+            "required": [],
+            "title": "Thumbnails"
+        },
+        "Statistics": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "commentCount": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "favoriteCount": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "likeCount": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "viewCount": {
+                    "type": "string",
+                    "format": "integer"
+                }
+            },
+            "required": [],
+            "title": "Statistics"
+        },
+        "Status": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "embeddable": {
+                    "type": "boolean"
+                },
+                "license": {
+                    "type": "string"
+                },
+                "madeForKids": {
+                    "type": "boolean"
+                },
+                "privacyStatus": {
+                    "type": "string"
+                },
+                "publicStatsViewable": {
+                    "type": "boolean"
+                },
+                "uploadStatus": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Status"
+        },
+        "PageInfo": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "resultsPerPage": {
+                    "type": "integer"
+                },
+                "totalResults": {
+                    "type": "integer"
+                }
+            },
+            "required": [],
+            "title": "PageInfo"
+        },
+        "YoutubeDislike": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "dateCreated": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "deleted": {
+                    "type": "boolean"
+                },
+                "dislikes": {
+                    "type": "integer"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "likes": {
+                    "type": "integer"
+                },
+                "rating": {
+                    "type": "number"
+                },
+                "rawDislikes": {
+                    "type": "integer"
+                },
+                "rawLikes": {
+                    "type": "integer"
+                },
+                "viewCount": {
+                    "type": "integer"
+                }
+            },
+            "required": [],
+            "title": "YoutubeDislike"
+        },
+        "YoutubeOperational": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "etag": {
+                    "type": "string"
+                },
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/YoutubeOperationalItem"
+                    }
+                },
+                "kind": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "YoutubeOperational"
+        },
+        "YoutubeOperationalItem": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "chapters": {
+                    "$ref": "#/definitions/Chapters"
+                },
+                "etag": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "kind": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "YoutubeOperationalItem"
+        },
+        "Chapters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "areAutoGenerated": {
+                    "type": "boolean"
+                },
+                "chapters": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Chapter"
+                    }
+                }
+            },
+            "required": [],
+            "title": "Chapters"
+        },
+        "Chapter": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "thumbnails": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Default"
+                    }
+                },
+                "time": {
+                    "type": "integer"
+                },
+                "title": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Chapter"
+        },
+        "Default": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "height": {
+                    "type": "integer"
+                },
+                "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".jpg"
+                    ]
+                },
+                "width": {
+                    "type": "integer"
+                }
+            },
+            "required": [],
+            "title": "Default"
+        },
+        "YoutubeTranscripts": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "English": {
+                    "$ref": "#/definitions/English"
+                },
+                "German": {
+                    "$ref": "#/definitions/English"
+                }
+            },
+            "required": [],
+            "title": "YoutubeTranscripts"
+        },
+        "English": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "_url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "content": {
+                    "$ref": "#/definitions/Content"
+                },
+                "is_generated": {
+                    "type": "boolean"
+                },
+                "is_translatable": {
+                    "type": "boolean"
+                },
+                "language_code": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                }
+            },
+            "required": [],
+            "title": "English"
+        }
+    }
+}

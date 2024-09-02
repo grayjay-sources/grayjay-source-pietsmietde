@@ -227,8 +227,8 @@ declare interface HLSSourceDef {
     name: string,
     duration: integer,
     url: string,
-    priority: boolean?,
-    language: string?
+    priority: boolean | undefined,
+    language: string | undefined
 }
 declare class HLSSource implements IVideoSource {
     constructor(obj: HLSSourceDef);
@@ -237,7 +237,7 @@ declare interface DashSourceDef {
     name: string,
     duration: integer,
     url: string,
-    language: string?
+    language: string | undefined
 }
 declare class DashSource implements IVideoSource {
     constructor(obj: DashSourceDef)
@@ -266,7 +266,7 @@ declare interface PlatformChannelDef {
     description: string,
     url: string,
     urlAlternatives: string[],
-    links: Map<string>?
+    links: Map<string> | undefined
 }
 declare class PlatformChannel {
     constructor(obj: PlatformChannelDef);

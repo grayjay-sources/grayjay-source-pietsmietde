@@ -10,7 +10,7 @@ def recursive_dict_traversal(nested_dict: dict[str, Any], current_path=''):
         
         if isinstance(value, dict):
             if "type" in value.keys():
-                value["readonly"] = True
+                value["readOnly"] = True
                 print(f"{full_path}: {value}")
             
             recursive_dict_traversal(value, full_path)

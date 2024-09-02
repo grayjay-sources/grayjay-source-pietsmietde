@@ -9,10 +9,10 @@ def recursive_dict_traversal(nested_dict: dict[str, Any], current_path=''):
     for key, value in nested_dict.items():
         full_path = f"{current_path}.{key}" if current_path else key
         # if key == "type": raise Exception("penis")
-        print(f"{full_path}: {value}")
         
         if isinstance(value, dict):
             if "type" in value.keys(): value["readonly"] = True
+            print(f"{full_path}: {value}")
             recursive_dict_traversal(value, full_path)
 
 def process_json_files(directory):
@@ -30,7 +30,9 @@ def process_json_files(directory):
                         recursive_dict_traversal(content)
                         
                         # You can add more processing here if needed
-                        print(f"Schema name: {content.get('title', 'Untitled')}")
+                        # print(f"Schema name: {content.get('title', 'Untitled')}")
+                        
+                        json.dump(content, f)
 
                 except json.JSONDecodeError:
                     print(f"Error parsing JSON in file: {file_path}")

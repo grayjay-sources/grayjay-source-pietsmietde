@@ -1,0 +1,426 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/SearchResponse",
+    "definitions": {
+        "SearchResponse": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Datum"
+                    }
+                },
+                "links": {
+                    "$ref": "#/definitions/Links"
+                },
+                "meta": {
+                    "$ref": "#/definitions/Meta"
+                },
+                "counts": {
+                    "$ref": "#/definitions/Counts"
+                },
+                "success": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "counts",
+                "data",
+                "links",
+                "meta",
+                "success"
+            ],
+            "title": "SearchResponse"
+        },
+        "Counts": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "videos": {
+                    "type": "integer"
+                },
+                "articles": {
+                    "type": "integer"
+                },
+                "playlists": {
+                    "type": "integer"
+                },
+                "channels": {
+                    "type": "integer"
+                },
+                "podcasts": {
+                    "type": "integer"
+                },
+                "tags": {
+                    "type": "integer"
+                },
+                "suggestions": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "articles",
+                "channels",
+                "playlists",
+                "podcasts",
+                "suggestions",
+                "tags",
+                "videos"
+            ],
+            "title": "Counts"
+        },
+        "Datum": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "slug": {
+                    "type": "string"
+                },
+                "url_slug": {
+                    "type": "string"
+                },
+                "short_url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ]
+                },
+                "url": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "featured": {
+                    "type": "boolean"
+                },
+                "remote": {
+                    "type": "boolean"
+                },
+                "remote_url": {
+                    "type": "null"
+                },
+                "description": {
+                    "type": "null"
+                },
+                "likes_count": {
+                    "type": "null"
+                },
+                "comments_count": {
+                    "type": "null"
+                },
+                "thumbnail": {
+                    "$ref": "#/definitions/Thumbnail"
+                },
+                "channels": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Channel"
+                    }
+                },
+                "publish_date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "preferences": {
+                    "$ref": "#/definitions/Preferences"
+                }
+            },
+            "required": [
+                "channels",
+                "comments_count",
+                "description",
+                "featured",
+                "id",
+                "likes_count",
+                "preferences",
+                "publish_date",
+                "remote",
+                "remote_url",
+                "short_url",
+                "slug",
+                "thumbnail",
+                "title",
+                "url",
+                "url_slug"
+            ],
+            "title": "Datum"
+        },
+        "Channel": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "slug": {
+                    "$ref": "#/definitions/Slug"
+                },
+                "title": {
+                    "$ref": "#/definitions/Title"
+                },
+                "description": {
+                    "type": "null"
+                },
+                "url_slug": {
+                    "$ref": "#/definitions/URLSlug"
+                },
+                "videos_count": {
+                    "type": "null"
+                },
+                "followings_count": {
+                    "type": "null"
+                }
+            },
+            "required": [
+                "description",
+                "followings_count",
+                "id",
+                "slug",
+                "title",
+                "url_slug",
+                "videos_count"
+            ],
+            "title": "Channel"
+        },
+        "Preferences": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "comments": {
+                    "type": "boolean"
+                },
+                "likes": {
+                    "type": "boolean"
+                },
+                "tags": {
+                    "type": "boolean"
+                },
+                "shares": {
+                    "type": "boolean"
+                },
+                "clips": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "clips",
+                "comments",
+                "likes",
+                "shares",
+                "tags"
+            ],
+            "title": "Preferences"
+        },
+        "Thumbnail": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "collection": {
+                    "$ref": "#/definitions/Collection"
+                },
+                "remote_url": {
+                    "type": "null"
+                },
+                "variations": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Variation"
+                    }
+                }
+            },
+            "required": [
+                "collection",
+                "id",
+                "remote_url",
+                "variations"
+            ],
+            "title": "Thumbnail"
+        },
+        "Variation": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "height": {
+                    "type": "integer"
+                },
+                "file": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".jpg"
+                    ]
+                }
+            },
+            "required": [
+                "file",
+                "height",
+                "url"
+            ],
+            "title": "Variation"
+        },
+        "Links": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "first": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "last": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "prev": {
+                    "type": "null"
+                },
+                "next": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                }
+            },
+            "required": [
+                "first",
+                "last",
+                "next",
+                "prev"
+            ],
+            "title": "Links"
+        },
+        "Meta": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "current_page": {
+                    "type": "integer"
+                },
+                "from": {
+                    "type": "integer"
+                },
+                "last_page": {
+                    "type": "integer"
+                },
+                "links": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Link"
+                    }
+                },
+                "path": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "per_page": {
+                    "type": "integer"
+                },
+                "to": {
+                    "type": "integer"
+                },
+                "total": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "current_page",
+                "from",
+                "last_page",
+                "links",
+                "path",
+                "per_page",
+                "to",
+                "total"
+            ],
+            "title": "Meta"
+        },
+        "Link": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "url": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "qt-uri-protocols": [
+                                "https"
+                            ]
+                        }
+                    ]
+                },
+                "label": {
+                    "type": "string"
+                },
+                "active": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "active",
+                "label",
+                "url"
+            ],
+            "title": "Link"
+        },
+        "Slug": {
+            "type": "string",
+            "enum": [
+                "pietsmiet",
+                "pietsmiet-tv"
+            ],
+            "title": "Slug"
+        },
+        "Title": {
+            "type": "string",
+            "enum": [
+                "PietSmiet",
+                "PietSmiet TV"
+            ],
+            "title": "Title"
+        },
+        "URLSlug": {
+            "type": "string",
+            "enum": [
+                "9-pietsmiet",
+                "10-pietsmiet-tv"
+            ],
+            "title": "URLSlug"
+        },
+        "Collection": {
+            "type": "string",
+            "enum": [
+                "thumbnail"
+            ],
+            "title": "Collection"
+        }
+    }
+}

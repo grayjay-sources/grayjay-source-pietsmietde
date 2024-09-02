@@ -1,0 +1,352 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/VideoPlayerResponse",
+    "definitions": {
+        "VideoPlayerResponse": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "options": {
+                    "$ref": "#/definitions/Options"
+                },
+                "advertising": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Advertising"
+                    }
+                },
+                "success": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "advertising",
+                "options",
+                "success"
+            ],
+            "title": "VideoPlayerResponse"
+        },
+        "Advertising": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "time": {
+                    "type": "integer"
+                },
+                "tag": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "nugg": {
+                    "type": "boolean"
+                },
+                "played": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "nugg",
+                "played",
+                "tag",
+                "time"
+            ],
+            "title": "Advertising"
+        },
+        "Options": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "visual": {
+                    "$ref": "#/definitions/Visual"
+                },
+                "generic": {
+                    "$ref": "#/definitions/Generic"
+                },
+                "tracks": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Track"
+                    }
+                }
+            },
+            "required": [
+                "generic",
+                "tracks",
+                "visual"
+            ],
+            "title": "Options"
+        },
+        "Generic": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "autoplay": {
+                    "type": "boolean"
+                },
+                "muted": {
+                    "type": "boolean"
+                },
+                "controls": {
+                    "type": "boolean"
+                },
+                "loop": {
+                    "type": "boolean"
+                },
+                "playback_rates": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    }
+                },
+                "analytics": {
+                    "$ref": "#/definitions/Analytics"
+                },
+                "chromecast": {
+                    "$ref": "#/definitions/Chromecast"
+                }
+            },
+            "required": [
+                "analytics",
+                "autoplay",
+                "chromecast",
+                "controls",
+                "loop",
+                "muted",
+                "playback_rates"
+            ],
+            "title": "Generic"
+        },
+        "Analytics": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "google": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "google"
+            ],
+            "title": "Analytics"
+        },
+        "Chromecast": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "enabled": {
+                    "type": "boolean"
+                },
+                "receiver_application_id": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "enabled",
+                "receiver_application_id"
+            ],
+            "title": "Chromecast"
+        },
+        "Track": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "title": {
+                    "type": "null"
+                },
+                "full_title": {
+                    "type": "string"
+                },
+                "pluralized_title": {
+                    "type": "string"
+                },
+                "main": {
+                    "type": "boolean"
+                },
+                "sources": {
+                    "$ref": "#/definitions/Sources"
+                },
+                "qualities": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Quality"
+                    }
+                }
+            },
+            "required": [
+                "full_title",
+                "id",
+                "main",
+                "pluralized_title",
+                "qualities",
+                "sources",
+                "title"
+            ],
+            "title": "Track"
+        },
+        "Quality": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "label": {
+                    "type": "string"
+                },
+                "bitrate": {
+                    "type": "integer"
+                },
+                "framerate": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "bitrate",
+                "framerate",
+                "label"
+            ],
+            "title": "Quality"
+        },
+        "Sources": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "hls": {
+                    "$ref": "#/definitions/Dash"
+                },
+                "dash": {
+                    "$ref": "#/definitions/Dash"
+                },
+                "mp4": {
+                    "type": "null"
+                }
+            },
+            "required": [
+                "dash",
+                "hls",
+                "mp4"
+            ],
+            "title": "Sources"
+        },
+        "Dash": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "src": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".m3u8",
+                        ".mpd"
+                    ]
+                },
+                "type": {
+                    "type": "string"
+                },
+                "labels": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "labels_bitrate": {
+                    "$ref": "#/definitions/LabelsBitrate"
+                }
+            },
+            "required": [
+                "labels",
+                "labels_bitrate",
+                "src",
+                "type"
+            ],
+            "title": "Dash"
+        },
+        "LabelsBitrate": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "1645": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "1645"
+            ],
+            "title": "LabelsBitrate"
+        },
+        "Visual": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "fluid": {
+                    "type": "boolean"
+                },
+                "responsive": {
+                    "type": "boolean"
+                },
+                "aspect_ratio": {
+                    "type": "string"
+                },
+                "thumbnail": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".jpg"
+                    ]
+                },
+                "brand": {
+                    "$ref": "#/definitions/Brand"
+                }
+            },
+            "required": [
+                "aspect_ratio",
+                "brand",
+                "fluid",
+                "responsive",
+                "thumbnail"
+            ],
+            "title": "Visual"
+        },
+        "Brand": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "logo": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".svg"
+                    ]
+                },
+                "color": {
+                    "type": "string"
+                },
+                "link": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                }
+            },
+            "required": [
+                "color",
+                "link",
+                "logo"
+            ],
+            "title": "Brand"
+        }
+    }
+}

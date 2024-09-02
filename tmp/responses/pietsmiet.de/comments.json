@@ -8,7 +8,7 @@
 			"timestamp": 2,
 			"pinned": false,
 			"count_replies": 0,
-			"likes_count": 5,
+			"likes_count": 14,
 			"dislikes_count": 0,
 			"user": {
 				"id": 31960,
@@ -36,8 +36,8 @@
 						}
 					]
 				},
-				"reputation": 625,
-				"reputation_pretty": "625",
+				"reputation": 736,
+				"reputation_pretty": "736",
 				"preferences": {
 					"public_profile": true,
 					"subscription_enable_identification": true
@@ -57,7 +57,7 @@
 			"timestamp": null,
 			"pinned": false,
 			"count_replies": 0,
-			"likes_count": 2,
+			"likes_count": 3,
 			"dislikes_count": 0,
 			"user": {
 				"id": 122279,
@@ -87,8 +87,8 @@
 						}
 					]
 				},
-				"reputation": 67,
-				"reputation_pretty": "67",
+				"reputation": 110,
+				"reputation_pretty": "110",
 				"preferences": {
 					"public_profile": true,
 					"subscription_enable_identification": true
@@ -108,7 +108,7 @@
 			"timestamp": 58,
 			"pinned": false,
 			"count_replies": 0,
-			"likes_count": 0,
+			"likes_count": 1,
 			"dislikes_count": 1,
 			"user": {
 				"id": 122615,
@@ -122,8 +122,8 @@
 				"public_profile": false,
 				"banner": null,
 				"avatar": null,
-				"reputation": 15,
-				"reputation_pretty": "15",
+				"reputation": 40,
+				"reputation_pretty": "40",
 				"preferences": {
 					"public_profile": true,
 					"subscription_enable_identification": true
@@ -136,39 +136,52 @@
 			"reply": null
 		},
 		{
-			"id": 425442,
-			"created_at": "2024-04-04 12:58:17",
-			"text": "Jo. Das selbe bei mir auch.",
+			"id": 425468,
+			"created_at": "2024-04-04 20:21:56",
+			"text": "same bei mir",
 			"approved": true,
-			"timestamp": 130,
+			"timestamp": null,
 			"pinned": false,
 			"count_replies": 0,
-			"likes_count": 0,
+			"likes_count": 1,
 			"dislikes_count": 0,
 			"user": {
-				"id": 154634,
-				"url_slug": "154634-frihed1007",
-				"username": "frihed1007",
-				"name": "Frihed1007",
-				"name_possessive": "Frihed1007s",
+				"id": 7470,
+				"url_slug": "7470-xarnarany",
+				"username": "xarnarany",
+				"name": "xarnarany",
+				"name_possessive": "xarnaranys",
 				"description": null,
 				"team": false,
 				"blocked": false,
 				"public_profile": false,
 				"banner": null,
-				"avatar": null,
-				"reputation": 33,
-				"reputation_pretty": "33",
+				"avatar": {
+					"id": 167275,
+					"collection": "avatar",
+					"remote_url": null,
+					"variations": [
+						{
+							"height": 130,
+							"file": "a2b6af5f3669827edfe58db643195d27be59a5db.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/a2b6af5f3669827edfe58db643195d27be59a5db.jpg?i=167275"
+						},
+						{
+							"height": 75,
+							"file": "5995f7e194fe2a1bc6ac425eefab747783175d53.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/5995f7e194fe2a1bc6ac425eefab747783175d53.jpg?i=167275"
+						}
+					]
+				},
+				"reputation": 0,
+				"reputation_pretty": "0",
 				"preferences": {
 					"public_profile": true,
 					"subscription_enable_identification": true
 				},
-				"subscribed": true,
-				"subscription_streak": 4,
-				"subscription_supporter": false,
 				"gifted_subscriptions_count": 0,
-				"created_at": "2022-03-29 11:50:47",
-				"updated_at": "2024-03-05 13:56:39"
+				"created_at": "2018-10-10 20:48:38",
+				"updated_at": "2022-08-12 15:49:30"
 			},
 			"is_reply": true,
 			"reply": 425435
@@ -177,6 +190,57 @@
 			"id": 425448,
 			"created_at": "2024-04-04 14:14:55",
 			"text": "Dito. Auf Youtube funktioniert es aber",
+			"approved": true,
+			"timestamp": null,
+			"pinned": false,
+			"count_replies": 0,
+			"likes_count": 2,
+			"dislikes_count": 0,
+			"user": {
+				"id": 125853,
+				"url_slug": "125853-baskase",
+				"username": "baskase",
+				"name": "Baskase",
+				"name_possessive": "Baskases",
+				"description": null,
+				"team": false,
+				"blocked": false,
+				"public_profile": false,
+				"banner": null,
+				"avatar": {
+					"id": 212737,
+					"collection": "avatar",
+					"remote_url": null,
+					"variations": [
+						{
+							"height": 130,
+							"file": "26439565ae22a03d289880877bfe886888bae477.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/26439565ae22a03d289880877bfe886888bae477.jpg?i=212737"
+						},
+						{
+							"height": 75,
+							"file": "5293c6799f45c43d74eebebf291607a71c07b083.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/5293c6799f45c43d74eebebf291607a71c07b083.jpg?i=212737"
+						}
+					]
+				},
+				"reputation": 125,
+				"reputation_pretty": "125",
+				"preferences": {
+					"public_profile": false,
+					"subscription_enable_identification": true
+				},
+				"gifted_subscriptions_count": 0,
+				"created_at": "2021-01-11 15:03:58",
+				"updated_at": "2021-01-11 15:33:06"
+			},
+			"is_reply": true,
+			"reply": 425435
+		},
+		{
+			"id": 425489,
+			"created_at": "2024-04-05 12:02:10",
+			"text": "Aber klar: youtube com \/watch?v=f8HzJh6h3_I<br \/>\nBtw. die Videonamen sind immer gleich auf YT wie hier, kannst also auch einfach den Videotitel hier kopieren und bei YT suchen in Zukunft :)",
 			"approved": true,
 			"timestamp": null,
 			"pinned": false,
@@ -211,8 +275,8 @@
 						}
 					]
 				},
-				"reputation": 88,
-				"reputation_pretty": "88",
+				"reputation": 125,
+				"reputation_pretty": "125",
 				"preferences": {
 					"public_profile": false,
 					"subscription_enable_identification": true
@@ -220,6 +284,98 @@
 				"gifted_subscriptions_count": 0,
 				"created_at": "2021-01-11 15:03:58",
 				"updated_at": "2021-01-11 15:33:06"
+			},
+			"is_reply": true,
+			"reply": 425435
+		},
+		{
+			"id": 425442,
+			"created_at": "2024-04-04 12:58:17",
+			"text": "Jo. Das selbe bei mir auch.",
+			"approved": true,
+			"timestamp": 130,
+			"pinned": false,
+			"count_replies": 0,
+			"likes_count": 2,
+			"dislikes_count": 0,
+			"user": {
+				"id": 154634,
+				"url_slug": "154634-frihed1007",
+				"username": "frihed1007",
+				"name": "Frihed1007",
+				"name_possessive": "Frihed1007s",
+				"description": null,
+				"team": false,
+				"blocked": false,
+				"public_profile": false,
+				"banner": null,
+				"avatar": null,
+				"reputation": 188,
+				"reputation_pretty": "188",
+				"preferences": {
+					"public_profile": true,
+					"subscription_enable_identification": true
+				},
+				"subscribed": true,
+				"subscription_streak": 9,
+				"subscription_supporter": false,
+				"gifted_subscriptions_count": 0,
+				"created_at": "2022-03-29 11:50:47",
+				"updated_at": "2024-08-05 13:24:54"
+			},
+			"is_reply": true,
+			"reply": 425435
+		},
+		{
+			"id": 425471,
+			"created_at": "2024-04-05 08:58:49",
+			"text": "Hallo Baskase! Hast du da vielleicht mal den YT Link für mich (oder nur diese Zeichenfolge aus der URL, falls man keine Links posten darf)? Ich finde das Video da gar nicht und bei mir läuft es hier auch nicht. Danke schön :)",
+			"approved": true,
+			"timestamp": null,
+			"pinned": false,
+			"count_replies": 0,
+			"likes_count": 1,
+			"dislikes_count": 0,
+			"user": {
+				"id": 192281,
+				"url_slug": "192281-hani506",
+				"username": "hani506",
+				"name": "hani506",
+				"name_possessive": "hani506s",
+				"description": null,
+				"team": false,
+				"blocked": false,
+				"public_profile": false,
+				"banner": null,
+				"avatar": {
+					"id": 248005,
+					"collection": "avatar",
+					"remote_url": null,
+					"variations": [
+						{
+							"height": 130,
+							"file": "0583717a86ddf675466adfec5774a3aedd2623ae.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/0583717a86ddf675466adfec5774a3aedd2623ae.jpg?i=248005"
+						},
+						{
+							"height": 75,
+							"file": "6beb1bbf720793cebb68ac91b32f87d6cb9e41aa.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/6beb1bbf720793cebb68ac91b32f87d6cb9e41aa.jpg?i=248005"
+						}
+					]
+				},
+				"reputation": 1,
+				"reputation_pretty": "1",
+				"preferences": {
+					"public_profile": true,
+					"subscription_enable_identification": true
+				},
+				"subscribed": true,
+				"subscription_streak": 5,
+				"subscription_supporter": true,
+				"gifted_subscriptions_count": 0,
+				"created_at": "2024-03-24 18:05:44",
+				"updated_at": "2024-08-24 21:21:23"
 			},
 			"is_reply": true,
 			"reply": 425435
@@ -254,7 +410,7 @@
 		],
 		"path": "\/",
 		"per_page": 100,
-		"to": 5,
+		"to": 8,
 		"total": 3
 	},
 	"success": true

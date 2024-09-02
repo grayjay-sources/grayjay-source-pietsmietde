@@ -1,0 +1,386 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/CommentsResponse",
+    "definitions": {
+        "CommentsResponse": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "data": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Datum"
+                    }
+                },
+                "links": {
+                    "$ref": "#/definitions/Links"
+                },
+                "meta": {
+                    "$ref": "#/definitions/Meta"
+                },
+                "success": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "data",
+                "links",
+                "meta",
+                "success"
+            ],
+            "title": "CommentsResponse"
+        },
+        "Datum": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "created_at": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "text": {
+                    "type": "string"
+                },
+                "approved": {
+                    "type": "boolean"
+                },
+                "timestamp": {
+                    "anyOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "pinned": {
+                    "type": "boolean"
+                },
+                "count_replies": {
+                    "type": "integer"
+                },
+                "likes_count": {
+                    "type": "integer"
+                },
+                "dislikes_count": {
+                    "type": "integer"
+                },
+                "user": {
+                    "$ref": "#/definitions/User"
+                },
+                "is_reply": {
+                    "type": "boolean"
+                },
+                "reply": {
+                    "anyOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "approved",
+                "count_replies",
+                "created_at",
+                "dislikes_count",
+                "id",
+                "is_reply",
+                "likes_count",
+                "pinned",
+                "reply",
+                "text",
+                "timestamp",
+                "user"
+            ],
+            "title": "Datum"
+        },
+        "User": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "url_slug": {
+                    "type": "string"
+                },
+                "username": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "name_possessive": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "null"
+                },
+                "team": {
+                    "type": "boolean"
+                },
+                "blocked": {
+                    "type": "boolean"
+                },
+                "public_profile": {
+                    "type": "boolean"
+                },
+                "banner": {
+                    "type": "null"
+                },
+                "avatar": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/Avatar"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "reputation": {
+                    "type": "integer"
+                },
+                "reputation_pretty": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "preferences": {
+                    "$ref": "#/definitions/Preferences"
+                },
+                "gifted_subscriptions_count": {
+                    "type": "integer"
+                },
+                "created_at": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "updated_at": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "subscribed": {
+                    "type": "boolean"
+                },
+                "subscription_streak": {
+                    "type": "integer"
+                },
+                "subscription_supporter": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "avatar",
+                "banner",
+                "blocked",
+                "created_at",
+                "description",
+                "gifted_subscriptions_count",
+                "id",
+                "name",
+                "name_possessive",
+                "preferences",
+                "public_profile",
+                "reputation",
+                "reputation_pretty",
+                "team",
+                "updated_at",
+                "url_slug",
+                "username"
+            ],
+            "title": "User"
+        },
+        "Avatar": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "collection": {
+                    "type": "string"
+                },
+                "remote_url": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "qt-uri-protocols": [
+                                "https"
+                            ],
+                            "qt-uri-extensions": [
+                                ".jpeg"
+                            ]
+                        }
+                    ]
+                },
+                "variations": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Variation"
+                    }
+                }
+            },
+            "required": [
+                "collection",
+                "id",
+                "remote_url",
+                "variations"
+            ],
+            "title": "Avatar"
+        },
+        "Variation": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "height": {
+                    "type": "integer"
+                },
+                "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".jpeg",
+                        ".jpg"
+                    ]
+                },
+                "file": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "height",
+                "url"
+            ],
+            "title": "Variation"
+        },
+        "Preferences": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "public_profile": {
+                    "type": "boolean"
+                },
+                "subscription_enable_identification": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "public_profile",
+                "subscription_enable_identification"
+            ],
+            "title": "Preferences"
+        },
+        "Links": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "first": {
+                    "type": "string"
+                },
+                "last": {
+                    "type": "string"
+                },
+                "prev": {
+                    "type": "null"
+                },
+                "next": {
+                    "type": "null"
+                }
+            },
+            "required": [
+                "first",
+                "last",
+                "next",
+                "prev"
+            ],
+            "title": "Links"
+        },
+        "Meta": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "current_page": {
+                    "type": "integer"
+                },
+                "from": {
+                    "type": "integer"
+                },
+                "last_page": {
+                    "type": "integer"
+                },
+                "links": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Link"
+                    }
+                },
+                "path": {
+                    "type": "string"
+                },
+                "per_page": {
+                    "type": "integer"
+                },
+                "to": {
+                    "type": "integer"
+                },
+                "total": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "current_page",
+                "from",
+                "last_page",
+                "links",
+                "path",
+                "per_page",
+                "to",
+                "total"
+            ],
+            "title": "Meta"
+        },
+        "Link": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "url": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "label": {
+                    "type": "string"
+                },
+                "active": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "active",
+                "label",
+                "url"
+            ],
+            "title": "Link"
+        }
+    }
+}

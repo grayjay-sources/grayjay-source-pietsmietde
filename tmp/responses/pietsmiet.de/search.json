@@ -1,0 +1,931 @@
+{
+	"data": [
+		{
+			"id": 79527,
+			"slug": "ich-weiss-was-du-nicht-weisst-mit-noway-und-dhalu",
+			"url_slug": "79527-ich-weiss-was-du-nicht-weisst-mit-noway-und-dhalu",
+			"short_url": "http:\/\/ptsmt.de\/v\/79527",
+			"url": "\/videos\/79527-ich-weiss-was-du-nicht-weisst-mit-noway-und-dhalu",
+			"title": "DHALU & NOWAY vs. PIETSMIET: Ich weiß, was du nicht weißt",
+			"featured": false,
+			"remote": false,
+			"remote_url": null,
+			"description": null,
+			"likes_count": null,
+			"comments_count": null,
+			"thumbnail": {
+				"id": 249727,
+				"collection": "thumbnail",
+				"remote_url": null,
+				"variations": [
+					{
+						"height": 720,
+						"file": "d0f7f65e5a8f3266c1e1676f2151f10be07b3fe3.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/d0f7f65e5a8f3266c1e1676f2151f10be07b3fe3.jpg?i=249727"
+					},
+					{
+						"height": 360,
+						"file": "4f9d39867f6fb20a726a602ffd1159abdb72178b.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/4f9d39867f6fb20a726a602ffd1159abdb72178b.jpg?i=249727"
+					},
+					{
+						"height": 144,
+						"file": "ecbbbafc5418ae61de918b8de9bf672653e1e026.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/ecbbbafc5418ae61de918b8de9bf672653e1e026.jpg?i=249727"
+					}
+				]
+			},
+			"channels": [
+				{
+					"id": 9,
+					"slug": "pietsmiet",
+					"title": "PietSmiet",
+					"description": null,
+					"url_slug": "9-pietsmiet",
+					"videos_count": null,
+					"followings_count": null
+				}
+			],
+			"publish_date": "2024-08-15 10:00:00",
+			"preferences": {
+				"comments": true,
+				"likes": true,
+				"tags": true,
+				"shares": true,
+				"clips": true
+			}
+		},
+		{
+			"id": 79533,
+			"slug": "react-minecraft-season-9",
+			"url_slug": "79533-react-minecraft-season-9",
+			"short_url": "http:\/\/ptsmt.de\/v\/79533",
+			"url": "\/videos\/79533-react-minecraft-season-9",
+			"title": "React: Best of Minecraft Season 9 #1 [ Best of Pietsmiet]",
+			"featured": false,
+			"remote": false,
+			"remote_url": null,
+			"description": null,
+			"likes_count": null,
+			"comments_count": null,
+			"thumbnail": {
+				"id": 249774,
+				"collection": "thumbnail",
+				"remote_url": null,
+				"variations": [
+					{
+						"height": 720,
+						"file": "556e9ff6fc4a75038b49625f1ef6f39a6952ebed.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/556e9ff6fc4a75038b49625f1ef6f39a6952ebed.jpg?i=249774"
+					},
+					{
+						"height": 360,
+						"file": "21b706c256466af8e90ba6e97ab8a2e39305d0d4.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/21b706c256466af8e90ba6e97ab8a2e39305d0d4.jpg?i=249774"
+					},
+					{
+						"height": 144,
+						"file": "d807a1f10a00baad49ea44f964c0c418d0935c18.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/d807a1f10a00baad49ea44f964c0c418d0935c18.jpg?i=249774"
+					}
+				]
+			},
+			"channels": [
+				{
+					"id": 10,
+					"slug": "pietsmiet-tv",
+					"title": "PietSmiet TV",
+					"description": null,
+					"url_slug": "10-pietsmiet-tv",
+					"videos_count": null,
+					"followings_count": null
+				}
+			],
+			"publish_date": "2024-08-26 11:30:00",
+			"preferences": {
+				"comments": true,
+				"likes": true,
+				"tags": true,
+				"shares": true,
+				"clips": true
+			}
+		},
+		{
+			"id": 79459,
+			"slug": "knapp-bis-zum-schluss-rasterchaos",
+			"url_slug": "79459-knapp-bis-zum-schluss-rasterchaos",
+			"short_url": "http:\/\/ptsmt.de\/v\/79459",
+			"url": "\/videos\/79459-knapp-bis-zum-schluss-rasterchaos",
+			"title": "KNAPP BIS ZUM SCHLUSS! | Rasterchaos",
+			"featured": false,
+			"remote": false,
+			"remote_url": null,
+			"description": null,
+			"likes_count": null,
+			"comments_count": null,
+			"thumbnail": {
+				"id": 249654,
+				"collection": "thumbnail",
+				"remote_url": null,
+				"variations": [
+					{
+						"height": 720,
+						"file": "3c000845fa87cf614d2166b97453bc8f3476677d.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/3c000845fa87cf614d2166b97453bc8f3476677d.jpg?i=249654"
+					},
+					{
+						"height": 360,
+						"file": "4d5571af2f07ca395fabbc8d1ae19ec92d703550.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/4d5571af2f07ca395fabbc8d1ae19ec92d703550.jpg?i=249654"
+					},
+					{
+						"height": 144,
+						"file": "9ea9616ce6b9e0df7064a1dee9885c64cfa2a011.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/9ea9616ce6b9e0df7064a1dee9885c64cfa2a011.jpg?i=249654"
+					}
+				]
+			},
+			"channels": [
+				{
+					"id": 9,
+					"slug": "pietsmiet",
+					"title": "PietSmiet",
+					"description": null,
+					"url_slug": "9-pietsmiet",
+					"videos_count": null,
+					"followings_count": null
+				}
+			],
+			"publish_date": "2024-08-08 10:00:00",
+			"preferences": {
+				"comments": true,
+				"likes": true,
+				"tags": true,
+				"shares": true,
+				"clips": true
+			}
+		},
+		{
+			"id": 79462,
+			"slug": "erkennst-du-dieses-bild-schnipselquiz",
+			"url_slug": "79462-erkennst-du-dieses-bild-schnipselquiz",
+			"short_url": "http:\/\/ptsmt.de\/v\/79462",
+			"url": "\/videos\/79462-erkennst-du-dieses-bild-schnipselquiz",
+			"title": "ERKENNST DU dieses BILD? | Schnipselquiz",
+			"featured": false,
+			"remote": false,
+			"remote_url": null,
+			"description": null,
+			"likes_count": null,
+			"comments_count": null,
+			"thumbnail": {
+				"id": 249618,
+				"collection": "thumbnail",
+				"remote_url": null,
+				"variations": [
+					{
+						"height": 720,
+						"file": "66c499af1cd115087cf8669df31fcf8133080674.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/66c499af1cd115087cf8669df31fcf8133080674.jpg?i=249618"
+					},
+					{
+						"height": 360,
+						"file": "f637beb089f19f7ceb409743f4bf48977536c314.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/f637beb089f19f7ceb409743f4bf48977536c314.jpg?i=249618"
+					},
+					{
+						"height": 144,
+						"file": "64b487036ed2900de946540ca03103f543a34e50.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/64b487036ed2900de946540ca03103f543a34e50.jpg?i=249618"
+					}
+				]
+			},
+			"channels": [
+				{
+					"id": 9,
+					"slug": "pietsmiet",
+					"title": "PietSmiet",
+					"description": null,
+					"url_slug": "9-pietsmiet",
+					"videos_count": null,
+					"followings_count": null
+				}
+			],
+			"publish_date": "2024-08-06 14:00:00",
+			"preferences": {
+				"comments": true,
+				"likes": true,
+				"tags": true,
+				"shares": true,
+				"clips": true
+			}
+		},
+		{
+			"id": 79484,
+			"slug": "wir-denken-gleich-ich-weiss-was-mein-partner-denkt",
+			"url_slug": "79484-wir-denken-gleich-ich-weiss-was-mein-partner-denkt",
+			"short_url": "http:\/\/ptsmt.de\/v\/79484",
+			"url": "\/videos\/79484-wir-denken-gleich-ich-weiss-was-mein-partner-denkt",
+			"title": "Wir denken gleich! | Ich weiß was mein Partner weiß",
+			"featured": false,
+			"remote": false,
+			"remote_url": null,
+			"description": null,
+			"likes_count": null,
+			"comments_count": null,
+			"thumbnail": {
+				"id": 249650,
+				"collection": "thumbnail",
+				"remote_url": null,
+				"variations": [
+					{
+						"height": 720,
+						"file": "b6843c70a6a342e1f5393e3c993a5ec2ad7da499.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/b6843c70a6a342e1f5393e3c993a5ec2ad7da499.jpg?i=249650"
+					},
+					{
+						"height": 360,
+						"file": "d7b9d7e9d393474499118b9aca1eadc40bd0f174.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/d7b9d7e9d393474499118b9aca1eadc40bd0f174.jpg?i=249650"
+					},
+					{
+						"height": 144,
+						"file": "3cccbdfda3b5ad1f484d96fa5971e29839e40368.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/3cccbdfda3b5ad1f484d96fa5971e29839e40368.jpg?i=249650"
+					}
+				]
+			},
+			"channels": [
+				{
+					"id": 9,
+					"slug": "pietsmiet",
+					"title": "PietSmiet",
+					"description": null,
+					"url_slug": "9-pietsmiet",
+					"videos_count": null,
+					"followings_count": null
+				}
+			],
+			"publish_date": "2024-08-09 16:00:00",
+			"preferences": {
+				"comments": true,
+				"likes": true,
+				"tags": true,
+				"shares": true,
+				"clips": true
+			}
+		},
+		{
+			"id": 79561,
+			"slug": "der-stift-muss-es-richten-bau-simulator",
+			"url_slug": "79561-der-stift-muss-es-richten-bau-simulator",
+			"short_url": "http:\/\/ptsmt.de\/v\/79561",
+			"url": "\/videos\/79561-der-stift-muss-es-richten-bau-simulator",
+			"title": "DER STIFT MUSS ES RICHTEN! | Bau-Simulator",
+			"featured": false,
+			"remote": false,
+			"remote_url": null,
+			"description": null,
+			"likes_count": null,
+			"comments_count": null,
+			"thumbnail": {
+				"id": 249808,
+				"collection": "thumbnail",
+				"remote_url": null,
+				"variations": [
+					{
+						"height": 720,
+						"file": "7473440fbf8926ffdcc8c12069192a83a2097c6b.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/7473440fbf8926ffdcc8c12069192a83a2097c6b.jpg?i=249808"
+					},
+					{
+						"height": 360,
+						"file": "d05858381d352b60cd805d0ea2a65f573393b666.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/d05858381d352b60cd805d0ea2a65f573393b666.jpg?i=249808"
+					},
+					{
+						"height": 144,
+						"file": "73fe14f71e31ce03eee511d381a4e24cd04a564a.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/73fe14f71e31ce03eee511d381a4e24cd04a564a.jpg?i=249808"
+					}
+				]
+			},
+			"channels": [
+				{
+					"id": 9,
+					"slug": "pietsmiet",
+					"title": "PietSmiet",
+					"description": null,
+					"url_slug": "9-pietsmiet",
+					"videos_count": null,
+					"followings_count": null
+				}
+			],
+			"publish_date": "2024-08-26 16:00:00",
+			"preferences": {
+				"comments": true,
+				"likes": true,
+				"tags": true,
+				"shares": true,
+				"clips": true
+			}
+		},
+		{
+			"id": 79337,
+			"slug": "react-bewerbung-10",
+			"url_slug": "79337-react-bewerbung-10",
+			"short_url": "http:\/\/ptsmt.de\/v\/79337",
+			"url": "\/videos\/79337-react-bewerbung-10",
+			"title": "React: BEST OF JUNI 2024 🎮 (xMijuki) - \"Best Of\"-Bewerbung #10",
+			"featured": false,
+			"remote": false,
+			"remote_url": null,
+			"description": null,
+			"likes_count": null,
+			"comments_count": null,
+			"thumbnail": {
+				"id": 249448,
+				"collection": "thumbnail",
+				"remote_url": null,
+				"variations": [
+					{
+						"height": 720,
+						"file": "f18d034a8b9dc7a32e6a74b77723d2c6e83d3fd6.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/f18d034a8b9dc7a32e6a74b77723d2c6e83d3fd6.jpg?i=249448"
+					},
+					{
+						"height": 360,
+						"file": "07124ad48a609035ea738ea04f75ff3df5cc4245.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/07124ad48a609035ea738ea04f75ff3df5cc4245.jpg?i=249448"
+					},
+					{
+						"height": 144,
+						"file": "a8e722e87c7a6264031057b7bf7d642d267e7d7a.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/a8e722e87c7a6264031057b7bf7d642d267e7d7a.jpg?i=249448"
+					}
+				]
+			},
+			"channels": [
+				{
+					"id": 10,
+					"slug": "pietsmiet-tv",
+					"title": "PietSmiet TV",
+					"description": null,
+					"url_slug": "10-pietsmiet-tv",
+					"videos_count": null,
+					"followings_count": null
+				}
+			],
+			"publish_date": "2024-08-06 11:30:00",
+			"preferences": {
+				"comments": true,
+				"likes": true,
+				"tags": true,
+				"shares": true,
+				"clips": true
+			}
+		},
+		{
+			"id": 79535,
+			"slug": "react-realer-irrsinn-2",
+			"url_slug": "79535-react-realer-irrsinn-2",
+			"short_url": "http:\/\/ptsmt.de\/v\/79535",
+			"url": "\/videos\/79535-react-realer-irrsinn-2",
+			"title": "React: Realer Irrsinn #49",
+			"featured": false,
+			"remote": false,
+			"remote_url": null,
+			"description": null,
+			"likes_count": null,
+			"comments_count": null,
+			"thumbnail": {
+				"id": 249775,
+				"collection": "thumbnail",
+				"remote_url": null,
+				"variations": [
+					{
+						"height": 720,
+						"file": "d2a62851c9e3ce56719584990a29fd22207c5eea.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/d2a62851c9e3ce56719584990a29fd22207c5eea.jpg?i=249775"
+					},
+					{
+						"height": 360,
+						"file": "737ed5bec2809de78fa687265eaa7c45b15a098f.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/737ed5bec2809de78fa687265eaa7c45b15a098f.jpg?i=249775"
+					},
+					{
+						"height": 144,
+						"file": "1baa796754fca2e5e4ef6a26bceaa75f49162c51.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/1baa796754fca2e5e4ef6a26bceaa75f49162c51.jpg?i=249775"
+					}
+				]
+			},
+			"channels": [
+				{
+					"id": 10,
+					"slug": "pietsmiet-tv",
+					"title": "PietSmiet TV",
+					"description": null,
+					"url_slug": "10-pietsmiet-tv",
+					"videos_count": null,
+					"followings_count": null
+				}
+			],
+			"publish_date": "2024-08-27 11:30:00",
+			"preferences": {
+				"comments": true,
+				"likes": true,
+				"tags": true,
+				"shares": true,
+				"clips": true
+			}
+		},
+		{
+			"id": 79447,
+			"slug": "meine-kollegen-sind-idioten",
+			"url_slug": "79447-meine-kollegen-sind-idioten",
+			"short_url": "http:\/\/ptsmt.de\/v\/79447",
+			"url": "\/videos\/79447-meine-kollegen-sind-idioten",
+			"title": "Wir arbeiten auf dem Bau!",
+			"featured": false,
+			"remote": false,
+			"remote_url": null,
+			"description": null,
+			"likes_count": null,
+			"comments_count": null,
+			"thumbnail": {
+				"id": 249583,
+				"collection": "thumbnail",
+				"remote_url": null,
+				"variations": [
+					{
+						"height": 720,
+						"file": "7c4dfa6c0c60f83a1970412132eec3cbdf7b740f.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/7c4dfa6c0c60f83a1970412132eec3cbdf7b740f.jpg?i=249583"
+					},
+					{
+						"height": 360,
+						"file": "36ddef6787b1eb178917d9e76f6ea52aada2a53d.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/36ddef6787b1eb178917d9e76f6ea52aada2a53d.jpg?i=249583"
+					},
+					{
+						"height": 144,
+						"file": "cbb2a398b07c6e65da81c6a4078625d5dcbaa3ba.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/cbb2a398b07c6e65da81c6a4078625d5dcbaa3ba.jpg?i=249583"
+					}
+				]
+			},
+			"channels": [
+				{
+					"id": 9,
+					"slug": "pietsmiet",
+					"title": "PietSmiet",
+					"description": null,
+					"url_slug": "9-pietsmiet",
+					"videos_count": null,
+					"followings_count": null
+				}
+			],
+			"publish_date": "2024-08-04 10:00:00",
+			"preferences": {
+				"comments": true,
+				"likes": true,
+				"tags": true,
+				"shares": true,
+				"clips": true
+			}
+		},
+		{
+			"id": 79265,
+			"slug": "bastighg-vs-pietsmiet-bei-minecraft-taskmaster",
+			"url_slug": "79265-bastighg-vs-pietsmiet-bei-minecraft-taskmaster",
+			"short_url": "http:\/\/ptsmt.de\/v\/79265",
+			"url": "\/videos\/79265-bastighg-vs-pietsmiet-bei-minecraft-taskmaster",
+			"title": "BASTIGHG vs. PIETSMIET bei Minecraft Taskmaster",
+			"featured": false,
+			"remote": false,
+			"remote_url": null,
+			"description": null,
+			"likes_count": null,
+			"comments_count": null,
+			"thumbnail": {
+				"id": 249222,
+				"collection": "thumbnail",
+				"remote_url": null,
+				"variations": [
+					{
+						"height": 720,
+						"file": "dd28e02dd01d37d862dac0293e1a22a039e5768a.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/dd28e02dd01d37d862dac0293e1a22a039e5768a.jpg?i=249222"
+					},
+					{
+						"height": 360,
+						"file": "96e172fa07d8f56070c60581065953d94856f47c.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/96e172fa07d8f56070c60581065953d94856f47c.jpg?i=249222"
+					},
+					{
+						"height": 144,
+						"file": "02d891e4f15ac261a9accb5a1a3c9315cbbe975f.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/02d891e4f15ac261a9accb5a1a3c9315cbbe975f.jpg?i=249222"
+					}
+				]
+			},
+			"channels": [
+				{
+					"id": 9,
+					"slug": "pietsmiet",
+					"title": "PietSmiet",
+					"description": null,
+					"url_slug": "9-pietsmiet",
+					"videos_count": null,
+					"followings_count": null
+				}
+			],
+			"publish_date": "2024-07-04 16:00:00",
+			"preferences": {
+				"comments": true,
+				"likes": true,
+				"tags": true,
+				"shares": true,
+				"clips": true
+			}
+		},
+		{
+			"id": 79360,
+			"slug": "wer-hat-das-beste-aim-von-pietsmiet-aimlabs",
+			"url_slug": "79360-wer-hat-das-beste-aim-von-pietsmiet-aimlabs",
+			"short_url": "http:\/\/ptsmt.de\/v\/79360",
+			"url": "\/videos\/79360-wer-hat-das-beste-aim-von-pietsmiet-aimlabs",
+			"title": "Wer hat das BESTE AIM von PietSmiet? | Aimlabs",
+			"featured": false,
+			"remote": false,
+			"remote_url": null,
+			"description": null,
+			"likes_count": null,
+			"comments_count": null,
+			"thumbnail": {
+				"id": 249442,
+				"collection": "thumbnail",
+				"remote_url": null,
+				"variations": [
+					{
+						"height": 720,
+						"file": "535341b0b51e4e84db8d06ef3f14ec7845600804.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/535341b0b51e4e84db8d06ef3f14ec7845600804.jpg?i=249442"
+					},
+					{
+						"height": 360,
+						"file": "cc88ab56a1c20daff6f9331a49729f3969d0789c.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/cc88ab56a1c20daff6f9331a49729f3969d0789c.jpg?i=249442"
+					},
+					{
+						"height": 144,
+						"file": "b619c19e4b8537c3321839a1bd3e1032c9f781e5.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/b619c19e4b8537c3321839a1bd3e1032c9f781e5.jpg?i=249442"
+					}
+				]
+			},
+			"channels": [
+				{
+					"id": 9,
+					"slug": "pietsmiet",
+					"title": "PietSmiet",
+					"description": null,
+					"url_slug": "9-pietsmiet",
+					"videos_count": null,
+					"followings_count": null
+				}
+			],
+			"publish_date": "2024-07-22 10:00:00",
+			"preferences": {
+				"comments": true,
+				"likes": true,
+				"tags": true,
+				"shares": true,
+				"clips": true
+			}
+		},
+		{
+			"id": 79297,
+			"slug": "react-american-truck-simulator",
+			"url_slug": "79297-react-american-truck-simulator",
+			"short_url": "http:\/\/ptsmt.de\/v\/79297",
+			"url": "\/videos\/79297-react-american-truck-simulator",
+			"title": "React: Best of American Truck Simulator [Best of PietSmiet]",
+			"featured": false,
+			"remote": false,
+			"remote_url": null,
+			"description": null,
+			"likes_count": null,
+			"comments_count": null,
+			"thumbnail": {
+				"id": 249322,
+				"collection": "thumbnail",
+				"remote_url": null,
+				"variations": [
+					{
+						"height": 720,
+						"file": "fd75c85b0cf2ba305331ab2ccfbabe5285e05cff.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/fd75c85b0cf2ba305331ab2ccfbabe5285e05cff.jpg?i=249322"
+					},
+					{
+						"height": 360,
+						"file": "3b0e3faf278f99ea7a9f4e50fca26fb70555246a.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/3b0e3faf278f99ea7a9f4e50fca26fb70555246a.jpg?i=249322"
+					},
+					{
+						"height": 144,
+						"file": "38d2af8eb6202ff5b3cbe95c2d31229f2a9d6dea.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/38d2af8eb6202ff5b3cbe95c2d31229f2a9d6dea.jpg?i=249322"
+					}
+				]
+			},
+			"channels": [
+				{
+					"id": 10,
+					"slug": "pietsmiet-tv",
+					"title": "PietSmiet TV",
+					"description": null,
+					"url_slug": "10-pietsmiet-tv",
+					"videos_count": null,
+					"followings_count": null
+				}
+			],
+			"publish_date": "2024-07-12 11:30:00",
+			"preferences": {
+				"comments": true,
+				"likes": true,
+				"tags": true,
+				"shares": true,
+				"clips": true
+			}
+		},
+		{
+			"id": 79336,
+			"slug": "react-bewerbung-6",
+			"url_slug": "79336-react-bewerbung-6",
+			"short_url": "http:\/\/ptsmt.de\/v\/79336",
+			"url": "\/videos\/79336-react-bewerbung-6",
+			"title": "React: Best of PietSmiet | SimK - \"Best Of\"-Bewerbung #6",
+			"featured": false,
+			"remote": false,
+			"remote_url": null,
+			"description": null,
+			"likes_count": null,
+			"comments_count": null,
+			"thumbnail": {
+				"id": 249447,
+				"collection": "thumbnail",
+				"remote_url": null,
+				"variations": [
+					{
+						"height": 720,
+						"file": "c77a9a4a47e6343e8f6b0f5a6dbcbbd5ac3d1a20.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/c77a9a4a47e6343e8f6b0f5a6dbcbbd5ac3d1a20.jpg?i=249447"
+					},
+					{
+						"height": 360,
+						"file": "79b4b4b502c5637bfb85fca55022ee6e8ecd0747.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/79b4b4b502c5637bfb85fca55022ee6e8ecd0747.jpg?i=249447"
+					},
+					{
+						"height": 144,
+						"file": "5db53582f025dbf66dca14070170fd2e4d0171b1.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/5db53582f025dbf66dca14070170fd2e4d0171b1.jpg?i=249447"
+					}
+				]
+			},
+			"channels": [
+				{
+					"id": 10,
+					"slug": "pietsmiet-tv",
+					"title": "PietSmiet TV",
+					"description": null,
+					"url_slug": "10-pietsmiet-tv",
+					"videos_count": null,
+					"followings_count": null
+				}
+			],
+			"publish_date": "2024-07-25 11:30:00",
+			"preferences": {
+				"comments": true,
+				"likes": true,
+				"tags": true,
+				"shares": true,
+				"clips": true
+			}
+		},
+		{
+			"id": 79340,
+			"slug": "nils-von-rbtv-gegen-pietsmiet-in-quizpoker",
+			"url_slug": "79340-nils-von-rbtv-gegen-pietsmiet-in-quizpoker",
+			"short_url": "http:\/\/ptsmt.de\/v\/79340",
+			"url": "\/videos\/79340-nils-von-rbtv-gegen-pietsmiet-in-quizpoker",
+			"title": "NILS von den ROCKET BEANS gegen PietSmiet in Quizpoker",
+			"featured": false,
+			"remote": false,
+			"remote_url": null,
+			"description": null,
+			"likes_count": null,
+			"comments_count": null,
+			"thumbnail": {
+				"id": 249386,
+				"collection": "thumbnail",
+				"remote_url": null,
+				"variations": [
+					{
+						"height": 720,
+						"file": "da23f553f04be3ea12f6a5a868488d8a41641cfd.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/da23f553f04be3ea12f6a5a868488d8a41641cfd.jpg?i=249386"
+					},
+					{
+						"height": 360,
+						"file": "4abab577f7e7790d545f04562e2652281ce84092.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/4abab577f7e7790d545f04562e2652281ce84092.jpg?i=249386"
+					},
+					{
+						"height": 144,
+						"file": "9a79d7454952b07beee9f6aedef4294926f0c48c.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/9a79d7454952b07beee9f6aedef4294926f0c48c.jpg?i=249386"
+					}
+				]
+			},
+			"channels": [
+				{
+					"id": 9,
+					"slug": "pietsmiet",
+					"title": "PietSmiet",
+					"description": null,
+					"url_slug": "9-pietsmiet",
+					"videos_count": null,
+					"followings_count": null
+				}
+			],
+			"publish_date": "2024-07-18 10:00:00",
+			"preferences": {
+				"comments": true,
+				"likes": true,
+				"tags": true,
+				"shares": true,
+				"clips": true
+			}
+		},
+		{
+			"id": 79396,
+			"slug": "endlich-richtig-arbeiten-grocery-store-simulator",
+			"url_slug": "79396-endlich-richtig-arbeiten-grocery-store-simulator",
+			"short_url": "http:\/\/ptsmt.de\/v\/79396",
+			"url": "\/videos\/79396-endlich-richtig-arbeiten-grocery-store-simulator",
+			"title": "ARBEIT und CHAOS im PietSmiet Supermarkt! | Grocery Store Simulator",
+			"featured": false,
+			"remote": false,
+			"remote_url": null,
+			"description": null,
+			"likes_count": null,
+			"comments_count": null,
+			"thumbnail": {
+				"id": 249503,
+				"collection": "thumbnail",
+				"remote_url": null,
+				"variations": [
+					{
+						"height": 720,
+						"file": "626be36b54f32dd57a1da73cd52b0395bc3cbdb1.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/626be36b54f32dd57a1da73cd52b0395bc3cbdb1.jpg?i=249503"
+					},
+					{
+						"height": 360,
+						"file": "56c2122d19ed3113d49c3fd354dfeb64b24ae0d1.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/56c2122d19ed3113d49c3fd354dfeb64b24ae0d1.jpg?i=249503"
+					},
+					{
+						"height": 144,
+						"file": "b3179fe9a7eb3b58191bf244d81d748bae998e20.jpg",
+						"url": "https:\/\/www.pietsmiet.de\/img\/b3179fe9a7eb3b58191bf244d81d748bae998e20.jpg?i=249503"
+					}
+				]
+			},
+			"channels": [
+				{
+					"id": 9,
+					"slug": "pietsmiet",
+					"title": "PietSmiet",
+					"description": null,
+					"url_slug": "9-pietsmiet",
+					"videos_count": null,
+					"followings_count": null
+				}
+			],
+			"publish_date": "2024-07-26 16:00:00",
+			"preferences": {
+				"comments": true,
+				"likes": true,
+				"tags": true,
+				"shares": true,
+				"clips": true
+			}
+		}
+	],
+	"links": {
+		"first": "https:\/\/www.pietsmiet.de\/api\/v1\/search?query=pietsmiet&page=1",
+		"last": "https:\/\/www.pietsmiet.de\/api\/v1\/search?query=pietsmiet&page=390",
+		"prev": null,
+		"next": "https:\/\/www.pietsmiet.de\/api\/v1\/search?query=pietsmiet&page=2"
+	},
+	"meta": {
+		"current_page": 1,
+		"from": 1,
+		"last_page": 390,
+		"links": [
+			{
+				"url": null,
+				"label": "Vorige",
+				"active": false
+			},
+			{
+				"url": "https:\/\/www.pietsmiet.de\/api\/v1\/search?query=pietsmiet&page=1",
+				"label": "1",
+				"active": true
+			},
+			{
+				"url": "https:\/\/www.pietsmiet.de\/api\/v1\/search?query=pietsmiet&page=2",
+				"label": "2",
+				"active": false
+			},
+			{
+				"url": "https:\/\/www.pietsmiet.de\/api\/v1\/search?query=pietsmiet&page=3",
+				"label": "3",
+				"active": false
+			},
+			{
+				"url": "https:\/\/www.pietsmiet.de\/api\/v1\/search?query=pietsmiet&page=4",
+				"label": "4",
+				"active": false
+			},
+			{
+				"url": "https:\/\/www.pietsmiet.de\/api\/v1\/search?query=pietsmiet&page=5",
+				"label": "5",
+				"active": false
+			},
+			{
+				"url": "https:\/\/www.pietsmiet.de\/api\/v1\/search?query=pietsmiet&page=6",
+				"label": "6",
+				"active": false
+			},
+			{
+				"url": "https:\/\/www.pietsmiet.de\/api\/v1\/search?query=pietsmiet&page=7",
+				"label": "7",
+				"active": false
+			},
+			{
+				"url": "https:\/\/www.pietsmiet.de\/api\/v1\/search?query=pietsmiet&page=8",
+				"label": "8",
+				"active": false
+			},
+			{
+				"url": "https:\/\/www.pietsmiet.de\/api\/v1\/search?query=pietsmiet&page=9",
+				"label": "9",
+				"active": false
+			},
+			{
+				"url": "https:\/\/www.pietsmiet.de\/api\/v1\/search?query=pietsmiet&page=10",
+				"label": "10",
+				"active": false
+			},
+			{
+				"url": null,
+				"label": "...",
+				"active": false
+			},
+			{
+				"url": "https:\/\/www.pietsmiet.de\/api\/v1\/search?query=pietsmiet&page=389",
+				"label": "389",
+				"active": false
+			},
+			{
+				"url": "https:\/\/www.pietsmiet.de\/api\/v1\/search?query=pietsmiet&page=390",
+				"label": "390",
+				"active": false
+			},
+			{
+				"url": "https:\/\/www.pietsmiet.de\/api\/v1\/search?query=pietsmiet&page=2",
+				"label": "Nächste",
+				"active": false
+			}
+		],
+		"path": "https:\/\/www.pietsmiet.de\/api\/v1\/search",
+		"per_page": 15,
+		"to": 15,
+		"total": 5836
+	},
+	"counts": {
+		"videos": 5836,
+		"articles": 1299,
+		"playlists": 73,
+		"channels": 5,
+		"podcasts": 212,
+		"tags": 2592,
+		"suggestions": 6731
+	},
+	"success": true
+}

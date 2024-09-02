@@ -11,13 +11,16 @@
             "additionalProperties": false,
             "properties": {
                 "h": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "v": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "success": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 }
             },
             "required": [
@@ -25,7 +28,8 @@
                 "success",
                 "v"
             ],
-            "title": "ConfigResponse"
+            "title": "ConfigResponse",
+            "readOnly": true
         }
     }
 }

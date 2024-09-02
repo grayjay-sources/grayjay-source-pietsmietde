@@ -14,7 +14,8 @@
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/Datum"
-                    }
+                    },
+                    "readOnly": true
                 },
                 "links": {
                     "$ref": "#/definitions/Links"
@@ -23,7 +24,8 @@
                     "$ref": "#/definitions/Meta"
                 },
                 "success": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 }
             },
             "required": [
@@ -32,38 +34,47 @@
                 "meta",
                 "success"
             ],
-            "title": "ChannelsResponse"
+            "title": "ChannelsResponse",
+            "readOnly": true
         },
         "Datum": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "id": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "slug": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "title": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "description": {
-                    "type": "null"
+                    "type": "null",
+                    "readOnly": true
                 },
                 "url_slug": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "thumbnail": {
-                    "type": "null"
+                    "type": "null",
+                    "readOnly": true
                 },
                 "first_video": {
                     "$ref": "#/definitions/FirstVideo"
                 },
                 "videos_count": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "followings_count": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 }
             },
             "required": [
@@ -77,58 +88,72 @@
                 "url_slug",
                 "videos_count"
             ],
-            "title": "Datum"
+            "title": "Datum",
+            "readOnly": true
         },
         "FirstVideo": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "id": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "slug": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "url_slug": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "short_url": {
                     "type": "string",
                     "format": "uri",
                     "qt-uri-protocols": [
                         "http"
-                    ]
+                    ],
+                    "readOnly": true
                 },
                 "url": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "title": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "featured": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "remote": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "remote_url": {
-                    "type": "null"
+                    "type": "null",
+                    "readOnly": true
                 },
                 "description": {
-                    "type": "null"
+                    "type": "null",
+                    "readOnly": true
                 },
                 "likes_count": {
-                    "type": "null"
+                    "type": "null",
+                    "readOnly": true
                 },
                 "comments_count": {
-                    "type": "null"
+                    "type": "null",
+                    "readOnly": true
                 },
                 "thumbnail": {
                     "$ref": "#/definitions/Thumbnail"
                 },
                 "publish_date": {
                     "type": "string",
-                    "format": "date-time"
+                    "format": "date-time",
+                    "readOnly": true
                 },
                 "preferences": {
                     "$ref": "#/definitions/Preferences"
@@ -151,26 +176,32 @@
                 "url",
                 "url_slug"
             ],
-            "title": "FirstVideo"
+            "title": "FirstVideo",
+            "readOnly": true
         },
         "Preferences": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "comments": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "likes": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "tags": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "shares": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "clips": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 }
             },
             "required": [
@@ -180,26 +211,31 @@
                 "shares",
                 "tags"
             ],
-            "title": "Preferences"
+            "title": "Preferences",
+            "readOnly": true
         },
         "Thumbnail": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "id": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "collection": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "remote_url": {
-                    "type": "null"
+                    "type": "null",
+                    "readOnly": true
                 },
                 "variations": {
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/Variation"
-                    }
+                    },
+                    "readOnly": true
                 }
             },
             "required": [
@@ -208,17 +244,20 @@
                 "remote_url",
                 "variations"
             ],
-            "title": "Thumbnail"
+            "title": "Thumbnail",
+            "readOnly": true
         },
         "Variation": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "height": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "file": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "url": {
                     "type": "string",
@@ -228,7 +267,8 @@
                     ],
                     "qt-uri-extensions": [
                         ".jpg"
-                    ]
+                    ],
+                    "readOnly": true
                 }
             },
             "required": [
@@ -236,7 +276,8 @@
                 "height",
                 "url"
             ],
-            "title": "Variation"
+            "title": "Variation",
+            "readOnly": true
         },
         "Links": {
             "type": "object",
@@ -247,20 +288,24 @@
                     "format": "uri",
                     "qt-uri-protocols": [
                         "https"
-                    ]
+                    ],
+                    "readOnly": true
                 },
                 "last": {
                     "type": "string",
                     "format": "uri",
                     "qt-uri-protocols": [
                         "https"
-                    ]
+                    ],
+                    "readOnly": true
                 },
                 "prev": {
-                    "type": "null"
+                    "type": "null",
+                    "readOnly": true
                 },
                 "next": {
-                    "type": "null"
+                    "type": "null",
+                    "readOnly": true
                 }
             },
             "required": [
@@ -269,42 +314,51 @@
                 "next",
                 "prev"
             ],
-            "title": "Links"
+            "title": "Links",
+            "readOnly": true
         },
         "Meta": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "current_page": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "from": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "last_page": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "links": {
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/Link"
-                    }
+                    },
+                    "readOnly": true
                 },
                 "path": {
                     "type": "string",
                     "format": "uri",
                     "qt-uri-protocols": [
                         "https"
-                    ]
+                    ],
+                    "readOnly": true
                 },
                 "per_page": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "to": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "total": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 }
             },
             "required": [
@@ -317,7 +371,8 @@
                 "to",
                 "total"
             ],
-            "title": "Meta"
+            "title": "Meta",
+            "readOnly": true
         },
         "Link": {
             "type": "object",
@@ -338,10 +393,12 @@
                     ]
                 },
                 "label": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "active": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 }
             },
             "required": [
@@ -349,7 +406,8 @@
                 "label",
                 "url"
             ],
-            "title": "Link"
+            "title": "Link",
+            "readOnly": true
         }
     }
 }

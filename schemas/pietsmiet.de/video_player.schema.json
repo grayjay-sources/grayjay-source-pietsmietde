@@ -17,10 +17,12 @@
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/Advertising"
-                    }
+                    },
+                    "readOnly": true
                 },
                 "success": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 }
             },
             "required": [
@@ -28,27 +30,32 @@
                 "options",
                 "success"
             ],
-            "title": "VideoPlayerResponse"
+            "title": "VideoPlayerResponse",
+            "readOnly": true
         },
         "Advertising": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "time": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "tag": {
                     "type": "string",
                     "format": "uri",
                     "qt-uri-protocols": [
                         "https"
-                    ]
+                    ],
+                    "readOnly": true
                 },
                 "nugg": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "played": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 }
             },
             "required": [
@@ -57,7 +64,8 @@
                 "tag",
                 "time"
             ],
-            "title": "Advertising"
+            "title": "Advertising",
+            "readOnly": true
         },
         "Options": {
             "type": "object",
@@ -73,7 +81,8 @@
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/Track"
-                    }
+                    },
+                    "readOnly": true
                 }
             },
             "required": [
@@ -81,29 +90,36 @@
                 "tracks",
                 "visual"
             ],
-            "title": "Options"
+            "title": "Options",
+            "readOnly": true
         },
         "Generic": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "autoplay": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "muted": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "controls": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "loop": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "playback_rates": {
                     "type": "array",
                     "items": {
-                        "type": "number"
-                    }
+                        "type": "number",
+                        "readOnly": true
+                    },
+                    "readOnly": true
                 },
                 "analytics": {
                     "$ref": "#/definitions/Analytics"
@@ -121,56 +137,67 @@
                 "muted",
                 "playback_rates"
             ],
-            "title": "Generic"
+            "title": "Generic",
+            "readOnly": true
         },
         "Analytics": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "google": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 }
             },
             "required": [
                 "google"
             ],
-            "title": "Analytics"
+            "title": "Analytics",
+            "readOnly": true
         },
         "Chromecast": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "enabled": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "receiver_application_id": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 }
             },
             "required": [
                 "enabled",
                 "receiver_application_id"
             ],
-            "title": "Chromecast"
+            "title": "Chromecast",
+            "readOnly": true
         },
         "Track": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "id": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "title": {
-                    "type": "null"
+                    "type": "null",
+                    "readOnly": true
                 },
                 "full_title": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "pluralized_title": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "main": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "sources": {
                     "$ref": "#/definitions/Sources"
@@ -179,7 +206,8 @@
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/Quality"
-                    }
+                    },
+                    "readOnly": true
                 }
             },
             "required": [
@@ -191,20 +219,24 @@
                 "sources",
                 "title"
             ],
-            "title": "Track"
+            "title": "Track",
+            "readOnly": true
         },
         "Quality": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "label": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "bitrate": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "framerate": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 }
             },
             "required": [
@@ -212,7 +244,8 @@
                 "framerate",
                 "label"
             ],
-            "title": "Quality"
+            "title": "Quality",
+            "readOnly": true
         },
         "Sources": {
             "type": "object",
@@ -225,7 +258,8 @@
                     "$ref": "#/definitions/Dash"
                 },
                 "mp4": {
-                    "type": "null"
+                    "type": "null",
+                    "readOnly": true
                 }
             },
             "required": [
@@ -233,7 +267,8 @@
                 "hls",
                 "mp4"
             ],
-            "title": "Sources"
+            "title": "Sources",
+            "readOnly": true
         },
         "Dash": {
             "type": "object",
@@ -248,16 +283,20 @@
                     "qt-uri-extensions": [
                         ".m3u8",
                         ".mpd"
-                    ]
+                    ],
+                    "readOnly": true
                 },
                 "type": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "labels": {
                     "type": "array",
                     "items": {
-                        "type": "string"
-                    }
+                        "type": "string",
+                        "readOnly": true
+                    },
+                    "readOnly": true
                 },
                 "labels_bitrate": {
                     "$ref": "#/definitions/LabelsBitrate"
@@ -269,33 +308,39 @@
                 "src",
                 "type"
             ],
-            "title": "Dash"
+            "title": "Dash",
+            "readOnly": true
         },
         "LabelsBitrate": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "1645": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 }
             },
             "required": [
                 "1645"
             ],
-            "title": "LabelsBitrate"
+            "title": "LabelsBitrate",
+            "readOnly": true
         },
         "Visual": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "fluid": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "responsive": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "aspect_ratio": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "thumbnail": {
                     "type": "string",
@@ -305,7 +350,8 @@
                     ],
                     "qt-uri-extensions": [
                         ".jpg"
-                    ]
+                    ],
+                    "readOnly": true
                 },
                 "brand": {
                     "$ref": "#/definitions/Brand"
@@ -318,7 +364,8 @@
                 "responsive",
                 "thumbnail"
             ],
-            "title": "Visual"
+            "title": "Visual",
+            "readOnly": true
         },
         "Brand": {
             "type": "object",
@@ -332,17 +379,20 @@
                     ],
                     "qt-uri-extensions": [
                         ".svg"
-                    ]
+                    ],
+                    "readOnly": true
                 },
                 "color": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "link": {
                     "type": "string",
                     "format": "uri",
                     "qt-uri-protocols": [
                         "https"
-                    ]
+                    ],
+                    "readOnly": true
                 }
             },
             "required": [
@@ -350,7 +400,8 @@
                 "link",
                 "logo"
             ],
-            "title": "Brand"
+            "title": "Brand",
+            "readOnly": true
         }
     }
 }

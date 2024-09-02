@@ -14,49 +14,61 @@
                     "$ref": "#/definitions/Playlist"
                 },
                 "success": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 }
             },
             "required": [
                 "playlist",
                 "success"
             ],
-            "title": "PlaylistResponse"
+            "title": "PlaylistResponse",
+            "readOnly": true
         },
         "Playlist": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "id": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "slug": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "title": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "description": {
-                    "type": "null"
+                    "type": "null",
+                    "readOnly": true
                 },
                 "type": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "publish_date": {
                     "type": "string",
-                    "format": "date-time"
+                    "format": "date-time",
+                    "readOnly": true
                 },
                 "meta_tags": {
-                    "type": "null"
+                    "type": "null",
+                    "readOnly": true
                 },
                 "url_slug": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "videos_count": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "followings_count": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 }
             },
             "required": [
@@ -71,7 +83,8 @@
                 "url_slug",
                 "videos_count"
             ],
-            "title": "Playlist"
+            "title": "Playlist",
+            "readOnly": true
         }
     }
 }

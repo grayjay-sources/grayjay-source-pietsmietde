@@ -14,64 +14,80 @@
                     "$ref": "#/definitions/Video"
                 },
                 "success": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 }
             },
             "required": [
                 "success",
                 "video"
             ],
-            "title": "VideoDetailsResponse"
+            "title": "VideoDetailsResponse",
+            "readOnly": true
         },
         "Video": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "id": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "slug": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "url_slug": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "short_url": {
                     "type": "string",
                     "format": "uri",
                     "qt-uri-protocols": [
                         "http"
-                    ]
+                    ],
+                    "readOnly": true
                 },
                 "url": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "title": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "featured": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "remote": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "remote_url": {
-                    "type": "null"
+                    "type": "null",
+                    "readOnly": true
                 },
                 "description": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "duration": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "duration_pretty": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "likes_count": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "comments_count": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "thumbnail": {
                     "$ref": "#/definitions/Thumbnail"
@@ -80,17 +96,20 @@
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/Perspective"
-                    }
+                    },
+                    "readOnly": true
                 },
                 "channels": {
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/Channel"
-                    }
+                    },
+                    "readOnly": true
                 },
                 "publish_date": {
                     "type": "string",
-                    "format": "date-time"
+                    "format": "date-time",
+                    "readOnly": true
                 },
                 "preferences": {
                     "$ref": "#/definitions/Preferences"
@@ -117,32 +136,40 @@
                 "url",
                 "url_slug"
             ],
-            "title": "Video"
+            "title": "Video",
+            "readOnly": true
         },
         "Channel": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "id": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "slug": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "title": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "description": {
-                    "type": "null"
+                    "type": "null",
+                    "readOnly": true
                 },
                 "url_slug": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "videos_count": {
-                    "type": "null"
+                    "type": "null",
+                    "readOnly": true
                 },
                 "followings_count": {
-                    "type": "null"
+                    "type": "null",
+                    "readOnly": true
                 }
             },
             "required": [
@@ -154,23 +181,28 @@
                 "url_slug",
                 "videos_count"
             ],
-            "title": "Channel"
+            "title": "Channel",
+            "readOnly": true
         },
         "Perspective": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "id": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "title": {
-                    "type": "null"
+                    "type": "null",
+                    "readOnly": true
                 },
                 "title_pluralized": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "main": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 }
             },
             "required": [
@@ -179,26 +211,32 @@
                 "title",
                 "title_pluralized"
             ],
-            "title": "Perspective"
+            "title": "Perspective",
+            "readOnly": true
         },
         "Preferences": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "comments": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "likes": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "tags": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "shares": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 },
                 "clips": {
-                    "type": "boolean"
+                    "type": "boolean",
+                    "readOnly": true
                 }
             },
             "required": [
@@ -208,26 +246,31 @@
                 "shares",
                 "tags"
             ],
-            "title": "Preferences"
+            "title": "Preferences",
+            "readOnly": true
         },
         "Thumbnail": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "id": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "collection": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "remote_url": {
-                    "type": "null"
+                    "type": "null",
+                    "readOnly": true
                 },
                 "variations": {
                     "type": "array",
                     "items": {
                         "$ref": "#/definitions/Variation"
-                    }
+                    },
+                    "readOnly": true
                 }
             },
             "required": [
@@ -236,17 +279,20 @@
                 "remote_url",
                 "variations"
             ],
-            "title": "Thumbnail"
+            "title": "Thumbnail",
+            "readOnly": true
         },
         "Variation": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
                 "height": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "file": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "url": {
                     "type": "string",
@@ -256,7 +302,8 @@
                     ],
                     "qt-uri-extensions": [
                         ".jpg"
-                    ]
+                    ],
+                    "readOnly": true
                 }
             },
             "required": [
@@ -264,7 +311,8 @@
                 "height",
                 "url"
             ],
-            "title": "Variation"
+            "title": "Variation",
+            "readOnly": true
         }
     }
 }

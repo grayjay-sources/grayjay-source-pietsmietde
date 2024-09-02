@@ -5,6 +5,7 @@ BASE_PATH = "schemas/"
 EXT = ".json"
 _EXITCODE = 0
 
+
 def recursive_dict_traversal(nested_dict: dict[str, Any], current_path=''):
     for key, value in nested_dict.items():
         full_path = f"{current_path}.{key}" if current_path else key
@@ -13,6 +14,7 @@ def recursive_dict_traversal(nested_dict: dict[str, Any], current_path=''):
                 value["readOnly"] = True
                 # print(f"{full_path}: {value}")
             recursive_dict_traversal(value, full_path)
+
 
 def process_files_recursively(directory: str, ext: str):
     for root, dirs, files in os.walk(directory):
@@ -24,12 +26,13 @@ def process_files_recursively(directory: str, ext: str):
                     with open(file_path, 'r') as f:
                         content = json.load(f)
                     recursive_dict_traversal(content)
-                    with open(file_path, 'w') as f: # Write the modified content back to the file
+                    with open(file_path, 'w') as f:  # Write the modified content back to the file
                         json.dump(content, f, indent=4)
                         print(f"\nModified file: {file_path}")
                 except Exception as ex:
                     _EXITCODE = 1
                     print(f"Error parsing {file_path}: {ex}")
+
 
 if __name__ == "__main__":
     process_files_recursively(BASE_PATH, EXT)

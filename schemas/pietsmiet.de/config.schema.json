@@ -1,8 +1,12 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$ref": "#/definitions/APICONFIGResponse",
+    "allOf": [
+        {
+            "$ref": "#/definitions/ConfigResponse"
+        }
+    ],
     "definitions": {
-        "APICONFIGResponse": {
+        "ConfigResponse": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
@@ -21,7 +25,7 @@
                 "success",
                 "v"
             ],
-            "title": "APICONFIGResponse"
+            "title": "ConfigResponse"
         }
     }
 }

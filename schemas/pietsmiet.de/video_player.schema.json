@@ -1,6 +1,10 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$ref": "#/definitions/VideoPlayerResponse",
+    "allOf": [
+        {
+            "$ref": "#/definitions/VideoPlayerResponse"
+        }
+    ],
     "definitions": {
         "VideoPlayerResponse": {
             "type": "object",

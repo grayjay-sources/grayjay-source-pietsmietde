@@ -1,6 +1,10 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$ref": "#/definitions/SearchResponse",
+    "allOf": [
+        {
+            "$ref": "#/definitions/SearchResponse"
+        }
+    ],
     "definitions": {
         "SearchResponse": {
             "type": "object",

@@ -1,361 +1,361 @@
 {
-    "data": [
-        {
-            "id": 9,
-            "slug": "pietsmiet",
-            "title": "PietSmiet",
-            "description": null,
-            "url_slug": "9-pietsmiet",
-            "thumbnail": null,
-            "first_video": {
-                "id": 78696,
-                "slug": "grosser-fehler-perfect-heist-2",
-                "url_slug": "78696-grosser-fehler-perfect-heist-2",
-                "short_url": "http:\/\/ptsmt.de\/v\/78696",
-                "url": "\/videos\/78696-grosser-fehler-perfect-heist-2",
-                "title": "GRO\u1e9eER FEHLER! | Perfect Heist 2",
-                "featured": false,
-                "remote": false,
-                "remote_url": null,
-                "description": null,
-                "likes_count": null,
-                "comments_count": null,
-                "thumbnail": {
-                    "id": 248142,
-                    "collection": "thumbnail",
-                    "remote_url": null,
-                    "variations": [
-                        {
-                            "height": 720,
-                            "file": "de76f202b0a042c247f72eb69204e21179466afd.jpg",
-                            "url": "https:\/\/www.pietsmiet.de\/img\/de76f202b0a042c247f72eb69204e21179466afd.jpg?i=248142"
-                        },
-                        {
-                            "height": 360,
-                            "file": "9c64c35882b0c86ec3611841839d4d5cfbdbefbe.jpg",
-                            "url": "https:\/\/www.pietsmiet.de\/img\/9c64c35882b0c86ec3611841839d4d5cfbdbefbe.jpg?i=248142"
-                        },
-                        {
-                            "height": 144,
-                            "file": "30e522eb478a08985c8d9ede2cda6fcf93bd4219.jpg",
-                            "url": "https:\/\/www.pietsmiet.de\/img\/30e522eb478a08985c8d9ede2cda6fcf93bd4219.jpg?i=248142"
-                        }
-                    ]
-                },
-                "publish_date": "2024-04-05 14:00:00",
-                "preferences": {
-                    "comments": true,
-                    "likes": true,
-                    "tags": true,
-                    "shares": true,
-                    "clips": true
-                }
-            },
-            "videos_count": 27162,
-            "followings_count": 926
-        },
-        {
-            "id": 8,
-            "slug": "frag-pietsmiet",
-            "title": "Frag PietSmiet",
-            "description": null,
-            "url_slug": "8-frag-pietsmiet",
-            "thumbnail": null,
-            "first_video": {
-                "id": 74786,
-                "slug": "letzte-frag-pietsmiet",
-                "url_slug": "74786-letzte-frag-pietsmiet",
-                "short_url": "http:\/\/ptsmt.de\/v\/74786",
-                "url": "\/videos\/74786-letzte-frag-pietsmiet",
-                "title": "Wir BEENDEN Frag PietSmiet!",
-                "featured": false,
-                "remote": false,
-                "remote_url": null,
-                "description": null,
-                "likes_count": null,
-                "comments_count": null,
-                "thumbnail": {
-                    "id": 239060,
-                    "collection": "thumbnail",
-                    "remote_url": null,
-                    "variations": [
-                        {
-                            "height": 720,
-                            "file": "5e199fc85c1535da6fb1c271c7d05efba229a14f.jpg",
-                            "url": "https:\/\/www.pietsmiet.de\/img\/5e199fc85c1535da6fb1c271c7d05efba229a14f.jpg?i=239060"
-                        },
-                        {
-                            "height": 360,
-                            "file": "572538153c8a6da2a63409daf964a845a42c6910.jpg",
-                            "url": "https:\/\/www.pietsmiet.de\/img\/572538153c8a6da2a63409daf964a845a42c6910.jpg?i=239060"
-                        },
-                        {
-                            "height": 144,
-                            "file": "10f0717ca26f40a7d7c8d30613831cbd06e90eb2.jpg",
-                            "url": "https:\/\/www.pietsmiet.de\/img\/10f0717ca26f40a7d7c8d30613831cbd06e90eb2.jpg?i=239060"
-                        }
-                    ]
-                },
-                "publish_date": "2023-02-07 09:00:00",
-                "preferences": {
-                    "comments": true,
-                    "likes": true,
-                    "tags": true,
-                    "shares": true,
-                    "clips": true
-                }
-            },
-            "videos_count": 2889,
-            "followings_count": 299
-        },
-        {
-            "id": 10,
-            "slug": "pietsmiet-tv",
-            "title": "PietSmiet TV",
-            "description": null,
-            "url_slug": "10-pietsmiet-tv",
-            "thumbnail": null,
-            "first_video": {
-                "id": 78678,
-                "slug": "react-streamer-jebaited",
-                "url_slug": "78678-react-streamer-jebaited",
-                "short_url": "http:\/\/ptsmt.de\/v\/78678",
-                "url": "\/videos\/78678-react-streamer-jebaited",
-                "title": "React: Twitch Streamers getting Jebaited #3",
-                "featured": false,
-                "remote": false,
-                "remote_url": null,
-                "description": null,
-                "likes_count": null,
-                "comments_count": null,
-                "thumbnail": {
-                    "id": 248103,
-                    "collection": "thumbnail",
-                    "remote_url": null,
-                    "variations": [
-                        {
-                            "height": 720,
-                            "file": "3da58401641e61d22c10b873653cf9e626ad67a2.jpg",
-                            "url": "https:\/\/www.pietsmiet.de\/img\/3da58401641e61d22c10b873653cf9e626ad67a2.jpg?i=248103"
-                        },
-                        {
-                            "height": 360,
-                            "file": "6812081e3b8522c998049be2f0f6d6a27be8e70f.jpg",
-                            "url": "https:\/\/www.pietsmiet.de\/img\/6812081e3b8522c998049be2f0f6d6a27be8e70f.jpg?i=248103"
-                        },
-                        {
-                            "height": 144,
-                            "file": "f921a52ff1e3cfcdc67a805ffcc88dd40e409a6e.jpg",
-                            "url": "https:\/\/www.pietsmiet.de\/img\/f921a52ff1e3cfcdc67a805ffcc88dd40e409a6e.jpg?i=248103"
-                        }
-                    ]
-                },
-                "publish_date": "2024-04-04 11:30:00",
-                "preferences": {
-                    "comments": true,
-                    "likes": true,
-                    "tags": true,
-                    "shares": true,
-                    "clips": true
-                }
-            },
-            "videos_count": 2236,
-            "followings_count": 774
-        },
-        {
-            "id": 44,
-            "slug": "pietstream",
-            "title": "PietSmiet Live",
-            "description": null,
-            "url_slug": "44-pietstream",
-            "thumbnail": null,
-            "first_video": {
-                "id": 78379,
-                "slug": "lies-of-pi-5",
-                "url_slug": "78379-lies-of-pi-5",
-                "short_url": "http:\/\/ptsmt.de\/v\/78379",
-                "url": "\/videos\/78379-lies-of-pi-5",
-                "title": "Die Nase w\u00e4chst! | Lies of P Stream #5",
-                "featured": false,
-                "remote": false,
-                "remote_url": null,
-                "description": null,
-                "likes_count": null,
-                "comments_count": null,
-                "thumbnail": {
-                    "id": 247531,
-                    "collection": "thumbnail",
-                    "remote_url": null,
-                    "variations": [
-                        {
-                            "height": 720,
-                            "file": "0364d8024c664254c009efb255c9f5f83f2b9f48.jpg",
-                            "url": "https:\/\/www.pietsmiet.de\/img\/0364d8024c664254c009efb255c9f5f83f2b9f48.jpg?i=247531"
-                        },
-                        {
-                            "height": 360,
-                            "file": "dc71fc75b121ef8c174c386396f98dc5ea0e43fc.jpg",
-                            "url": "https:\/\/www.pietsmiet.de\/img\/dc71fc75b121ef8c174c386396f98dc5ea0e43fc.jpg?i=247531"
-                        },
-                        {
-                            "height": 144,
-                            "file": "77b342980b7c8d4dd8397c8e86aaa5bcad790044.jpg",
-                            "url": "https:\/\/www.pietsmiet.de\/img\/77b342980b7c8d4dd8397c8e86aaa5bcad790044.jpg?i=247531"
-                        }
-                    ]
-                },
-                "publish_date": "2024-02-16 13:30:00",
-                "preferences": {
-                    "comments": true,
-                    "likes": true,
-                    "tags": true,
-                    "shares": true,
-                    "clips": true
-                }
-            },
-            "videos_count": 1307,
-            "followings_count": 452
-        },
-        {
-            "id": 37,
-            "slug": "pietsmietde",
-            "title": "PietSmietDE",
-            "description": null,
-            "url_slug": "37-pietsmietde",
-            "thumbnail": null,
-            "first_video": {
-                "id": 77024,
-                "slug": "sichten-ist-noch-alles-wie-fruher-ttt",
-                "url_slug": "77024-sichten-ist-noch-alles-wie-fruher-ttt",
-                "short_url": "http:\/\/ptsmt.de\/v\/77024",
-                "url": "\/videos\/77024-sichten-ist-noch-alles-wie-fruher-ttt",
-                "title": "SICHTEN: Ist noch alles WIE FR\u00dcHER?! | TTT",
-                "featured": false,
-                "remote": false,
-                "remote_url": null,
-                "description": null,
-                "likes_count": null,
-                "comments_count": null,
-                "thumbnail": {
-                    "id": 244704,
-                    "collection": "thumbnail",
-                    "remote_url": null,
-                    "variations": [
-                        {
-                            "height": 720,
-                            "file": "4beaeffb7ad5149b0000152c34c6833076e572e7.jpg",
-                            "url": "https:\/\/www.pietsmiet.de\/img\/4beaeffb7ad5149b0000152c34c6833076e572e7.jpg?i=244704"
-                        },
-                        {
-                            "height": 360,
-                            "file": "cfbf6271c4b7c0b2745f37ce0940de5cd7bdbe3f.jpg",
-                            "url": "https:\/\/www.pietsmiet.de\/img\/cfbf6271c4b7c0b2745f37ce0940de5cd7bdbe3f.jpg?i=244704"
-                        },
-                        {
-                            "height": 144,
-                            "file": "04e4b4675ed485ae1ba7c8141b3d6caf81d05f8e.jpg",
-                            "url": "https:\/\/www.pietsmiet.de\/img\/04e4b4675ed485ae1ba7c8141b3d6caf81d05f8e.jpg?i=244704"
-                        }
-                    ]
-                },
-                "publish_date": "2023-08-11 16:00:00",
-                "preferences": {
-                    "comments": true,
-                    "likes": true,
-                    "tags": true,
-                    "shares": true,
-                    "clips": true
-                }
-            },
-            "videos_count": 1045,
-            "followings_count": 449
-        },
-        {
-            "id": 12,
-            "slug": "best-of-pietsmiet",
-            "title": "Best of Pietsmiet",
-            "description": null,
-            "url_slug": "12-best-of-pietsmiet",
-            "thumbnail": null,
-            "first_video": {
-                "id": 78700,
-                "slug": "jay-hat-vor-allem-angst",
-                "url_slug": "78700-jay-hat-vor-allem-angst",
-                "short_url": "http:\/\/ptsmt.de\/v\/78700",
-                "url": "\/videos\/78700-jay-hat-vor-allem-angst",
-                "title": "Jay hat vor alles Angst",
-                "featured": false,
-                "remote": false,
-                "remote_url": null,
-                "description": null,
-                "likes_count": null,
-                "comments_count": null,
-                "thumbnail": {
-                    "id": 248143,
-                    "collection": "thumbnail",
-                    "remote_url": null,
-                    "variations": [
-                        {
-                            "height": 720,
-                            "file": "fd919007fa118a938b3aced685af50f0001c72d9.jpg",
-                            "url": "https:\/\/www.pietsmiet.de\/img\/fd919007fa118a938b3aced685af50f0001c72d9.jpg?i=248143"
-                        },
-                        {
-                            "height": 360,
-                            "file": "bed0e19e010f1b3727bad66c0235459f70d2a179.jpg",
-                            "url": "https:\/\/www.pietsmiet.de\/img\/bed0e19e010f1b3727bad66c0235459f70d2a179.jpg?i=248143"
-                        },
-                        {
-                            "height": 144,
-                            "file": "8a7b6485a11bff77c118e4ffcc53427328484886.jpg",
-                            "url": "https:\/\/www.pietsmiet.de\/img\/8a7b6485a11bff77c118e4ffcc53427328484886.jpg?i=248143"
-                        }
-                    ]
-                },
-                "publish_date": "2024-04-05 14:30:00",
-                "preferences": {
-                    "comments": true,
-                    "likes": true,
-                    "tags": true,
-                    "shares": true,
-                    "clips": true
-                }
-            },
-            "videos_count": 761,
-            "followings_count": 694
-        }
-    ],
-    "links": {
-        "first": "https:\/\/www.pietsmiet.de\/api\/v1\/videos\/channels?order=videos&page=1",
-        "last": "https:\/\/www.pietsmiet.de\/api\/v1\/videos\/channels?order=videos&page=1",
-        "prev": null,
-        "next": null
-    },
-    "meta": {
-        "current_page": 1,
-        "from": 1,
-        "last_page": 1,
-        "links": [
-            {
-                "url": null,
-                "label": "Vorige",
-                "active": false
-            },
-            {
-                "url": "https:\/\/www.pietsmiet.de\/api\/v1\/videos\/channels?order=videos&page=1",
-                "label": "1",
-                "active": true
-            },
-            {
-                "url": null,
-                "label": "N\u00e4chste",
-                "active": false
-            }
-        ],
-        "path": "https:\/\/www.pietsmiet.de\/api\/v1\/videos\/channels",
-        "per_page": 20,
-        "to": 6,
-        "total": 6
-    },
-    "success": true
+	"data": [
+		{
+			"id": 44,
+			"slug": "pietstream",
+			"title": "PietSmiet Live",
+			"description": null,
+			"url_slug": "44-pietstream",
+			"thumbnail": null,
+			"first_video": {
+				"id": 79602,
+				"slug": "polizeisimulator-stream",
+				"url_slug": "79602-polizeisimulator-stream",
+				"short_url": "http:\/\/ptsmt.de\/v\/79602",
+				"url": "\/videos\/79602-polizeisimulator-stream",
+				"title": "Police Simulator: Highway Patrol Bühnenshow mit Chris & Piet",
+				"featured": false,
+				"remote": false,
+				"remote_url": null,
+				"description": null,
+				"likes_count": null,
+				"comments_count": null,
+				"thumbnail": {
+					"id": 249871,
+					"collection": "thumbnail",
+					"remote_url": null,
+					"variations": [
+						{
+							"height": 720,
+							"file": "a2a98fdb028d0f7e3477ea7261b1406c27a17e5f.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/a2a98fdb028d0f7e3477ea7261b1406c27a17e5f.jpg?i=249871"
+						},
+						{
+							"height": 360,
+							"file": "3e3d70be23f197165009bb968d9143b22419f4de.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/3e3d70be23f197165009bb968d9143b22419f4de.jpg?i=249871"
+						},
+						{
+							"height": 144,
+							"file": "9a09824d7b27433977fdc188ce637f6af0cb6fad.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/9a09824d7b27433977fdc188ce637f6af0cb6fad.jpg?i=249871"
+						}
+					]
+				},
+				"publish_date": "2024-08-27 11:37:00",
+				"preferences": {
+					"comments": true,
+					"likes": true,
+					"tags": true,
+					"shares": true,
+					"clips": true
+				}
+			},
+			"videos_count": 1377,
+			"followings_count": 455
+		},
+		{
+			"id": 37,
+			"slug": "pietsmietde",
+			"title": "PietSmietDE",
+			"description": null,
+			"url_slug": "37-pietsmietde",
+			"thumbnail": null,
+			"first_video": {
+				"id": 77024,
+				"slug": "sichten-ist-noch-alles-wie-fruher-ttt",
+				"url_slug": "77024-sichten-ist-noch-alles-wie-fruher-ttt",
+				"short_url": "http:\/\/ptsmt.de\/v\/77024",
+				"url": "\/videos\/77024-sichten-ist-noch-alles-wie-fruher-ttt",
+				"title": "SICHTEN: Ist noch alles WIE FRÜHER?! | TTT",
+				"featured": false,
+				"remote": false,
+				"remote_url": null,
+				"description": null,
+				"likes_count": null,
+				"comments_count": null,
+				"thumbnail": {
+					"id": 244704,
+					"collection": "thumbnail",
+					"remote_url": null,
+					"variations": [
+						{
+							"height": 720,
+							"file": "4beaeffb7ad5149b0000152c34c6833076e572e7.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/4beaeffb7ad5149b0000152c34c6833076e572e7.jpg?i=244704"
+						},
+						{
+							"height": 360,
+							"file": "cfbf6271c4b7c0b2745f37ce0940de5cd7bdbe3f.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/cfbf6271c4b7c0b2745f37ce0940de5cd7bdbe3f.jpg?i=244704"
+						},
+						{
+							"height": 144,
+							"file": "04e4b4675ed485ae1ba7c8141b3d6caf81d05f8e.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/04e4b4675ed485ae1ba7c8141b3d6caf81d05f8e.jpg?i=244704"
+						}
+					]
+				},
+				"publish_date": "2023-08-11 16:00:00",
+				"preferences": {
+					"comments": true,
+					"likes": true,
+					"tags": true,
+					"shares": true,
+					"clips": true
+				}
+			},
+			"videos_count": 1045,
+			"followings_count": 449
+		},
+		{
+			"id": 8,
+			"slug": "frag-pietsmiet",
+			"title": "Frag PietSmiet",
+			"description": null,
+			"url_slug": "8-frag-pietsmiet",
+			"thumbnail": null,
+			"first_video": {
+				"id": 74786,
+				"slug": "letzte-frag-pietsmiet",
+				"url_slug": "74786-letzte-frag-pietsmiet",
+				"short_url": "http:\/\/ptsmt.de\/v\/74786",
+				"url": "\/videos\/74786-letzte-frag-pietsmiet",
+				"title": "Wir BEENDEN Frag PietSmiet!",
+				"featured": false,
+				"remote": false,
+				"remote_url": null,
+				"description": null,
+				"likes_count": null,
+				"comments_count": null,
+				"thumbnail": {
+					"id": 239060,
+					"collection": "thumbnail",
+					"remote_url": null,
+					"variations": [
+						{
+							"height": 720,
+							"file": "5e199fc85c1535da6fb1c271c7d05efba229a14f.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/5e199fc85c1535da6fb1c271c7d05efba229a14f.jpg?i=239060"
+						},
+						{
+							"height": 360,
+							"file": "572538153c8a6da2a63409daf964a845a42c6910.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/572538153c8a6da2a63409daf964a845a42c6910.jpg?i=239060"
+						},
+						{
+							"height": 144,
+							"file": "10f0717ca26f40a7d7c8d30613831cbd06e90eb2.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/10f0717ca26f40a7d7c8d30613831cbd06e90eb2.jpg?i=239060"
+						}
+					]
+				},
+				"publish_date": "2023-02-07 09:00:00",
+				"preferences": {
+					"comments": true,
+					"likes": true,
+					"tags": true,
+					"shares": true,
+					"clips": true
+				}
+			},
+			"videos_count": 2889,
+			"followings_count": 299
+		},
+		{
+			"id": 9,
+			"slug": "pietsmiet",
+			"title": "PietSmiet",
+			"description": null,
+			"url_slug": "9-pietsmiet",
+			"thumbnail": null,
+			"first_video": {
+				"id": 79645,
+				"slug": "unsere-ikonen-der-2000er-50-fragen-zu-den-2000ern",
+				"url_slug": "79645-unsere-ikonen-der-2000er-50-fragen-zu-den-2000ern",
+				"short_url": "http:\/\/ptsmt.de\/v\/79645",
+				"url": "\/videos\/79645-unsere-ikonen-der-2000er-50-fragen-zu-den-2000ern",
+				"title": "Unsere IKONEN der 2000er! | 50 Fragen zu den 2000ern",
+				"featured": false,
+				"remote": false,
+				"remote_url": null,
+				"description": null,
+				"likes_count": null,
+				"comments_count": null,
+				"thumbnail": {
+					"id": 249935,
+					"collection": "thumbnail",
+					"remote_url": null,
+					"variations": [
+						{
+							"height": 720,
+							"file": "be41d0d066db21ece6f6da236050476056a3dde8.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/be41d0d066db21ece6f6da236050476056a3dde8.jpg?i=249935"
+						},
+						{
+							"height": 360,
+							"file": "7023951c69569c0651022c105bf032e78a2e8997.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/7023951c69569c0651022c105bf032e78a2e8997.jpg?i=249935"
+						},
+						{
+							"height": 144,
+							"file": "8592d6b07a515b07a4196a8c04196bfabded0685.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/8592d6b07a515b07a4196a8c04196bfabded0685.jpg?i=249935"
+						}
+					]
+				},
+				"publish_date": "2024-09-01 16:00:00",
+				"preferences": {
+					"comments": true,
+					"likes": true,
+					"tags": true,
+					"shares": true,
+					"clips": true
+				}
+			},
+			"videos_count": 27608,
+			"followings_count": 935
+		},
+		{
+			"id": 10,
+			"slug": "pietsmiet-tv",
+			"title": "PietSmiet TV",
+			"description": null,
+			"url_slug": "10-pietsmiet-tv",
+			"thumbnail": null,
+			"first_video": {
+				"id": 79575,
+				"slug": "react-verbrecher",
+				"url_slug": "79575-react-verbrecher",
+				"short_url": "http:\/\/ptsmt.de\/v\/79575",
+				"url": "\/videos\/79575-react-verbrecher",
+				"title": "React: Die Jagd nach Deutschlands intelligentestem Verbrecher",
+				"featured": false,
+				"remote": false,
+				"remote_url": null,
+				"description": null,
+				"likes_count": null,
+				"comments_count": null,
+				"thumbnail": {
+					"id": 249869,
+					"collection": "thumbnail",
+					"remote_url": null,
+					"variations": [
+						{
+							"height": 720,
+							"file": "7bee3e3c39a54d17d3f0c311e00adfeab9f541fe.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/7bee3e3c39a54d17d3f0c311e00adfeab9f541fe.jpg?i=249869"
+						},
+						{
+							"height": 360,
+							"file": "8b8a67fa89564dc3a3cf941347228e2842cd97a3.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/8b8a67fa89564dc3a3cf941347228e2842cd97a3.jpg?i=249869"
+						},
+						{
+							"height": 144,
+							"file": "08786c0030925404512f040beb3522b7193bc7ee.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/08786c0030925404512f040beb3522b7193bc7ee.jpg?i=249869"
+						}
+					]
+				},
+				"publish_date": "2024-08-31 11:30:00",
+				"preferences": {
+					"comments": true,
+					"likes": true,
+					"tags": true,
+					"shares": true,
+					"clips": true
+				}
+			},
+			"videos_count": 2387,
+			"followings_count": 780
+		},
+		{
+			"id": 12,
+			"slug": "best-of-pietsmiet",
+			"title": "Best of Pietsmiet",
+			"description": null,
+			"url_slug": "12-best-of-pietsmiet",
+			"thumbnail": null,
+			"first_video": {
+				"id": 79647,
+				"slug": "es-wird-das-gothic-remake-gespielt",
+				"url_slug": "79647-es-wird-das-gothic-remake-gespielt",
+				"short_url": "http:\/\/ptsmt.de\/v\/79647",
+				"url": "\/videos\/79647-es-wird-das-gothic-remake-gespielt",
+				"title": "Es wird das Gothic Remake gespielt",
+				"featured": false,
+				"remote": false,
+				"remote_url": null,
+				"description": null,
+				"likes_count": null,
+				"comments_count": null,
+				"thumbnail": {
+					"id": 249936,
+					"collection": "thumbnail",
+					"remote_url": null,
+					"variations": [
+						{
+							"height": 720,
+							"file": "7f16adfa29a82e486eabaf02fd0cdab6c601fc29.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/7f16adfa29a82e486eabaf02fd0cdab6c601fc29.jpg?i=249936"
+						},
+						{
+							"height": 360,
+							"file": "fbba85aba407f938820e5a37f4c2e684448ef37d.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/fbba85aba407f938820e5a37f4c2e684448ef37d.jpg?i=249936"
+						},
+						{
+							"height": 144,
+							"file": "d39286ef4ea9c34295a6ea509e8a6271e04fab7a.jpg",
+							"url": "https:\/\/www.pietsmiet.de\/img\/d39286ef4ea9c34295a6ea509e8a6271e04fab7a.jpg?i=249936"
+						}
+					]
+				},
+				"publish_date": "2024-08-31 16:30:00",
+				"preferences": {
+					"comments": true,
+					"likes": true,
+					"tags": true,
+					"shares": true,
+					"clips": true
+				}
+			},
+			"videos_count": 800,
+			"followings_count": 696
+		}
+	],
+	"links": {
+		"first": "https:\/\/www.pietsmiet.de\/api\/v1\/videos\/channels?page=1",
+		"last": "https:\/\/www.pietsmiet.de\/api\/v1\/videos\/channels?page=1",
+		"prev": null,
+		"next": null
+	},
+	"meta": {
+		"current_page": 1,
+		"from": 1,
+		"last_page": 1,
+		"links": [
+			{
+				"url": null,
+				"label": "Vorige",
+				"active": false
+			},
+			{
+				"url": "https:\/\/www.pietsmiet.de\/api\/v1\/videos\/channels?page=1",
+				"label": "1",
+				"active": true
+			},
+			{
+				"url": null,
+				"label": "Nächste",
+				"active": false
+			}
+		],
+		"path": "https:\/\/www.pietsmiet.de\/api\/v1\/videos\/channels",
+		"per_page": 20,
+		"to": 6,
+		"total": 6
+	},
+	"success": true
 }

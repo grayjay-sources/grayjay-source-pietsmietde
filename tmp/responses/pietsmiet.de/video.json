@@ -1,168 +1,68 @@
 {
-    "video": {
-        "id": 79258,
-        "slug": "ttt-03-07",
-        "url_slug": "79258-ttt-03-07",
-        "short_url": "http:\/\/ptsmt.de\/v\/79258",
-        "url": "\/videos\/79258-ttt-03-07",
-        "title": "Heute sterben _____ Leute an FALLSCHADEN! | TTT",
-        "featured": false,
-        "remote": false,
-        "remote_url": null,
-        "description": "Sichten: <a href=\"http:\/\/ptsmt.de\/v\/79258\" target=\"_blank\">http:\/\/ptsmt.de\/v\/79258<\/a><br \/>\r\nUnseren Merch mit Shirts, Hoodies und Caps findet ihr auf <a href=\"http:\/\/pietsmiet.store\" target=\"_blank\">http:\/\/pietsmiet.store<\/a><br \/>\r\nVerpasst keine Livestreams und folgt uns auf <a href=\"http:\/\/twitch.tv\/PietSmiet\" target=\"_blank\">http:\/\/twitch.tv\/PietSmiet<\/a><br \/>\r\n<br \/>\r\nMehr Videos von TTT gibt es in der Playlist auf YouTube: <a href=\"https:\/\/www.youtube.com\/playlist?list=PL5JK9SjdCJp_AdXO7tK1_W7SSB5QmhUiY\" target=\"_blank\">https:\/\/www.youtube.com\/playlist?list=PL5JK9SjdCJp_AdXO7tK1_W7SSB5QmhUiY<\/a><br \/>\r\nMehr Videos von TTT gibt es fr\u00fcher auf PietSmiet.de: <a href=\"http:\/\/ptsmt.de\/p\/327\" target=\"_blank\">http:\/\/ptsmt.de\/p\/327<\/a><br \/>\r\n<br \/>\r\nDies ist ein Multiplayer Gameplay von TTT. Wir haben das Spiel auf dem PC gezockt.<br \/>\r\nTTT wurde uns vom Publisher zur Verf\u00fcgung gestellt.<br \/>\r\n<br \/>\r\nIhr k\u00f6nnt \u00fcber diesen Link auf Amazon shoppen: <a href=\"http:\/\/pietsmiet.de\/amazon\" target=\"_blank\">http:\/\/pietsmiet.de\/amazon<\/a><br \/>\r\nHierbei handelt es sich um einen Affiliate-Link. Durch einen Kauf \u00fcber diesen Link werden wir am Umsatz beteiligt. Dies hat f\u00fcr Dich keine Auswirkungen auf den Preis.<br \/>\r\n<br \/>\r\nReacts: <a href=\"http:\/\/youtube.com\/PietSmietTV\" target=\"_blank\">http:\/\/youtube.com\/PietSmietTV<\/a> - Stream-VODs: <a href=\"http:\/\/youtube.com\/PietSmietLive\" target=\"_blank\">http:\/\/youtube.com\/PietSmietLive<\/a> - Best-ofs: <a href=\"http:\/\/youtube.com\/BestPietSmiet\" target=\"_blank\">http:\/\/youtube.com\/BestPietSmiet<\/a> - Fragen an uns: <a href=\"http:\/\/youtube.com\/FragPietSmiet\" target=\"_blank\">http:\/\/youtube.com\/FragPietSmiet<\/a> - Merch: <a href=\"http:\/\/pietsmiet.store\" target=\"_blank\">http:\/\/pietsmiet.store<\/a> - PCs: <a href=\"http:\/\/pietsmiet.de\/pc\" target=\"_blank\">http:\/\/pietsmiet.de\/pc<\/a> - St\u00fchle: <a href=\"http:\/\/pietsmiet.de\/stuhl\" target=\"_blank\">http:\/\/pietsmiet.de\/stuhl<\/a> - Buch: <a href=\"http:\/\/pietsmiet.de\/buch\" target=\"_blank\">http:\/\/pietsmiet.de\/buch<\/a> - Podcast: <a href=\"http:\/\/pietsmiet.de\/podcast\" target=\"_blank\">http:\/\/pietsmiet.de\/podcast<\/a>",
-        "duration": 1871,
-        "duration_pretty": "31:11",
-        "likes_count": 100,
-        "comments_count": 13,
-        "thumbnail": {
-            "id": 249215,
-            "collection": "thumbnail",
-            "remote_url": null,
-            "variations": [
-                {
-                    "height": 720,
-                    "file": "a6938f86dc3fa672fa54fc87472a5c9cea34b1e5.jpg",
-                    "url": "https:\/\/www.pietsmiet.de\/img\/a6938f86dc3fa672fa54fc87472a5c9cea34b1e5.jpg?i=249215"
-                },
-                {
-                    "height": 360,
-                    "file": "7445126d32242335f00998099f255deafabed6e3.jpg",
-                    "url": "https:\/\/www.pietsmiet.de\/img\/7445126d32242335f00998099f255deafabed6e3.jpg?i=249215"
-                },
-                {
-                    "height": 144,
-                    "file": "dda438e8f54fc5f8e343273104128ffa12b31185.jpg",
-                    "url": "https:\/\/www.pietsmiet.de\/img\/dda438e8f54fc5f8e343273104128ffa12b31185.jpg?i=249215"
-                }
-            ]
-        },
-        "perspectives": [
-            {
-                "id": 67993,
-                "title": "Brammens Sicht",
-                "title_pluralized": "Brammens Sichts",
-                "main": false
-            },
-            {
-                "id": 67994,
-                "title": "Chris Sicht",
-                "title_pluralized": "Chris Sichts",
-                "main": false
-            },
-            {
-                "id": 67995,
-                "title": "Jays Sicht",
-                "title_pluralized": "Jays Sichts",
-                "main": false
-            },
-            {
-                "id": 67996,
-                "title": "Peters Sicht",
-                "title_pluralized": "Peters Sichts",
-                "main": false
-            },
-            {
-                "id": 67997,
-                "title": "Seps Sicht",
-                "title_pluralized": "Seps Sichts",
-                "main": false
-            },
-            {
-                "id": 67998,
-                "title": "Jules Sicht",
-                "title_pluralized": "Jules Sichts",
-                "main": false
-            },
-            {
-                "id": 67999,
-                "title": "Svens Sicht",
-                "title_pluralized": "Svens Sichts",
-                "main": false
-            },
-            {
-                "id": 68000,
-                "title": "Hauptsicht",
-                "title_pluralized": "Hauptsichts",
-                "main": true
-            }
-        ],
-        "channels": [
-            {
-                "id": 9,
-                "slug": "pietsmiet",
-                "title": "PietSmiet",
-                "description": null,
-                "url_slug": "9-pietsmiet",
-                "videos_count": null,
-                "followings_count": null
-            }
-        ],
-        "playlists": [
-            {
-                "id": 327,
-                "slug": "trouble-in-terrorist-town-ttt",
-                "title": "Trouble in Terrorist Town | TTT",
-                "description": null,
-                "type": 0,
-                "publish_date": "2014-01-21 16:20:24",
-                "meta_tags": null,
-                "url_slug": "327-trouble-in-terrorist-town-ttt",
-                "first_video": {
-                    "id": 79258,
-                    "slug": "ttt-03-07",
-                    "url_slug": "79258-ttt-03-07",
-                    "short_url": "http:\/\/ptsmt.de\/v\/79258",
-                    "url": "\/videos\/79258-ttt-03-07",
-                    "title": "Heute sterben _____ Leute an FALLSCHADEN! | TTT",
-                    "featured": false,
-                    "remote": false,
-                    "remote_url": null,
-                    "description": null,
-                    "likes_count": null,
-                    "comments_count": null,
-                    "thumbnail": {
-                        "id": 249215,
-                        "collection": "thumbnail",
-                        "remote_url": null,
-                        "variations": [
-                            {
-                                "height": 720,
-                                "file": "a6938f86dc3fa672fa54fc87472a5c9cea34b1e5.jpg",
-                                "url": "https:\/\/www.pietsmiet.de\/img\/a6938f86dc3fa672fa54fc87472a5c9cea34b1e5.jpg?i=249215"
-                            },
-                            {
-                                "height": 360,
-                                "file": "7445126d32242335f00998099f255deafabed6e3.jpg",
-                                "url": "https:\/\/www.pietsmiet.de\/img\/7445126d32242335f00998099f255deafabed6e3.jpg?i=249215"
-                            },
-                            {
-                                "height": 144,
-                                "file": "dda438e8f54fc5f8e343273104128ffa12b31185.jpg",
-                                "url": "https:\/\/www.pietsmiet.de\/img\/dda438e8f54fc5f8e343273104128ffa12b31185.jpg?i=249215"
-                            }
-                        ]
-                    },
-                    "publish_date": "2024-07-03 16:00:00",
-                    "preferences": {
-                        "comments": true,
-                        "likes": true,
-                        "tags": true,
-                        "shares": true,
-                        "clips": true
-                    }
-                },
-                "videos_count": 659,
-                "followings_count": 0
-            }
-        ],
-        "publish_date": "2024-07-03 16:00:00",
-        "preferences": {
-            "comments": true,
-            "likes": true,
-            "tags": true,
-            "shares": true,
-            "clips": true
-        }
-    },
-    "success": true
+	"video": {
+		"id": 79576,
+		"slug": "retro-battle-worms-armageddon",
+		"url_slug": "79576-retro-battle-worms-armageddon",
+		"short_url": "http:\/\/ptsmt.de\/v\/79576",
+		"url": "\/videos\/79576-retro-battle-worms-armageddon",
+		"title": "Früher war ALLES ANDERS! | Retro Battle: Worms Armageddon",
+		"featured": false,
+		"remote": false,
+		"remote_url": null,
+		"description": "Zur Umfrage für die nächsten Folgen von \"Retro Battle\": <a href=\"http:\/\/ptsmt.de\/n\/8586\" target=\"_blank\">http:\/\/ptsmt.de\/n\/8586<\/a><br \/>\r\nUnseren Merch mit Shirts, Hoodies und Caps findet ihr auf <a href=\"http:\/\/pietsmiet.de\/shop\" target=\"_blank\">http:\/\/pietsmiet.de\/shop<\/a><br \/>\r\nVerpasst keine Livestreams und folgt uns auf <a href=\"http:\/\/twitch.tv\/PietSmiet\" target=\"_blank\">http:\/\/twitch.tv\/PietSmiet<\/a><br \/>\r\n<br \/>\r\nMehr Videos von Worms gibt es in der Playlist auf YouTube: <a href=\"https:\/\/www.youtube.com\/playlist?list=PL5JK9SjdCJp8phivrxxruFSev2iy6fZEZ\" target=\"_blank\">https:\/\/www.youtube.com\/playlist?list=PL5JK9SjdCJp8phivrxxruFSev2iy6fZEZ<\/a><br \/>\r\nMehr Videos von Worms gibt es früher auf PietSmiet.de: <a href=\"http:\/\/ptsmt.de\/p\/359\" target=\"_blank\">http:\/\/ptsmt.de\/p\/359<\/a><br \/>\r\n<br \/>\r\nDies ist ein Multiplayer Let's Play Gameplay von Worms. Wir haben das Spiel auf dem PC gezockt.<br \/>\r\n<br \/>\r\nIhr könnt über diesen Link auf Amazon shoppen: <a href=\"http:\/\/pietsmiet.de\/amazon\" target=\"_blank\">http:\/\/pietsmiet.de\/amazon<\/a><br \/>\r\nHierbei handelt es sich um einen Affiliate-Link. Durch einen Kauf über diesen Link werden wir am Umsatz beteiligt. Dies hat für Dich keine Auswirkungen auf den Preis.<br \/>\r\n<br \/>\r\nReacts: <a href=\"http:\/\/youtube.com\/PietSmietTV\" target=\"_blank\">http:\/\/youtube.com\/PietSmietTV<\/a> - Best-ofs: <a href=\"http:\/\/youtube.com\/BestPietSmiet\" target=\"_blank\">http:\/\/youtube.com\/BestPietSmiet<\/a> - Fragen an uns: <a href=\"http:\/\/youtube.com\/FragPietSmiet\" target=\"_blank\">http:\/\/youtube.com\/FragPietSmiet<\/a> - Merch: <a href=\"http:\/\/pietsmiet.de\/shop\" target=\"_blank\">http:\/\/pietsmiet.de\/shop<\/a> - PCs: <a href=\"http:\/\/pietsmiet.de\/pc\" target=\"_blank\">http:\/\/pietsmiet.de\/pc<\/a> - Stühle: <a href=\"http:\/\/pietsmiet.de\/stuhl\" target=\"_blank\">http:\/\/pietsmiet.de\/stuhl<\/a> - Buch: <a href=\"http:\/\/pietsmiet.de\/buch\" target=\"_blank\">http:\/\/pietsmiet.de\/buch<\/a> - Podcast: <a href=\"http:\/\/pietsmiet.de\/podcast\" target=\"_blank\">http:\/\/pietsmiet.de\/podcast<\/a>",
+		"duration": 2151,
+		"duration_pretty": "35:51",
+		"likes_count": 99,
+		"comments_count": 13,
+		"thumbnail": {
+			"id": 249806,
+			"collection": "thumbnail",
+			"remote_url": null,
+			"variations": [
+				{
+					"height": 720,
+					"file": "b99baf2ccecdd32b02a8d79a1ce5476fc7767e80.jpg",
+					"url": "https:\/\/www.pietsmiet.de\/img\/b99baf2ccecdd32b02a8d79a1ce5476fc7767e80.jpg?i=249806"
+				},
+				{
+					"height": 360,
+					"file": "18933a5a8b21d2b4dfb74da7c94b07c334675921.jpg",
+					"url": "https:\/\/www.pietsmiet.de\/img\/18933a5a8b21d2b4dfb74da7c94b07c334675921.jpg?i=249806"
+				},
+				{
+					"height": 144,
+					"file": "cdd651b0a4993a4785382d09160ab833d13a407c.jpg",
+					"url": "https:\/\/www.pietsmiet.de\/img\/cdd651b0a4993a4785382d09160ab833d13a407c.jpg?i=249806"
+				}
+			]
+		},
+		"perspectives": [
+			{
+				"id": 68318,
+				"title": null,
+				"title_pluralized": "s",
+				"main": true
+			}
+		],
+		"channels": [
+			{
+				"id": 9,
+				"slug": "pietsmiet",
+				"title": "PietSmiet",
+				"description": null,
+				"url_slug": "9-pietsmiet",
+				"videos_count": null,
+				"followings_count": null
+			}
+		],
+		"publish_date": "2024-08-31 16:00:00",
+		"preferences": {
+			"comments": true,
+			"likes": true,
+			"tags": true,
+			"shares": true,
+			"clips": true
+		}
+	},
+	"success": true
 }

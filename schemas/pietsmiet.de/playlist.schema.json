@@ -1,0 +1,73 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/PlaylistResponse",
+    "definitions": {
+        "PlaylistResponse": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "playlist": {
+                    "$ref": "#/definitions/Playlist"
+                },
+                "success": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "playlist",
+                "success"
+            ],
+            "title": "PlaylistResponse"
+        },
+        "Playlist": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "slug": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "null"
+                },
+                "type": {
+                    "type": "integer"
+                },
+                "publish_date": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "meta_tags": {
+                    "type": "null"
+                },
+                "url_slug": {
+                    "type": "string"
+                },
+                "videos_count": {
+                    "type": "integer"
+                },
+                "followings_count": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "description",
+                "followings_count",
+                "id",
+                "meta_tags",
+                "publish_date",
+                "slug",
+                "title",
+                "type",
+                "url_slug",
+                "videos_count"
+            ],
+            "title": "Playlist"
+        }
+    }
+}

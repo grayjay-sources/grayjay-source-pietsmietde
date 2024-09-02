@@ -1,0 +1,103 @@
+{
+	"options": {
+		"visual": {
+			"fluid": true,
+			"responsive": true,
+			"aspect_ratio": "16:9",
+			"thumbnail": "https:\/\/www.pietsmiet.de\/storage\/media\/f2\/47\/5f\/8bf869b072c4ac77435a517da1f686cf.jpg",
+			"brand": {
+				"logo": "https:\/\/www.pietsmiet.de\/assets\/pietsmiet\/brand\/icon.svg",
+				"color": "039a45",
+				"link": "https:\/\/www.pietsmiet.de"
+			}
+		},
+		"generic": {
+			"autoplay": false,
+			"muted": false,
+			"controls": true,
+			"loop": false,
+			"playback_rates": [
+				0.25,
+				0.5,
+				0.75,
+				1,
+				1.25,
+				1.5,
+				2
+			],
+			"analytics": {
+				"google": "UA-38125589-1"
+			},
+			"chromecast": {
+				"enabled": true,
+				"receiver_application_id": "198B24D0"
+			}
+		},
+		"tracks": [
+			{
+				"id": 68318,
+				"title": null,
+				"full_title": "Früher war ALLES ANDERS! | Retro Battle: Worms Armageddon",
+				"pluralized_title": "s",
+				"main": true,
+				"sources": {
+					"hls": {
+						"src": "https:\/\/pietcdn.de\/hls\/f2\/47\/5f\/,49606cb894cdf7b6923e5c236def4252,.mp4.us\/hmt.m3u8",
+						"type": "application\/x-mpegurl",
+						"labels": [
+							"720p"
+						],
+						"labels_bitrate": {
+							"1645": "720p"
+						}
+					},
+					"dash": {
+						"src": "https:\/\/pietcdn.de\/dash\/f2\/47\/5f\/,49606cb894cdf7b6923e5c236def4252,.mp4.us\/dmf.mpd",
+						"type": "application\/dash+xml",
+						"labels": [
+							"720p"
+						],
+						"labels_bitrate": {
+							"1645": "720p"
+						}
+					},
+					"mp4": null
+				},
+				"qualities": [
+					{
+						"label": "720p",
+						"bitrate": 1684807,
+						"framerate": 29
+					}
+				]
+			}
+		]
+	},
+	"advertising": [
+		{
+			"time": 0,
+			"tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=preroll&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/79576&description_url=https:\/\/www.pietsmiet.de\/videos\/79576&correlator=5971&iu=\/35853227\/DE_Pietsmiet\/preroll",
+			"nugg": true,
+			"played": false
+		},
+		{
+			"time": 600,
+			"tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/79576&description_url=https:\/\/www.pietsmiet.de\/videos\/79576&correlator=6192&iu=\/35853227\/DE_Pietsmiet\/preroll",
+			"nugg": false,
+			"played": false
+		},
+		{
+			"time": 1200,
+			"tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/79576&description_url=https:\/\/www.pietsmiet.de\/videos\/79576&correlator=9110&iu=\/35853227\/DE_Pietsmiet\/preroll",
+			"nugg": false,
+			"played": false
+		},
+		{
+			"time": 1800,
+			"tag": "https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=640x480&vpos=midroll&mridx=1&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https:\/\/www.pietsmiet.de\/videos\/79576&description_url=https:\/\/www.pietsmiet.de\/videos\/79576&correlator=9351&iu=\/35853227\/DE_Pietsmiet\/preroll",
+			"nugg": false,
+			"played": false
+		}
+	],
+	"success": true
+}

@@ -6,7 +6,6 @@
  */
 
 export type SearchSchema = SearchResponse;
-export type Collection = "thumbnail";
 export type Slug = string;
 export type Title = string;
 export type URLSlug = string;
@@ -92,4 +91,8 @@ export interface Counts {
   podcasts: number;
   tags: number;
   suggestions: number;
+}
+
+export const enum Collection {
+  thumbnail = "thumbnail"
 }

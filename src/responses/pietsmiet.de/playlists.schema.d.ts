@@ -9,7 +9,6 @@ export type PlaylistsSchema = PlaylistsResponse;
 export type Slug = string;
 export type Title = string;
 export type URLSlug = string;
-export type Collection = "thumbnail";
 
 export interface PlaylistsResponse {
   data: Datum[];
@@ -95,4 +94,8 @@ export interface Link {
   url: null | string;
   label: string;
   active: boolean;
+}
+
+export const enum Collection {
+  thumbnail = "thumbnail"
 }

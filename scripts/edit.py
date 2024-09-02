@@ -11,8 +11,9 @@ def recursive_dict_traversal(nested_dict: dict[str, Any], current_path=''):
         # if key == "type": raise Exception("penis")
         
         if isinstance(value, dict):
-            if "type" in value.keys(): value["readonly"] = True
-            print(f"{full_path}: {value}")
+            if "type" in value.keys():
+                value["readonly"] = True
+                print(f"{full_path}: {value}")
             recursive_dict_traversal(value, full_path)
 
 def process_json_files(directory):
@@ -23,7 +24,7 @@ def process_json_files(directory):
                 print(f"Processing file: {file_path}")
                 
                 try:
-                    with open(file_path, 'r+') as f:
+                    with open(file_path, 'w+') as f:
                         # Load the JSON content
                         content = json.load(f)
                         print(f"\nProcessing file: {file_path}")
@@ -33,7 +34,7 @@ def process_json_files(directory):
                         # print(f"Schema name: {content.get('title', 'Untitled')}")
                         f.seek(0, 1)  # Seek to the end of the file
                         # Write the new content
-                        json.dump(content, f)
+                        json.dump(content, f, indent=1)
                         # Reset the position to the beginning of the file
                         f.seek(0)
 

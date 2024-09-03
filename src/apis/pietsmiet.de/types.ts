@@ -1,4 +1,5 @@
-// consts.ts
+import type ConfigSchema from './responses/config.schema.d.ts';
+import type ChannelsSchema from './responses/channels.schema.d.ts';
 
 export interface PSDEConstants {
     readonly API: Record<string, Record<string, any>>;
@@ -12,7 +13,7 @@ export interface PSDEConstants {
 
 export const pietsmietDE: PSDEConstants = {
     API: {
-        Config: { URL: "${BASE_URL}", Response:  },
+        Config: { URL: "${BASE_URL}/api/v1/config/i", Response: ConfigSchema },
         Channels: { URL: "${BASE_URL}/api/v1/videos/channels?page=" },
         Home: { URL: "${BASE_URL}/api/v1/videos?limit=${limits.Videos}&order=${orders.Videos}&prioritize_featured=0&page=" },
         Playlists: { URL: "${BASE_URL}/api/v1/videos/playlists?limit=${limits.Videos}&order=${orders.Videos}&page=1" },

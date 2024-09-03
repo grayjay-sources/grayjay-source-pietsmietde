@@ -44,5 +44,8 @@
         "ctix": "^2.6.3",
         "http-server": "^14.1.1",
         "npm-check-updates": "^17.0.0"
+    },
+    "dependencies": {
+        "@fastify/merge-json-schemas": "github:fastify/merge-json-schemas"
     }
 }

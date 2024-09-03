@@ -2435,7 +2435,7 @@
                               "id": 68354,
                               "main": false,
                               "title": "Chris",
-                              "title_pluralized": "Chris\\'"
+                              "title_pluralized": "Chris"
                             },
                             {
                               "id": 68355,
@@ -17082,7 +17082,7 @@
             "title": {
               "title": "FirstVideoTitle",
               "type": "string",
-              "example": "[\"Früher war ALLES ANDERS! | Retro Battle: Worms Armageddon\",\"Wir wurden ALLE BETROGEN! | Betrayal Beach\",\"INFLUENCER zurück in der SCHULE: Back 2 School\",\"SEEPFERDCHEN, now KISS! | ABC Quiz\",\"Diese Fall Guys Map hat uns GEBROCHEN! | UP\"N Down\"]"
+              "example": "[\"Früher war ALLES ANDERS! | Retro Battle: Worms Armageddon\",\"Wir wurden ALLE BETROGEN! | Betrayal Beach\",\"INFLUENCER zurück in der SCHULE: Back 2 School\",\"SEEPFERDCHEN, now KISS! | ABC Quiz\",\"Diese Fall Guys Map hat uns GEBROCHEN! | UP N Down\"]"
             },
             "url": {
               "title": "FirstVideoURL",
@@ -19482,7 +19482,7 @@
             "title_pluralized": {
               "title": "TitlePluralized",
               "type": "string",
-              "example": "[\"s\",\"Brammens\",\"Chris\\'\",\"Peters\",\"Seps\",\"Jules\",\"Svens\",\"Hauptsichts\"]"
+              "example": "[\"s\",\"Brammens\",\"Chris\",\"Peters\",\"Seps\",\"Jules\",\"Svens\",\"Hauptsichts\"]"
             }
           },
           "additionalProperties": false

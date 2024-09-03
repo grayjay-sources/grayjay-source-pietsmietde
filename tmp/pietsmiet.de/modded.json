@@ -2435,7 +2435,7 @@
                                                         "id": 68354,
                                                         "main": false,
                                                         "title": "Chris",
-                                                        "title_pluralized": "Chris\\'"
+                                                        "title_pluralized": "Chris"
                                                     },
                                                     {
                                                         "id": 68355,
@@ -14312,7 +14312,9 @@
                     "google": {
                         "title": "Google",
                         "type": "string",
-                        "example": "[\"UA-38125589-1\"]"
+                        "examples": [
+                            "UA-38125589-1"
+                        ]
                     }
                 },
                 "additionalProperties": false
@@ -14429,12 +14431,18 @@
                     "name": {
                         "title": "Name",
                         "type": "string",
-                        "example": "[\"Mikkel\",\"Sven\"]"
+                        "examples": [
+                            "Mikkel",
+                            "Sven"
+                        ]
                     },
                     "name_possessive": {
                         "title": "NamePossessive",
                         "type": "string",
-                        "example": "[\"Mikkels\",\"Svens\"]"
+                        "examples": [
+                            "Mikkels",
+                            "Svens"
+                        ]
                     },
                     "preferences": {
                         "$ref": "#/components/schemas/AuthorPreferences"
@@ -14448,7 +14456,9 @@
                     "reputation_pretty": {
                         "title": "ReputationPretty",
                         "type": "string",
-                        "example": "[\"***\"]"
+                        "examples": [
+                            "***"
+                        ]
                     },
                     "team": {
                         "type": "boolean"
@@ -14460,12 +14470,18 @@
                     "url_slug": {
                         "title": "AuthorURLSlug",
                         "type": "string",
-                        "example": "[\"7-Mikkel\",\"11-Sven\"]"
+                        "examples": [
+                            "7-Mikkel",
+                            "11-Sven"
+                        ]
                     },
                     "username": {
                         "title": "Name",
                         "type": "string",
-                        "example": "[\"Mikkel\",\"Sven\"]"
+                        "examples": [
+                            "Mikkel",
+                            "Sven"
+                        ]
                     }
                 },
                 "additionalProperties": false
@@ -14516,7 +14532,9 @@
                     "file": {
                         "title": "IndecentFile",
                         "type": "string",
-                        "example": "[\"05070b3df9dfba0ef3a825b50e79252ac5793876.jpg\"]"
+                        "examples": [
+                            "05070b3df9dfba0ef3a825b50e79252ac5793876.jpg"
+                        ]
                     },
                     "height": {
                         "type": "integer"
@@ -14687,7 +14705,9 @@
                     "color": {
                         "title": "Color",
                         "type": "string",
-                        "example": "[\"039a45\"]"
+                        "examples": [
+                            "039a45"
+                        ]
                     },
                     "link": {
                         "type": "string",
@@ -14722,17 +14742,29 @@
                     "slug": {
                         "title": "Slug",
                         "type": "string",
-                        "example": "[\"allgemein\",\"quiz\",\"devblog\"]"
+                        "examples": [
+                            "allgemein",
+                            "quiz",
+                            "devblog"
+                        ]
                     },
                     "title": {
                         "title": "Title",
                         "type": "string",
-                        "example": "[\"Allgemein\",\"Quiz\",\"Devblog\"]"
+                        "examples": [
+                            "Allgemein",
+                            "Quiz",
+                            "Devblog"
+                        ]
                     },
                     "url_slug": {
                         "title": "CategoryURLSlug",
                         "type": "string",
-                        "example": "[\"34-allgemein\",\"57-quiz\",\"55-devblog\"]"
+                        "examples": [
+                            "34-allgemein",
+                            "57-quiz",
+                            "55-devblog"
+                        ]
                     }
                 },
                 "additionalProperties": false
@@ -14750,17 +14782,26 @@
                     "slug": {
                         "title": "PurpleSlug",
                         "type": "string",
-                        "example": "[\"allgemein\",\"uploadplan\"]"
+                        "examples": [
+                            "allgemein",
+                            "uploadplan"
+                        ]
                     },
                     "title": {
                         "title": "PurpleTitle",
                         "type": "string",
-                        "example": "[\"Allgemein\",\"Uploadplan\"]"
+                        "examples": [
+                            "Allgemein",
+                            "Uploadplan"
+                        ]
                     },
                     "url_slug": {
                         "title": "PurpleURLSlug",
                         "type": "string",
-                        "example": "[\"34-allgemein\",\"22-uploadplan\"]"
+                        "examples": [
+                            "34-allgemein",
+                            "22-uploadplan"
+                        ]
                     }
                 },
                 "additionalProperties": false
@@ -14781,17 +14822,35 @@
                     "slug": {
                         "title": "Slug",
                         "type": "string",
-                        "example": "[\"pietsmiet\",\"pietsmiet-tv\",\"pietstream\",\"best-of-pietsmiet\",\"pietsmietde\"]"
+                        "examples": [
+                            "pietsmiet",
+                            "pietsmiet-tv",
+                            "pietstream",
+                            "best-of-pietsmiet",
+                            "pietsmietde"
+                        ]
                     },
                     "title": {
                         "title": "Title",
                         "type": "string",
-                        "example": "[\"PietSmiet\",\"PietSmiet TV\",\"PietSmiet Live\",\"Best of Pietsmiet\",\"PietSmietDE\"]"
+                        "examples": [
+                            "PietSmiet",
+                            "PietSmiet TV",
+                            "PietSmiet Live",
+                            "Best of Pietsmiet",
+                            "PietSmietDE"
+                        ]
                     },
                     "url_slug": {
                         "title": "URLSlug",
                         "type": "string",
-                        "example": "[\"9-pietsmiet\",\"10-pietsmiet-tv\",\"44-pietstream\",\"12-best-of-pietsmiet\",\"37-pietsmietde\"]"
+                        "examples": [
+                            "9-pietsmiet",
+                            "10-pietsmiet-tv",
+                            "44-pietstream",
+                            "12-best-of-pietsmiet",
+                            "37-pietsmietde"
+                        ]
                     },
                     "videos_count": {
                         "nullable": true
@@ -14835,7 +14894,9 @@
                     "receiver_application_id": {
                         "title": "ReceiverApplicationID",
                         "type": "string",
-                        "example": "[\"198B24D0\"]"
+                        "examples": [
+                            "198B24D0"
+                        ]
                     }
                 },
                 "additionalProperties": false
@@ -15037,7 +15098,9 @@
                     "type": {
                         "title": "DashType",
                         "type": "string",
-                        "example": "[\"application/dash+xml\"]"
+                        "examples": [
+                            "application/dash+xml"
+                        ]
                     }
                 },
                 "additionalProperties": false
@@ -15058,12 +15121,19 @@
                     "icon": {
                         "title": "Icon",
                         "type": "string",
-                        "example": "[\"unlock\",\"lock\"]"
+                        "examples": [
+                            "unlock",
+                            "lock"
+                        ]
                     },
                     "text": {
                         "title": "Text",
                         "type": "string",
-                        "example": "[\"Deine 2-Faktor Anmeldung wurde deaktiviert.\",\"2-Faktor Anmeldung wurde f\u00fcr deinen Account aktiviert.\",\"Dein Passwort wurde ge\u00e4ndert.\"]"
+                        "examples": [
+                            "Deine 2-Faktor Anmeldung wurde deaktiviert.",
+                            "2-Faktor Anmeldung wurde f\u00fcr deinen Account aktiviert.",
+                            "Dein Passwort wurde ge\u00e4ndert."
+                        ]
                     }
                 },
                 "additionalProperties": false
@@ -16217,7 +16287,9 @@
                     "mime": {
                         "title": "MIME",
                         "type": "string",
-                        "example": "[\"audio/mpeg\"]"
+                        "examples": [
+                            "audio/mpeg"
+                        ]
                     },
                     "publish_date": {
                         "type": "string",
@@ -17076,7 +17148,13 @@
                     "slug": {
                         "title": "FirstVideoSlug",
                         "type": "string",
-                        "example": "[\"retro-battle-worms-armageddon\",\"wir-wurden-alle-betrogen-betrayal-beach\",\"back2school\",\"seepferdchen-now-kiss-abc-quiz\",\"diese-fall-guys-map-hat-uns-gebrochen-upn-down\"]"
+                        "examples": [
+                            "retro-battle-worms-armageddon",
+                            "wir-wurden-alle-betrogen-betrayal-beach",
+                            "back2school",
+                            "seepferdchen-now-kiss-abc-quiz",
+                            "diese-fall-guys-map-hat-uns-gebrochen-upn-down"
+                        ]
                     },
                     "thumbnail": {
                         "$ref": "#/components/schemas/FirstVideoThumbnail"
@@ -17084,17 +17162,35 @@
                     "title": {
                         "title": "FirstVideoTitle",
                         "type": "string",
-                        "example": "[\"Fr\u00fcher war ALLES ANDERS! | Retro Battle: Worms Armageddon\",\"Wir wurden ALLE BETROGEN! | Betrayal Beach\",\"INFLUENCER zur\u00fcck in der SCHULE: Back 2 School\",\"SEEPFERDCHEN, now KISS! | ABC Quiz\",\"Diese Fall Guys Map hat uns GEBROCHEN! | UP\"N Down\"]"
+                        "examples": [
+                            "Fr\u00fcher war ALLES ANDERS! | Retro Battle: Worms Armageddon",
+                            "Wir wurden ALLE BETROGEN! | Betrayal Beach",
+                            "INFLUENCER zur\u00fcck in der SCHULE: Back 2 School",
+                            "SEEPFERDCHEN, now KISS! | ABC Quiz",
+                            "Diese Fall Guys Map hat uns GEBROCHEN! | UP N Down"
+                        ]
                     },
                     "url": {
                         "title": "FirstVideoURL",
                         "type": "string",
-                        "example": "[\"/videos/79576-retro-battle-worms-armageddon\",\"/videos/79483-wir-wurden-alle-betrogen-betrayal-beach\",\"/videos/79460-back2school\",\"/videos/79381-seepferdchen-now-kiss-abc-quiz\",\"/videos/79515-diese-fall-guys-map-hat-uns-gebrochen-upn-down\"]"
+                        "examples": [
+                            "/videos/79576-retro-battle-worms-armageddon",
+                            "/videos/79483-wir-wurden-alle-betrogen-betrayal-beach",
+                            "/videos/79460-back2school",
+                            "/videos/79381-seepferdchen-now-kiss-abc-quiz",
+                            "/videos/79515-diese-fall-guys-map-hat-uns-gebrochen-upn-down"
+                        ]
                     },
                     "url_slug": {
                         "title": "FirstVideoURLSlug",
                         "type": "string",
-                        "example": "[\"79576-retro-battle-worms-armageddon\",\"79483-wir-wurden-alle-betrogen-betrayal-beach\",\"79460-back2school\",\"79381-seepferdchen-now-kiss-abc-quiz\",\"79515-diese-fall-guys-map-hat-uns-gebrochen-upn-down\"]"
+                        "examples": [
+                            "79576-retro-battle-worms-armageddon",
+                            "79483-wir-wurden-alle-betrogen-betrayal-beach",
+                            "79460-back2school",
+                            "79381-seepferdchen-now-kiss-abc-quiz",
+                            "79515-diese-fall-guys-map-hat-uns-gebrochen-upn-down"
+                        ]
                     }
                 },
                 "additionalProperties": false
@@ -17132,7 +17228,9 @@
                     "file": {
                         "title": "FluffyFile",
                         "type": "string",
-                        "example": "[\"b99baf2ccecdd32b02a8d79a1ce5476fc7767e80.jpg\"]"
+                        "examples": [
+                            "b99baf2ccecdd32b02a8d79a1ce5476fc7767e80.jpg"
+                        ]
                     },
                     "height": {
                         "type": "integer"
@@ -17277,7 +17375,9 @@
                     "file": {
                         "title": "HilariousFile",
                         "type": "string",
-                        "example": "[\"b78b5abff75c856c08b28bb11d423d2c86dde046.jpg\"]"
+                        "examples": [
+                            "b78b5abff75c856c08b28bb11d423d2c86dde046.jpg"
+                        ]
                     },
                     "height": {
                         "type": "integer"
@@ -17302,7 +17402,9 @@
                     "file": {
                         "title": "IndigoFile",
                         "type": "string",
-                        "example": "[\"98a4dbc8a467110ac6fc68ddfe81706158ef5b5c.jpg\"]"
+                        "examples": [
+                            "98a4dbc8a467110ac6fc68ddfe81706158ef5b5c.jpg"
+                        ]
                     },
                     "height": {
                         "type": "integer"
@@ -17344,7 +17446,12 @@
                     "title": {
                         "title": "ItemTitle",
                         "type": "string",
-                        "example": "[\"Jackbox: Blather Round\",\"React: Das ist Berlin\",\"Worms\",\"Call of Duty: Black Ops 6\"]"
+                        "examples": [
+                            "Jackbox: Blather Round",
+                            "React: Das ist Berlin",
+                            "Worms",
+                            "Call of Duty: Black Ops 6"
+                        ]
                     },
                     "type": {
                         "type": "integer"
@@ -17406,7 +17513,13 @@
                     "title": {
                         "title": "LatestArticleTitle",
                         "type": "string",
-                        "example": "[\"Retro Battle: Umfrage\",\"Die goldene Emma 2024: Einreichung Dezember bis Juli\",\"gamescom 2024: Hier k\u00f6nnt ihr die Jungs treffen\",\"So erh\u00f6ht ihr die Chance, dass wir eure Spielshows spielen!\",\"50 Fragen: So sendet ihr eure Quizshow richtig ein\"]"
+                        "examples": [
+                            "Retro Battle: Umfrage",
+                            "Die goldene Emma 2024: Einreichung Dezember bis Juli",
+                            "gamescom 2024: Hier k\u00f6nnt ihr die Jungs treffen",
+                            "So erh\u00f6ht ihr die Chance, dass wir eure Spielshows spielen!",
+                            "50 Fragen: So sendet ihr eure Quizshow richtig ein"
+                        ]
                     },
                     "url": {
                         "type": "string"
@@ -17414,7 +17527,13 @@
                     "url_slug": {
                         "title": "LatestArticleURLSlug",
                         "type": "string",
-                        "example": "[\"8586-retro-battle-umfrage\",\"8585-die-goldene-emma-2024-einreichung-dezember-bis-juli\",\"8584-gamescom-2024-hier-konnt-ihr-die-jungs-treffen\",\"8582-so-erhoht-ihr-die-chance-dass-wir-eure-spielshows-spielen\",\"8581-50-fragen-so-sendet-ihr-eure-quizshow-richtig-ein\"]"
+                        "examples": [
+                            "8586-retro-battle-umfrage",
+                            "8585-die-goldene-emma-2024-einreichung-dezember-bis-juli",
+                            "8584-gamescom-2024-hier-konnt-ihr-die-jungs-treffen",
+                            "8582-so-erhoht-ihr-die-chance-dass-wir-eure-spielshows-spielen",
+                            "8581-50-fragen-so-sendet-ihr-eure-quizshow-richtig-ein"
+                        ]
                     }
                 },
                 "additionalProperties": false
@@ -17496,12 +17615,24 @@
                     "slug": {
                         "title": "LatestPlaylistSlug",
                         "type": "string",
-                        "example": "[\"retro-battle\",\"betrayal-beach\",\"back-to-school\",\"abc-quiz\",\"upn-down\"]"
+                        "examples": [
+                            "retro-battle",
+                            "betrayal-beach",
+                            "back-to-school",
+                            "abc-quiz",
+                            "upn-down"
+                        ]
                     },
                     "title": {
                         "title": "LatestPlaylistTitle",
                         "type": "string",
-                        "example": "[\"Retro Battle\",\"Betrayal Beach\",\"Back to School\",\"ABC Quiz\",\"UP\\\"N DOWN\"]"
+                        "examples": [
+                            "Retro Battle",
+                            "Betrayal Beach",
+                            "Back to School",
+                            "ABC Quiz",
+                            "UP\"N DOWN"
+                        ]
                     },
                     "type": {
                         "type": "integer"
@@ -17509,7 +17640,13 @@
                     "url_slug": {
                         "title": "LatestPlaylistURLSlug",
                         "type": "string",
-                        "example": "[\"155942-retro-battle\",\"155893-betrayal-beach\",\"155866-back-to-school\",\"155762-abc-quiz\",\"155689-upn-down\"]"
+                        "examples": [
+                            "155942-retro-battle",
+                            "155893-betrayal-beach",
+                            "155866-back-to-school",
+                            "155762-abc-quiz",
+                            "155689-upn-down"
+                        ]
                     },
                     "videos_count": {
                         "type": "integer"
@@ -17556,7 +17693,9 @@
                     "slug": {
                         "title": "LatestPodcastSlug",
                         "type": "string",
-                        "example": "[\"pietcast-447-so-war-die-gamescom\"]"
+                        "examples": [
+                            "pietcast-447-so-war-die-gamescom"
+                        ]
                     },
                     "source_url": {
                         "type": "string",
@@ -17574,12 +17713,16 @@
                     "title": {
                         "title": "LatestPodcastTitle",
                         "type": "string",
-                        "example": "[\"PietCast #447 - So war die Gamescom\"]"
+                        "examples": [
+                            "PietCast #447 - So war die Gamescom"
+                        ]
                     },
                     "url_slug": {
                         "title": "LatestPodcastURLSlug",
                         "type": "string",
-                        "example": "[\"3336-pietcast-447-so-war-die-gamescom\"]"
+                        "examples": [
+                            "3336-pietcast-447-so-war-die-gamescom"
+                        ]
                     }
                 },
                 "additionalProperties": false
@@ -17681,7 +17824,13 @@
                     "slug": {
                         "title": "LatestVideoSlug",
                         "type": "string",
-                        "example": "[\"rentner-testen-die-black-ops-6-beta\",\"monty-maulwurf-mvp-worms-clan-wars\",\"react-das-ist-berlin\",\"beschreibe-es-in-worten-jackbox-games-blather-round\",\"minecraft-meets-terraria-pietsmiet-probiert-core-keeper-10\"]"
+                        "examples": [
+                            "rentner-testen-die-black-ops-6-beta",
+                            "monty-maulwurf-mvp-worms-clan-wars",
+                            "react-das-ist-berlin",
+                            "beschreibe-es-in-worten-jackbox-games-blather-round",
+                            "minecraft-meets-terraria-pietsmiet-probiert-core-keeper-10"
+                        ]
                     },
                     "thumbnail": {
                         "$ref": "#/components/schemas/LatestVideoThumbnail"
@@ -17689,7 +17838,13 @@
                     "title": {
                         "title": "LatestVideoTitle",
                         "type": "string",
-                        "example": "[\"Rentner testen die Black Ops 6 Beta\",\"Monty-Maulwurf MVP | Worms Clan Wars\",\"React: Das ist Berlin #56\",\"BESCHREIBE es in WORTEN! | Jackbox Games Blather \\\"Round\",\"Minecraft meets Terraria | PietSmiet probiert Core Keeper 1.0\"]"
+                        "examples": [
+                            "Rentner testen die Black Ops 6 Beta",
+                            "Monty-Maulwurf MVP | Worms Clan Wars",
+                            "React: Das ist Berlin #56",
+                            "BESCHREIBE es in WORTEN! | Jackbox Games Blather \"Round",
+                            "Minecraft meets Terraria | PietSmiet probiert Core Keeper 1.0"
+                        ]
                     },
                     "url": {
                         "type": "string"
@@ -17697,7 +17852,13 @@
                     "url_slug": {
                         "title": "LatestVideoURLSlug",
                         "type": "string",
-                        "example": "[\"79656-rentner-testen-die-black-ops-6-beta\",\"79538-monty-maulwurf-mvp-worms-clan-wars\",\"79573-react-das-ist-berlin\",\"79569-beschreibe-es-in-worten-jackbox-games-blather-round\",\"79651-minecraft-meets-terraria-pietsmiet-probiert-core-keeper-10\"]"
+                        "examples": [
+                            "79656-rentner-testen-die-black-ops-6-beta",
+                            "79538-monty-maulwurf-mvp-worms-clan-wars",
+                            "79573-react-das-ist-berlin",
+                            "79569-beschreibe-es-in-worten-jackbox-games-blather-round",
+                            "79651-minecraft-meets-terraria-pietsmiet-probiert-core-keeper-10"
+                        ]
                     }
                 },
                 "additionalProperties": false
@@ -17718,7 +17879,16 @@
                     "title_pluralized": {
                         "title": "TitlePluralized",
                         "type": "string",
-                        "example": "[\"s\",\"Brammens\",\"Chris\",\"Peters\",\"Seps\",\"Jules\",\"Svens\",\"Hauptsichts\"]"
+                        "examples": [
+                            "s",
+                            "Brammens",
+                            "Chris",
+                            "Peters",
+                            "Seps",
+                            "Jules",
+                            "Svens",
+                            "Hauptsichts"
+                        ]
                     }
                 },
                 "additionalProperties": false
@@ -18162,7 +18332,20 @@
                     "title_pluralized": {
                         "title": "TitlePluralized",
                         "type": "string",
-                        "example": "[\"s\",\"Hauptsichts\",\"Brammens Sichts\",\"Chris Sichts\",\"Jays Sichts\",\"Peters Sichts\",\"Seps Sichts\",\"Svens Sichts\",\"Brammens\",\"Jays\",\"Seps\",\"Piets\"]"
+                        "examples": [
+                            "s",
+                            "Hauptsichts",
+                            "Brammens Sichts",
+                            "Chris Sichts",
+                            "Jays Sichts",
+                            "Peters Sichts",
+                            "Seps Sichts",
+                            "Svens Sichts",
+                            "Brammens",
+                            "Jays",
+                            "Seps",
+                            "Piets"
+                        ]
                     }
                 },
                 "additionalProperties": false
@@ -18190,12 +18373,18 @@
                     "slug": {
                         "title": "Slug",
                         "type": "string",
-                        "example": "[\"retro-battle\",\"watch-later\"]"
+                        "examples": [
+                            "retro-battle",
+                            "watch-later"
+                        ]
                     },
                     "title": {
                         "title": "Title",
                         "type": "string",
-                        "example": "[\"Retro Battle\",\"Sp\u00e4ter ansehen\"]"
+                        "examples": [
+                            "Retro Battle",
+                            "Sp\u00e4ter ansehen"
+                        ]
                     },
                     "type": {
                         "type": "integer"
@@ -18539,7 +18728,10 @@
                     "slug": {
                         "title": "FluffySlug",
                         "type": "string",
-                        "example": "[\"peterheisstpodcast\",\"pietcast\"]"
+                        "examples": [
+                            "peterheisstpodcast",
+                            "pietcast"
+                        ]
                     },
                     "spotify_url": {
                         "nullable": true
@@ -18547,12 +18739,18 @@
                     "title": {
                         "title": "FluffyTitle",
                         "type": "string",
-                        "example": "[\"Peter hei\u00dft Podcast\",\"PietCast\"]"
+                        "examples": [
+                            "Peter hei\u00dft Podcast",
+                            "PietCast"
+                        ]
                     },
                     "url_slug": {
                         "title": "FluffyURLSlug",
                         "type": "string",
-                        "example": "[\"36-peterheisstpodcast\",\"31-pietcast\"]"
+                        "examples": [
+                            "36-peterheisstpodcast",
+                            "31-pietcast"
+                        ]
                     }
                 },
                 "additionalProperties": false
@@ -18564,7 +18762,9 @@
                     "file": {
                         "title": "PurpleFile",
                         "type": "string",
-                        "example": "[\"3d796cb90e82457ad489898ed177ff91a3e42489.jpg\"]"
+                        "examples": [
+                            "3d796cb90e82457ad489898ed177ff91a3e42489.jpg"
+                        ]
                     },
                     "height": {
                         "type": "integer"
@@ -18820,7 +19020,9 @@
                     "name": {
                         "title": "SocialAccountName",
                         "type": "string",
-                        "example": "[\"socialAccountName\"]"
+                        "examples": [
+                            "socialAccountName"
+                        ]
                     },
                     "service": {
                         "title": "Service",
@@ -18906,7 +19108,9 @@
                     "file": {
                         "title": "StickyFile",
                         "type": "string",
-                        "example": "[\"a37f22cc1c294615315453d10420d384a037b9a8.jpg\"]"
+                        "examples": [
+                            "a37f22cc1c294615315453d10420d384a037b9a8.jpg"
+                        ]
                     },
                     "height": {
                         "type": "integer"
@@ -19125,7 +19329,9 @@
                     "file": {
                         "title": "TentacledFile",
                         "type": "string",
-                        "example": "[\"cd6dbc914c9e3a0171491f157b15c1345d1bbd2f.jpg\"]"
+                        "examples": [
+                            "cd6dbc914c9e3a0171491f157b15c1345d1bbd2f.jpg"
+                        ]
                     },
                     "height": {
                         "type": "integer"
@@ -19286,12 +19492,16 @@
                     "name": {
                         "title": "TopUserName",
                         "type": "string",
-                        "example": "[\"nikolarius\"]"
+                        "examples": [
+                            "nikolarius"
+                        ]
                     },
                     "name_possessive": {
                         "title": "TopUserNamePossessive",
                         "type": "string",
-                        "example": "[\"nikolarius'\"]"
+                        "examples": [
+                            "nikolarius'"
+                        ]
                     },
                     "preferences": {
                         "$ref": "#/components/schemas/AuthorPreferences"
@@ -19305,7 +19515,9 @@
                     "reputation_pretty": {
                         "title": "TopUserReputationPretty",
                         "type": "string",
-                        "example": "[\"59,454\"]"
+                        "examples": [
+                            "59,454"
+                        ]
                     },
                     "team": {
                         "type": "boolean"
@@ -19317,12 +19529,16 @@
                     "url_slug": {
                         "title": "TopUserURLSlug",
                         "type": "string",
-                        "example": "[\"69870-nklsglng\"]"
+                        "examples": [
+                            "69870-nklsglng"
+                        ]
                     },
                     "username": {
                         "title": "TopUserUsername",
                         "type": "string",
-                        "example": "[\"nklsglng\"]"
+                        "examples": [
+                            "nklsglng"
+                        ]
                     }
                 },
                 "additionalProperties": false
@@ -19343,7 +19559,9 @@
                     "pluralized_title": {
                         "title": "PluralizedTitle",
                         "type": "string",
-                        "example": "[\"s\"]"
+                        "examples": [
+                            "s"
+                        ]
                     },
                     "qualities": {
                         "type": "array",
@@ -19398,7 +19616,9 @@
                     "duration_pretty": {
                         "title": "TrendingVideoDurationPretty",
                         "type": "string",
-                        "example": "[\"32:17\"]"
+                        "examples": [
+                            "32:17"
+                        ]
                     },
                     "featured": {
                         "type": "boolean"
@@ -19438,7 +19658,9 @@
                     "slug": {
                         "title": "TrendingVideoSlug",
                         "type": "string",
-                        "example": "[\"da-wurde-ja-keiner-runterfallen-oder-ttt\"]"
+                        "examples": [
+                            "da-wurde-ja-keiner-runterfallen-oder-ttt"
+                        ]
                     },
                     "thumbnail": {
                         "$ref": "#/components/schemas/TrendingVideoThumbnail"
@@ -19446,17 +19668,23 @@
                     "title": {
                         "title": "TrendingVideoTitle",
                         "type": "string",
-                        "example": "[\"Da w\u00fcrde ja keiner RUNTERFALLEN! oder? | TTT\"]"
+                        "examples": [
+                            "Da w\u00fcrde ja keiner RUNTERFALLEN! oder? | TTT"
+                        ]
                     },
                     "url": {
                         "title": "TrendingVideoURL",
                         "type": "string",
-                        "example": "[\"/videos/79620-da-wurde-ja-keiner-runterfallen-oder-ttt\"]"
+                        "examples": [
+                            "/videos/79620-da-wurde-ja-keiner-runterfallen-oder-ttt"
+                        ]
                     },
                     "url_slug": {
                         "title": "TrendingVideoURLSlug",
                         "type": "string",
-                        "example": "[\"79620-da-wurde-ja-keiner-runterfallen-oder-ttt\"]"
+                        "examples": [
+                            "79620-da-wurde-ja-keiner-runterfallen-oder-ttt"
+                        ]
                     }
                 },
                 "additionalProperties": false
@@ -19484,7 +19712,16 @@
                     "title_pluralized": {
                         "title": "TitlePluralized",
                         "type": "string",
-                        "example": "[\"s\",\"Brammens\",\"Chris\\'\",\"Peters\",\"Seps\",\"Jules\",\"Svens\",\"Hauptsichts\"]"
+                        "examples": [
+                            "s",
+                            "Brammens",
+                            "Chris",
+                            "Peters",
+                            "Seps",
+                            "Jules",
+                            "Svens",
+                            "Hauptsichts"
+                        ]
                     }
                 },
                 "additionalProperties": false
@@ -19525,7 +19762,14 @@
                     "description": {
                         "title": "Description",
                         "type": "string",
-                        "example": "[\"T\u00e4gliche Videozusammenfassung\",\"W\u00f6chentliche Videozusammenfassung\",\"Antwort auf Kommentar\",\"Kommentar ist beliebt\",\"Erw\u00e4hnung in einem Kommentar\",\"Neue Artikel\"]"
+                        "examples": [
+                            "T\u00e4gliche Videozusammenfassung",
+                            "W\u00f6chentliche Videozusammenfassung",
+                            "Antwort auf Kommentar",
+                            "Kommentar ist beliebt",
+                            "Erw\u00e4hnung in einem Kommentar",
+                            "Neue Artikel"
+                        ]
                     },
                     "key": {
                         "title": "Key",
@@ -19633,7 +19877,9 @@
                     "reputation_pretty": {
                         "title": "ReputationPretty",
                         "type": "string",
-                        "example": "[\"***\"]"
+                        "examples": [
+                            "***"
+                        ]
                     },
                     "team": {
                         "type": "boolean"
@@ -20003,7 +20249,9 @@
                     "email": {
                         "title": "Email",
                         "type": "string",
-                        "example": "[\"email@example.com\"]"
+                        "examples": [
+                            "email@example.com"
+                        ]
                     },
                     "id": {
                         "type": "integer"
@@ -20011,12 +20259,18 @@
                     "name": {
                         "title": "UserName",
                         "type": "string",
-                        "example": "[\"userName\",\"DisplayName\"]"
+                        "examples": [
+                            "userName",
+                            "DisplayName"
+                        ]
                     },
                     "name_possessive": {
                         "title": "NamePossessive",
                         "type": "string",
-                        "example": "[\"userNames\",\"DisplayNames\"]"
+                        "examples": [
+                            "userNames",
+                            "DisplayNames"
+                        ]
                     },
                     "notifications_count": {
                         "type": "integer"
@@ -20075,12 +20329,16 @@
                     "url_slug": {
                         "title": "URLSlug",
                         "type": "string",
-                        "example": "[\"<userId>-<userName>\"]"
+                        "examples": [
+                            "<userId>-<userName>"
+                        ]
                     },
                     "username": {
                         "title": "UserUsername",
                         "type": "string",
-                        "example": "[\"userName\"]"
+                        "examples": [
+                            "userName"
+                        ]
                     },
                     "verified": {
                         "type": "boolean"
@@ -20892,7 +21150,9 @@
                     "duration_pretty": {
                         "title": "DurationPrettyDurationPretty",
                         "type": "string",
-                        "example": "[\"21:56\"]"
+                        "examples": [
+                            "21:56"
+                        ]
                     },
                     "featured": {
                         "type": "boolean"
@@ -20932,12 +21192,16 @@
                     "slug": {
                         "title": "LatestVideoSlug",
                         "type": "string",
-                        "example": "[\"rentner-testen-die-black-ops-6-beta\"]"
+                        "examples": [
+                            "rentner-testen-die-black-ops-6-beta"
+                        ]
                     },
                     "title": {
                         "title": "LatestVideoTitle",
                         "type": "string",
-                        "example": "[\"Rentner testen die Black Ops 6 Beta\"]"
+                        "examples": [
+                            "Rentner testen die Black Ops 6 Beta"
+                        ]
                     },
                     "url": {
                         "type": "string"
@@ -20945,7 +21209,9 @@
                     "url_slug": {
                         "title": "LatestVideoURLSlug",
                         "type": "string",
-                        "example": "[\"79656-rentner-testen-die-black-ops-6-beta\"]"
+                        "examples": [
+                            "79656-rentner-testen-die-black-ops-6-beta"
+                        ]
                     }
                 },
                 "additionalProperties": false

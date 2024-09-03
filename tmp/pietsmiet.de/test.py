@@ -31,12 +31,15 @@ def process_file(file_path):
         content = json.load(f)
     # new_content = deepcopy(content)
     # new_content["paths"] = []
-    content["components"]["schemas"] = dict(sorted(content["components"]["schemas"].items()))
-    # for path, entry in content["paths"].items():
-    #     if isinstance(entry, list): continue
-    #     for method_str, method in entry.items():
-    #         if isinstance(method, list): continue
-    #         if not method: continue
+    # content["components"]["schemas"] = dict(sorted(content["components"]["schemas"].items()))
+    for path, entry in content["paths"].items():
+        print(path)
+        # if isinstance(entry, list): continue
+        for method_str, method in entry.items():
+            if not method or isinstance(method, list): continue
+            splitpath = [i for i in path.split('/') if i]
+            if not len(splitpath): continue
+            method["tags"] = [splitpath[0]] # [i for i in path.split('/') if i and not any(not c.isalnum() for c in i)][0]
     #         for code, response in method["responses"].items():
     #             for key in ['cf-cache-status','cf-ray','nel']:
     #                 if key in response["headers"].keys():

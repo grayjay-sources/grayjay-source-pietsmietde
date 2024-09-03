@@ -72,7 +72,7 @@ System.register("apis/pietsmiet.de/types", [], function (exports_2, context_2) {
         execute: function () {
             exports_2("pietsmietDE", pietsmietDE = {
                 API: {
-                    Config: { URL: "${BASE_URL}", Response:  },
+                    Config: { URL: "${BASE_URL}" },
                     Channels: { URL: "${BASE_URL}/api/v1/videos/channels?page=" },
                     Home: { URL: "${BASE_URL}/api/v1/videos?limit=${limits.Videos}&order=${orders.Videos}&prioritize_featured=0&page=" },
                     Playlists: { URL: "${BASE_URL}/api/v1/videos/playlists?limit=${limits.Videos}&order=${orders.Videos}&page=1" },

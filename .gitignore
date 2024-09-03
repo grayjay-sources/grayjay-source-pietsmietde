@@ -1,8 +1,11 @@
 node_modules/
+*-generated/
 *.js
 *.js.map
 *.bak
 *.har
+
+
 
 !dist/*
 dist/dev-config.json

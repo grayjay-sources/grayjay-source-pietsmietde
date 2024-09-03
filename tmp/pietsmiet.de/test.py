@@ -21,8 +21,8 @@ def recursive_dict_traversal(nested_dict: dict[str, Any], current_path=''):
     for key, value in nested_dict.items():
         full_path = f"{current_path}.{key}" if current_path else key
         if isinstance(value, dict):
-            if "type" in value.keys() and not key == "properties":
-                value["readOnly"] = True
+            if "example" in value.keys():
+                print(value["example"])
                 # print(f"{full_path}: {value}")
             recursive_dict_traversal(value, full_path)
 

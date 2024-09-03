@@ -40,6 +40,8 @@
     "type": "module",
     "devDependencies": {
         "@grayjay/plugin": "gitlab:kaidelorenzo/grayjay-plugin-types#4478f604519640c28c4cb19d74f7cc1e9af3619d",
+        "@types/jest": "^29.5.12",
+        "@types/mocha": "^10.0.7",
         "@types/node": "^20.14.9",
         "ctix": "^2.6.3",
         "http-server": "^14.1.1",

@@ -14516,9 +14516,7 @@
             "file": {
               "title": "IndecentFile",
               "type": "string",
-              "example": [
-                "05070b3df9dfba0ef3a825b50e79252ac5793876.jpg"
-              ]
+              "example": "[\"05070b3df9dfba0ef3a825b50e79252ac5793876.jpg\"]"
             },
             "height": {
               "type": "integer"
@@ -14689,9 +14687,7 @@
             "color": {
               "title": "Color",
               "type": "string",
-              "example": [
-                "039a45"
-              ]
+              "example": "[\"039a45\"]"
             },
             "link": {
               "type": "string",
@@ -15041,9 +15037,7 @@
             "type": {
               "title": "DashType",
               "type": "string",
-              "example": [
-                "application/dash+xml"
-              ]
+              "example": "[\"application/dash+xml\"]"
             }
           },
           "additionalProperties": false
@@ -15931,26 +15925,17 @@
                     "slug": {
                       "title": "Slug",
                       "type": "string",
-                      "example": [
-                        "pietsmiet",
-                        "pietstream"
-                      ]
+                      "example": "[\"pietsmiet\",\"pietstream\"]"
                     },
                     "title": {
                       "title": "Title",
                       "type": "string",
-                      "example": [
-                        "PietSmiet",
-                        "PietSmiet Live"
-                      ]
+                      "example": "[\"PietSmiet\",\"PietSmiet Live\"]"
                     },
                     "url_slug": {
                       "title": "URLSlug",
                       "type": "string",
-                      "example": [
-                        "9-pietsmiet",
-                        "44-pietstream"
-                      ]
+                      "example": "[\"9-pietsmiet\",\"44-pietstream\"]"
                     },
                     "videos_count": {
                       "nullable": true
@@ -16232,9 +16217,7 @@
             "mime": {
               "title": "MIME",
               "type": "string",
-              "example": [
-                "audio/mpeg"
-              ]
+              "example": "[\"audio/mpeg\"]"
             },
             "publish_date": {
               "type": "string",
@@ -16548,9 +16531,7 @@
             "mime": {
               "title": "MIME",
               "type": "string",
-              "example": [
-                "audio/mpeg"
-              ]
+              "enum": ["audio/mpeg"]
             },
             "preferences": {
               "$ref": "#/components/schemas/DatumPreferences"
@@ -17149,9 +17130,7 @@
             "file": {
               "title": "FluffyFile",
               "type": "string",
-              "example": [
-                "b99baf2ccecdd32b02a8d79a1ce5476fc7767e80.jpg"
-              ]
+              "example": "[\"b99baf2ccecdd32b02a8d79a1ce5476fc7767e80.jpg\"]"
             },
             "height": {
               "type": "integer"
@@ -17296,9 +17275,7 @@
             "file": {
               "title": "HilariousFile",
               "type": "string",
-              "example": [
-                "b78b5abff75c856c08b28bb11d423d2c86dde046.jpg"
-              ]
+              "example": "[\"b78b5abff75c856c08b28bb11d423d2c86dde046.jpg\"]"
             },
             "height": {
               "type": "integer"
@@ -17323,9 +17300,7 @@
             "file": {
               "title": "IndigoFile",
               "type": "string",
-              "example": [
-                "98a4dbc8a467110ac6fc68ddfe81706158ef5b5c.jpg"
-              ]
+              "example": "[\"98a4dbc8a467110ac6fc68ddfe81706158ef5b5c.jpg\"]"
             },
             "height": {
               "type": "integer"
@@ -17429,13 +17404,7 @@
             "title": {
               "title": "LatestArticleTitle",
               "type": "string",
-              "example": [
-                "Retro Battle: Umfrage",
-                "Die goldene Emma 2024: Einreichung Dezember bis Juli",
-                "gamescom 2024: Hier könnt ihr die Jungs treffen",
-                "So erhöht ihr die Chance, dass wir eure Spielshows spielen!",
-                "50 Fragen: So sendet ihr eure Quizshow richtig ein"
-              ]
+              "example": "[\"Retro Battle: Umfrage\",\"Die goldene Emma 2024: Einreichung Dezember bis Juli\",\"gamescom 2024: Hier könnt ihr die Jungs treffen\",\"So erhöht ihr die Chance, dass wir eure Spielshows spielen!\",\"50 Fragen: So sendet ihr eure Quizshow richtig ein\"]"
             },
             "url": {
               "type": "string"
@@ -17443,13 +17412,7 @@
             "url_slug": {
               "title": "LatestArticleURLSlug",
               "type": "string",
-              "example": [
-                "8586-retro-battle-umfrage",
-                "8585-die-goldene-emma-2024-einreichung-dezember-bis-juli",
-                "8584-gamescom-2024-hier-konnt-ihr-die-jungs-treffen",
-                "8582-so-erhoht-ihr-die-chance-dass-wir-eure-spielshows-spielen",
-                "8581-50-fragen-so-sendet-ihr-eure-quizshow-richtig-ein"
-              ]
+              "example": "[\"8586-retro-battle-umfrage\",\"8585-die-goldene-emma-2024-einreichung-dezember-bis-juli\",\"8584-gamescom-2024-hier-konnt-ihr-die-jungs-treffen\",\"8582-so-erhoht-ihr-die-chance-dass-wir-eure-spielshows-spielen\",\"8581-50-fragen-so-sendet-ihr-eure-quizshow-richtig-ein\"]"
             }
           },
           "additionalProperties": false
@@ -17531,24 +17494,12 @@
             "slug": {
               "title": "LatestPlaylistSlug",
               "type": "string",
-              "example": [
-                "retro-battle",
-                "betrayal-beach",
-                "back-to-school",
-                "abc-quiz",
-                "upn-down"
-              ]
+              "example": "[\"retro-battle\",\"betrayal-beach\",\"back-to-school\",\"abc-quiz\",\"upn-down\"]"
             },
             "title": {
               "title": "LatestPlaylistTitle",
               "type": "string",
-              "example": [
-                "Retro Battle",
-                "Betrayal Beach",
-                "Back to School",
-                "ABC Quiz",
-                "UP\"N DOWN"
-              ]
+              "example": "[\"Retro Battle\",\"Betrayal Beach\",\"Back to School\",\"ABC Quiz\",\"UP\\\"N DOWN\"]"
             },
             "type": {
               "type": "integer"
@@ -17556,13 +17507,7 @@
             "url_slug": {
               "title": "LatestPlaylistURLSlug",
               "type": "string",
-              "example": [
-                "155942-retro-battle",
-                "155893-betrayal-beach",
-                "155866-back-to-school",
-                "155762-abc-quiz",
-                "155689-upn-down"
-              ]
+              "example": "[\"155942-retro-battle\",\"155893-betrayal-beach\",\"155866-back-to-school\",\"155762-abc-quiz\",\"155689-upn-down\"]"
             },
             "videos_count": {
               "type": "integer"
@@ -17609,9 +17554,7 @@
             "slug": {
               "title": "LatestPodcastSlug",
               "type": "string",
-              "example": [
-                "pietcast-447-so-war-die-gamescom"
-              ]
+              "example": "[\"pietcast-447-so-war-die-gamescom\"]"
             },
             "source_url": {
               "type": "string",
@@ -17629,16 +17572,12 @@
             "title": {
               "title": "LatestPodcastTitle",
               "type": "string",
-              "example": [
-                "PietCast #447 - So war die Gamescom"
-              ]
+              "example": "[\"PietCast #447 - So war die Gamescom\"]"
             },
             "url_slug": {
               "title": "LatestPodcastURLSlug",
               "type": "string",
-              "example": [
-                "3336-pietcast-447-so-war-die-gamescom"
-              ]
+              "example": "[\"3336-pietcast-447-so-war-die-gamescom\"]"
             }
           },
           "additionalProperties": false
@@ -17694,12 +17633,7 @@
                 {
                   "title": "DurationPrettyDurationPretty",
                   "type": "string",
-                  "example": [
-                    "21:56",
-                    "23:00",
-                    "15:24",
-                    "17:56"
-                  ]
+                  "example": "[\"21:56\",\"23:00\",\"15:24\",\"17:56\"]"
                 },
                 {
                   "type": "string",
@@ -17745,13 +17679,7 @@
             "slug": {
               "title": "LatestVideoSlug",
               "type": "string",
-              "example": [
-                "rentner-testen-die-black-ops-6-beta",
-                "monty-maulwurf-mvp-worms-clan-wars",
-                "react-das-ist-berlin",
-                "beschreibe-es-in-worten-jackbox-games-blather-round",
-                "minecraft-meets-terraria-pietsmiet-probiert-core-keeper-10"
-              ]
+              "example": "[\"rentner-testen-die-black-ops-6-beta\",\"monty-maulwurf-mvp-worms-clan-wars\",\"react-das-ist-berlin\",\"beschreibe-es-in-worten-jackbox-games-blather-round\",\"minecraft-meets-terraria-pietsmiet-probiert-core-keeper-10\"]"
             },
             "thumbnail": {
               "$ref": "#/components/schemas/LatestVideoThumbnail"
@@ -17759,13 +17687,7 @@
             "title": {
               "title": "LatestVideoTitle",
               "type": "string",
-              "example": [
-                "Rentner testen die Black Ops 6 Beta",
-                "Monty-Maulwurf MVP | Worms Clan Wars",
-                "React: Das ist Berlin #56",
-                "BESCHREIBE es in WORTEN! | Jackbox Games Blather \"Round",
-                "Minecraft meets Terraria | PietSmiet probiert Core Keeper 1.0"
-              ]
+              "example": "[\"Rentner testen die Black Ops 6 Beta\",\"Monty-Maulwurf MVP | Worms Clan Wars\",\"React: Das ist Berlin #56\",\"BESCHREIBE es in WORTEN! | Jackbox Games Blather \\\"Round\",\"Minecraft meets Terraria | PietSmiet probiert Core Keeper 1.0\"]"
             },
             "url": {
               "type": "string"
@@ -17773,13 +17695,7 @@
             "url_slug": {
               "title": "LatestVideoURLSlug",
               "type": "string",
-              "example": [
-                "79656-rentner-testen-die-black-ops-6-beta",
-                "79538-monty-maulwurf-mvp-worms-clan-wars",
-                "79573-react-das-ist-berlin",
-                "79569-beschreibe-es-in-worten-jackbox-games-blather-round",
-                "79651-minecraft-meets-terraria-pietsmiet-probiert-core-keeper-10"
-              ]
+              "example": "[\"79656-rentner-testen-die-black-ops-6-beta\",\"79538-monty-maulwurf-mvp-worms-clan-wars\",\"79573-react-das-ist-berlin\",\"79569-beschreibe-es-in-worten-jackbox-games-blather-round\",\"79651-minecraft-meets-terraria-pietsmiet-probiert-core-keeper-10\"]"
             }
           },
           "additionalProperties": false
@@ -17800,16 +17716,7 @@
             "title_pluralized": {
               "title": "TitlePluralized",
               "type": "string",
-              "example": [
-                "s",
-                "Brammens",
-                "Chris",
-                "Peters",
-                "Seps",
-                "Jules",
-                "Svens",
-                "Hauptsichts"
-              ]
+              "example": "[\"s\",\"Brammens\",\"Chris\",\"Peters\",\"Seps\",\"Jules\",\"Svens\",\"Hauptsichts\"]"
             }
           },
           "additionalProperties": false
@@ -18630,10 +18537,7 @@
             "slug": {
               "title": "FluffySlug",
               "type": "string",
-              "example": [
-                "peterheisstpodcast",
-                "pietcast"
-              ]
+              "example": "[\"peterheisstpodcast\",\"pietcast\"]"
             },
             "spotify_url": {
               "nullable": true
@@ -18641,18 +18545,12 @@
             "title": {
               "title": "FluffyTitle",
               "type": "string",
-              "example": [
-                "Peter heißt Podcast",
-                "PietCast"
-              ]
+              "example": "[\"Peter heißt Podcast\",\"PietCast\"]"
             },
             "url_slug": {
               "title": "FluffyURLSlug",
               "type": "string",
-              "example": [
-                "36-peterheisstpodcast",
-                "31-pietcast"
-              ]
+              "example": "[\"36-peterheisstpodcast\",\"31-pietcast\"]"
             }
           },
           "additionalProperties": false
@@ -18664,9 +18562,7 @@
             "file": {
               "title": "PurpleFile",
               "type": "string",
-              "example": [
-                "3d796cb90e82457ad489898ed177ff91a3e42489.jpg"
-              ]
+              "example": "[\"3d796cb90e82457ad489898ed177ff91a3e42489.jpg\"]"
             },
             "height": {
               "type": "integer"
@@ -18922,9 +18818,7 @@
             "name": {
               "title": "SocialAccountName",
               "type": "string",
-              "example": [
-                "socialAccountName"
-              ]
+              "example": "[\"socialAccountName\"]"
             },
             "service": {
               "title": "Service",
@@ -19010,9 +18904,7 @@
             "file": {
               "title": "StickyFile",
               "type": "string",
-              "example": [
-                "a37f22cc1c294615315453d10420d384a037b9a8.jpg"
-              ]
+              "example": "[\"a37f22cc1c294615315453d10420d384a037b9a8.jpg\"]"
             },
             "height": {
               "type": "integer"
@@ -19504,9 +19396,7 @@
             "duration_pretty": {
               "title": "TrendingVideoDurationPretty",
               "type": "string",
-              "example": [
-                "32:17"
-              ]
+              "example": "[\"32:17\"]"
             },
             "featured": {
               "type": "boolean"
@@ -19546,9 +19436,7 @@
             "slug": {
               "title": "TrendingVideoSlug",
               "type": "string",
-              "example": [
-                "da-wurde-ja-keiner-runterfallen-oder-ttt"
-              ]
+              "example": "[\"da-wurde-ja-keiner-runterfallen-oder-ttt\"]"
             },
             "thumbnail": {
               "$ref": "#/components/schemas/TrendingVideoThumbnail"
@@ -19556,23 +19444,17 @@
             "title": {
               "title": "TrendingVideoTitle",
               "type": "string",
-              "example": [
-                "Da würde ja keiner RUNTERFALLEN! oder? | TTT"
-              ]
+              "example": "[\"Da würde ja keiner RUNTERFALLEN! oder? | TTT\"]"
             },
             "url": {
               "title": "TrendingVideoURL",
               "type": "string",
-              "example": [
-                "/videos/79620-da-wurde-ja-keiner-runterfallen-oder-ttt"
-              ]
+              "example": "[\"/videos/79620-da-wurde-ja-keiner-runterfallen-oder-ttt\"]"
             },
             "url_slug": {
               "title": "TrendingVideoURLSlug",
               "type": "string",
-              "example": [
-                "79620-da-wurde-ja-keiner-runterfallen-oder-ttt"
-              ]
+              "example": "[\"79620-da-wurde-ja-keiner-runterfallen-oder-ttt\"]"
             }
           },
           "additionalProperties": false
@@ -19641,14 +19523,7 @@
             "description": {
               "title": "Description",
               "type": "string",
-              "example": [
-                "Tägliche Videozusammenfassung",
-                "Wöchentliche Videozusammenfassung",
-                "Antwort auf Kommentar",
-                "Kommentar ist beliebt",
-                "Erwähnung in einem Kommentar",
-                "Neue Artikel"
-              ]
+              "example": "[\"Tägliche Videozusammenfassung\",\"Wöchentliche Videozusammenfassung\",\"Antwort auf Kommentar\",\"Kommentar ist beliebt\",\"Erwähnung in einem Kommentar\",\"Neue Artikel\"]"
             },
             "key": {
               "title": "Key",
@@ -20085,9 +19960,7 @@
                           "file": {
                             "title": "File",
                             "type": "string",
-                            "example": [
-                              "d1491746e1ef8b0a7cc9e2a86b112f66bc289627.jpg"
-                            ]
+                            "example": "[\"d1491746e1ef8b0a7cc9e2a86b112f66bc289627.jpg\"]"
                           },
                           "height": {
                             "type": "integer"
@@ -20128,9 +20001,7 @@
             "email": {
               "title": "Email",
               "type": "string",
-              "example": [
-                "email@example.com"
-              ]
+              "example": "[\"email@example.com\"]"
             },
             "id": {
               "type": "integer"
@@ -20138,18 +20009,12 @@
             "name": {
               "title": "UserName",
               "type": "string",
-              "example": [
-                "userName",
-                "DisplayName"
-              ]
+              "example": "[\"userName\",\"DisplayName\"]"
             },
             "name_possessive": {
               "title": "NamePossessive",
               "type": "string",
-              "example": [
-                "userNames",
-                "DisplayNames"
-              ]
+              "example": "[\"userNames\",\"DisplayNames\"]"
             },
             "notifications_count": {
               "type": "integer"
@@ -20208,16 +20073,12 @@
             "url_slug": {
               "title": "URLSlug",
               "type": "string",
-              "example": [
-                "<userId>-<userName>"
-              ]
+              "example": "[\"<userId>-<userName>\"]"
             },
             "username": {
               "title": "UserUsername",
               "type": "string",
-              "example": [
-                "userName"
-              ]
+              "example": "[\"userName\"]"
             },
             "verified": {
               "type": "boolean"
@@ -21002,10 +20863,7 @@
                   "title": "RemoteURLEnum",
                   "type": "string",
                   "nullable": true,
-                  "example": [
-                    "/storage/images/predatorthumb.png",
-                    "/storage/images/uploadplan.png"
-                  ]
+                  "example": "[\"/storage/images/predatorthumb.png\",\"/storage/images/uploadplan.png\"]"
                 },
                 {
                   "type": "string",

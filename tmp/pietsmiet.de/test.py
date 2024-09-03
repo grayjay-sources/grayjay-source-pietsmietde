@@ -22,7 +22,12 @@ def recursive_dict_traversal(nested_dict: dict[str, Any], current_path=''):
         full_path = f"{current_path}.{key}" if current_path else key
         if isinstance(value, dict):
             if "example" in value.keys():
-                print(value["example"])
+                example = value["example"]
+                if isinstance(example, dict) or isinstance(example, list): continue
+                try:
+                    example = json.loads(example)
+                    
+                except Exception as ex: print("Failed to json parse", value["example"])
                 # print(f"{full_path}: {value}")
             recursive_dict_traversal(value, full_path)
 
@@ -32,21 +37,21 @@ def process_file(file_path):
     # new_content = deepcopy(content)
     # new_content["paths"] = []
     # content["components"]["schemas"] = dict(sorted(content["components"]["schemas"].items()))
-    for path, entry in content["paths"].items():
-        print(path)
-        # if isinstance(entry, list): continue
-        for method_str, method in entry.items():
-            if not method or isinstance(method, list): continue
-            splitpath = [i for i in path.split('/') if i]
-            if not len(splitpath): continue
-            method["tags"] = [splitpath[0]] # [i for i in path.split('/') if i and not any(not c.isalnum() for c in i)][0]
+    # for path, entry in content["paths"].items():
+    #     print(path)
+    #     # if isinstance(entry, list): continue
+    #     for method_str, method in entry.items():
+    #         if not method or isinstance(method, list): continue
+    #         splitpath = [i for i in path.split('/') if i]
+    #         if not len(splitpath): continue
+    #         method["tags"] = [splitpath[0]] # [i for i in path.split('/') if i and not any(not c.isalnum() for c in i)][0]
     #         for code, response in method["responses"].items():
     #             for key in ['cf-cache-status','cf-ray','nel']:
     #                 if key in response["headers"].keys():
     #                     del response["headers"][key]
             # new_content["log"]["entries"].append(entry)
-    # recursive_dict_traversal(content)
-    with open("tmp/pietsmiet.de/modded.json.har", 'w') as f:  # Write the modified content back to the file
+    recursive_dict_traversal(content)
+    with open("tmp/pietsmiet.de/modded.json", 'w') as f:  # Write the modified content back to the file
         json.dump(content, f, indent=4)
         print(f"\nModified file: {file_path}")
 

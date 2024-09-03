@@ -2,6 +2,7 @@ node_modules/
 *.js
 *.js.map
 *.bak
+*.har
 
 !dist/*
 dist/dev-config.json

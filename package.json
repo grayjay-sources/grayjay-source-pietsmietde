@@ -13,7 +13,8 @@
         "bun-release": "bun install && bun update && bun x npm-check-updates && bun run bun-test",
         "npm-release": "npm install && npm update && npx npm-check-updates && npm test",
         "bun-dev": "bun run build && bun x http-server build",
-        "npm-dev": "npm run build && npx http-server build"
+        "npm-dev": "npm run build && npx http-server build",
+        "ctix": "npx ctix build --mode create -p ./tsconfig.json --start-from ./src --include src/**/*.ts"
     },
     "repository": {
         "type": "git",
@@ -25,7 +26,9 @@
         "grayjay"
     ],
     "author": "Bluscream",
-    "contributors": [ "Kai DeLorenzo"],
+    "contributors": [
+        "Kai DeLorenzo"
+    ],
     "license": "WTFPL",
     "bugs": {
         "url": "https://github.com/Bluscream/grayjay-source-pietsmietde/issues/new"
@@ -38,6 +41,7 @@
     "devDependencies": {
         "@grayjay/plugin": "gitlab:kaidelorenzo/grayjay-plugin-types#4478f604519640c28c4cb19d74f7cc1e9af3619d",
         "@types/node": "^20.14.9",
+        "ctix": "^2.6.3",
         "http-server": "^14.1.1",
         "npm-check-updates": "^17.0.0"
     }

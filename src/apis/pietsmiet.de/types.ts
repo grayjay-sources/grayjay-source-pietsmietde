@@ -1,9 +1,7 @@
 // consts.ts
 
-import type { '*' } from "./responses/*.js"
-
 export interface PSDEConstants {
-    readonly API: Record<string, Record<string, string>>;
+    readonly API: Record<string, Record<string, any>>;
     readonly URLs: Record<string, string>;
     readonly Limits: Record<string, number>;
     readonly Orders: Record<string, string>;
@@ -14,7 +12,7 @@ export interface PSDEConstants {
 
 export const pietsmietDE: PSDEConstants = {
     API: {
-        Config: { URL: "${BASE_URL}" },
+        Config: { URL: "${BASE_URL}", Response:  },
         Channels: { URL: "${BASE_URL}/api/v1/videos/channels?page=" },
         Home: { URL: "${BASE_URL}/api/v1/videos?limit=${limits.Videos}&order=${orders.Videos}&prioritize_featured=0&page=" },
         Playlists: { URL: "${BASE_URL}/api/v1/videos/playlists?limit=${limits.Videos}&order=${orders.Videos}&page=1" },

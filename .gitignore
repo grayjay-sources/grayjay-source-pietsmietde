@@ -1,5 +1,6 @@
-# *.har
+node_modules/
+*.js
+*.js.map
 
-/assets/banner.*
-/assets/icon.*
-/assets/logo.*
+!dist/*
+dist/dev-config.json

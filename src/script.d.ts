@@ -42,14 +42,21 @@ declare class Thumbnails {
     constructor(thumbnails: Thumbnail[])
 }
 declare class Thumbnail {
+    url: string
+    quality: number
     constructor(url, quality) {
         this.url = url ?? ""; //string
-        this.quality = quality ?? 0; //integer
+        this.quality = quality ?? 0; //number
     }
 }
 
 declare class PlatformID {
-    constructor(platform: string, id: string, pluginId: string, claimType: int = 0, claimFieldType: integer = -1);
+    platform: string
+    id: string
+    pluginId: string
+    claimType: number = 0
+    claimFieldType: number = -1
+    constructor(platform: string, id: string, pluginId: string, claimType: number = 0, claimFieldType: number = -1);
 }
 
 declare class ResultCapabilities {
@@ -64,11 +71,11 @@ declare class FilterCapability {
 
 
 declare class PlatformAuthorLink {
-    constructor(id: PlatformID, name: string, url: string, thumbnail: string, subscribers: integer?, membershipUrl: string?);
+    constructor(id: PlatformID, name: string, url: string, thumbnail: string, subscribers: number?, membershipUrl: string?);
 }
 
 declare class PlatformAuthorMembershipLink {
-    constructor(id: PlatformID, name: string, url: string, thumbnail: string, subscribers: integer?, membershipUrl: string?);
+    constructor(id: PlatformID, name: string, url: string, thumbnail: string, subscribers: number?, membershipUrl: string?);
 }
 
 declare interface PlatformContentDef {
@@ -76,7 +83,7 @@ declare interface PlatformContentDef {
     name: string,
     thumbnails: Thumbnails,
     author: PlatformAuthorLink,
-    datetime: integer,
+    datetime: number,
     url: string
 }
 declare interface PlatformContent { }
@@ -107,7 +114,7 @@ declare interface PlatformVideoDef extends PlatformContentDef {
     thumbnails: Thumbnails,
     author: PlatformAuthorLink,
 
-    duration: int,
+    duration: number,
     viewCount: long,
     isLive: boolean,
     shareUrl: string?
@@ -139,7 +146,7 @@ declare class PlatformPost extends PlatformContent {
 
 declare interface PlatformPostDetailsDef extends PlatformPostDef {
     rating: IRating,
-    textType: int,
+    textType: number,
     content: String
 }
 declare class PlatformPostDetails extends PlatformPost {
@@ -174,13 +181,13 @@ declare interface IAudioSource {
 
 }
 declare interface VideoUrlSourceDef implements IVideoSource {
-    width: integer,
-    height: integer,
+    width: number,
+    height: number,
     container: string,
     codec: string,
     name: string,
-    bitrate: integer,
-    duration: integer,
+    bitrate: number,
+    duration: number,
     url: string
 }
 declare class VideoUrlSource {
@@ -189,21 +196,21 @@ declare class VideoUrlSource {
     getRequestModifier(): RequestModifier?;
 }
 declare interface VideoUrlRangeSourceDef extends VideoUrlSource {
-    itagId: integer,
-    initStart: integer,
-    initEnd: integer,
-    indexStart: integer,
-    indexEnd: integer,
+    itagId: number,
+    initStart: number,
+    initEnd: number,
+    indexStart: number,
+    indexEnd: number,
 }
 declare class VideoUrlRangeSource extends VideoUrlSource {
     constructor(obj: YTVideoSourceDef);
 }
 declare interface AudioUrlSourceDef {
     name: string,
-    bitrate: integer,
+    bitrate: number,
     container: string,
     codecs: string,
-    duration: integer,
+    duration: number,
     url: string,
     language: string
 }
@@ -213,19 +220,19 @@ declare class AudioUrlSource implements IAudioSource {
     getRequestModifier(): RequestModifier?;
 }
 declare interface AudioUrlRangeSourceDef extends AudioUrlSource {
-    itagId: integer,
-    initStart: integer,
-    initEnd: integer,
-    indexStart: integer,
-    indexEnd: integer,
-    audioChannels: integer
+    itagId: number,
+    initStart: number,
+    initEnd: number,
+    indexStart: number,
+    indexEnd: number,
+    audioChannels: number
 }
 declare class AudioUrlRangeSource extends AudioUrlSource {
     constructor(obj: AudioUrlRangeSourceDef);
 }
 declare interface HLSSourceDef {
     name: string,
-    duration: integer,
+    duration: number,
     url: string,
     priority: boolean | undefined,
     language: string | undefined
@@ -235,7 +242,7 @@ declare class HLSSource implements IVideoSource {
 }
 declare interface DashSourceDef {
     name: string,
-    duration: integer,
+    duration: number,
     url: string,
     language: string | undefined
 }
@@ -262,7 +269,7 @@ declare interface PlatformChannelDef {
     name: string,
     thumbnail: string,
     banner: string,
-    subscribers: integer,
+    subscribers: number,
     description: string,
     url: string,
     urlAlternatives: string[],
@@ -274,7 +281,7 @@ declare class PlatformChannel {
 
 //Playlist
 declare interface PlatformPlaylistDef implements PlatformContent {
-    videoCount: integer,
+    videoCount: number,
     thumbnail: string
 }
 declare class PlatformPlaylist extends PlatformContent {
@@ -290,13 +297,13 @@ declare class PlatformPlaylistDetails extends PlatformContent {
 
 //Ratings
 interface IRating {
-    type: integer
+    type: number
 }
 declare class RatingLikes implements IRating {
-    constructor(likes: integer);
+    constructor(likes: number);
 }
 declare class RatingLikesDislikes implements IRating {
-    constructor(likes: integer, dislikes: integer);
+    constructor(likes: number, dislikes: number);
 }
 declare class RatingScaler implements IRating {
     constructor(value: double);
@@ -308,7 +315,7 @@ declare interface CommentDef {
     message: string,
     rating: IRating,
     date: long,
-    replyCount: int,
+    replyCount: number,
     context: any
 }
 declare class PlatformComment {
@@ -316,9 +323,9 @@ declare class PlatformComment {
 }
 
 declare class PlaybackTracker {
-    constructor(interval: integer);
+    constructor(interval: number);
 
-    setProgress(seconds: integer);
+    setProgress(seconds: number);
 }
 
 declare class LiveEventPager {
@@ -331,7 +338,7 @@ declare class LiveEventPager {
 }
 
 declare class LiveEvent {
-    constructor(type: integer);
+    constructor(type: number);
 }
 declare class LiveEventComment extends LiveEvent {
     constructor(name: string, message: string, thumbnail: string?, colorName: string?, badges: string[]);
@@ -340,10 +347,10 @@ declare class LiveEventEmojis extends LiveEvent {
     constructor(name: Map<string>);
 }
 declare class LiveEventDonation extends LiveEvent {
-    constructor(amount: integer, name: string, message: string, thumbnail: string?, expire: Int, colorDonation: string?);
+    constructor(amount: number, name: string, message: string, thumbnail: string?, expire: number, colorDonation: string?);
 }
 declare class LiveEventViewCount extends LiveEvent {
-    constructor(viewCount: integer);
+    constructor(viewCount: number);
 }
 declare class LiveEventRaid extends LiveEvent {
     constructor(targetUrl: string, targetName: string, targetThumbnail: string);
@@ -407,7 +414,7 @@ interface Source {
     getSearchChannelContentsCapabilities(): ResultCapabilities;
 
     //Optional
-    getChannelUrlByClaim(claimType: int, values: Map<Int, String>)
+    getChannelUrlByClaim(claimType: number, values: Map<number, String>)
 
     isChannelUrl(url: string): boolean;
     getChannel(url: string): PlatformChannel;

@@ -16531,7 +16531,7 @@
           "mime": {
             "title": "MIME",
             "type": "string",
-            "enum": ["audio/mpeg"]
+            "example": "[\"audio/mpeg\"]"
           },
           "preferences": {
             "$ref": "#/components/schemas/DatumPreferences"

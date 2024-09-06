@@ -26,10 +26,11 @@ def recursive_dict_traversal(nested_dict: dict[str, Any], current_path=''):
                 if isinstance(example, dict) or isinstance(example, list): continue
                 try:
                     example = json.loads(example)
-                    value["examples"] = example
-                    print(f"{full_path}: {value}")
-                    del value["example"]
-                except Exception as ex: print("Failed to json parse", example, ex)
+                    if (isinstance(example, list) and len(example) > 0): example = example[0]
+                    value["example"] = example
+                    # print(f"{full_path}: {value}")
+                    # del value["example"]
+                except Exception as ex: print("Failed to json parse", full_path, ex)
             recursive_dict_traversal(value, full_path)
 
 def process_file(file_path):

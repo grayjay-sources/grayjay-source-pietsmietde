@@ -11,6 +11,7 @@
   "paths" : {
     "/community/suggestions" : {
       "get" : {
+        "tags" : [ "community" ],
         "summary" : "Get Community Suggestions",
         "description" : "",
         "operationId" : "getCommunitySuggestions",
@@ -263,12 +264,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "community" ]
+        } ]
       }
     },
     "/config/i" : {
       "get" : {
+        "tags" : [ "config" ],
         "summary" : "Get X-Origin-Integrity Header",
         "description" : "",
         "operationId" : "getXOriginIntegrityHeader",
@@ -318,12 +319,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "config" ]
+        } ]
       }
     },
     "/config/asset_version" : {
       "get" : {
+        "tags" : [ "config" ],
         "summary" : "Get Config Asset Version",
         "description" : "",
         "operationId" : "getConfigAssetVersion",
@@ -372,12 +373,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "config" ]
+        } ]
       }
     },
     "/config/enumerations/countries" : {
       "get" : {
+        "tags" : [ "config" ],
         "summary" : "Get Config Enumerations Countries",
         "description" : "",
         "operationId" : "getConfigEnumerationsCountries",
@@ -618,12 +619,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "config" ]
+        } ]
       }
     },
     "/headlines" : {
       "get" : {
+        "tags" : [ "headlines" ],
         "summary" : "Get Headlines",
         "description" : "",
         "operationId" : "getHeadlines",
@@ -712,12 +713,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "headlines" ]
+        } ]
       }
     },
     "/livestreams" : {
       "get" : {
+        "tags" : [ "livestreams" ],
         "summary" : "Get Livestreams",
         "description" : "",
         "operationId" : "getLivestreams",
@@ -830,12 +831,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "livestreams" ]
+        } ]
       }
     },
     "/modules" : {
       "get" : {
+        "tags" : [ "modules" ],
         "summary" : "Get Modules",
         "description" : "",
         "operationId" : "getModules",
@@ -1400,7 +1401,7 @@
                             "url" : "https://www.pietsmiet.de/img/5b3602d16e26e26cc28480ba6bf8374274eee339.jpg?i=249707"
                           } ]
                         },
-                        "title" : "Diese Fall Guys Map hat uns GEBROCHEN! | Up'n Down",
+                        "title" : "Diese Fall Guys Map hat uns GEBROCHEN! | UP\"N Down",
                         "url" : "/videos/79515-diese-fall-guys-map-hat-uns-gebrochen-upn-down",
                         "url_slug" : "79515-diese-fall-guys-map-hat-uns-gebrochen-upn-down"
                       },
@@ -1408,7 +1409,7 @@
                       "id" : 155689,
                       "publish_date" : "2024-07-11 10:00:00",
                       "slug" : "upn-down",
-                      "title" : "UP'N DOWN",
+                      "title" : "UP\"N DOWN",
                       "type" : 0,
                       "url_slug" : "155689-upn-down",
                       "videos_count" : 4
@@ -1626,7 +1627,7 @@
                           "url" : "https://www.pietsmiet.de/img/e5ecea3160a7185fab907bd040c4e150d19ef972.jpg?i=249873"
                         } ]
                       },
-                      "title" : "BESCHREIBE es in WORTEN! | Jackbox Games Blather 'Round",
+                      "title" : "BESCHREIBE es in WORTEN! | Jackbox Games Blather \"Round",
                       "url" : "/videos/79569-beschreibe-es-in-worten-jackbox-games-blather-round",
                       "url_slug" : "79569-beschreibe-es-in-worten-jackbox-games-blather-round"
                     }, {
@@ -1712,7 +1713,7 @@
                           "remote" : false,
                           "short_url" : "http://ptsmt.de/v/79569",
                           "slug" : "beschreibe-es-in-worten-jackbox-games-blather-round",
-                          "title" : "BESCHREIBE es in WORTEN! | Jackbox Games Blather 'Round",
+                          "title" : "BESCHREIBE es in WORTEN! | Jackbox Games Blather \"Round",
                           "url" : "/videos/79569-beschreibe-es-in-worten-jackbox-games-blather-round",
                           "url_slug" : "79569-beschreibe-es-in-worten-jackbox-games-blather-round"
                         }
@@ -2156,7 +2157,7 @@
                         "id" : 68354,
                         "main" : false,
                         "title" : "Chris",
-                        "title_pluralized" : "Chris'"
+                        "title_pluralized" : "Chris\\'"
                       }, {
                         "id" : 68355,
                         "main" : false,
@@ -2171,7 +2172,7 @@
                         "id" : 68357,
                         "main" : false,
                         "title" : "Jules",
-                        "title_pluralized" : "Jules'"
+                        "title_pluralized" : "Jules"
                       }, {
                         "id" : 68358,
                         "main" : false,
@@ -2413,8 +2414,7 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "modules" ]
+        } ]
       }
     },
     "/news/articles" : {
@@ -2845,6 +2845,7 @@
     },
     "/podcast/categories" : {
       "get" : {
+        "tags" : [ "podcast" ],
         "summary" : "Get Podcast Categories",
         "description" : "",
         "operationId" : "getPodcastCategories",
@@ -2997,12 +2998,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "podcast" ]
+        } ]
       }
     },
     "/news/categories/{id}" : {
       "get" : {
+        "tags" : [ "news" ],
         "summary" : "Get News Categories 34",
         "description" : "",
         "operationId" : "getNewsCategoriesId",
@@ -3066,12 +3067,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "news" ]
+        } ]
       }
     },
     "/podcast/episodes" : {
       "get" : {
+        "tags" : [ "podcast" ],
         "summary" : "Get Podcast Episodes",
         "description" : "",
         "operationId" : "getPodcastEpisodes",
@@ -3649,12 +3650,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "podcast" ]
+        } ]
       }
     },
     "/podcast/episodes/{id}" : {
       "get" : {
+        "tags" : [ "podcast" ],
         "summary" : "Get Podcast Episodes By ID",
         "description" : "",
         "operationId" : "getPodcastEpisodesById",
@@ -3748,12 +3749,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "podcast" ]
+        } ]
       }
     },
     "/polls" : {
       "get" : {
+        "tags" : [ "polls" ],
         "summary" : "Get Polls",
         "description" : "",
         "operationId" : "getPolls",
@@ -3840,12 +3841,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "polls" ]
+        } ]
       }
     },
     "/polls/votes" : {
       "get" : {
+        "tags" : [ "polls" ],
         "summary" : "Get Polls Votes",
         "description" : "",
         "operationId" : "getPollsVotes",
@@ -3908,12 +3909,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "polls" ]
+        } ]
       }
     },
     "/promotions" : {
       "get" : {
+        "tags" : [ "promotions" ],
         "summary" : "Get Promotions",
         "description" : "",
         "operationId" : "getPromotions",
@@ -3966,12 +3967,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "promotions" ]
+        } ]
       }
     },
     "/schedules" : {
       "get" : {
+        "tags" : [ "schedules" ],
         "summary" : "Get Schedules",
         "description" : "",
         "operationId" : "getSchedules",
@@ -4046,7 +4047,7 @@
                         "remote" : false,
                         "short_url" : "http://ptsmt.de/v/79569",
                         "slug" : "beschreibe-es-in-worten-jackbox-games-blather-round",
-                        "title" : "BESCHREIBE es in WORTEN! | Jackbox Games Blather 'Round",
+                        "title" : "BESCHREIBE es in WORTEN! | Jackbox Games Blather \"Round",
                         "url" : "/videos/79569-beschreibe-es-in-worten-jackbox-games-blather-round",
                         "url_slug" : "79569-beschreibe-es-in-worten-jackbox-games-blather-round"
                       }
@@ -4177,12 +4178,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "schedules" ]
+        } ]
       }
     },
     "/schedules/upcoming" : {
       "get" : {
+        "tags" : [ "schedules" ],
         "summary" : "Get Schedules Upcoming",
         "description" : "",
         "operationId" : "getSchedulesUpcoming",
@@ -4231,12 +4232,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "schedules" ]
+        } ]
       }
     },
     "/search" : {
       "get" : {
+        "tags" : [ "search" ],
         "summary" : "Get Search",
         "description" : "",
         "operationId" : "getSearch",
@@ -4391,12 +4392,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "search" ]
+        } ]
       }
     },
     "/subscriptions/discounts" : {
       "get" : {
+        "tags" : [ "subscriptions" ],
         "summary" : "Get Subscriptions Discounts",
         "description" : "",
         "operationId" : "getSubscriptionsDiscounts",
@@ -4437,12 +4438,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "subscriptions" ]
+        } ]
       }
     },
     "/subscriptions/products" : {
       "get" : {
+        "tags" : [ "subscriptions" ],
         "summary" : "Get Subscriptions Products",
         "description" : "",
         "operationId" : "getSubscriptionsProducts",
@@ -4600,12 +4601,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "subscriptions" ]
+        } ]
       }
     },
     "/tags" : {
       "get" : {
+        "tags" : [ "tags" ],
         "summary" : "Get Tags",
         "description" : "",
         "operationId" : "getTags",
@@ -4781,12 +4782,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "tags" ]
+        } ]
       }
     },
     "/users/@me" : {
       "get" : {
+        "tags" : [ "users" ],
         "summary" : "Get Users Me",
         "description" : "",
         "operationId" : "getUsersMe",
@@ -4911,12 +4912,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/users/{id}" : {
       "get" : {
+        "tags" : [ "users" ],
         "summary" : "Get Users By ID",
         "description" : "",
         "operationId" : "getUsersById",
@@ -5049,12 +5050,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/users/{id}/achievements" : {
       "get" : {
+        "tags" : [ "users" ],
         "summary" : "Get Users By ID Achievements",
         "description" : "",
         "operationId" : "getUsersByIdAchievements",
@@ -5141,12 +5142,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/users/{id}/dislikes" : {
       "get" : {
+        "tags" : [ "users" ],
         "summary" : "Get Users By ID Dislikes",
         "description" : "",
         "operationId" : "getUsersByIdDislikes",
@@ -5228,10 +5229,10 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       },
       "post" : {
+        "tags" : [ "users" ],
         "summary" : "Post Users By ID Dislikes",
         "description" : "",
         "operationId" : "postUsersByIdDislikes",
@@ -5315,12 +5316,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/users/{id}/followings" : {
       "get" : {
+        "tags" : [ "users" ],
         "summary" : "Get Users By ID Followings",
         "description" : "",
         "operationId" : "getUsersByIdFollowings",
@@ -5393,12 +5394,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/users/{id}/invoices" : {
       "get" : {
+        "tags" : [ "users" ],
         "summary" : "Get Users By ID Invoices",
         "description" : "",
         "operationId" : "getUsersByIdInvoices",
@@ -5505,12 +5506,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/users/{id}/likes" : {
       "get" : {
+        "tags" : [ "users" ],
         "summary" : "Get Users By ID Likes",
         "description" : "",
         "operationId" : "getUsersByIdLikes",
@@ -5683,10 +5684,10 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       },
       "post" : {
+        "tags" : [ "users" ],
         "summary" : "Post Users By ID Likes",
         "description" : "",
         "operationId" : "postUsersByIdLikes",
@@ -5770,12 +5771,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/users/{id}/notifications" : {
       "get" : {
+        "tags" : [ "users" ],
         "summary" : "Get Users By ID Notifications",
         "description" : "",
         "operationId" : "getUsersByIdNotifications",
@@ -5898,12 +5899,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/users/{id}/notifications/{uuid}" : {
       "patch" : {
+        "tags" : [ "users" ],
         "summary" : "Patch Users By ID Notifications By UUID",
         "description" : "",
         "operationId" : "patchUsersByIdNotificationsByUuid",
@@ -6029,12 +6030,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/users/{id}/settings/assets" : {
       "post" : {
+        "tags" : [ "users" ],
         "summary" : "Post Users By ID Settings Assets",
         "description" : "",
         "operationId" : "postUsersByIdSettingsAssets",
@@ -6106,12 +6107,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/users/{id}/settings/data/request" : {
       "post" : {
+        "tags" : [ "users" ],
         "summary" : "Post Users By ID Settings Data Request",
         "description" : "",
         "operationId" : "postUsersByIdSettingsDataRequest",
@@ -6173,12 +6174,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/users/{id}/settings/notifications" : {
       "get" : {
+        "tags" : [ "users" ],
         "summary" : "Get Users By ID Settings Notifications",
         "description" : "",
         "operationId" : "getUsersByIdSettingsNotifications",
@@ -6271,10 +6272,10 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       },
       "patch" : {
+        "tags" : [ "users" ],
         "summary" : "Patch Users By ID Settings Notifications",
         "description" : "",
         "operationId" : "patchUsersByIdSettingsNotifications",
@@ -6396,12 +6397,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/users/{id}/settings/password" : {
       "patch" : {
+        "tags" : [ "users" ],
         "summary" : "Patch Users By ID Settings Password",
         "description" : "",
         "operationId" : "patchUsersByIdSettingsPassword",
@@ -6513,12 +6514,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/users/{id}/settings/preferences" : {
       "patch" : {
+        "tags" : [ "users" ],
         "summary" : "Patch Users By ID Settings Preferences",
         "description" : "",
         "operationId" : "patchUsersByIdSettingsPreferences",
@@ -6613,12 +6614,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/users/{id}/settings/profile" : {
       "patch" : {
+        "tags" : [ "users" ],
         "summary" : "Patch Users By ID Settings Profile",
         "description" : "",
         "operationId" : "patchUsersByIdSettingsProfile",
@@ -6698,12 +6699,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/users/{id}/settings/twofactor/reset" : {
       "post" : {
+        "tags" : [ "users" ],
         "summary" : "Post Users By ID Settings Twofactor Reset",
         "description" : "",
         "operationId" : "postUsersByIdSettingsTwofactorReset",
@@ -6778,12 +6779,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/users/{id}/settings/twofactor/setup" : {
       "get" : {
+        "tags" : [ "users" ],
         "summary" : "Get Users By ID Settings Twofactor Setup",
         "description" : "",
         "operationId" : "getUsersByIdSettingsTwofactorSetup",
@@ -6849,10 +6850,10 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       },
       "post" : {
+        "tags" : [ "users" ],
         "summary" : "Post Users By ID Settings Twofactor Setup",
         "description" : "",
         "operationId" : "postUsersByIdSettingsTwofactorSetup",
@@ -6929,12 +6930,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/users/{id}/subscriptions" : {
       "get" : {
+        "tags" : [ "users" ],
         "summary" : "Get Users By ID Subscriptions",
         "description" : "",
         "operationId" : "getUsersByIdSubscriptions",
@@ -7052,12 +7053,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/users/{id}/tokens" : {
       "get" : {
+        "tags" : [ "users" ],
         "summary" : "Get Users By ID Tokens",
         "description" : "",
         "operationId" : "getUsersByIdTokens",
@@ -7171,10 +7172,10 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       },
       "delete" : {
+        "tags" : [ "users" ],
         "summary" : "Delete Users Object 20 Object Tokens",
         "description" : "",
         "operationId" : "deleteUsersObject20ObjectTokens",
@@ -7218,12 +7219,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/users/{id}/tokens/{token}" : {
       "delete" : {
+        "tags" : [ "users" ],
         "summary" : "Delete Tokens by User Id",
         "description" : "",
         "operationId" : "deleteUsersByIdTokensId",
@@ -7323,12 +7324,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/users/{id}/views" : {
       "get" : {
+        "tags" : [ "users" ],
         "summary" : "Get Users By ID Views",
         "description" : "",
         "operationId" : "getUsersByIdViews",
@@ -7583,12 +7584,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "users" ]
+        } ]
       }
     },
     "/utility/autobahn" : {
       "post" : {
+        "tags" : [ "utility" ],
         "summary" : "Post Utility Autobahn",
         "description" : "",
         "operationId" : "postUtilityAutobahn",
@@ -7652,12 +7653,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "utility" ]
+        } ]
       }
     },
     "/utility/comments" : {
       "get" : {
+        "tags" : [ "utility" ],
         "summary" : "Get Utility Comments",
         "description" : "",
         "operationId" : "getUtilityComments",
@@ -7901,10 +7902,10 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "utility" ]
+        } ]
       },
       "post" : {
+        "tags" : [ "utility" ],
         "summary" : "Post Utility Comments",
         "description" : "",
         "operationId" : "postUtilityComments",
@@ -8034,12 +8035,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "utility" ]
+        } ]
       }
     },
     "/utility/comments/{id}/reports" : {
       "post" : {
+        "tags" : [ "utility" ],
         "summary" : "Post Utility Comments By ID Reports",
         "description" : "",
         "operationId" : "postUtilityCommentsByIdReports",
@@ -8101,12 +8102,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "utility" ]
+        } ]
       }
     },
     "/utility/follows" : {
       "get" : {
+        "tags" : [ "utility" ],
         "summary" : "Get Utility Follows",
         "description" : "",
         "operationId" : "getUtilityFollows",
@@ -8193,10 +8194,10 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "utility" ]
+        } ]
       },
       "post" : {
+        "tags" : [ "utility" ],
         "summary" : "Post Utility Follows",
         "description" : "",
         "operationId" : "postUtilityFollows",
@@ -8274,10 +8275,10 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "utility" ]
+        } ]
       },
       "delete" : {
+        "tags" : [ "utility" ],
         "summary" : "Delete Utility Follows",
         "description" : "",
         "operationId" : "deleteUtilityFollows",
@@ -8353,12 +8354,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "utility" ]
+        } ]
       }
     },
     "/utility/highlights" : {
       "post" : {
+        "tags" : [ "utility" ],
         "summary" : "Post Utility Highlights",
         "description" : "",
         "operationId" : "postUtilityHighlights",
@@ -8424,12 +8425,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "utility" ]
+        } ]
       }
     },
     "/utility/player" : {
       "get" : {
+        "tags" : [ "utility" ],
         "summary" : "Get Utility Player",
         "description" : "",
         "operationId" : "getUtilityPlayer",
@@ -8616,12 +8617,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "utility" ]
+        } ]
       }
     },
     "/videos" : {
       "get" : {
+        "tags" : [ "videos" ],
         "summary" : "Get Videos",
         "description" : "",
         "operationId" : "getVideos",
@@ -9002,7 +9003,7 @@
                         "url" : "https://www.pietsmiet.de/img/e5ecea3160a7185fab907bd040c4e150d19ef972.jpg?i=249873"
                       } ]
                     },
-                    "title" : "BESCHREIBE es in WORTEN! | Jackbox Games Blather 'Round",
+                    "title" : "BESCHREIBE es in WORTEN! | Jackbox Games Blather \"Round",
                     "url" : "/videos/79569-beschreibe-es-in-worten-jackbox-games-blather-round",
                     "url_slug" : "79569-beschreibe-es-in-worten-jackbox-games-blather-round"
                   }, {
@@ -9637,12 +9638,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "videos" ]
+        } ]
       }
     },
     "/videos/authors" : {
       "get" : {
+        "tags" : [ "videos" ],
         "summary" : "Get Videos Authors",
         "description" : "",
         "operationId" : "getVideosAuthors",
@@ -10499,12 +10500,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "videos" ]
+        } ]
       }
     },
     "/videos/channels" : {
       "get" : {
+        "tags" : [ "videos" ],
         "summary" : "Get Videos Channels",
         "description" : "",
         "operationId" : "getVideosChannels",
@@ -10853,12 +10854,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "videos" ]
+        } ]
       }
     },
     "/videos/channels/{id}" : {
       "get" : {
+        "tags" : [ "videos" ],
         "summary" : "Get Channel Video Count",
         "description" : "",
         "operationId" : "getChannelVideoCount",
@@ -10924,12 +10925,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "videos" ]
+        } ]
       }
     },
     "/videos/clips" : {
       "get" : {
+        "tags" : [ "videos" ],
         "summary" : "Get Videos Clips",
         "description" : "",
         "operationId" : "getVideosClips",
@@ -11048,10 +11049,10 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "videos" ]
+        } ]
       },
       "post" : {
+        "tags" : [ "videos" ],
         "summary" : "Post Videos Clips",
         "description" : "",
         "operationId" : "postVideosClips",
@@ -11152,12 +11153,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "videos" ]
+        } ]
       }
     },
     "/videos/playlists" : {
       "get" : {
+        "tags" : [ "videos" ],
         "summary" : "Get Videos Playlists",
         "description" : "",
         "operationId" : "getVideosPlaylists",
@@ -11483,7 +11484,7 @@
                           "url" : "https://www.pietsmiet.de/img/5b3602d16e26e26cc28480ba6bf8374274eee339.jpg?i=249707"
                         } ]
                       },
-                      "title" : "Diese Fall Guys Map hat uns GEBROCHEN! | Up'n Down",
+                      "title" : "Diese Fall Guys Map hat uns GEBROCHEN! | Up\\'n Down",
                       "url" : "/videos/79515-diese-fall-guys-map-hat-uns-gebrochen-upn-down",
                       "url_slug" : "79515-diese-fall-guys-map-hat-uns-gebrochen-upn-down"
                     },
@@ -11491,7 +11492,7 @@
                     "id" : 155689,
                     "publish_date" : "2024-07-11 10:00:00",
                     "slug" : "upn-down",
-                    "title" : "UP'N DOWN",
+                    "title" : "UP\"N DOWN",
                     "type" : 0,
                     "url_slug" : "155689-upn-down",
                     "videos_count" : 4
@@ -11833,7 +11834,7 @@
                           "url" : "https://www.pietsmiet.de/img/e5ecea3160a7185fab907bd040c4e150d19ef972.jpg?i=249873"
                         } ]
                       },
-                      "title" : "BESCHREIBE es in WORTEN! | Jackbox Games Blather 'Round",
+                      "title" : "BESCHREIBE es in WORTEN! | Jackbox Games Blather \"Round",
                       "url" : "/videos/79569-beschreibe-es-in-worten-jackbox-games-blather-round",
                       "url_slug" : "79569-beschreibe-es-in-worten-jackbox-games-blather-round"
                     },
@@ -12221,12 +12222,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "videos" ]
+        } ]
       }
     },
     "/videos/playlists/{id}" : {
       "get" : {
+        "tags" : [ "videos" ],
         "summary" : "Get Videos Playlists By ID",
         "description" : "",
         "operationId" : "getVideosPlaylistsById",
@@ -12294,12 +12295,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "videos" ]
+        } ]
       }
     },
     "/videos/playlists/{id}/videos" : {
       "post" : {
+        "tags" : [ "videos" ],
         "summary" : "Post Videos Playlists By ID",
         "description" : "",
         "operationId" : "postVideosPlaylistsById",
@@ -12392,12 +12393,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "videos" ]
+        } ]
       }
     },
     "/videos/{id}" : {
       "get" : {
+        "tags" : [ "videos" ],
         "summary" : "Get Videos By ID",
         "description" : "",
         "operationId" : "getVideosById",
@@ -12519,12 +12520,12 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "videos" ]
+        } ]
       }
     },
     "/videos/{id}/next" : {
       "get" : {
+        "tags" : [ "videos" ],
         "summary" : "Get Videos By ID Next",
         "description" : "",
         "operationId" : "getVideosByIdNext",
@@ -12692,8 +12693,7 @@
         },
         "security" : [ {
           "X-Origin-Integrity" : [ ]
-        } ],
-        "tags" : [ "videos" ]
+        } ]
       }
     }
   },
@@ -12740,7 +12740,7 @@
           "google" : {
             "title" : "Google",
             "type" : "string",
-            "example" : [ "UA-38125589-1" ]
+            "example" : "[\"UA-38125589-1\"]"
           }
         },
         "additionalProperties" : false
@@ -12857,12 +12857,12 @@
           "name" : {
             "title" : "Name",
             "type" : "string",
-            "example" : [ "Mikkel", "Sven" ]
+            "example" : "[\"Mikkel\",\"Sven\"]"
           },
           "name_possessive" : {
             "title" : "NamePossessive",
             "type" : "string",
-            "example" : [ "Mikkels", "Svens" ]
+            "example" : "[\"Mikkels\",\"Svens\"]"
           },
           "preferences" : {
             "$ref" : "#/components/schemas/AuthorPreferences"
@@ -12876,7 +12876,7 @@
           "reputation_pretty" : {
             "title" : "ReputationPretty",
             "type" : "string",
-            "example" : [ "***" ]
+            "example" : "[\"***\"]"
           },
           "team" : {
             "type" : "boolean"
@@ -12888,12 +12888,12 @@
           "url_slug" : {
             "title" : "AuthorURLSlug",
             "type" : "string",
-            "example" : [ "7-Mikkel", "11-Sven" ]
+            "example" : "[\"7-Mikkel\",\"11-Sven\"]"
           },
           "username" : {
             "title" : "Name",
             "type" : "string",
-            "example" : [ "Mikkel", "Sven" ]
+            "example" : "[\"Mikkel\",\"Sven\"]"
           }
         },
         "additionalProperties" : false
@@ -12942,7 +12942,7 @@
           "file" : {
             "title" : "IndecentFile",
             "type" : "string",
-            "enum" : [ "05070b3df9dfba0ef3a825b50e79252ac5793876.jpg", "91b805d14533d253e88168777efc515de2471d8b.jpg", "337eac33e9b9611cfc558e3264d3ac0089a15599.jpg", "023fddb697b8202d6553bd37c2da79e305ae8aa7.jpg", "d02e2cf8f3f219db3b8ff3b3a6d0d185356c7512.jpg", "cf2ec2474cc540d3612f0754c1f5e9306fc61c79.jpg", "8c0602d1ab5c896c18310e4cfac691e8cbe97497.jpg", "2f8a2ce60431ad7eb060157e15e6a7272721d7ce.jpg", "324cfb7b3fd72cbe2c31d04fad1574551cadab39.jpg", "cc3c3279e4f763ba17471684800f6f695176ada8.jpg", "ea73de55528a4a8329e6b8b87a3e26acb1c581d8.jpg", "0653935b38b2737823aa946acf19e85b685ae38c.jpg", "f37394ce42cd9d5fb5ecdc04a15ee4fcdf2ae0e9.jpg", "43661dea23ff214917ed39709d4e027bcee40d1c.jpg", "1ba264d2e2f0bad7f1c817e67ff470539534f616.jpg", "d84fcf7a59c9e05dfd8b39905037de661389b386.jpg", "bd52b49d401a94a2cbc0d1381f1641f59cc90fa1.jpg", "a02f1cf239d45b92edc9123d75108c1d832bf00c.jpg", "cca3c488a674bc30a00b9908270c9d0d67e7cbb8.jpg", "8eaa6b0988867d4e44b2078ba611399287bc4fdb.jpg" ]
+            "example" : [ "05070b3df9dfba0ef3a825b50e79252ac5793876.jpg" ]
           },
           "height" : {
             "type" : "integer"
@@ -13109,7 +13109,7 @@
           "color" : {
             "title" : "Color",
             "type" : "string",
-            "enum" : [ "039a45" ]
+            "example" : [ "039a45" ]
           },
           "link" : {
             "type" : "string",
@@ -13136,19 +13136,19 @@
             "type" : "integer"
           },
           "slug" : {
-            "type" : "string",
             "title" : "Slug",
-            "example" : [ "allgemein", "quiz", "devblog" ]
+            "type" : "string",
+            "example" : "[\"allgemein\",\"quiz\",\"devblog\"]"
           },
           "title" : {
-            "type" : "string",
             "title" : "Title",
-            "example" : [ "Allgemein", "Quiz", "Devblog" ]
+            "type" : "string",
+            "example" : "[\"Allgemein\",\"Quiz\",\"Devblog\"]"
           },
           "url_slug" : {
-            "type" : "string",
             "title" : "CategoryURLSlug",
-            "example" : [ "34-allgemein", "57-quiz", "55-devblog" ]
+            "type" : "string",
+            "example" : "[\"34-allgemein\",\"57-quiz\",\"55-devblog\"]"
           }
         },
         "additionalProperties" : false
@@ -13166,17 +13166,17 @@
           "slug" : {
             "title" : "PurpleSlug",
             "type" : "string",
-            "example" : [ "allgemein", "uploadplan" ]
+            "example" : "[\"allgemein\",\"uploadplan\"]"
           },
           "title" : {
             "title" : "PurpleTitle",
             "type" : "string",
-            "example" : [ "Allgemein", "Uploadplan" ]
+            "example" : "[\"Allgemein\",\"Uploadplan\"]"
           },
           "url_slug" : {
             "title" : "PurpleURLSlug",
             "type" : "string",
-            "example" : [ "34-allgemein", "22-uploadplan" ]
+            "example" : "[\"34-allgemein\",\"22-uploadplan\"]"
           }
         },
         "additionalProperties" : false
@@ -13197,17 +13197,17 @@
           "slug" : {
             "title" : "Slug",
             "type" : "string",
-            "example" : [ "pietsmiet", "pietsmiet-tv", "pietstream", "best-of-pietsmiet", "pietsmietde" ]
+            "example" : "[\"pietsmiet\",\"pietsmiet-tv\",\"pietstream\",\"best-of-pietsmiet\",\"pietsmietde\"]"
           },
           "title" : {
             "title" : "Title",
             "type" : "string",
-            "example" : [ "PietSmiet", "PietSmiet TV", "PietSmiet Live", "Best of Pietsmiet", "PietSmietDE" ]
+            "example" : "[\"PietSmiet\",\"PietSmiet TV\",\"PietSmiet Live\",\"Best of Pietsmiet\",\"PietSmietDE\"]"
           },
           "url_slug" : {
             "title" : "URLSlug",
             "type" : "string",
-            "example" : [ "9-pietsmiet", "10-pietsmiet-tv", "44-pietstream", "12-best-of-pietsmiet", "37-pietsmietde" ]
+            "example" : "[\"9-pietsmiet\",\"10-pietsmiet-tv\",\"44-pietstream\",\"12-best-of-pietsmiet\",\"37-pietsmietde\"]"
           },
           "videos_count" : {
             "nullable" : true
@@ -13251,7 +13251,7 @@
           "receiver_application_id" : {
             "title" : "ReceiverApplicationID",
             "type" : "string",
-            "example" : [ "198B24D0" ]
+            "example" : "[\"198B24D0\"]"
           }
         },
         "additionalProperties" : false
@@ -13449,7 +13449,7 @@
           "type" : {
             "title" : "DashType",
             "type" : "string",
-            "enum" : [ "application/dash+xml" ]
+            "example" : [ "application/dash+xml" ]
           }
         },
         "additionalProperties" : false
@@ -13468,14 +13468,14 @@
             }
           },
           "icon" : {
-            "type" : "string",
             "title" : "Icon",
-            "example" : [ "unlock", "lock" ]
+            "type" : "string",
+            "example" : "[\"unlock\",\"lock\"]"
           },
           "text" : {
-            "type" : "string",
             "title" : "Text",
-            "example" : [ "Deine 2-Faktor Anmeldung wurde deaktiviert.", "2-Faktor Anmeldung wurde für deinen Account aktiviert.", "Dein Passwort wurde geändert." ]
+            "type" : "string",
+            "example" : "[\"Deine 2-Faktor Anmeldung wurde deaktiviert.\",\"2-Faktor Anmeldung wurde für deinen Account aktiviert.\",\"Dein Passwort wurde geändert.\"]"
           }
         },
         "additionalProperties" : false
@@ -14275,17 +14275,17 @@
                 "slug" : {
                   "title" : "Slug",
                   "type" : "string",
-                  "enum" : [ "pietsmiet", "pietstream" ]
+                  "example" : [ "pietsmiet", "pietstream" ]
                 },
                 "title" : {
                   "title" : "Title",
                   "type" : "string",
-                  "enum" : [ "PietSmiet", "PietSmiet Live" ]
+                  "example" : [ "PietSmiet", "PietSmiet Live" ]
                 },
                 "url_slug" : {
                   "title" : "URLSlug",
                   "type" : "string",
-                  "enum" : [ "9-pietsmiet", "44-pietstream" ]
+                  "example" : [ "9-pietsmiet", "44-pietstream" ]
                 },
                 "videos_count" : {
                   "nullable" : true
@@ -14551,7 +14551,7 @@
           "mime" : {
             "title" : "MIME",
             "type" : "string",
-            "enum" : [ "audio/mpeg" ]
+            "example" : [ "audio/mpeg" ]
           },
           "publish_date" : {
             "type" : "string",
@@ -14849,7 +14849,7 @@
           "mime" : {
             "title" : "MIME",
             "type" : "string",
-            "enum" : [ "audio/mpeg" ]
+            "example" : [ "audio/mpeg" ]
           },
           "preferences" : {
             "$ref" : "#/components/schemas/DatumPreferences"
@@ -15339,27 +15339,27 @@
             "x-qt-uri-protocols" : [ "http" ]
           },
           "slug" : {
-            "type" : "string",
             "title" : "FirstVideoSlug",
-            "example" : [ "retro-battle-worms-armageddon", "wir-wurden-alle-betrogen-betrayal-beach", "back2school", "seepferdchen-now-kiss-abc-quiz", "diese-fall-guys-map-hat-uns-gebrochen-upn-down" ]
+            "type" : "string",
+            "example" : "[\"retro-battle-worms-armageddon\",\"wir-wurden-alle-betrogen-betrayal-beach\",\"back2school\",\"seepferdchen-now-kiss-abc-quiz\",\"diese-fall-guys-map-hat-uns-gebrochen-upn-down\"]"
           },
           "thumbnail" : {
             "$ref" : "#/components/schemas/FirstVideoThumbnail"
           },
           "title" : {
-            "type" : "string",
             "title" : "FirstVideoTitle",
-            "example" : [ "Früher war ALLES ANDERS! | Retro Battle: Worms Armageddon", "Wir wurden ALLE BETROGEN! | Betrayal Beach", "INFLUENCER zurück in der SCHULE: Back 2 School", "SEEPFERDCHEN, now KISS! | ABC Quiz", "Diese Fall Guys Map hat uns GEBROCHEN! | Up'n Down" ]
+            "type" : "string",
+            "example" : "[\"Früher war ALLES ANDERS! | Retro Battle: Worms Armageddon\",\"Wir wurden ALLE BETROGEN! | Betrayal Beach\",\"INFLUENCER zurück in der SCHULE: Back 2 School\",\"SEEPFERDCHEN, now KISS! | ABC Quiz\",\"Diese Fall Guys Map hat uns GEBROCHEN! | UP\"N Down\"]"
           },
           "url" : {
-            "type" : "string",
             "title" : "FirstVideoURL",
-            "example" : [ "/videos/79576-retro-battle-worms-armageddon", "/videos/79483-wir-wurden-alle-betrogen-betrayal-beach", "/videos/79460-back2school", "/videos/79381-seepferdchen-now-kiss-abc-quiz", "/videos/79515-diese-fall-guys-map-hat-uns-gebrochen-upn-down" ]
+            "type" : "string",
+            "example" : "[\"/videos/79576-retro-battle-worms-armageddon\",\"/videos/79483-wir-wurden-alle-betrogen-betrayal-beach\",\"/videos/79460-back2school\",\"/videos/79381-seepferdchen-now-kiss-abc-quiz\",\"/videos/79515-diese-fall-guys-map-hat-uns-gebrochen-upn-down\"]"
           },
           "url_slug" : {
-            "type" : "string",
             "title" : "FirstVideoURLSlug",
-            "example" : [ "79576-retro-battle-worms-armageddon", "79483-wir-wurden-alle-betrogen-betrayal-beach", "79460-back2school", "79381-seepferdchen-now-kiss-abc-quiz", "79515-diese-fall-guys-map-hat-uns-gebrochen-upn-down" ]
+            "type" : "string",
+            "example" : "[\"79576-retro-battle-worms-armageddon\",\"79483-wir-wurden-alle-betrogen-betrayal-beach\",\"79460-back2school\",\"79381-seepferdchen-now-kiss-abc-quiz\",\"79515-diese-fall-guys-map-hat-uns-gebrochen-upn-down\"]"
           }
         },
         "additionalProperties" : false
@@ -15395,7 +15395,7 @@
           "file" : {
             "title" : "FluffyFile",
             "type" : "string",
-            "enum" : [ "b99baf2ccecdd32b02a8d79a1ce5476fc7767e80.jpg", "18933a5a8b21d2b4dfb74da7c94b07c334675921.jpg", "cdd651b0a4993a4785382d09160ab833d13a407c.jpg", "3f2cfcba822db50cd16fc191f6de5b5fd3113f17.jpg", "d06a09c68edb490d73d79b4de199b513600b09f2.jpg", "bdf7325121b52beb12a985055221cced0744962a.jpg", "df1bf23f13b052bb3f6bd7e0e20061d6a4f987e9.jpg", "c0cde6698b20f26f58ee045da7f4eda09cada6af.jpg", "e62c29bbc90a2ddb04713b1d8641e040d8aff343.jpg", "e1ce2ef937633fc8a0eb575b2b46db15f0224503.jpg", "34703e0a4d8f2f62ecf9042b93af01fa4cf0607d.jpg", "3c099c436b466a43c5e49d979ba6b4233651fdc9.jpg", "36518189eecf89bbf392c5ce1d7bea07c810d960.jpg", "634ade16c38d39d29e1cb446d0b026ee3fcbc6a5.jpg", "5b3602d16e26e26cc28480ba6bf8374274eee339.jpg" ]
+            "example" : [ "b99baf2ccecdd32b02a8d79a1ce5476fc7767e80.jpg" ]
           },
           "height" : {
             "type" : "integer"
@@ -15528,7 +15528,7 @@
           "file" : {
             "title" : "HilariousFile",
             "type" : "string",
-            "enum" : [ "b78b5abff75c856c08b28bb11d423d2c86dde046.jpg", "a843cc105d578e12b30b4accc7cf1ecc5b2102cc.jpg", "ad96a1d917e7171a11061665f936b121f7173454.jpg", "e33f8287fb06e285111cf1d976ab66581f3ed391.jpg", "2a60c0a63033499fbbe44f43071497a1672a4e31.jpg", "18278b24157e067754fba80f7471beea060cb405.jpg", "618b16d0439124438f18508fdba1edb367db265f.jpg", "6ceb0e1f94107cfad26920c57e186d70f2056a8e.jpg", "03a764aa435fe1e529b1e138dcd5811b603c362e.jpg", "893de32a745b377292b2b1db7530c06552c0db17.jpg", "1dfa9e2c54da4dc537d1db62c7df034a474bdde9.jpg", "361550a272222bbf27b723194e018fa80aeaee2e.jpg", "3c44c0da15981f3758110466522507122c96426c.jpg", "b7824013fcbeebf2e7a16f556d660d53d34fc04e.jpg", "3062aea303b1bae6babf5c7512537486410cee61.jpg" ]
+            "example" : [ "b78b5abff75c856c08b28bb11d423d2c86dde046.jpg" ]
           },
           "height" : {
             "type" : "integer"
@@ -15549,7 +15549,7 @@
           "file" : {
             "title" : "IndigoFile",
             "type" : "string",
-            "enum" : [ "98a4dbc8a467110ac6fc68ddfe81706158ef5b5c.jpg", "58f09a0bc9473e6cf72bcc00ece09ddda0955a37.jpg", "525ce5d7d1efa88885b2d2dc0a7b477c224ad845.jpg" ]
+            "example" : [ "98a4dbc8a467110ac6fc68ddfe81706158ef5b5c.jpg" ]
           },
           "height" : {
             "type" : "integer"
@@ -15587,7 +15587,7 @@
           "title" : {
             "title" : "ItemTitle",
             "type" : "string",
-            "example" : [ "Jackbox: Blather Round", "React: Das ist Berlin", "Worms", "Call of Duty: Black Ops 6" ]
+            "example" : "[\"Jackbox: Blather Round\",\"React: Das ist Berlin\",\"Worms\",\"Call of Duty: Black Ops 6\"]"
           },
           "type" : {
             "type" : "integer"
@@ -15626,7 +15626,7 @@
           "intro" : {
             "title" : "Intro",
             "type" : "string",
-            "enum" : [ "Stimmt jetzt über die nächste Folge ab!", "Reicht eure Vorschläge ein!", "Unsere Termine auf der gamescom", "Mit diesen Tipps macht ihr uns das Leben leichter", "Ein kleiner Leitfaden, um euch und uns das Leben zu erleichtern" ]
+            "example" : "Stimmt jetzt über die nächste Folge ab!"
           },
           "preferences" : {
             "$ref" : "#/components/schemas/LatestArticlePreferences"
@@ -15638,7 +15638,7 @@
           "slug" : {
             "title" : "LatestArticleSlug",
             "type" : "string",
-            "enum" : [ "retro-battle-umfrage", "die-goldene-emma-2024-einreichung-dezember-bis-juli", "gamescom-2024-hier-konnt-ihr-die-jungs-treffen", "so-erhoht-ihr-die-chance-dass-wir-eure-spielshows-spielen", "50-fragen-so-sendet-ihr-eure-quizshow-richtig-ein" ]
+            "example" : "retro-battle-umfrage"
           },
           "text" : {
             "nullable" : true
@@ -15649,7 +15649,7 @@
           "title" : {
             "title" : "LatestArticleTitle",
             "type" : "string",
-            "enum" : [ "Retro Battle: Umfrage", "Die goldene Emma 2024: Einreichung Dezember bis Juli", "gamescom 2024: Hier könnt ihr die Jungs treffen", "So erhöht ihr die Chance, dass wir eure Spielshows spielen!", "50 Fragen: So sendet ihr eure Quizshow richtig ein" ]
+            "example" : [ "Retro Battle: Umfrage", "Die goldene Emma 2024: Einreichung Dezember bis Juli", "gamescom 2024: Hier könnt ihr die Jungs treffen", "So erhöht ihr die Chance, dass wir eure Spielshows spielen!", "50 Fragen: So sendet ihr eure Quizshow richtig ein" ]
           },
           "url" : {
             "type" : "string"
@@ -15657,7 +15657,7 @@
           "url_slug" : {
             "title" : "LatestArticleURLSlug",
             "type" : "string",
-            "enum" : [ "8586-retro-battle-umfrage", "8585-die-goldene-emma-2024-einreichung-dezember-bis-juli", "8584-gamescom-2024-hier-konnt-ihr-die-jungs-treffen", "8582-so-erhoht-ihr-die-chance-dass-wir-eure-spielshows-spielen", "8581-50-fragen-so-sendet-ihr-eure-quizshow-richtig-ein" ]
+            "example" : [ "8586-retro-battle-umfrage", "8585-die-goldene-emma-2024-einreichung-dezember-bis-juli", "8584-gamescom-2024-hier-konnt-ihr-die-jungs-treffen", "8582-so-erhoht-ihr-die-chance-dass-wir-eure-spielshows-spielen", "8581-50-fragen-so-sendet-ihr-eure-quizshow-richtig-ein" ]
           }
         },
         "additionalProperties" : false
@@ -15737,12 +15737,12 @@
           "slug" : {
             "title" : "LatestPlaylistSlug",
             "type" : "string",
-            "enum" : [ "retro-battle", "betrayal-beach", "back-to-school", "abc-quiz", "upn-down" ]
+            "example" : [ "retro-battle", "betrayal-beach", "back-to-school", "abc-quiz", "upn-down" ]
           },
           "title" : {
             "title" : "LatestPlaylistTitle",
             "type" : "string",
-            "enum" : [ "Retro Battle", "Betrayal Beach", "Back to School", "ABC Quiz", "UP'N DOWN" ]
+            "example" : [ "Retro Battle", "Betrayal Beach", "Back to School", "ABC Quiz", "UP\"N DOWN" ]
           },
           "type" : {
             "type" : "integer"
@@ -15750,7 +15750,7 @@
           "url_slug" : {
             "title" : "LatestPlaylistURLSlug",
             "type" : "string",
-            "enum" : [ "155942-retro-battle", "155893-betrayal-beach", "155866-back-to-school", "155762-abc-quiz", "155689-upn-down" ]
+            "example" : [ "155942-retro-battle", "155893-betrayal-beach", "155866-back-to-school", "155762-abc-quiz", "155689-upn-down" ]
           },
           "videos_count" : {
             "type" : "integer"
@@ -15795,7 +15795,7 @@
           "slug" : {
             "title" : "LatestPodcastSlug",
             "type" : "string",
-            "enum" : [ "pietcast-447-so-war-die-gamescom" ]
+            "example" : [ "pietcast-447-so-war-die-gamescom" ]
           },
           "source_url" : {
             "type" : "string",
@@ -15809,12 +15809,12 @@
           "title" : {
             "title" : "LatestPodcastTitle",
             "type" : "string",
-            "enum" : [ "PietCast #447 - So war die Gamescom" ]
+            "example" : [ "PietCast #447 - So war die Gamescom" ]
           },
           "url_slug" : {
             "title" : "LatestPodcastURLSlug",
             "type" : "string",
-            "enum" : [ "3336-pietcast-447-so-war-die-gamescom" ]
+            "example" : [ "3336-pietcast-447-so-war-die-gamescom" ]
           }
         },
         "additionalProperties" : false
@@ -15867,7 +15867,7 @@
             "anyOf" : [ {
               "title" : "DurationPrettyDurationPretty",
               "type" : "string",
-              "enum" : [ "21:56", "23:00", "15:24", "17:56" ]
+              "example" : [ "21:56", "23:00", "15:24", "17:56" ]
             }, {
               "type" : "string",
               "format" : "time"
@@ -15909,7 +15909,7 @@
           "slug" : {
             "title" : "LatestVideoSlug",
             "type" : "string",
-            "enum" : [ "rentner-testen-die-black-ops-6-beta", "monty-maulwurf-mvp-worms-clan-wars", "react-das-ist-berlin", "beschreibe-es-in-worten-jackbox-games-blather-round", "minecraft-meets-terraria-pietsmiet-probiert-core-keeper-10" ]
+            "example" : [ "rentner-testen-die-black-ops-6-beta", "monty-maulwurf-mvp-worms-clan-wars", "react-das-ist-berlin", "beschreibe-es-in-worten-jackbox-games-blather-round", "minecraft-meets-terraria-pietsmiet-probiert-core-keeper-10" ]
           },
           "thumbnail" : {
             "$ref" : "#/components/schemas/LatestVideoThumbnail"
@@ -15917,7 +15917,7 @@
           "title" : {
             "title" : "LatestVideoTitle",
             "type" : "string",
-            "enum" : [ "Rentner testen die Black Ops 6 Beta", "Monty-Maulwurf MVP | Worms Clan Wars", "React: Das ist Berlin #56", "BESCHREIBE es in WORTEN! | Jackbox Games Blather 'Round", "Minecraft meets Terraria | PietSmiet probiert Core Keeper 1.0" ]
+            "example" : [ "Rentner testen die Black Ops 6 Beta", "Monty-Maulwurf MVP | Worms Clan Wars", "React: Das ist Berlin #56", "BESCHREIBE es in WORTEN! | Jackbox Games Blather \"Round", "Minecraft meets Terraria | PietSmiet probiert Core Keeper 1.0" ]
           },
           "url" : {
             "type" : "string"
@@ -15925,7 +15925,7 @@
           "url_slug" : {
             "title" : "LatestVideoURLSlug",
             "type" : "string",
-            "enum" : [ "79656-rentner-testen-die-black-ops-6-beta", "79538-monty-maulwurf-mvp-worms-clan-wars", "79573-react-das-ist-berlin", "79569-beschreibe-es-in-worten-jackbox-games-blather-round", "79651-minecraft-meets-terraria-pietsmiet-probiert-core-keeper-10" ]
+            "example" : [ "79656-rentner-testen-die-black-ops-6-beta", "79538-monty-maulwurf-mvp-worms-clan-wars", "79573-react-das-ist-berlin", "79569-beschreibe-es-in-worten-jackbox-games-blather-round", "79651-minecraft-meets-terraria-pietsmiet-probiert-core-keeper-10" ]
           }
         },
         "additionalProperties" : false
@@ -15946,7 +15946,7 @@
           "title_pluralized" : {
             "title" : "TitlePluralized",
             "type" : "string",
-            "enum" : [ "s", "Brammens", "Chris'", "Peters", "Seps", "Jules'", "Svens", "Hauptsichts" ]
+            "example" : [ "s", "Brammens", "Chris", "Peters", "Seps", "Jules", "Svens", "Hauptsichts" ]
           }
         },
         "additionalProperties" : false
@@ -16365,7 +16365,7 @@
           "title_pluralized" : {
             "title" : "TitlePluralized",
             "type" : "string",
-            "example" : [ "s", "Hauptsichts", "Brammens Sichts", "Chris Sichts", "Jays Sichts", "Peters Sichts", "Seps Sichts", "Svens Sichts", "Brammens", "Jays", "Seps", "Piets" ]
+            "example" : "[\"s\",\"Hauptsichts\",\"Brammens Sichts\",\"Chris Sichts\",\"Jays Sichts\",\"Peters Sichts\",\"Seps Sichts\",\"Svens Sichts\",\"Brammens\",\"Jays\",\"Seps\",\"Piets\"]"
           }
         },
         "additionalProperties" : false
@@ -16393,12 +16393,12 @@
           "slug" : {
             "title" : "Slug",
             "type" : "string",
-            "example" : [ "retro-battle", "watch-later" ]
+            "example" : "[\"retro-battle\",\"watch-later\"]"
           },
           "title" : {
             "title" : "Title",
             "type" : "string",
-            "example" : [ "Retro Battle", "Später ansehen" ]
+            "example" : "[\"Retro Battle\",\"Später ansehen\"]"
           },
           "type" : {
             "type" : "integer"
@@ -16727,7 +16727,7 @@
           "slug" : {
             "title" : "FluffySlug",
             "type" : "string",
-            "enum" : [ "peterheisstpodcast", "pietcast" ]
+            "example" : [ "peterheisstpodcast", "pietcast" ]
           },
           "spotify_url" : {
             "nullable" : true
@@ -16735,12 +16735,12 @@
           "title" : {
             "title" : "FluffyTitle",
             "type" : "string",
-            "enum" : [ "Peter heißt Podcast", "PietCast" ]
+            "example" : [ "Peter heißt Podcast", "PietCast" ]
           },
           "url_slug" : {
             "title" : "FluffyURLSlug",
             "type" : "string",
-            "enum" : [ "36-peterheisstpodcast", "31-pietcast" ]
+            "example" : [ "36-peterheisstpodcast", "31-pietcast" ]
           }
         },
         "additionalProperties" : false
@@ -16752,7 +16752,7 @@
           "file" : {
             "title" : "PurpleFile",
             "type" : "string",
-            "enum" : [ "3d796cb90e82457ad489898ed177ff91a3e42489.jpg", "7b66d92e821f3d530670a7be04e63ecf933dc983.jpg", "3815d8c9c15175150fcdbcd5d1fe66fb62aab967.jpg", "c0048e53b61f4c9976688778a9bd8abe4750513f.jpg", "b0140ea74a478863ab8fd52cfb5399bbd04bf215.jpg", "6c259457ad9942473f4c9d1cb0562d58a86a5955.jpg", "b2bda99459cec7fcb94136afd7807270e7cf9fd2.jpg", "8dd4a663b31368722f6cbbd68c7aa6d6a2f9174b.jpg", "d95a05416032ad0230e68f2ff9ae7158cc22a4b5.jpg", "403f21b09b5ac9711d6029f1b616ac4bff4e2d5b.jpg", "de8c10a358da1921713a29c9c4a0128b388f2dc9.jpg", "0fbf12a2a59313fb10054a111bc383b09bbb7944.jpg", "8fcb08375de48178e73c2fcf6061c25cfd641fad.jpg", "92a305e37f5bc8f686ca0875bf2d0106e08364be.jpg", "9e8d374aa0e75e85390d577fe69c93d2bb27bc48.jpg" ]
+            "example" : [ "3d796cb90e82457ad489898ed177ff91a3e42489.jpg" ]
           },
           "height" : {
             "type" : "integer"
@@ -16986,7 +16986,7 @@
           "name" : {
             "title" : "SocialAccountName",
             "type" : "string",
-            "enum" : [ "blu", "userNameLP", "userName_" ]
+            "example" : [ "socialAccountName" ]
           },
           "service" : {
             "title" : "Service",
@@ -17006,7 +17006,7 @@
           "username" : {
             "title" : "SocialAccountUsername",
             "type" : "string",
-            "enum" : [ "blu#4340", "userNameLP", "userName_#0" ]
+            "enum" : [ "SocialAccountUsername" ]
           }
         },
         "additionalProperties" : false
@@ -17067,7 +17067,7 @@
           "file" : {
             "title" : "StickyFile",
             "type" : "string",
-            "enum" : [ "a37f22cc1c294615315453d10420d384a037b9a8.jpg", "3480e67586d0daabc165d448844de7e67ec04b91.jpg", "45c7f7651f41747982aae27026f76a5b07708862.jpg", "b221874d544a4ebb588442178d337cca705e1158.jpg", "dbc76769b2f9c0226224e1f315393c9516b5cfb5.jpg", "539e3fa2e06fc6ffcc7cdcd71884fc027b844217.jpg", "0cedb2ab18cce454668b951348f4b774cbfd6cfe.jpg", "3bfc902e4b23fe5e63d6aedd1c40ebd6f75b4622.jpg", "3c86a022ef10f9fbb71ea9c8c23b9a185227675c.jpg", "252de33ddbaa5d4b526a065bf0326ad8194ca35a.jpg", "2273ded24ce70bdae4f9305ee6d2599f7abd34c8.jpg", "e5ecea3160a7185fab907bd040c4e150d19ef972.jpg", "abbe986319a2292c1b2e2b3add96244088183007.jpg", "14321df522fc69d36f9112ddc531338415ab51f1.jpg", "1e0c8cec5d89c4e5558a8e57e9404b2c12064fac.jpg" ]
+            "example" : [ "a37f22cc1c294615315453d10420d384a037b9a8.jpg" ]
           },
           "height" : {
             "type" : "integer"
@@ -17280,7 +17280,7 @@
           "file" : {
             "title" : "TentacledFile",
             "type" : "string",
-            "example" : [ "cd6dbc914c9e3a0171491f157b15c1345d1bbd2f.jpg", "ad93f84b1700293e59760b968b21c8606d8a0419.jpg", "b043c5fc5d9f2a2c9702ae4c253d9ac2cf9051bd.jpg" ]
+            "example" : "[\"cd6dbc914c9e3a0171491f157b15c1345d1bbd2f.jpg\"]"
           },
           "height" : {
             "type" : "integer"
@@ -17429,12 +17429,12 @@
           "name" : {
             "title" : "TopUserName",
             "type" : "string",
-            "example" : [ "nikolarius", "The Don", "Pocket", "S3RPENT", "Shulk", "beargrylls", "farbenator", "AlexDelux", "Intefare", "salt_city_citizen" ]
+            "example" : "[\"nikolarius\"]"
           },
           "name_possessive" : {
             "title" : "TopUserNamePossessive",
             "type" : "string",
-            "example" : [ "nikolarius'", "The Dons", "Pockets", "S3RPENTs", "Shulks", "beargrylls'", "farbenators", "AlexDeluxs", "Intefares", "salt_city_citizens" ]
+            "example" : "[\"nikolarius'\"]"
           },
           "preferences" : {
             "$ref" : "#/components/schemas/AuthorPreferences"
@@ -17448,7 +17448,7 @@
           "reputation_pretty" : {
             "title" : "TopUserReputationPretty",
             "type" : "string",
-            "example" : [ "59,454", "58,552", "27,941", "21,439", "20,384", "19,436", "19,229", "17,387", "13,439", "13,171" ]
+            "example" : "[\"59,454\"]"
           },
           "team" : {
             "type" : "boolean"
@@ -17460,12 +17460,12 @@
           "url_slug" : {
             "title" : "TopUserURLSlug",
             "type" : "string",
-            "example" : [ "69870-nklsglng", "1771-taniell", "57769-pocket", "92480-thefordguy", "17608-mariomeister", "12967-beargrylls", "77058-farbenator", "2701-alexdelux", "67250-intefare", "42550-salt_city_citizen" ]
+            "example" : "[\"69870-nklsglng\"]"
           },
           "username" : {
             "title" : "TopUserUsername",
             "type" : "string",
-            "example" : [ "nklsglng", "taniell", "pocket", "thefordguy", "mariomeister", "beargrylls", "farbenator", "alexdelux", "intefare", "salt_city_citizen" ]
+            "example" : "[\"nklsglng\"]"
           }
         },
         "additionalProperties" : false
@@ -17486,7 +17486,7 @@
           "pluralized_title" : {
             "title" : "PluralizedTitle",
             "type" : "string",
-            "example" : [ "s" ]
+            "example" : "[\"s\"]"
           },
           "qualities" : {
             "type" : "array",
@@ -17541,7 +17541,7 @@
           "duration_pretty" : {
             "title" : "TrendingVideoDurationPretty",
             "type" : "string",
-            "enum" : [ "32:17", "49:22", "47:23", "38:32", "23:34" ]
+            "example" : [ "32:17" ]
           },
           "featured" : {
             "type" : "boolean"
@@ -17579,7 +17579,7 @@
           "slug" : {
             "title" : "TrendingVideoSlug",
             "type" : "string",
-            "enum" : [ "da-wurde-ja-keiner-runterfallen-oder-ttt", "ich-muss-hier-raus-perfect-heist-2", "trackmania-minecraft", "valves-hype-spiel-deadlock", "guess-the-game-3gg3-special" ]
+            "example" : [ "da-wurde-ja-keiner-runterfallen-oder-ttt" ]
           },
           "thumbnail" : {
             "$ref" : "#/components/schemas/TrendingVideoThumbnail"
@@ -17587,17 +17587,17 @@
           "title" : {
             "title" : "TrendingVideoTitle",
             "type" : "string",
-            "enum" : [ "Da würde ja keiner RUNTERFALLEN! oder? | TTT", "ICH MUSS RAUS! | Perfect Heist 2", "BESSER WIRDS NICHT MEHR! | Trackmania x Minecraft", "VALVES HYPE SPIEL! | Deadlock", "Guess The Game 3gg3 SPECIAL!" ]
+            "example" : [ "Da würde ja keiner RUNTERFALLEN! oder? | TTT" ]
           },
           "url" : {
             "title" : "TrendingVideoURL",
             "type" : "string",
-            "enum" : [ "/videos/79620-da-wurde-ja-keiner-runterfallen-oder-ttt", "/videos/79622-ich-muss-hier-raus-perfect-heist-2", "/videos/79618-trackmania-minecraft", "/videos/79632-valves-hype-spiel-deadlock", "/videos/79636-guess-the-game-3gg3-special" ]
+            "example" : [ "/videos/79620-da-wurde-ja-keiner-runterfallen-oder-ttt" ]
           },
           "url_slug" : {
             "title" : "TrendingVideoURLSlug",
             "type" : "string",
-            "enum" : [ "79620-da-wurde-ja-keiner-runterfallen-oder-ttt", "79622-ich-muss-hier-raus-perfect-heist-2", "79618-trackmania-minecraft", "79632-valves-hype-spiel-deadlock", "79636-guess-the-game-3gg3-special" ]
+            "example" : [ "79620-da-wurde-ja-keiner-runterfallen-oder-ttt" ]
           }
         },
         "additionalProperties" : false
@@ -17617,13 +17617,13 @@
               "title" : "PerspectiveTitle",
               "type" : "string",
               "nullable" : true,
-              "example" : [ "Brammen", "Chris", "Peter", "Sep", "Jules", "Sven", "Hauptsicht" ]
+              "example" : "[\"Brammen\",\"Chris\",\"Peter\",\"Sep\",\"Jules\",\"Sven\",\"Hauptsicht\"]"
             } ]
           },
           "title_pluralized" : {
             "title" : "TitlePluralized",
             "type" : "string",
-            "example" : [ "s", "Brammens", "Chris'", "Peters", "Seps", "Jules'", "Svens", "Hauptsichts" ]
+            "example" : "[\"s\",\"Brammens\",\"Chris\\'\",\"Peters\",\"Seps\",\"Jules\",\"Svens\",\"Hauptsichts\"]"
           }
         },
         "additionalProperties" : false
@@ -17662,7 +17662,7 @@
           "description" : {
             "title" : "Description",
             "type" : "string",
-            "enum" : [ "Tägliche Videozusammenfassung", "Wöchentliche Videozusammenfassung", "Antwort auf Kommentar", "Kommentar ist beliebt", "Erwähnung in einem Kommentar", "Neue Artikel" ]
+            "example" : [ "Tägliche Videozusammenfassung", "Wöchentliche Videozusammenfassung", "Antwort auf Kommentar", "Kommentar ist beliebt", "Erwähnung in einem Kommentar", "Neue Artikel" ]
           },
           "key" : {
             "title" : "Key",
@@ -17761,7 +17761,7 @@
           "reputation_pretty" : {
             "title" : "ReputationPretty",
             "type" : "string",
-            "example" : [ "***" ]
+            "example" : "[\"***\"]"
           },
           "team" : {
             "type" : "boolean"
@@ -18079,7 +18079,7 @@
                       "file" : {
                         "title" : "File",
                         "type" : "string",
-                        "enum" : [ "d1491746e1ef8b0a7cc9e2a86b112f66bc289627.jpg", "334d49b1325da4b18763e6b0f3e425463f50acc5.jpg", "30d754c99af0bcf54ef04eb15064426c7f72c31e.jpg", "57e60e33b61a87225fb7775feee45151ba73de99.jpg", "69630ab9191400ead547ed2618ee1a9a36b4356f.jpg", "876ce2bbb9c925b14f101511c7e1bd79dc4c4a1b.jpg" ]
+                        "example" : [ "d1491746e1ef8b0a7cc9e2a86b112f66bc289627.jpg" ]
                       },
                       "height" : {
                         "type" : "integer"
@@ -18115,7 +18115,7 @@
           "email" : {
             "title" : "Email",
             "type" : "string",
-            "enum" : [ "email@example.com" ]
+            "example" : [ "email@example.com" ]
           },
           "id" : {
             "type" : "integer"
@@ -18123,12 +18123,12 @@
           "name" : {
             "title" : "UserName",
             "type" : "string",
-            "enum" : [ "userName", "DisplayName" ]
+            "example" : [ "userName", "DisplayName" ]
           },
           "name_possessive" : {
             "title" : "NamePossessive",
             "type" : "string",
-            "enum" : [ "userNames", "DisplayNames" ]
+            "example" : [ "userNames", "DisplayNames" ]
           },
           "notifications_count" : {
             "type" : "integer"
@@ -18187,12 +18187,12 @@
           "url_slug" : {
             "title" : "URLSlug",
             "type" : "string",
-            "enum" : [ "<userId>-<userName>" ]
+            "example" : [ "<userId>-<userName>" ]
           },
           "username" : {
             "title" : "UserUsername",
             "type" : "string",
-            "enum" : [ "userName" ]
+            "example" : [ "userName" ]
           },
           "verified" : {
             "type" : "boolean"
@@ -18972,7 +18972,7 @@
               "title" : "RemoteURLEnum",
               "type" : "string",
               "nullable" : true,
-              "enum" : [ "/storage/images/predatorthumb.png", "/storage/images/uploadplan.png" ]
+              "example" : [ "/storage/images/predatorthumb.png", "/storage/images/uploadplan.png" ]
             }, {
               "type" : "string",
               "format" : "uri"
@@ -18995,9 +18995,9 @@
             "type" : "integer"
           },
           "duration_pretty" : {
-            "type" : "string",
             "title" : "DurationPrettyDurationPretty",
-            "example" : [ "21:56", "23:00", "15:24", "17:56" ]
+            "type" : "string",
+            "example" : "[\"21:56\"]"
           },
           "featured" : {
             "type" : "boolean"
@@ -19033,22 +19033,22 @@
             "x-qt-uri-protocols" : [ "http" ]
           },
           "slug" : {
-            "type" : "string",
             "title" : "LatestVideoSlug",
-            "example" : [ "rentner-testen-die-black-ops-6-beta", "monty-maulwurf-mvp-worms-clan-wars", "react-das-ist-berlin", "beschreibe-es-in-worten-jackbox-games-blather-round", "minecraft-meets-terraria-pietsmiet-probiert-core-keeper-10" ]
+            "type" : "string",
+            "example" : "[\"rentner-testen-die-black-ops-6-beta\"]"
           },
           "title" : {
-            "type" : "string",
             "title" : "LatestVideoTitle",
-            "example" : [ "Rentner testen die Black Ops 6 Beta", "Monty-Maulwurf MVP | Worms Clan Wars", "React: Das ist Berlin #56", "BESCHREIBE es in WORTEN! | Jackbox Games Blather 'Round", "Minecraft meets Terraria | PietSmiet probiert Core Keeper 1.0" ]
+            "type" : "string",
+            "example" : "[\"Rentner testen die Black Ops 6 Beta\"]"
           },
           "url" : {
             "type" : "string"
           },
           "url_slug" : {
-            "type" : "string",
             "title" : "LatestVideoURLSlug",
-            "example" : [ "79656-rentner-testen-die-black-ops-6-beta", "79538-monty-maulwurf-mvp-worms-clan-wars", "79573-react-das-ist-berlin", "79569-beschreibe-es-in-worten-jackbox-games-blather-round", "79651-minecraft-meets-terraria-pietsmiet-probiert-core-keeper-10" ]
+            "type" : "string",
+            "example" : "[\"79656-rentner-testen-die-black-ops-6-beta\"]"
           }
         },
         "additionalProperties" : false
@@ -19338,7 +19338,7 @@
           "aspect_ratio" : {
             "title" : "AspectRatio",
             "type" : "string",
-            "example" : [ "16:9" ]
+            "enum" : [ "16:9" ]
           },
           "brand" : {
             "$ref" : "#/components/schemas/Brand"

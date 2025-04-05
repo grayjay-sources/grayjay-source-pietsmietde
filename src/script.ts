@@ -140,7 +140,7 @@ class Utils {
 		return formattedMessage;
 	}
 	debug = function (obj: unknown) {
-		bridge.throwTest((utils.log(`Debug: ${JSON.stringify(obj)}`)));
+		utils.log(`Debug: ${JSON.stringify(obj)}`); // bridge.throwTest()
 	}
 	prepend = function <T>(array: T[], value: T) {
 		const newArray = array.slice();

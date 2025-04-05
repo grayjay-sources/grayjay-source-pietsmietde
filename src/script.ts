@@ -122,7 +122,7 @@ class Utils {
 		const fmt = utils.log(`${message}: ${error} (${JSON.stringify(error)})`, true);
 		if (_throw) {
 			const log = errorLog; errorLog = "";
-			throw new ScriptException(`${fmt}\n\n${log}`);
+			// throw new ScriptException(`${fmt}\n\n${log}`);
 		}
 	}
 	log = function (message: string, toast = false) {
@@ -246,7 +246,7 @@ class Utils {
 			}
 		}
 		utils.error(`${url_s.length} URLs failed to fetch`, null, true);
-		throw new ScriptException("unreachable")
+		// throw new ScriptException("unreachable")
 	}
 	getJson(this: Utils, url_s: string | string[], headers: HTTPHeaders = {}, name: "YTProxy" | null = null) {
 		const new_headers = { ...headers, Accept: "application/json" }
@@ -715,7 +715,7 @@ class Youtube {
 			if (error instanceof Error) {
 				utils.error(`[Youtube] ${video_id}: ${error?.message}`, error)
 			}
-			throw error;
+			// throw error;
 		}
 	}
 }

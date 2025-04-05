@@ -118,12 +118,12 @@ function init_source<
 
 //#region utils
 class Utils {
-	error = function (message: string, error: string | null | unknown) { // , _throw = false
+	error = function (message: string, error: string | null | unknown, _throw = false) {
 		utils.log(`${message}: ${error} (${JSON.stringify(error)})`, true); // const fmt = 
-		// if (_throw) {
+		if (_throw) {
 			// const log = errorLog; errorLog = "";
 			// throw new ScriptException(`${fmt}\n\n${log}`);
-		// }
+		}
 	}
 	log = function (message: string, toast = false) {
 		message = JSON.stringify(message);

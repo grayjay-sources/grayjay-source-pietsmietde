@@ -247,10 +247,12 @@ class Utils {
 		}
 		utils.error(`${url_s.length} URLs failed to fetch`, null, true);
 		// throw new ScriptException("unreachable")
+		return null;
 	}
 	getJson(this: Utils, url_s: string | string[], headers: HTTPHeaders = {}, name: "YTProxy" | null = null) {
 		const new_headers = { ...headers, Accept: "application/json" }
 		const response = this.get(url_s, new_headers, name);
+		if (!response) throw new Error("[getJson] response was empty");
 		return JSON.parse(response.body);
 	}
 }
@@ -347,6 +349,7 @@ function getProtected(url_s: string) {
 		fetchIntegrityValue();
 	}
 	const response = utils.get(url_s, headerDict);
+	if (!response) throw new Error("[getProtected] response was empty");
 	if (!response.isOk) {
 		utils.error(`Failed to get ${url_s} [${response.code}]`, null, true);
 		if (response.code === 400) fetchIntegrityValue();
@@ -358,6 +361,7 @@ function getProtectedJson(url_s: string | string[]) {
 }
 function fetchIntegrityValue() {
 	const confResponse = utils.get(URL_API_CONFIG, {}); // headerDict
+	if (!confResponse) throw new Error("[fetchIntegrityValue] confResponse was empty");
 	if (!confResponse.isOk)
 		utils.error(`Failed to get integrity value from ${URL_API_CONFIG} [${confResponse.code}]`, null, true);
 	const results = JSON.parse(confResponse.body);
@@ -505,9 +509,7 @@ function isPlaylistUrl(url: string) {
 }
 function getPlaylist(url: string) {
 	const slug = parsePlaylistSlug(url);
-	if (slug === undefined) {
-		throw new ScriptException("invalid playlist url")
-	}
+	if (!slug) throw new ScriptException("invalid playlist url");
 	const id = parseIdFromSlug(slug);
 	const playlistDetails = getPlaylistDetailsFromId(id.toString());
 	const playlistVideos = getVideoResults(1, [id]);
@@ -599,11 +601,9 @@ function getContentDetails(url: string) {
 	if (local_settings.use_yt_proxy ?? true) {
 		try {
 			const ytdata = yt.get(video_id)
-			if (ytdata === null) { utils.error(`Unable to fetch Youtube data for ${video_id}`, null, false); return new PlatformVideoDetails(pvd); }
+			if (!ytdata) { utils.error(`Unable to fetch Youtube data for ${video_id}`, null, false); return new PlatformVideoDetails(pvd); }
 			const yt_data = ytdata["youtube-data"].items[0];
-			if (yt_data === undefined) {
-				throw new ScriptException("no youtube data")
-			}
+			if (!yt_data) throw new ScriptException("[getContentDetails] no youtube data");
 			const yt_dislikes = ytdata["youtube-dislike"];
 			const yt_video_id = yt_data.id;
 			const yt_viewCount = parseInt(yt_data.statistics.viewCount);

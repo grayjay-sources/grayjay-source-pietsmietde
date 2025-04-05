@@ -1,5 +1,8 @@
 # GrayJay [pietsmiet.de](https://www.pietsmiet.de/) source
 
+> [!CAUTION]  
+> As of 01.03.2025 the Pietsmiet.de website has been substituted with a placeholder page and the API is no longer accessible, therefor this plugin and all other 3rd party tools relying on the page are permanently offline.
+
 ## Installation
 
 Copy and paste the link below into your browser to open the plugin in Grayjay

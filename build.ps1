@@ -23,19 +23,18 @@ $config | Set-Content -Path $configPath
 # build project
 npm run release:node
 
-# Wait for user to confirm release
-$confirmation = Read-Host "Do you want to proceed with the release? (yes/no)"
-if ($confirmation -ne "yes") {
-    Write-Host "Release aborted"
+Write-Host "Press any key to release, otherwise exit"
+$x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+if ($x.VirtualKeyCode -eq 27) {
+    Write-Host "Exiting..."
     exit
 }
-
 
 # git stuff
 git add .
 git commit -m "Bump version to v$newVersion"
+git tag $newVersion -a -m "GrayJay PietSmiet.de Source Version $newVersion"
 git push
 
 # make tag
-git tag $newVersion -a -m "GrayJay PietSmiet.de Source Version $newVersion"
 git push origin --tags

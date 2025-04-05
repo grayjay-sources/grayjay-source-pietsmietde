@@ -716,6 +716,7 @@ class Youtube {
 				utils.error(`[Youtube] ${video_id}: ${error?.message}`, error)
 			}
 			// throw error;
+			return null;
 		}
 	}
 }
